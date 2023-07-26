@@ -1,0 +1,106 @@
+.homeContainer {
+  border: 1px solid rgb(6, 97, 6);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+.topTabs {
+  width: 80%;
+  display: flex;
+  justify-content: right;
+  position: relative;
+}
+.topTabBox {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 60px;
+}
+.topWhiteTab {
+  width: 71px;
+  height: 29px;
+  border-radius: 9px;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+}
+.topTabLogo {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.coverGallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid rgb(24, 144, 192);
+  overflow: hidden;
+  border-radius: 10px;
+}
+.galleryImage {
+  width: 100%;
+}
+.firstGBox {
+  width: 721px;
+  height: 574px;
+  margin-right: 5px;
+}
+.secondGBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.secondSBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.BgBox {
+  margin: 0px 5px 5px 5px;
+}
+.CgBox {
+  margin: 0px 0px 5px 5px;
+}
+.DgBox {
+  margin: 5px 5px 0px 5px;
+}
+.EgBox {
+  margin: 5px 0px 0px 5px;
+}
+.subImageBox {
+  width: 282px;
+  height: 282px;
+}
+
+.venueLocation {
+  /* border: 1px solid; */
+  width: 70%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.locationHeader {
+  display: flex;
+  flex-direction: row;
+}
+.CityLocation {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.startLogos {
+  display: flex;
+  flex-direction: row;
+}
+.startLogos img {
+  width: 25px;
+  height: 25px;
+}

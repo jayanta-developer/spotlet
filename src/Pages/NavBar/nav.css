@@ -1,0 +1,64 @@
+.navBar {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 96px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+}
+.notificationIcons img {
+  width: 22px;
+  height: 22px;
+  margin: 0px 10px;
+}
+.companyLogo {
+  margin: 0px 30px;
+}
+.searchBar {
+  margin: 0px 30px;
+}
+.searchField {
+  width: 352px;
+  height: 46px;
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: row;
+}
+.searchInput input {
+  height: 11px !important;
+  padding-left: 55px;
+}
+.searchInput fieldset {
+  border-radius: 72px !important;
+}
+
+.notificationIcons {
+  margin: 0px 30px;
+}
+.host {
+  margin: 0px 30px;
+}
+.booking {
+  margin: 0px 30px;
+}
+.profile {
+  margin: 0px 30px;
+}
+.profileTab {
+  width: 179px;
+  height: 54px;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.avatarBox {
+  width: 40px;
+  height: 40px;
+  border-radius: 21px;
+  overflow: hidden;
+}

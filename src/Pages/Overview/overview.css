@@ -1,0 +1,330 @@
+.overviewContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menuBox {
+  width: 219px;
+  height: 460px;
+  padding: 11px 0px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.menuItem {
+  display: flex;
+  height: 36px;
+  justify-content: left;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 15px;
+  margin: 12px 0px;
+  transition: border 0.1s;
+}
+.overviewActive {
+  border-left: 5px #ea4335 solid;
+}
+.overviewActive:hover > p {
+  color: #ea4335;
+}
+
+.menuItem:hover {
+  border-left: 5px #ea4335 solid;
+}
+.menuItem:hover > p {
+  color: #ea4335;
+}
+
+.menuItem p {
+  color: #000;
+  font-family: "Poppins-Regular";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mainItemBox {
+  width: 683px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.04);
+  flex-shrink: 0;
+}
+
+.venueDetails {
+  height: 92px;
+}
+.verified {
+  height: 121px;
+  display: flex;
+  flex-direction: row;
+}
+.verifyBox {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+}
+.verifyHeaderText {
+  color: #3c3c3c;
+  font-family: "Poppins-Bold" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 26px !important; /* 162.5% */
+}
+.verifySubText {
+  color: #1c1c1c;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: 26px !important; /* 173.333% */
+}
+.Description {
+  height: 251px;
+}
+.DescriptionHeader {
+  border: 1px solid;
+  display: flex;
+  flex-direction: row;
+}
+.descriptionHeaderText {
+  color: #3c3c3c;
+  font-family: "Poppins-Regular" !important;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: normal !important;
+}
+.Amenities {
+  height: 306px;
+}
+
+.bookingRequest {
+  width: 339px;
+  height: 432px;
+  border-radius: 10px;
+  /* background: #fff; */
+  /* box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.priseBox {
+  width: 294px;
+  height: 92px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #ea4335;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 5;
+}
+.priceText {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.priseBox p {
+  color: #fff;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 99.7%;
+}
+.priseInputBox {
+  width: 339px;
+  height: 408px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  bottom: 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 65px;
+}
+.priseInputItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.priseInputItem input {
+  height: 18px;
+  width: 305px;
+}
+.priseInputItem fieldset {
+  border-radius: 10px;
+  border-color: #eaeaea !important;
+}
+.pSize {
+  height: 51px !important;
+}
+.priseInputItem img {
+  position: relative;
+  left: 139px;
+  top: 28px;
+}
+.priseDateInput {
+  flex-direction: column;
+}
+.priseDateInput input:focus {
+  outline: none;
+}
+.priseDateInput img {
+  left: 39px;
+  top: 29px;
+}
+.pSize::placeholder {
+  font-size: 14px !important;
+  color: rgba(128, 128, 128, 0.726);
+}
+.DateFieldInput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.requestBookingBtn {
+  width: 305px;
+  height: 51px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #ea4335;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.redBtnText {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins-Bold" !important;
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 99.7% !important; /* 17.946px */
+}
+
+.hostDetails {
+  width: 339px;
+  height: 208px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 21px;
+}
+.hostDetailsBox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 110px;
+  justify-content: space-between;
+}
+.avatarImage {
+  width: 87px;
+  height: 87px;
+  border-radius: 48px;
+  overflow: hidden;
+}
+.avatarInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.hostHeaderText {
+  color: #000;
+  font-family: "Poppins-Bold" !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 99.7% !important; /* 16.949px */
+}
+.avatarDetailsTextField {
+  display: flex;
+  flex-direction: row;
+}
+.hostDetailsLabel {
+  color: #b7b7b7;
+  font-family: "Poppins-Regular" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 99.7% !important; /* 13.958px */
+}
+.hostDetailsLabelText {
+  color: #000;
+  font-family: "Poppins-Bold" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 99.7% !important;
+}
+
+.mainBox {
+  margin: 0px 30px;
+}
+.mainItemBox {
+  margin-bottom: 20px;
+}
+
+.totalPriseBox {
+  display: flex;
+  flex-direction: revert;
+  justify-content: space-between;
+  width: 296px;
+}
+.TotalPriseText {
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: 99.7% !important;
+}
+.venueDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.venueDetailsItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.venueDetailsItem p {
+  color: #333;
+  text-align: center;
+  font-family: "Poppins-Regular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px; /* 185.714% */
+  margin-top: 5px;
+}
+.venueDetailsIcon {
+  width: 16px;
+  height: 16px;
+  margin-bottom: 5px;
+}

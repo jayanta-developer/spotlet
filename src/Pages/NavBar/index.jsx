@@ -27,10 +27,7 @@ export default function NavBar() {
             <img style={{ width: "22px", position: "relative", left: "44px" }} src={SearchIcon} />
             <TextField className='searchInput' sx={{ width: "100%" }} placeholder='   Enter Location' />
           </Box>
-
         </Box>
-
-
 
         <Box className="notificationIcons">
           <img src={bail} />

@@ -12,11 +12,21 @@ import group from "../../Assets/images/venuDetailsIcon/download (3) 1.svg"
 
 import verifyIcon from "../../Assets/images/verifyIcon.svg"
 import daimonIcon from "../../Assets/images/dimonIcon.svg"
-import DiscriptionIcon from "../../Assets/images/Untitled design.png"
+import DiscriptionIcon from "../../Assets/images/Untitled design.png";
+import animetor from "../../Assets/images/animetor.png"
 
 
 import DownArrow from "../../Assets/images/GrayDownArrow.svg";
+import rightArrow from "../../Assets/images/rightArrow.svg"
 import Avatar from "../../Assets/images/427a1f62a2d277788a853d203733f8d5.png";
+
+
+//component
+import Features from '../MainMenu/Features';
+import Dont from '../MainMenu/Do&Dont';
+import Rules from '../MainMenu/Rules';
+import CancellationPolicy from "../MainMenu/CancellationPolicy";
+import OpeningTime from "../MainMenu/Opening"
 
 
 
@@ -112,12 +122,98 @@ export default function Overview() {
 
           <Box className="Description mainItemBox">
             <Box className="DescriptionHeader">
-              <img style={{ width: "40px" }} src={DiscriptionIcon} />
+              <Box ml={2} mr={2} className="descriptionIconBox">
+                <img style={{ width: "100%" }} src={DiscriptionIcon} />
+              </Box>
               <Typography className='descriptionHeaderText'>Description of the property</Typography>
+            </Box>
+
+            <Box className="descriptionTextBox">
+              <Typography className='descriptionText'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry s standard dummy text ever since the 1500s, when an unknown printer took a & scrambled it to make a type specimen book. It has survived <samp className='descriptionGrayText'>not only five centuries, galley of type. ake a type specimen book. It has survived</samp> </Typography>
+            </Box>
+            <Box className="seeMoreBtn">
+              <Typography pl={2} className='seeMoreText'>+ SEE MORE</Typography>
             </Box>
           </Box>
 
-          <Box className="Amenities mainItemBox"></Box>
+          <Box className="Amenities mainItemBox">
+            <Box className="amenitiesHeader">
+              <Box ml={2} mr={2} className="AmenitiesIconBox">
+                <img style={{ width: "100%" }} src={animetor} />
+              </Box>
+              <Typography className='descriptionHeaderText'>Amenities</Typography>
+              <Box sx={{ paddingLeft: "54%" }} className="seeMoreBtn">
+                <Typography pl={2} className='seeMoreText amenitiesSeeMoreBtn'>+ SEE MORE</Typography>
+              </Box>
+            </Box>
+            <Box className="amenitiesTextBox">
+              <Box className="amenitiesText">
+                <Box className="amenitiesItem">
+                  <img src={rightArrow} />
+                  <Typography ml={1}>Kitchen</Typography>
+                </Box>
+                <Box className="amenitiesItem">
+                  <img src={rightArrow} />
+                  <Typography ml={1}>Bathrooms </Typography>
+                </Box>
+                <Box className="amenitiesItem">
+                  <img src={rightArrow} />
+                  <Typography ml={1}>Sink </Typography>
+                </Box>
+                <Box className="amenitiesItem">
+                  <img src={rightArrow} />
+                  <Typography ml={1}>Large table</Typography>
+                </Box>
+                <Box className="amenitiesItem">
+                  <img src={rightArrow} />
+                  <Typography ml={1}>Sound System</Typography>
+                </Box>
+                <Box className="amenitiesItem">
+                  <img src={rightArrow} />
+                  <Typography ml={1}>Wifi</Typography>
+                </Box>
+                <Box className="amenitiesItem">
+                  <img src={rightArrow} />
+                  <Typography ml={1}>Air Conditioning</Typography>
+                </Box>
+              </Box>
+              <Box className="amenitiesText">
+                <Box className="amenitiesItem">
+                  <img src={rightArrow} />
+                  <Typography ml={1}>Whiteboard</Typography>
+                </Box>
+                <Box className="amenitiesItem">
+                  <img src={rightArrow} />
+                  <Typography ml={1}>Photography Lighting</Typography>
+                </Box>
+                <Box className="amenitiesItem">
+                  <img src={rightArrow} />
+                  <Typography ml={1}>Power Tie-in</Typography>
+                </Box>
+                <Box className="amenitiesItem">
+                  <img src={rightArrow} />
+                  <Typography ml={1}>Projector and Screen / TV</Typography>
+                </Box>
+                <Box className="amenitiesItem">
+                  <img src={rightArrow} />
+                  <Typography ml={1}>Private Entrance</Typography>
+                </Box>
+                <Box className="amenitiesItem">
+                  <img src={rightArrow} />
+                  <Typography ml={1}>Smart sensors that control<br /> lighting and temperature</Typography>
+                </Box>
+              </Box>
+            </Box>
+
+          </Box>
+
+          {/* component */}
+          <Features />
+          <Dont />
+          <Rules />
+          <CancellationPolicy />
+          <OpeningTime />
+
 
         </Box>
 

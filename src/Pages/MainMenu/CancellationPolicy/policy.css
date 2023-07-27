@@ -1,0 +1,14 @@
+.cancellationBox {
+  height: 226px;
+}
+.cancelTextBox {
+  padding: 20px;
+}
+.cancelTextBox p {
+  color: #1c1c1c;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: 28px !important;
+}

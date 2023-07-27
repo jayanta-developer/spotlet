@@ -1,0 +1,9 @@
+.rulesContainer {
+  height: 263px;
+}
+.amenities_Text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}

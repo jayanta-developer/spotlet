@@ -55,6 +55,7 @@
   background: #fff;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.04);
   flex-shrink: 0;
+  margin-bottom: 20px;
 }
 
 .venueDetails {
@@ -93,9 +94,18 @@
   height: 251px;
 }
 .DescriptionHeader {
-  border: 1px solid;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  height: 67px;
+  border-bottom: 1px solid #ececec;
+}
+.descriptionIconBox {
+  width: 50px;
+  height: 50px;
+}
+.descriptionTextBox {
+  padding: 20px 20px 0px 20px;
 }
 .descriptionHeaderText {
   color: #3c3c3c;
@@ -105,8 +115,69 @@
   font-weight: 700 !important;
   line-height: normal !important;
 }
+.descriptionGrayText {
+  color: #d2cccc;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: 26px !important;
+}
+
+.descriptionText {
+  color: #1c1c1c;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: 26px !important;
+}
+.seeMoreText {
+  color: #ea4335;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 26px !important;
+}
+
 .Amenities {
   height: 306px;
+}
+.amenitiesHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 67px;
+  border-bottom: 1px solid #ececec;
+}
+.AmenitiesIconBox {
+  width: 50px;
+  height: 50px;
+}
+.amenitiesTextBox {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.amenitiesText {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.amenitiesText p {
+  color: #1c1c1c;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: 26px !important;
+}
+.amenitiesItem {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3px;
 }
 
 .bookingRequest {
@@ -284,9 +355,6 @@
 
 .mainBox {
   margin: 0px 30px;
-}
-.mainItemBox {
-  margin-bottom: 20px;
 }
 
 .totalPriseBox {

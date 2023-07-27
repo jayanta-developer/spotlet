@@ -1,0 +1,44 @@
+.openingBox {
+  height: 369px;
+}
+.openingTimeBox {
+  display: flex;
+  flex-direction: row;
+}
+.weekNames {
+  width: 40%;
+}
+.weekItem {
+  height: 43px;
+  border-bottom: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weekItem p {
+  color: #1c1c1c;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: 40px !important;
+}
+.times {
+  width: 60%;
+}
+.time {
+  height: 43px;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.time p {
+  color: #1c1c1c;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: 40px !important;
+}

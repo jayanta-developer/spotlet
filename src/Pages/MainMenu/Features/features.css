@@ -1,0 +1,27 @@
+.mainItemBox {
+  width: 683px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.04);
+  flex-shrink: 0;
+  margin-bottom: 20px;
+}
+.featuresContainer {
+  height: 306px;
+}
+.featuresHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 67px;
+  border-bottom: 1px solid #ececec;
+}
+.seeMoreText {
+  color: #ea4335;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 26px !important;
+}

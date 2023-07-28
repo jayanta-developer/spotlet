@@ -5,6 +5,7 @@ import NavBar from "./Pages/NavBar";
 import Home from "./Pages/Home";
 import Overview from "./Pages/Overview";
 import Properties from "./Pages/SimilarProperties";
+import Footer from "./Pages/Footer";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Home />
       <Overview />
       <Properties />
+      <Footer />
     </>
   );
 }

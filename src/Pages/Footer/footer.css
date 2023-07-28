@@ -1,0 +1,86 @@
+.footer {
+  width: 100%;
+  height: 333px;
+  background-color: #131313;
+}
+.footerMainBody {
+  width: 100%;
+  height: 283px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footerBox {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footerSubBody {
+  width: 100%;
+  height: 48px;
+  border-top: 1px solid #202020;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 10%;
+}
+.footerItem {
+  /* border: 1px solid white; */
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
+  margin: 0px 14px;
+}
+.footerSubItem {
+  margin-top: 13px;
+}
+.footerLogoSubText {
+  font-size: 14px;
+  color: #c9c9c9;
+}
+.footerItemHeader {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px !important;
+  margin-bottom: 15px;
+  font-family: "Poppins-Bold" !important;
+}
+.footerSubText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 6px 0px;
+}
+.footerSubText p {
+  color: #c9c9c9;
+  font-size: 14px !important;
+  margin-left: 5px;
+  font-family: "Poppins-Regular" !important;
+  cursor: pointer;
+}
+.RightArrow {
+  width: 10px;
+  height: 10px;
+}
+.RightsBox {
+  display: flex;
+  align-items: center;
+}
+.RightsBox p {
+  font-size: 14px !important;
+  font-family: "Poppins-Regular" !important;
+  color: #c9c9c9;
+}
+.socialMediaBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.socialMediaBox img {
+  width: 20px;
+  height: 20px;
+  margin: 0px 5px;
+}

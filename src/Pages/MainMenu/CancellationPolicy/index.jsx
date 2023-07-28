@@ -15,7 +15,7 @@ export default function CancellationPolicy() {
             <img style={{ width: "100%" }} src={cancellPolicyIcon} />
           </Box>
           <Typography className='descriptionHeaderText'>Cancellation Policy</Typography>
-          <Box sx={{ paddingLeft: "40%" }} className="seeMoreBtn">
+          <Box sx={{ paddingLeft: "39.5%" }} className="seeMoreBtn">
             <Typography pl={2} className='seeMoreText amenitiesSeeMoreBtn'>+ SEE MORE</Typography>
           </Box>
         </Box>

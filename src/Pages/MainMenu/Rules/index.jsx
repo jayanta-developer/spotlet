@@ -16,7 +16,7 @@ export default function Rules() {
             <img style={{ width: "100%" }} src={rules} />
           </Box>
           <Typography className='descriptionHeaderText'>Rules</Typography>
-          <Box sx={{ paddingLeft: "60%" }} className="seeMoreBtn">
+          <Box sx={{ paddingLeft: "61%" }} className="seeMoreBtn">
             <Typography pl={2} className='seeMoreText amenitiesSeeMoreBtn'>+ SEE MORE</Typography>
           </Box>
         </Box>

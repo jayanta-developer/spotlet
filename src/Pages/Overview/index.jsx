@@ -26,7 +26,9 @@ import Features from '../MainMenu/Features';
 import Dont from '../MainMenu/Do&Dont';
 import Rules from '../MainMenu/Rules';
 import CancellationPolicy from "../MainMenu/CancellationPolicy";
-import OpeningTime from "../MainMenu/Opening"
+import OpeningTime from "../MainMenu/Opening";
+import Map from "../MainMenu/Map";
+import Reviews from "../MainMenu/Reviews"
 
 
 
@@ -204,15 +206,19 @@ export default function Overview() {
                 </Box>
               </Box>
             </Box>
-
           </Box>
 
+
+
           {/* component */}
+
           <Features />
           <Dont />
           <Rules />
           <CancellationPolicy />
           <OpeningTime />
+          <Map />
+          <Reviews />
 
 
         </Box>

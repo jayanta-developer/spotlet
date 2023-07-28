@@ -15,8 +15,8 @@ export default function Features() {
           <Box ml={2} mr={2} className="descriptionIconBox">
             <img style={{ width: "100%" }} src={features} />
           </Box>
-          <Typography className='descriptionHeaderText'>Description of the property</Typography>
-          <Box sx={{ paddingLeft: "29%" }} className="seeMoreBtn">
+          <Typography className='descriptionHeaderText'>Features</Typography>
+          <Box sx={{ paddingLeft: "56%" }} className="seeMoreBtn">
             <Typography pl={2} className='seeMoreText amenitiesSeeMoreBtn'>+ SEE MORE</Typography>
           </Box>
         </Box>

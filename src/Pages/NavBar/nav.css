@@ -38,9 +38,11 @@
 
 .notificationIcons {
   margin: 0px 30px;
+  min-width: 126px;
 }
 .host {
   margin: 0px 30px;
+  min-width: 123px;
 }
 .booking {
   margin: 0px 30px;

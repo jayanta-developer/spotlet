@@ -1,0 +1,112 @@
+.propertiesContainer {
+  width: 100%;
+  height: 500px;
+}
+.propertiesHeader {
+  margin-bottom: 34px;
+  margin-top: 57px;
+}
+.propertiesHeader p {
+  color: #333;
+  font-family: "Poppins-Bold" !important;
+  font-size: 35px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: normal !important;
+  margin-left: 6%;
+}
+.propertiesBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.propertiesRenderBox {
+  display: flex;
+  width: 1298px;
+  height: 400px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.propertiesCard {
+  width: 304px;
+  height: 100%;
+  border: 1px solid #ededed;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.imageBox {
+  width: 100%;
+}
+.logo_Box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #ffffff;
+  box-shadow: 0 4px 4px #0000000a;
+  border-radius: 100px;
+  padding: 0 10px;
+  position: absolute;
+  bottom: 152px;
+  left: 241px;
+}
+.CardTextBox {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin-top: 20px;
+}
+.cardText {
+  display: flex;
+  flex-direction: column;
+}
+.cardText2nd {
+  align-items: end;
+}
+.cardText1stHeader {
+  font-family: "Poppins-Bold" !important;
+  font-size: 18px !important;
+  margin-bottom: 5px !important;
+  font-weight: 600 !important;
+  color: #333;
+}
+.cardSubText {
+  font-family: "Poppins-Regular" !important;
+  color: #777;
+  font-size: 16px !important;
+}
+.cardStarBox {
+  display: flex;
+  flex-direction: row;
+}
+.cardStarBox span {
+  font-size: 12px;
+  color: #333;
+  font-family: "Poppins-Regular" !important;
+}
+.cardLocationHeader {
+  font-size: 16px;
+  color: rgb(51, 51, 51);
+  font-family: "Poppins-Bold" !important;
+}
+.cardLocationBox {
+  display: flex;
+  align-items: center;
+}
+.cardLocationBox img {
+  width: 10px;
+  height: 14px;
+  margin-right: 5px;
+  position: relative;
+  bottom: 21%;
+}
+.cardLocationBox span {
+  font-size: 12px;
+  color: #333;
+  font-family: "Poppins-Regular" !important;
+  max-width: 115px;
+}

@@ -31,7 +31,7 @@ export default function index() {
             </Box>
 
             <Box sx={{ width: "90px" }} className="topWhiteTab">
-              <img className='topTabLogo' src={starIcon} />
+              <img style={{ width: "16px", height: "16px", marginBottom: "3px" }} className='topTabLogo' src={starIcon} />
               <Typography>Favorite</Typography>
 
             </Box>

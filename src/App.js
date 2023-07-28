@@ -4,6 +4,7 @@ import React from "react";
 import NavBar from "./Pages/NavBar";
 import Home from "./Pages/Home";
 import Overview from "./Pages/Overview";
+import Properties from "./Pages/SimilarProperties";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <NavBar />
       <Home />
       <Overview />
+      <Properties />
     </>
   );
 }

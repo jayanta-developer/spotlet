@@ -19,7 +19,7 @@ export default function NavBar() {
     <>
       <Box className="navBar">
         <Box className="companyLogo">
-          <img src={companyLogo} />
+          <img className='pointer' src={companyLogo} />
         </Box>
 
         <Box className="searchBar">
@@ -36,12 +36,12 @@ export default function NavBar() {
         </Box>
 
         <Box className="host">
-          <Typography className='poppins'>Become a Host</Typography>
+          <Typography className='poppins pointer'>Become a Host</Typography>
         </Box>
         <Box className="booking">
-          <Typography className='poppins' sx={{ color: "#EA4335" }}>Bookings</Typography>
+          <Typography className='poppins pointer' sx={{ color: "#EA4335" }}>Bookings</Typography>
         </Box>
-        <Box className="profile">
+        <Box className="profile pointer">
           <Box className="profileTab">
             <Box className="avatarBox">
               <img style={{ width: "100%" }} src={Avatar} />

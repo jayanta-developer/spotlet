@@ -14,6 +14,9 @@
 .poppinsBold {
   font-family: "Poppins-Bold" !important;
 }
+.pointer {
+  cursor: pointer;
+}
 
 * {
   box-sizing: border-box;

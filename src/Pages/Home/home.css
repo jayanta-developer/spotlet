@@ -22,12 +22,12 @@
   width: 71px;
   height: 29px;
   border-radius: 9px;
-  background: #fff;
+  /* background: #fff; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 0px 10px;
+  margin: 0px 4px;
 }
 .topTabLogo {
   width: 12px;
@@ -103,4 +103,27 @@
 .startLogos img {
   width: 25px;
   height: 25px;
+}
+
+/* Top Tab box */
+.PrintBox {
+  width: 401px;
+  height: 375px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 107px;
+  right: 180px;
+}
+.ShareBox {
+  width: 401px;
+  height: 263px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 102px;
 }

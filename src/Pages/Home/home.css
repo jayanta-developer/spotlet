@@ -106,6 +106,7 @@
 }
 
 /* Top Tab box */
+/* Print Box */
 .PrintBox {
   width: 401px;
   height: 375px;
@@ -116,7 +117,142 @@
   position: absolute;
   top: 107px;
   right: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
 }
+.printHeaderText {
+  color: #202020;
+  font-family: "Poppins-Bold" !important;
+  font-size: 19px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 26px !important;
+}
+.printInputField {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.PrintDropDown {
+  width: 206px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #e3e3e3;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.PrintDropDownPlaceholder {
+  color: #928f8f;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 130% !important;
+}
+.PrintDropDown img {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 182px;
+}
+.printInputFieldLabel {
+  color: #212121;
+  font-family: "Poppins-Regular" !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 130% !important;
+}
+.printInputFieldLabel {
+  color: #212121;
+  font-family: "Poppins-Regular" !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 130% !important;
+}
+.printButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.PrintPreviewBtn {
+  width: 139px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #ea4335;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.CancelBtn {
+  width: 105px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #ea4335;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 7px;
+}
+
+.saveBtn {
+  width: 105px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #ea4335;
+  background: #ea4335;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.PrintPreviewBtn p {
+  color: #ea4335;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 130% !important;
+}
+.CancelBtn p {
+  color: #ea4335;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 130% !important;
+}
+.whiteBtnText {
+  color: #fff;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 130% !important;
+}
+.PrintPreviewBtn img {
+  width: 19px;
+  height: 19px;
+  margin-right: 11px;
+}
+
+/* share Box */
 .ShareBox {
   width: 401px;
   height: 263px;
@@ -126,4 +262,72 @@
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
   position: absolute;
   top: 102px;
+  padding: 20px;
+}
+.shareItemBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.shareItem {
+  width: 164px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #e3e3e3;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  margin: 4px 5px;
+}
+.shareSubHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.shareBoxHeaderText {
+  color: #202020;
+  font-family: "Poppins-Bold" !important;
+  font-size: 19px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 26px !important;
+}
+.shareId {
+  color: #202020;
+  font-family: "Poppins-Bold" !important;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 26px !important;
+  margin-right: 5px;
+}
+.shareBoxSubHeaderText {
+  color: #383838;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 130% !important;
+  display: flex;
+  align-items: center;
+}
+.shareItem {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  cursor: pointer;
+}
+.shareItem img {
+  width: 20px;
+  height: 20px;
+  margin: 0px 15px 0px 19px;
+}
+.shareItemText {
+  color: #212121;
+  font-family: "Poppins-Bold" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 130% !important; /* 18.2px */
 }

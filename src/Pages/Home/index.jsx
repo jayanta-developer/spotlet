@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Box, Typography, Divider } from '@mui/material'
+import { Box, Typography, Divider, Menu, MenuItem } from '@mui/material'
 
 import "./home.css"
 
@@ -11,7 +11,14 @@ import imageD from "../../Assets/images/galleryImages/32.jpg"
 import imageE from "../../Assets/images/galleryImages/42.jpg"
 
 //white tab logo
-import share from "../../Assets/images/share.svg";
+import downArrowF from "../../Assets/images/DownArrowfill.svg"
+import fileListSearch from "../../Assets/images/file-list-search.svg"
+import Star1 from "../../Assets/images/Star 1.svg";
+import copyIcon from "../../Assets/images/copyIcon.svg"
+import MailIcon from "../../Assets/images/MailIcon.svg"
+import MessageIcon from "../../Assets/images/messagesIcon.svg"
+import WhatsAppIcon from "../../Assets/images/whatsappIcon.svg"
+import FacebookIcon from "../../Assets/images/facebookIcon.svg"
 
 
 import locationIcon from "../../Assets/images/Group 54.svg"
@@ -23,7 +30,6 @@ export default function Home() {
   const [Favorite, setFavorite] = useState(false);
   const [shareBox, setShareBox] = useState(false);
   const ref = useRef(null);
-
   const handleClickOutside = (event) => {
 
     if (ref.current && !ref.current.contains(event.target)
@@ -39,7 +45,6 @@ export default function Home() {
   };
 
   const handleClickOutsideShareBox = (event) => {
-    console.log(event.target.id);
     if (ref.current && !ref.current.contains(event.target)
       && event.target.id !== "share"
       && event.target.id !== "shareText"
@@ -67,7 +72,7 @@ export default function Home() {
         <Box className="topTabs">
           <Box className="topTabBox">
             <Box
-              onClick={() => setPrintBox(true)}
+              onClick={() => setPrintBox(!printBox)}
               id="Print"
               className="topWhiteTab pointer"
               sx={{ background: printBox ? "#EA4335" : "#fff", color: printBox ? "white" : "black" }}
@@ -98,7 +103,7 @@ export default function Home() {
             </Box>
 
             <Box
-              onClick={() => setShareBox(true)}
+              onClick={() => setShareBox(!shareBox)}
               className="topWhiteTab pointer shareBox"
               sx={{ background: shareBox ? "#EA4335" : "#fff", color: shareBox ? "#fff" : "black" }}
               id="share"
@@ -117,8 +122,121 @@ export default function Home() {
           </Box>
 
           {/* Print Box */}
-          <Box ref={ref} sx={{ display: printBox ? "block" : "none" }} className="PrintBox" id="printBox"></Box>
-          <Box ref={ref} sx={{ display: shareBox ? "block" : "none" }} className="ShareBox" ></Box>
+          <Box
+            ref={ref}
+            sx={{ display: printBox ? "block" : "none" }}
+            className="PrintBox" id="printBox"
+            onClick={(event) => event.stopPropagation()}
+
+          >
+            <Box pl={1.2} className="printHeader">
+              <Typography className='printHeaderText'>Print</Typography>
+            </Box>
+
+            <Box mt={1.9} className="printInputField">
+              <Typography className='printInputFieldLabel'>Destination</Typography>
+              <Box className="PrintDropDown">
+                <Typography className='PrintDropDownPlaceholder'>Save as PDF</Typography>
+                <img src={downArrowF} />
+              </Box>
+            </Box>
+            <Box className="printInputField">
+              <Typography className='printInputFieldLabel'>Pages</Typography>
+              <Box className="PrintDropDown">
+                <Typography className='PrintDropDownPlaceholder'>All</Typography>
+                <img src={downArrowF} />
+              </Box>
+            </Box>
+            <Box className="printInputField">
+              <Typography className='printInputFieldLabel'>Layout</Typography>
+              <Box className="PrintDropDown">
+                <Typography className='PrintDropDownPlaceholder'>Potrait</Typography>
+                <img src={downArrowF} />
+              </Box>
+            </Box>
+            <Box mb={10.5} className="printInputField">
+              <Typography className='printInputFieldLabel'>Color</Typography>
+              <Box className="PrintDropDown">
+                <Typography className='PrintDropDownPlaceholder'>B&W</Typography>
+                <img src={downArrowF} />
+              </Box>
+            </Box>
+
+            <Box className="printButton">
+              <Box className="PrintPreviewBtn pointer">
+                <img src={fileListSearch} />
+                <Typography >Print preview</Typography>
+              </Box>
+              <Box onClick={() => setPrintBox(false)} className="CancelBtn pointer">
+                <Typography className='redBtnText'>Cancel</Typography>
+              </Box>
+              <Box className="saveBtn pointer">
+                <Typography className='whiteBtnText'>Save</Typography>
+              </Box>
+
+            </Box>
+          </Box>
+
+
+
+
+          <Box ref={ref} sx={{ display: shareBox ? "block" : "none" }} className="ShareBox" >
+            <Box className="shareBoxHeader">
+              <Typography className='shareBoxHeaderText'>Share this location</Typography>
+              <Box className="shareSubHeader">
+                <Typography className='shareId'>#SPOTL83712</Typography>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 8 4" fill="none">
+                  <circle cx="7" cy="2" r="2" fill="#525151" />
+                </svg>
+
+                <img src={Star1} />
+                <Typography className='shareBoxSubHeaderText'><svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 8 4" fill="none">
+                  <circle cx="7" cy="2" r="2" fill="#525151" />
+                </svg>
+
+                  4.0<svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 8 4" fill="none">
+                    <circle cx="7" cy="2" r="2" fill="#525151" />
+                  </svg>
+
+                  Spotle<svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 8 4" fill="none">
+                    <circle cx="7" cy="2" r="2" fill="#525151" />
+                  </svg>
+
+                  Verified<svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 8 4" fill="none">
+                    <circle cx="7" cy="2" r="2" fill="#525151" />
+                  </svg>
+
+                  Exclusive
+                </Typography>
+              </Box>
+
+            </Box>
+            <Box className="shareItemBox">
+
+              <Box className="shareItem">
+                <img src={copyIcon} />
+                <Typography className='shareItemText'>Copy Link</Typography>
+              </Box>
+              <Box className="shareItem">
+                <img src={MailIcon} />
+                <Typography className='shareItemText'>Email</Typography>
+              </Box>
+              <Box className="shareItem">
+                <img src={MessageIcon} />
+                <Typography className='shareItemText'>Messages</Typography>
+              </Box>
+              <Box className="shareItem">
+                <img src={WhatsAppIcon} />
+                <Typography className='shareItemText'>WhatsApp</Typography>
+              </Box>
+              <Box className="shareItem">
+                <img src={FacebookIcon} />
+                <Typography className='shareItemText'>Facebook</Typography>
+              </Box>
+
+            </Box>
+
+          </Box>
 
 
         </Box>

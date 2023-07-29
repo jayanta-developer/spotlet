@@ -91,7 +91,7 @@
   line-height: 26px !important; /* 173.333% */
 }
 .Description {
-  height: 251px;
+  height: auto;
 }
 .DescriptionHeader {
   display: flex;
@@ -106,6 +106,7 @@
 }
 .descriptionTextBox {
   padding: 20px 20px 0px 20px;
+  overflow: hidden;
 }
 .descriptionHeaderText {
   color: #3c3c3c;
@@ -133,16 +134,24 @@
   line-height: 26px !important;
 }
 .seeMoreText {
+  width: 111px;
   color: #ea4335;
   font-family: "Poppins-Regular" !important;
   font-size: 16px !important;
   font-style: normal;
   font-weight: 700 !important;
   line-height: 26px !important;
+  cursor: pointer;
 }
 
 .Amenities {
   height: 306px;
+}
+.AmenitiesOpen {
+  width: 800px;
+  height: 515px;
+  flex-shrink: 0;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
 }
 .amenitiesHeader {
   display: flex;
@@ -355,6 +364,9 @@
 
 .mainBox {
   margin: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .totalPriseBox {

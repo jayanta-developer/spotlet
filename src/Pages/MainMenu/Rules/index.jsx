@@ -7,10 +7,10 @@ import "../../Overview/overview.css"
 import rules from '../../../Assets/images/Rules.png';
 import rightArrow from "../../../Assets/images/rightArrow.svg"
 
-export default function Rules() {
+export default function Rules({ Rule }) {
   return (
     <>
-      <Box className="mainItemBox rulesContainer">
+      <Box ref={Rule} className="mainItemBox rulesContainer">
         <Box className="featuresHeader">
           <Box ml={2} mr={2} className="descriptionIconBox">
             <img style={{ width: "100%" }} src={rules} />

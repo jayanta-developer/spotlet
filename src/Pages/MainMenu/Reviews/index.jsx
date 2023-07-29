@@ -8,7 +8,7 @@ import starIcon from "../.././../Assets/images/Start.png"
 import starYIcon from "../.././../Assets/images/star-48.png"
 import TimeIcon from "../../../Assets/images/TimeIcon.svg"
 
-export default function Reviews() {
+export default function Reviews({ Review }) {
 
 
   const reviewCard = (clientImgT, clientImgBkg, clientName, reviewTitle, reviewSubText, reviewTime) => {
@@ -53,7 +53,7 @@ export default function Reviews() {
 
   return (
     <>
-      <Box className="reviewContainer mainItemBox">
+      <Box ref={Review} className="reviewContainer mainItemBox">
         <Box className="reviewHeader">
           <Box ml={2} mr={2} className="descriptionIconBox">
             <img style={{ width: "100%" }} src={starIcon} />

@@ -6,10 +6,10 @@ import "../../Overview/overview.css"
 
 import cancellPolicyIcon from "../../../Assets/images/cancellPolicy.png"
 
-export default function CancellationPolicy() {
+export default function CancellationPolicy({ Cancellation }) {
   return (
     <>
-      <Box className="mainItemBox cancellationBox">
+      <Box ref={Cancellation} className="mainItemBox cancellationBox">
         <Box className="featuresHeader">
           <Box ml={2} mr={2} className="descriptionIconBox">
             <img style={{ width: "100%" }} src={cancellPolicyIcon} />

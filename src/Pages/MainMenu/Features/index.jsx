@@ -7,10 +7,10 @@ import features from "../../../Assets/images/FeturesIcon.png"
 import rightArrow from "../../../Assets/images/rightArrow.svg"
 
 
-export default function Features() {
+export default function Features({ Feature }) {
   return (
     <>
-      <Box className="featuresContainer mainItemBox">
+      <Box ref={Feature} className="featuresContainer mainItemBox">
         <Box className="featuresHeader">
           <Box ml={2} mr={2} className="descriptionIconBox">
             <img style={{ width: "100%" }} src={features} />

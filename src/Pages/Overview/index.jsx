@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import "./overview.css"
 import { Box, TextField, Typography } from '@mui/material';
 
@@ -33,38 +33,68 @@ import Reviews from "../MainMenu/Reviews"
 
 
 export default function Overview() {
+  const [seeDescription, setSeeDescription] = useState(false)
+  const [seeAmenities, setSeeAmenities] = useState(false)
+
+  const Overview = useRef(null);
+  const Amenities = useRef(null);
+  const Feature = useRef(null);
+  const DoDon = useRef(null);
+  const Rule = useRef(null);
+  const Cancellation = useRef(null);
+  const Openinghours = useRef(null);
+  const Location = useRef(null);
+  const Review = useRef(null);
+
+
+
+  const scrollToSection = (ref) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+
+
+
+
+
+
+
+
+
   return (
     <>
       <Box className="overviewContainer">
 
         <Box className="leftSideMenu">
           <Box className="menuBox">
-
-            <Box className="menuItem overviewActive">
+            {/* overviewActive */}
+            <Box onClick={() => scrollToSection(Overview)} className="menuItem ">
               <Typography >Overview</Typography>
             </Box>
-            <Box className="menuItem">
+            <Box onClick={() => scrollToSection(Amenities)} className="menuItem">
               <Typography>Amenities</Typography>
             </Box>
-            <Box className="menuItem">
+            <Box onClick={() => scrollToSection(Feature)} className="menuItem">
               <Typography>Features</Typography>
             </Box>
-            <Box className="menuItem">
+            <Box onClick={() => scrollToSection(DoDon)} className="menuItem">
               <Typography>Do’s & Don’ts</Typography>
             </Box>
-            <Box className="menuItem">
+            <Box onClick={() => scrollToSection(Rule)} className="menuItem">
               <Typography>Rules</Typography>
             </Box>
-            <Box className="menuItem">
+            <Box onClick={() => scrollToSection(Cancellation)} className="menuItem">
               <Typography>Cancellation Policy</Typography>
             </Box>
-            <Box className="menuItem">
+            <Box onClick={() => scrollToSection(Openinghours)} className="menuItem">
               <Typography>Opening hours</Typography>
             </Box>
-            <Box className="menuItem">
+            <Box onClick={() => scrollToSection(Location)} className="menuItem">
               <Typography>Location</Typography>
             </Box>
-            <Box className="menuItem">
+            <Box onClick={() => scrollToSection(Review)} className="menuItem">
               <Typography>Reviews</Typography>
             </Box>
 
@@ -130,22 +160,29 @@ export default function Overview() {
               <Typography className='descriptionHeaderText'>Description of the property</Typography>
             </Box>
 
-            <Box className="descriptionTextBox">
-              <Typography className='descriptionText'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry s standard dummy text ever since the 1500s, when an unknown printer took a & scrambled it to make a type specimen book. It has survived <samp className='descriptionGrayText'>not only five centuries, galley of type. ake a type specimen book. It has survived</samp> </Typography>
+            <Box sx={{ height: seeDescription ? "auto" : "155px" }} className="descriptionTextBox">
+              {
+                seeDescription ?
+                  <Typography className='descriptionText'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry s standard dummy text ever since the 1500s, when an unknown printer took a & scrambled it to make a type specimen book. It has survived not only five centuries, galley of type. ake a type specimen book. It has survived Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry s standard dummy text ever since the 1500s, when an unknown printer took a & scrambled it to make a type specimen book. It has survived not only five centuries, galley of type. ake a type specimen book. It has survived Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry s standard dummy text ever since the 1500s, when an unknown printer took a & scrambled it to make a type specimen book. It has survived not only five centuries.</Typography>
+                  :
+                  <Typography className='descriptionText'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry s standard dummy text ever since the 1500s, when an unknown printer took a & scrambled it to make a type specimen book. It has survived <samp className='descriptionGrayText'>not only five centuries, galley of type. ake a type specimen book. It has survived Lorem Ipsum is simply dummy text of the printing and...</samp> </Typography>
+              }
             </Box>
-            <Box className="seeMoreBtn">
-              <Typography pl={2} className='seeMoreText'>+ SEE MORE</Typography>
+            <Box mb={1.5} className="seeMoreBtn">
+              <Typography onClick={() => setSeeDescription(!seeDescription)} pl={2} className='seeMoreText'>
+                {seeDescription ? "+ SEE LESS" : "+ SEE MORE"}
+              </Typography>
             </Box>
           </Box>
 
-          <Box className="Amenities mainItemBox">
+          <Box ref={Amenities} className={seeAmenities ? "AmenitiesOpen" : "Amenities mainItemBox"}>
             <Box className="amenitiesHeader">
               <Box ml={2} mr={2} className="AmenitiesIconBox">
                 <img style={{ width: "100%" }} src={animetor} />
               </Box>
               <Typography className='descriptionHeaderText'>Amenities</Typography>
               <Box sx={{ paddingLeft: "54%" }} className="seeMoreBtn">
-                <Typography pl={2} className='seeMoreText amenitiesSeeMoreBtn'>+ SEE MORE</Typography>
+                <Typography onClick={() => setSeeAmenities(!seeAmenities)} pl={2} className='seeMoreText amenitiesSeeMoreBtn'>+ SEE MORE</Typography>
               </Box>
             </Box>
             <Box className="amenitiesTextBox">
@@ -212,13 +249,13 @@ export default function Overview() {
 
           {/* component */}
 
-          <Features />
-          <Dont />
-          <Rules />
-          <CancellationPolicy />
-          <OpeningTime />
-          <Map />
-          <Reviews />
+          <Features Feature={Feature} />
+          <Dont DoDon={DoDon} />
+          <Rules Rule={Rule} />
+          <CancellationPolicy Cancellation={Cancellation} />
+          <OpeningTime Openinghours={Openinghours} />
+          <Map Location={Location} />
+          <Reviews Review={Review} />
 
 
         </Box>

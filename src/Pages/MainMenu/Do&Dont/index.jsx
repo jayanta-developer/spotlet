@@ -7,10 +7,10 @@ import "../../Overview/overview.css";
 import DontIcon from "../../../Assets/images/Dont.png";
 import rightArrow from "../../../Assets/images/rightArrow.svg"
 
-export default function Dont() {
+export default function Dont({ DoDon }) {
   return (
     <>
-      <Box className="mainItemBox dontContainer">
+      <Box ref={DoDon} className="mainItemBox dontContainer">
         <Box className="featuresHeader">
           <Box ml={2} mr={2} className="descriptionIconBox">
             <img style={{ width: "100%" }} src={DontIcon} />

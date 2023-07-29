@@ -5,10 +5,10 @@ import "./map.css"
 
 import locationIcon from "../../../Assets/images/locationIcon.png"
 
-export default function Map() {
+export default function Map({ Location }) {
   return (
     <>
-      <Box className="mapContainer">
+      <Box ref={Location} className="mapContainer">
         <Box className="LocationHeader">
           <Box ml={2} mr={2} className="locationIconBox">
             <img style={{ width: "100%" }} src={locationIcon} />

@@ -7,10 +7,10 @@ import "../../Overview/overview.css"
 
 import TimeIcon from "../../../Assets/images/openingTimeIcon.png"
 
-export default function OpeningTime() {
+export default function OpeningTime({ Openinghours }) {
   return (
     <>
-      <Box className="mainItemBox openingBox">
+      <Box ref={Openinghours} className="mainItemBox openingBox">
         <Box className="featuresHeader">
           <Box ml={2} mr={2} className="descriptionIconBox">
             <img style={{ width: "100%" }} src={TimeIcon} />

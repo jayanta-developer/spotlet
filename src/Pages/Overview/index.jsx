@@ -104,7 +104,7 @@ export default function Overview() {
 
 
 
-        <Box className="mainBox">
+        <Box ref={Overview} className="mainBox">
           <Box className="venueDetails mainItemBox">
 
             <Box sx={{ width: "85px" }} className="venueDetailsItem">

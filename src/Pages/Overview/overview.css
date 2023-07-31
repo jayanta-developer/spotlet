@@ -13,6 +13,8 @@
   background: #fff;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  position: sticky;
+  top: 100px;
 }
 
 .menuItem {
@@ -215,6 +217,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: sticky;
+  top: 100px;
 }
 .priseBox {
   width: 294px;
@@ -331,6 +335,8 @@
   justify-content: center;
   align-items: center;
   padding: 21px;
+  position: sticky;
+  top: 587px;
 }
 .hostDetailsBox {
   display: flex;

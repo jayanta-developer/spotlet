@@ -11,7 +11,7 @@ export default function OpeningTime({ Openinghours }) {
   return (
     <>
       <Box ref={Openinghours} className="mainItemBox openingBox">
-        <Box className="featuresHeader">
+        <Box className="openingHeader">
           <Box ml={2} mr={2} className="descriptionIconBox">
             <img style={{ width: "100%" }} src={TimeIcon} />
           </Box>

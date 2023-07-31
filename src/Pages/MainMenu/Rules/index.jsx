@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box, Typography } from '@mui/material'
 
 import "./rules.css";
@@ -8,16 +8,18 @@ import rules from '../../../Assets/images/Rules.png';
 import rightArrow from "../../../Assets/images/rightArrow.svg"
 
 export default function Rules({ Rule }) {
+  const [rule, setRule] = useState(false)
+
   return (
     <>
-      <Box ref={Rule} className="mainItemBox rulesContainer">
-        <Box className="featuresHeader">
+      <Box ref={Rule} className={rule ? "rulesOpenContainer" : "rulesContainer"}>
+        <Box className={rule ? "rulesHeader" : "rulesHeader bottomBorder"}>
           <Box ml={2} mr={2} className="descriptionIconBox">
             <img style={{ width: "100%" }} src={rules} />
           </Box>
           <Typography className='descriptionHeaderText'>Rules</Typography>
           <Box sx={{ paddingLeft: "61%" }} className="seeMoreBtn">
-            <Typography pl={2} className='seeMoreText amenitiesSeeMoreBtn'>+ SEE MORE</Typography>
+            <Typography onClick={() => setRule(!rule)} pl={2} className='seeMoreText amenitiesSeeMoreBtn'>{rule ? "+ SEE LESS" : "+ SEE MORE"}</Typography>
           </Box>
         </Box>
         <Box className="amenitiesTextBox">

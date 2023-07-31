@@ -1,5 +1,13 @@
 .reviewContainer {
+  width: 683px;
   height: 778px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.04);
+  flex-shrink: 0;
+  margin-bottom: 20px;
+  transition: all 0.5s;
 }
 .reviewHeader {
   display: flex;
@@ -97,4 +105,164 @@
   font-style: normal;
   font-weight: 400 !important;
   line-height: 130% !important;
+}
+/* open review box */
+.reviewOpenContainer {
+  width: 800px;
+  height: 778px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+  margin-bottom: 20px;
+  padding: 12px 50px;
+  transition: width 0.5s;
+  position: relative;
+}
+.reviewRatingLogo {
+  width: 40px;
+  height: 40px;
+}
+.ratingOpenHeader {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  position: relative;
+}
+.ratingOpenHeader img {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  left: 99%;
+  cursor: pointer;
+}
+.ratingOpenTextBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.reviewOpenHeaderText {
+  color: #3c3c3c;
+  font-family: "Poppins-Bold" !important;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+.reviewRating {
+  width: 50%;
+}
+.reviewRatingHeader {
+  display: flex;
+  flex-direction: row;
+  height: 64px;
+}
+.reviewRatingSubHeaderText {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.reviewRatingStar {
+  display: flex;
+  flex-direction: row;
+}
+.reviewRatingStar img {
+  width: 16px;
+  height: 16px;
+}
+.openRatingGraStar {
+  width: 47px;
+  height: 47px;
+}
+.RatingSubHeaderText {
+  color: #888;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 130% !important; /* 20.8px */
+  letter-spacing: 0.32px !important;
+}
+.ratingOpenContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.ratingItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.ratingLogo {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 50%;
+  position: relative;
+}
+.ratingLogoBorder1 {
+  position: absolute;
+  left: -8px;
+  bottom: 0px;
+}
+.ratingLogoBorder15 {
+  position: absolute;
+  left: -8px;
+  bottom: -9px;
+}
+.ratingLogoBorder2 {
+  position: absolute;
+  left: -8px;
+  bottom: -31px;
+}
+.ratingLogoBorder25 {
+  position: absolute;
+  left: -8px;
+  bottom: -41px;
+}
+.ratingLogoBorder3 {
+  position: absolute;
+  left: -8px;
+  bottom: -49px;
+}
+.ratingLogoText {
+  color: #000;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 130% !important; /* 20.8px */
+  letter-spacing: 0.32px !important;
+}
+.ratingItemText {
+  color: #1c1c1c;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 26px !important; /* 162.5% */
+  margin-left: 20px !important;
+}
+.reviewReview {
+  width: 50%;
+}
+.review_headerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.review_headerBox p {
+  color: #3c3c3c;
+  font-family: "Poppins-Regular" !important;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal !important;
 }

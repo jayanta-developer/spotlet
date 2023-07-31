@@ -5,6 +5,14 @@
   display: flex;
   flex-direction: row;
 }
+.openingHeader {
+  height: 67px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 0px;
+  border-bottom: 1px solid #ececec;
+}
 .weekNames {
   width: 40%;
 }

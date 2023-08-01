@@ -34,7 +34,8 @@
   height: 12px;
   margin-right: 5px;
 }
-
+.coverContainer {
+}
 .coverGallery {
   display: flex;
   flex-direction: row;
@@ -85,10 +86,43 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: 25px 0px;
+  position: relative;
 }
+.ClickHereTab {
+  width: 65px;
+  height: 21px;
+  flex-shrink: 0;
+  border-radius: 10.5px;
+  background: #ea4335;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 19px;
+  cursor: pointer;
+}
+.ClickHereTab p {
+  color: #fff;
+  font-family: "Poppins-Regular" !important;
+  font-size: 10px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+
 .locationHeader {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+.locationId {
+  color: #1a1a1a;
+  font-family: "Poppins-Bold" !important;
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 130% !important;
+  margin-bottom: 8px !important;
 }
 .CityLocation {
   display: flex;

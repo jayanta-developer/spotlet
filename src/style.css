@@ -25,3 +25,42 @@
   user-select: none;
   font-family: "Poppins-Regular";
 }
+/* Target the element you want to customize the scroll bar for */
+body {
+  /* Set the width of the scrollbar */
+  scrollbar-width: thin; /* "thin", "auto", or "none" based on your preference */
+}
+
+/* Target the scrollbar thumb and track in WebKit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 2px; /* Width of the scrollbar */
+}
+
+/* Set the color of the scrollbar thumb in WebKit-based browsers */
+::-webkit-scrollbar-thumb {
+  background-color: #5c5c5c2d; /* Color of the scrollbar thumb */
+}
+
+/* Set the color of the scrollbar track in WebKit-based browsers */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color of the scrollbar track */
+}
+
+/* Target the scrollbar thumb and track in Mozilla-based browsers (Firefox) */
+::-moz-scrollbar {
+  width: 2px; /* Width of the scrollbar */
+}
+
+/* Set the color of the scrollbar thumb in Mozilla-based browsers */
+::-moz-scrollbar-thumb {
+  background-color: #55555541; /* Color of the scrollbar thumb */
+}
+
+/* Set the color of the scrollbar track in Mozilla-based browsers */
+::-moz-scrollbar-track {
+  background-color: #f1f1f1; /* Color of the scrollbar track */
+}
+
+body:hover {
+  overflow: auto;
+}

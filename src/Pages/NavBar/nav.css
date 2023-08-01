@@ -32,6 +32,8 @@
 .searchInput input {
   height: 11px !important;
   padding-left: 55px;
+  background-color: #f2f2f3;
+  border-radius: 22px;
 }
 .searchInput fieldset {
   border-radius: 72px !important;

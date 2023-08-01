@@ -59,6 +59,40 @@ export default function Reviews({ Review }) {
       </Box>
     )
   }
+  const reviewOpenCard = (clientImgT, clientImgBkg, clientName, date, reviewTitle, reviewSubText) => {
+    return (
+      <Box className="review_open_box">
+        <Box className="userInfo">
+          <Box className="userImgBox">
+            <Box sx={{ background: clientImgBkg }} className="userImg">
+              <Typography>{clientImgT}</Typography>
+            </Box>
+          </Box>
+          <Box className="user_NameBox">
+            <Box className="Name_Box_text">
+              <Typography className='reviewCard_userName '>{clientName}</Typography>
+              <Typography className='reviewOpenDate'>{date}</Typography>
+            </Box>
+            <Box className="star_logo_box">
+              <img src={starYIcon} />
+              <img src={starYIcon} />
+              <img src={starYIcon} />
+              <img src={starYIcon} />
+              <img src={starGrayIcon} />
+            </Box>
+          </Box>
+        </Box>
+
+        <Box className="reviewTitle">
+          <Typography className='reviewTitleText'>{reviewTitle}</Typography>
+        </Box>
+
+        <Box className="review_open_Text">
+          <Typography>{reviewSubText}</Typography>
+        </Box>
+      </Box>
+    )
+  }
 
 
   return (
@@ -191,15 +225,56 @@ export default function Reviews({ Review }) {
 
 
           <Box className="reviewReview">
+
             <Box className="review_headerBox">
-              <Typography>Reviews</Typography>
-              <Box className="searchBar">
-                <Box className="searchField">
-                  <img style={{ width: "22px", position: "relative", left: "44px" }} src={SearchIcon} />
-                  <TextField className='searchInput' sx={{ width: "100%" }} placeholder='Search reviews' />
+              <Typography className='review_headerBoxText'>Reviews</Typography>
+              <Box className="review_searchBar">
+                <Box className="search_Field">
+                  <img style={{ width: "22px", position: "relative", left: "44px", zIndex: "9" }} src={SearchIcon} />
+                  <TextField className='search_Input' sx={{ width: "100%" }} placeholder='Search reviews' />
                 </Box>
               </Box>
+              <Typography className='review_sub_header'>Guest Review</Typography>
+
             </Box>
+            <Box className="review_Open_contentBox">
+              {reviewOpenCard(
+                "C",
+                "#10d093",
+                "Danielle Alexander",
+                "15 October 2022",
+                "Standard of Excellence",
+                "If for any reason you wish to cancel a service before your flight reservation or hotel booking were processed you can do so without"
+
+              )}
+              {reviewOpenCard(
+                "A",
+                "#EA4335",
+                "Danielle Alexander",
+                "15 October 2022",
+                "Standard of Excellence",
+                "If for any reason you wish to cancel a service before your flight reservation or hotel booking were processed you can do so without"
+              )}
+              {reviewOpenCard(
+                "A",
+                "#EA4335",
+                "Danielle Alexander",
+                "15 October 2022",
+                "Standard of Excellence",
+                "If for any reason you wish to cancel a service before your flight reservation or hotel booking were processed you can do so without"
+              )}
+              {reviewOpenCard(
+                "A",
+                "#EA4335",
+                "Danielle Alexander",
+                "15 October 2022",
+                "Standard of Excellence",
+                "If for any reason you wish to cancel a service before your flight reservation or hotel booking were processed you can do so without"
+              )}
+
+            </Box>
+
+
           </Box>
         </Box>
 

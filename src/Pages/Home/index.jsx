@@ -25,6 +25,11 @@ import locationIcon from "../../Assets/images/Group 54.svg"
 import starIcon from "../../Assets/images/star-48.png"
 import starOutLine from "../../Assets/images/StarOutLine.png"
 
+import redHeartP from "../../Assets/images/redHeartP.svg"
+import redHeart from "../../Assets/images/redHartLogo.png"
+
+
+
 export default function Home() {
   const [printBox, setPrintBox] = useState(false);
   const [Favorite, setFavorite] = useState(false);
@@ -96,8 +101,8 @@ export default function Home() {
               onClick={() => setFavorite(!Favorite)}
               sx={{ width: "90px", background: "#fff" }} className="topWhiteTab pointer">
               {
-                Favorite ? <img style={{ width: "16px", height: "16px", marginBottom: "3px" }} className='topTabLogo' src={starIcon} /> :
-                  <img style={{ width: "16px", height: "16px", marginBottom: "3px" }} className='topTabLogo' src={starOutLine} />
+                Favorite ? <img style={{ width: "16px", height: "16px" }} className='topTabLogo' src={redHeartP} /> :
+                  <img style={{ width: "16px", height: "15px" }} className='topTabLogo' src={redHeart} />
               }
               <Typography>Favorite</Typography>
             </Box>
@@ -241,51 +246,59 @@ export default function Home() {
 
         </Box>
 
-        <Box className="coverGallery">
-          <Box className="firstGBox">
-            <img className='galleryImage' src={imageA} />
-          </Box>
-          <Box className="secondGBox">
-            <Box className="secondSBox">
-              <Box className="BgBox subImageBox"> <img className='galleryImage' src={imageE} /></Box>
-              <Box className="CgBox subImageBox"><img className='galleryImage' src={imageC} /></Box>
+        <Box className="coverContainer">
+
+          <Box className="coverGallery">
+            <Box className="firstGBox">
+              <img className='galleryImage' src={imageA} />
             </Box>
-            <Box className="secondSBox">
-              <Box className="DgBox subImageBox"><img className='galleryImage' src={imageD} /></Box>
-              <Box className="EgBox subImageBox"><img className='galleryImage' src={imageB} /></Box>
-            </Box>
-          </Box>
-        </Box>
-
-
-
-        <Box className="venueLocation">
-          <Box mb={1.5} className="locationHeader">
-            <Typography sx={{ fontSize: "25px" }} className='poppinsBold' variant='h5'>Coworking Space: </Typography>
-            <Typography sx={{ marginLeft: "10px", fontSize: "25px" }} className='poppinsBold' variant='h5'>Serendipity Labs</Typography>
-          </Box>
-          <Box className="locationSubText">
-            <Box className="locationLogo"></Box>
-            <Box className="CityLocation">
-              <img src={locationIcon} style={{ marginRight: "15px" }} />
-              <Typography className='poppins'>Lonavala, Maharashtra, India</Typography>
-              <Divider sx={{ margin: "0px 10px" }} orientation="vertical" flexItem />
-              <Box sx={{ marginRight: "10px" }} className="startLogos">
-                <img src={starIcon} />
-                <img src={starIcon} />
-                <img src={starIcon} />
-                <img src={starIcon} />
-                <img src={starIcon} />
+            <Box className="secondGBox">
+              <Box className="secondSBox">
+                <Box className="BgBox subImageBox"> <img className='galleryImage' src={imageE} /></Box>
+                <Box className="CgBox subImageBox"><img className='galleryImage' src={imageC} /></Box>
               </Box>
-              <Typography className='poppins' sx={{ color: "#888888" }}>4.0 (3377 Reviews)</Typography>
-
+              <Box className="secondSBox">
+                <Box className="DgBox subImageBox"><img className='galleryImage' src={imageD} /></Box>
+                <Box className="EgBox subImageBox"><img className='galleryImage' src={imageB} /></Box>
+              </Box>
             </Box>
-            <Box className="venueRetting">
+          </Box>
+
+
+
+
+          <Box className="venueLocation">
+            <Box mb={1.5} className="locationHeader">
+              <Typography sx={{ fontSize: "25px" }} className='poppinsBold' variant='h5'>Coworking Space: </Typography>
+              <Typography sx={{ marginLeft: "10px", fontSize: "25px" }} className='poppinsBold' variant='h5'>Serendipity Labs</Typography>
+              <Box className="ClickHereTab">
+                <Typography>Click Here</Typography>
+              </Box>
+            </Box>
+            <Typography className='locationId'>1DER58TYUIOP</Typography>
+            <Box className="locationSubText">
+              <Box className="locationLogo"></Box>
+              <Box className="CityLocation">
+                <img src={locationIcon} style={{ marginRight: "15px" }} />
+                <Typography className='poppins'>Lonavala, Maharashtra, India</Typography>
+                <Divider sx={{ margin: "0px 10px" }} orientation="vertical" flexItem />
+                <Box sx={{ marginRight: "10px" }} className="startLogos">
+                  <img src={starIcon} />
+                  <img src={starIcon} />
+                  <img src={starIcon} />
+                  <img src={starIcon} />
+                  <img src={starIcon} />
+                </Box>
+                <Typography className='poppins' sx={{ color: "#888888" }}>4.0 (3377 Reviews)</Typography>
+
+              </Box>
+              <Box className="venueRetting">
+
+              </Box>
 
             </Box>
 
           </Box>
-
         </Box>
 
       </Box>

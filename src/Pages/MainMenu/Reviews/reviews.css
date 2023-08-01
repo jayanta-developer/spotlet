@@ -109,21 +109,24 @@
 /* open review box */
 .reviewOpenContainer {
   width: 800px;
-  height: 778px;
+  height: 800px;
   border-radius: 10px;
   border: 1px solid #eee;
   background: #fff;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
   flex-shrink: 0;
   margin-bottom: 20px;
-  padding: 12px 50px;
+  padding: 30px 33px;
   transition: width 0.5s;
   position: relative;
 }
 .reviewRatingLogo {
   width: 40px;
   height: 40px;
+  margin-top: 8px;
+  border-radius: 50%;
 }
+
 .ratingOpenHeader {
   width: 100%;
   display: flex;
@@ -135,7 +138,8 @@
   width: 42px;
   height: 42px;
   position: absolute;
-  left: 99%;
+  left: 97%;
+  bottom: -25px;
   cursor: pointer;
 }
 .ratingOpenTextBox {
@@ -151,6 +155,7 @@
   font-style: normal;
   font-weight: 600 !important;
   line-height: normal !important;
+  margin-bottom: 7px;
 }
 .reviewRating {
   width: 50%;
@@ -159,6 +164,8 @@
   display: flex;
   flex-direction: row;
   height: 64px;
+  align-items: center;
+  margin-top: 11px;
 }
 .reviewRatingSubHeaderText {
   display: flex;
@@ -256,13 +263,102 @@
 .review_headerBox {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
-.review_headerBox p {
+.review_headerBoxText {
   color: #3c3c3c;
-  font-family: "Poppins-Regular" !important;
+  font-family: "Poppins-Bold" !important;
   font-size: 20px !important;
   font-style: normal;
   font-weight: 600 !important;
   line-height: normal !important;
+  text-align: center;
+  margin-bottom: 14px !important;
+}
+.review_sub_header {
+  color: #3c3c3c;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal !important;
+  padding-left: 22px;
+  margin-top: 24px !important;
+}
+.user_NameBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+}
+.star_logo_box {
+  display: flex;
+  flex-direction: row;
+  margin-left: 92px;
+}
+.star_logo_box img {
+  width: 15px;
+  height: 15px;
+}
+.review_Open_contentBox {
+  height: 86%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.review_open_box {
+  width: 100%;
+  padding: 20px 0 0px 20px;
+}
+.reviewCard_userName {
+  color: #272727;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 130% !important;
+}
+.reviewOpenDate {
+  color: #888;
+  font-family: "Poppins-Regular" !important;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 130% !important;
+}
+.reviewTitleText {
+  color: #676767;
+  font-family: "Poppins-Regular" !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 130% !important;
+}
+.review_open_Text p {
+  color: #737373;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+.reviewRatingHeaderText {
+  margin-left: 16px;
+}
+.search_Field {
+  width: 332px;
+  height: 34px;
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: row;
+}
+.search_Field div {
+  width: 332px;
+}
+.search_Input input {
+  height: 1px !important;
+  background-color: #f2f2f3;
+  border-radius: 22px;
+  padding-left: 55px;
+}
+.search_Input fieldset {
+  border-radius: 72px !important;
 }

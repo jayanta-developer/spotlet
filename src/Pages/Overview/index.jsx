@@ -19,6 +19,8 @@ import animetor from "../../Assets/images/animetor.png"
 import DownArrow from "../../Assets/images/GrayDownArrow.svg";
 import rightArrow from "../../Assets/images/rightArrow.svg"
 import Avatar from "../../Assets/images/427a1f62a2d277788a853d203733f8d5.png";
+import RedCross from "../../Assets/images/RedCross.svg";
+
 
 
 //component
@@ -35,6 +37,7 @@ import Reviews from "../MainMenu/Reviews"
 export default function Overview() {
   const [seeDescription, setSeeDescription] = useState(false)
   const [seeAmenities, setSeeAmenities] = useState(false)
+  const [priceDay, setPriceDay] = useState(false)
 
   const Overview = useRef(null);
   const Amenities = useRef(null);
@@ -105,31 +108,50 @@ export default function Overview() {
 
 
         <Box ref={Overview} className="mainBox">
-          <Box className="venueDetails mainItemBox">
+          <Box className="venueDetailsBox">
+            <Box className="venueDetails bottomBorder venueDetailsFirst">
 
-            <Box sx={{ width: "85px" }} className="venueDetailsItem">
-              <img className='venueDetailsIcon' src={timeIcon} />
-              <Typography>8 hr min</Typography>
+              <Box sx={{ width: "173px" }} className="venueDetailsItem">
+                <img className='venueDetailsIcon' src={videoIcon} />
+                <Typography>Film Shooting </Typography>
+              </Box>
+              <Box sx={{ width: "146px" }} className="venueDetailsItem">
+                <img className='venueDetailsIcon' src={bulding} />
+                <Typography>Corporate Event</Typography>
+              </Box>
+              <Box sx={{ width: "169px" }} className="venueDetailsItem">
+                <img className='venueDetailsIcon' src={group} />
+                <Typography>Individual Event</Typography>
+              </Box>
+
             </Box>
-            <Box sx={{ width: "94px" }} className="venueDetailsItem">
-              <img className='venueDetailsIcon' src={peopleIcon} />
-              <Typography>60 people</Typography>
-            </Box>
-            <Box sx={{ width: "94px" }} className="venueDetailsItem">
-              <img className='venueDetailsIcon' src={squerIcon} />
-              <Typography>1300 sq/ft </Typography>
-            </Box>
-            <Box sx={{ width: "121px" }} className="venueDetailsItem">
-              <img className='venueDetailsIcon' src={videoIcon} />
-              <Typography>Film Shooting </Typography>
-            </Box>
-            <Box sx={{ width: "138px" }} className="venueDetailsItem">
-              <img className='venueDetailsIcon' src={bulding} />
-              <Typography>Corporate Event</Typography>
-            </Box>
-            <Box sx={{ width: "132px" }} className="venueDetailsItem">
-              <img className='venueDetailsIcon' src={group} />
-              <Typography>Individual Event</Typography>
+            <Box className="venueDetails ">
+
+              <Box sx={{ width: "85px" }} className="venueDetailsItem">
+                <img className='venueDetailsIcon' src={timeIcon} />
+                <Typography>8 hr min</Typography>
+              </Box>
+              <Box sx={{ width: "94px" }} className="venueDetailsItem">
+                <img className='venueDetailsIcon' src={peopleIcon} />
+                <Typography>60 people</Typography>
+              </Box>
+              <Box sx={{ width: "94px" }} className="venueDetailsItem">
+                <img className='venueDetailsIcon' src={squerIcon} />
+                <Typography>1300 sq/ft </Typography>
+              </Box>
+              <Box sx={{ width: "138px" }} className="venueDetailsItem">
+                <img className='venueDetailsIcon' src={bulding} />
+                <Typography>parking</Typography>
+              </Box>
+              <Box sx={{ width: "138px" }} className="venueDetailsItem">
+                <img className='venueDetailsIcon' src={bulding} />
+                <Typography>street parking</Typography>
+              </Box>
+              <Box sx={{ width: "121px" }} className="venueDetailsItem">
+                <img className='venueDetailsIcon' src={videoIcon} />
+                <Typography>cc cameras</Typography>
+              </Box>
+
             </Box>
 
           </Box>
@@ -377,8 +399,6 @@ export default function Overview() {
           <OpeningTime Openinghours={Openinghours} />
           <Map Location={Location} />
           <Reviews Review={Review} />
-
-
         </Box>
 
 
@@ -395,7 +415,7 @@ export default function Overview() {
                 <Typography sx={{ fontSize: "14px" }} className='po'>2 hr. minimum</Typography>
               </Box>
             </Box>
-            <Box className="priseInputBox">
+            <Box className={priceDay ? "priseInputBox priseInputBoxHeight2" : "priseInputBox priseInputBoxHeight1"}>
 
               <Box mb={2.5} className="priseInputItem">
                 <img src={DownArrow} />
@@ -442,11 +462,55 @@ export default function Overview() {
                       className='eventInput pSize' placeholder='End Time' />
                   </Box>
                 </Box>
+
+
+
+                <Box sx={{ display: priceDay ? "flex" : "none" }} className="DateField_Input">
+                  <img onClick={() => setPriceDay(false)} className='dayCross' src={RedCross} />
+
+                  <Box className="priseInputItem priseDateInput">
+                    <img src={DownArrow} />
+                    <input
+                      style={{
+                        width: "101px",
+                        borderRadius: "10px 0 0 10px",
+                        border: "1px solid #EAEAEA",
+                        padding: "0px 7px"
+                      }}
+                      className='eventInput pSize' placeholder='Jul 26,2023' />
+                  </Box>
+
+                  <Box className="priseInputItem priseDateInput">
+                    <img src={DownArrow} />
+                    <input
+                      style={{
+                        width: "101px",
+                        border: "1px solid #EAEAEA",
+                        padding: "0px 7px"
+                      }}
+
+                      className='eventInput pSize' placeholder='Start Time' />
+                  </Box>
+
+                  <Box className="priseInputItem priseDateInput">
+                    <img src={DownArrow} />
+                    <input
+                      style={{
+                        width: "101px",
+                        borderRadius: "0 10px 10px 0",
+                        border: "1px solid #EAEAEA",
+                        padding: "0px 7px"
+                      }}
+                      className='eventInput pSize' placeholder='End Time' />
+                  </Box>
+                </Box>
+
+
               </Box>
 
 
               <Box mb={2.5} className="priseInputItem totalPriseBox">
-                <Typography sx={{ color: "#EA4335" }} className='TotalPriseText'>Add a day</Typography>
+                <Typography onClick={() => setPriceDay(true)} sx={{ color: "#EA4335" }} className='TotalPriseText'>Add a day</Typography>
                 <Typography className='TotalPriseText'>Total hours: 0</Typography>
               </Box>
 
@@ -464,7 +528,7 @@ export default function Overview() {
             </Box>
           </Box>
 
-          <Box className="hostDetails">
+          <Box className={priceDay ? "hostDetails hostDetails2" : "hostDetails hostDetails1"}>
             <Box mt={1} className="hostDetailsBox">
               <Box className="avatarImage">
                 <img style={{ width: "100%" }} src={Avatar} />

@@ -8,6 +8,8 @@ import SearchIcon from '../../Assets/images/search-normal.svg';
 import bail from "../../Assets/images/red bail.png"
 import star from "../../Assets/images/red star.png"
 import message from "../../Assets/images/red message.png";
+import redHeart from "../../Assets/images/redHartLogo.png"
+
 
 import Avatar from "../../Assets/images/Avatarprofile.png"
 import DownArrow from "../../Assets/images/downArrow.svg"
@@ -24,7 +26,7 @@ export default function NavBar() {
 
         <Box className="searchBar">
           <Box className="searchField">
-            <img style={{ width: "22px", position: "relative", left: "44px" }} src={SearchIcon} />
+            <img style={{ width: "22px", position: "relative", left: "44px", zIndex: "9" }} src={SearchIcon} />
             <TextField className='searchInput' sx={{ width: "100%" }} placeholder='   Enter Location' />
           </Box>
         </Box>
@@ -32,7 +34,7 @@ export default function NavBar() {
         <Box className="notificationIcons">
           <img src={bail} />
           <img src={message} />
-          <img src={star} />
+          <img style={{ width: "19px", height: "17px", marginBottom: "2px" }} src={redHeart} />
         </Box>
 
         <Box className="host">

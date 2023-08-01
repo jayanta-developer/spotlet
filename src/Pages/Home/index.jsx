@@ -28,6 +28,12 @@ import starOutLine from "../../Assets/images/StarOutLine.png"
 import redHeartP from "../../Assets/images/redHeartP.svg"
 import redHeart from "../../Assets/images/redHartLogo.png"
 
+///Components
+import NavBar from "../NavBar";
+import Overview from "../Overview";
+import Properties from "../SimilarProperties";
+import Footer from "../Footer";
+
 
 
 export default function Home() {
@@ -72,6 +78,7 @@ export default function Home() {
 
   return (
     <>
+      <NavBar />
       <Box className="homeContainer">
 
         <Box className="topTabs">
@@ -302,6 +309,11 @@ export default function Home() {
         </Box>
 
       </Box>
+
+
+      <Overview />
+      <Properties />
+      <Footer />
     </>
   )
 }

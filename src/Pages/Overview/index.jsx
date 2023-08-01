@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import "./overview.css"
 import { Box, TextField, Typography } from '@mui/material';
 
@@ -520,9 +521,11 @@ export default function Overview() {
               </Box>
 
               <Box mb={2.5} className="priseInputItem">
-                <Box className="requestBookingBtn">
-                  <Typography className='redBtnText'>Request Booking</Typography>
-                </Box>
+                <Link className='BookingBtnLink' to={"/booking"}>
+                  <Box className="requestBookingBtn">
+                    <Typography className='redBtnText'>Request Booking</Typography>
+                  </Box>
+                </Link>
               </Box>
 
             </Box>

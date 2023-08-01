@@ -475,3 +475,6 @@
   height: 16px;
   margin-bottom: 5px;
 }
+.BookingBtnLink {
+  text-decoration: none;
+}

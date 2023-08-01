@@ -4,10 +4,9 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 80px;
+  margin-top: 112px;
 }
 .topTabs {
-  width: 80%;
   display: flex;
   justify-content: right;
   position: relative;
@@ -15,8 +14,9 @@
 .topTabBox {
   display: flex;
   flex-direction: row;
-  position: relative;
-  top: 60px;
+  position: absolute;
+  top: 22px;
+  left: 383px;
 }
 .topWhiteTab {
   width: 71px;
@@ -149,8 +149,8 @@
   background: #fff;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
   position: absolute;
-  top: 107px;
-  right: 180px;
+  top: 69px;
+  right: -459px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -295,8 +295,9 @@
   background: #fff;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
   position: absolute;
-  top: 102px;
+  top: 69px;
   padding: 20px;
+  right: -636px;
 }
 .shareItemBox {
   display: flex;

@@ -1,0 +1,526 @@
+.bookingContainer {
+  width: 100%;
+  height: 1194px;
+}
+.bookingNav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 7px 208px;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+}
+.logBox {
+}
+.bookingContentBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.bookingContent {
+  /* border: 1px solid; */
+}
+.BookingInputBox {
+  margin-right: 10px;
+}
+.BookingDetailsBox {
+  margin-left: 10px;
+}
+.BookingHeader {
+  margin-bottom: 20px;
+}
+.BookingHeaderUnderLine {
+  width: 92px;
+  border-top: 3px solid #ea4335;
+  margin-top: 6px;
+}
+.BookingHeader p {
+  color: #000;
+  font-family: "Poppins-Bold" !important;
+  font-size: 42px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 130% !important; /* 54.6px */
+}
+.bookingMainBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.headerLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.BInput1 {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+  margin-bottom: 58px;
+}
+.BInput2 {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+.numberLogo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ea4335;
+}
+.numberText {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 130% !important;
+}
+.numberLabel {
+  color: #1f1f1f;
+  font-family: "Poppins-Regular" !important;
+  font-size: 23px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 130% !important; /* 29.9px */
+  margin-left: 18px !important;
+}
+.eventInputBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+.eventInputBox input {
+  height: 15px !important;
+}
+.aboutProjectInputBox input {
+  height: 65px !important;
+}
+.BookingDetailsCard {
+  width: 517px;
+  height: 879px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+.projectNameInputBox input {
+  height: 15px !important;
+}
+.projectNameInputBox {
+  margin: 25px 0px;
+}
+
+.PhoneInput {
+  width: 366px;
+  border-radius: 4px;
+  height: 48px;
+  border: rgba(128, 128, 128, 0.438) 1px solid;
+  padding-left: 22px;
+  display: flex;
+  align-items: center;
+}
+.PhoneInputCountry {
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  margin-right: var(--PhoneInputCountrySelect-marginRight);
+}
+.PhoneInputInput {
+  border: rgba(204, 41, 41, 0) 1px dotted;
+  background: #ffffff00;
+  border-radius: 0px 22px 24px 0px;
+}
+.PhoneInputCountryIcon--border {
+  border-radius: 11px;
+  overflow: hidden;
+  height: 22px;
+}
+.PhoneInputCountryIconImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.PhoneInput input:focus {
+  outline: none;
+}
+.ContactPersonIcon {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+}
+.EmailMessageIcon {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+}
+.AlternateContactIcon {
+  position: absolute;
+  top: 16px;
+  left: 336px;
+}
+.bookingCheckBox {
+  display: flex;
+  flex-direction: column;
+}
+.BookingBtnBox {
+  display: flex;
+  justify-content: end;
+}
+.BookingRequestBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 257px;
+  height: 51px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #ea4335;
+  background: #ea4335;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+}
+.BookingRequestBtn p {
+  color: #fff;
+  font-family: "Poppins-Regular" !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 130% !important;
+}
+.BookingDetailsTowBox {
+  width: 479px;
+  /* height: 382px; */
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+}
+.BookingDetailsTopCard {
+  width: 477px;
+  height: 146px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 7px 7px;
+}
+.BookingDetailsTopCardThamnal {
+  width: 187px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.BookingDetailsTopCardThamnal img {
+  width: 100%;
+  height: 100%;
+  margin-right: 8px;
+}
+.BookingDetailsTopCardTextBox {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 25px 0px 25px 19px;
+}
+.BookingDetailsTopCardHeader {
+  color: #202020;
+  font-family: "Poppins-Bold" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 130% !important;
+}
+.BookingDetailsTopCardLocation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.topCardLocationText {
+  color: #1f1f1f;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 130% !important;
+  margin-left: 8px !important;
+}
+.topCardStarBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.redPriceBanarBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 21px;
+}
+.redPriceBanar {
+  width: 265px;
+  height: 42px;
+  border-radius: 0px 0px 100px 100px;
+  background: #ea4335;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.inrText {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 99.7% !important;
+}
+.redBanerPrice {
+  color: #fff;
+  font-family: "Poppins-Regular" !important;
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 99.7% !important;
+}
+.hr {
+  color: #fff;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: 99.7% !important;
+}
+.banerLastText {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 99.7% !important; /* 11.964px */
+}
+.BookingDateBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.BookingDate {
+  width: 476px;
+  height: 35px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-right: 85px;
+}
+.BookingDate p {
+  color: #5e5e5e;
+  font-family: "Poppins-Regular" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: 99.7% !important;
+  margin: 0px 15px;
+}
+.BookingEditIcon {
+  position: absolute;
+  left: 365px;
+  top: -35px;
+}
+.BookingDeleteIcon {
+  position: absolute;
+  left: 395px;
+  top: -35px;
+}
+.addDays {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+.addDaysBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  height: 27px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  background: #ea4335;
+}
+.addDaysBtn p {
+  color: #fff;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 99.7% !important; /* 12.961px */
+}
+.totalHoursText {
+  color: #1e1d1d;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 99.7% !important; /* 12.961px */
+}
+.couponcodeBox {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.couponcodeBox p {
+  color: #474747;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 99.7% !important; /* 15.952px */
+}
+.couponEnterField {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+.couponEnterField input {
+  height: 27px !important;
+}
+.redArrowBtn {
+  width: 56px;
+  height: 59px;
+  flex-shrink: 0;
+  border-radius: 0px 10px 10px 0px;
+  background: #ea4335;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bookingPriceTextBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 17px 0px;
+  position: relative;
+}
+.bookingCharge {
+  border-bottom: 1px solid #eaeaea;
+  padding: 0px 20px 0px 20px;
+}
+.BookingChargesText {
+  color: #1b1b1b;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 99.7% !important; /* 14.955px */
+}
+.InrText {
+  color: #262525;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 99.7% !important;
+}
+.OnlyBookingPrice {
+  color: #393838;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: 99.7% !important;
+  position: absolute;
+  top: 21px;
+}
+.bookingText {
+  border-bottom: 1px solid #eaeaea;
+  padding: 10px 20px 0px 20px;
+}
+.bookingTextHeader {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.bookingTextHeader p {
+  color: #000;
+  font-family: "Poppins-Bold" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 16px !important; /* 106.667% */
+}
+.textSpamP {
+  width: 73%;
+  font-weight: 700 !important;
+}
+.textSpam {
+  color: #393838;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: 16px !important;
+}
+.securityDeposit {
+  border-bottom: 1px solid #eaeaea;
+  padding: 10px 20px 0px 20px;
+}
+.securityDepositSubBox {
+  display: flex;
+  flex-direction: row;
+}
+.totalPayment {
+  border-bottom: 1px solid #eaeaea;
+  padding: 20px 20px 29px 20px;
+}
+.totalPriceTextBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.totalPriceLabel {
+  color: #262525;
+  font-family: "Poppins-Regular" !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 99.7% !important; /* 16.949px */
+}
+.totalPriceAmount {
+  color: #262525;
+  font-family: "Poppins-Regular" !important;
+  font-size: 22px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 99.7% !important;
+}

@@ -19,9 +19,7 @@ export default function CancellationPolicy({ Cancellation }) {
             <img style={{ width: "100%" }} src={cancellPolicyIcon} />
           </Box>
           <Typography className='descriptionHeaderText'>Cancellation Policy</Typography>
-          <Box sx={{ paddingLeft: "39.5%" }} className="seeMoreBtn">
-            <Typography onClick={() => setCancel(!cancel)} pl={2} className='seeMoreText amenitiesSeeMoreBtn'>{cancel ? "+ SEE LESS" : "+ SEE MORE"}</Typography>
-          </Box>
+
         </Box>
         <Box className="cancelTextBox">
           {
@@ -32,6 +30,10 @@ export default function CancellationPolicy({ Cancellation }) {
               <Typography>If for any reason you wish to cancel a service before your flight reservation or hotel booking were processed you can do so without any penalties or charges by calling us or informing us in advance. You will receive a full refund of any fees paid for this particular service. If for any reason you wish</Typography>
           }
 
+        </Box>
+
+        <Box mb={1.3} className="seeMoreBtn">
+          <Typography onClick={() => setCancel(!cancel)} pl={2} className='seeMoreText amenitiesSeeMoreBtn'>{cancel ? "+ SEE LESS" : "+ SEE MORE"}</Typography>
         </Box>
 
       </Box>

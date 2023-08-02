@@ -1,0 +1,79 @@
+.app {
+  text-align: center;
+  /* padding: 20px; */
+}
+
+.image-slider {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slider-container {
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail-container {
+  display: none;
+}
+
+.thumbnails img {
+  width: 80px;
+  height: 60px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.thumbnails img.active {
+  border-color: #f00; /* Highlight color for active thumbnail */
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .slides img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .thumbnails img {
+    width: 60px;
+    height: 40px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .thumbnail-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+}

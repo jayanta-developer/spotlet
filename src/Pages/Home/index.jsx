@@ -27,12 +27,15 @@ import starOutLine from "../../Assets/images/StarOutLine.png"
 
 import redHeartP from "../../Assets/images/redHeartP.svg"
 import redHeart from "../../Assets/images/redHartLogo.png"
+import ImageIcon from "../../Assets/images/galleryImages/icons8-gallery-48.png"
 
 ///Components
 import NavBar from "../NavBar";
 import Overview from "../Overview";
 import Properties from "../SimilarProperties";
 import Footer from "../Footer";
+
+import ImageSlider from "../../Component/CoverImageSlider"
 
 
 
@@ -166,7 +169,7 @@ export default function Home() {
                 <img src={downArrowF} />
               </Box>
             </Box>
-            <Box mb={10.5} className="printInputField">
+            <Box className="printInputField bottomMargin">
               <Typography className='printInputFieldLabel'>Color</Typography>
               <Box className="PrintDropDown">
                 <Typography className='PrintDropDownPlaceholder'>B&W</Typography>
@@ -255,6 +258,10 @@ export default function Home() {
 
         <Box className="coverContainer">
 
+          <Box className="coverGallerySlider">
+            <ImageSlider />
+          </Box>
+
           <Box className="coverGallery">
             <Box className="firstGBox">
               <img className='galleryImage' src={imageA} />
@@ -270,34 +277,43 @@ export default function Home() {
               </Box>
             </Box>
           </Box>
+          <Box className="ShowGalleryTabBox">
+            <Box className="ShowGalleryTab">
+              <img src={ImageIcon} />
+              <Typography ml={1}>Show ALL (18)</Typography>
+            </Box>
+          </Box>
 
 
 
 
           <Box className="venueLocation">
             <Box mb={1.5} className="locationHeader">
-              <Typography sx={{ fontSize: "25px" }} className='poppinsBold' variant='h5'>Coworking Space: </Typography>
-              <Typography sx={{ marginLeft: "10px", fontSize: "25px" }} className='poppinsBold' variant='h5'>Serendipity Labs</Typography>
+              <Typography className='poppinsBold' variant='h5'>Coworking Space: </Typography>
+              <Typography sx={{ marginLeft: "10px", }} className='poppinsBold' variant='h5'>Serendipity Labs</Typography>
               <Box className="ClickHereTab">
-                <Typography>Click Here</Typography>
+                <Typography id='clickHereText'>Click Here</Typography>
               </Box>
             </Box>
             <Typography className='locationId'>1DER58TYUIOP</Typography>
             <Box className="locationSubText">
               <Box className="locationLogo"></Box>
               <Box className="CityLocation">
-                <img src={locationIcon} style={{ marginRight: "15px" }} />
-                <Typography className='poppins'>Lonavala, Maharashtra, India</Typography>
-                <Divider sx={{ margin: "0px 10px" }} orientation="vertical" flexItem />
-                <Box sx={{ marginRight: "10px" }} className="startLogos">
-                  <img src={starIcon} />
-                  <img src={starIcon} />
-                  <img src={starIcon} />
-                  <img src={starIcon} />
-                  <img src={starIcon} />
+                <Box className="cityLocationTextBox">
+                  <img src={locationIcon} style={{ marginRight: "15px" }} />
+                  <Typography className='poppins'>Lonavala, Maharashtra, India</Typography>
                 </Box>
-                <Typography className='poppins' sx={{ color: "#888888" }}>4.0 (3377 Reviews)</Typography>
-
+                <Divider className='divider' sx={{ margin: "0px 10px" }} orientation="vertical" flexItem />
+                <Box className="cityLocationTextBox">
+                  <Box sx={{ marginRight: "10px" }} className="startLogos">
+                    <img src={starIcon} />
+                    <img src={starIcon} />
+                    <img src={starIcon} />
+                    <img src={starIcon} />
+                    <img src={starIcon} />
+                  </Box>
+                  <Typography className='poppins' sx={{ color: "#888888" }}>4.0 (3377 Reviews)</Typography>
+                </Box>
               </Box>
               <Box className="venueRetting">
 
@@ -306,6 +322,7 @@ export default function Home() {
             </Box>
 
           </Box>
+
         </Box>
 
       </Box>

@@ -1,6 +1,6 @@
 .reviewContainer {
-  width: 683px;
-  height: 778px;
+  width: 100%;
+  height: auto;
   border-radius: 10px;
   border: 1px solid #eee;
   background: #fff;
@@ -15,9 +15,13 @@
   align-items: center;
   height: 67px;
 }
+.reviewHeaderRettingText {
+  font-size: 11px !important;
+}
 .startLogos {
   display: flex;
   flex-direction: row;
+  margin-right: 5px;
 }
 .startLogos img {
   width: 15px;
@@ -25,7 +29,7 @@
 }
 .review_box {
   width: 100%;
-  height: 239px;
+  height: 300px;
   border-top: 1px solid #eee;
   padding: 20px;
 }
@@ -361,4 +365,26 @@
 }
 .search_Input fieldset {
   border-radius: 72px !important;
+}
+.display {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviewContainer {
+    width: 683px;
+    height: auto;
+  }
+  .reviewHeaderRettingText {
+    font-size: 16px !important;
+  }
+  .startLogos {
+    margin-right: 10px;
+  }
+  .review_box {
+    height: 239px;
+  }
+  .display {
+    display: block;
+  }
 }

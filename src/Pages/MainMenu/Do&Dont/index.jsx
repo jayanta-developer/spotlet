@@ -19,19 +19,15 @@ export default function Dont({ DoDon }) {
             <img style={{ width: "100%" }} src={DontIcon} />
           </Box>
           <Typography className='descriptionHeaderText'>Do’s & Don’ts</Typography>
-          <Box sx={{ paddingLeft: "49%" }} className="seeMoreBtn">
-            <Typography onClick={() => setDont(!dont)} pl={2} className='seeMoreText amenitiesSeeMoreBtn'>{dont ? "+ SEE LESS" : "+ SEE MORE"}</Typography>
-          </Box>
         </Box>
 
         <Box className="doTextBox">
           <Box className="doBox">
-            <Box className="doBoxHeader sideBorder">
+            <Box className="doBoxHeader sideBorder sideBorder">
               <Typography>Do’s</Typography>
             </Box>
-            <Box className="doBoxText sideBorder">
+            <Box className="doBoxText sideBorder bottom_Border">
               <Box className="amenities_Text">
-
                 <Box className="amenitiesItem">
                   <img src={rightArrow} />
                   <Typography ml={1}>Smoking not allowed</Typography>
@@ -47,64 +43,69 @@ export default function Dont({ DoDon }) {
                 <Box className="amenitiesItem">
                   <img src={rightArrow} />
                   <Typography ml={1}>Smoking not allowed</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Pets not allowed</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Pool closed between 8.00pm 6.00am</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Smoking not allowed</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Pets not allowed</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Pool closed between 8.00pm 6.00am</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Smoking not allowed</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Pets not allowed</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Pool closed between 8.00pm 6.00am</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Smoking not allowed</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Pets not allowed</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Pool closed between 8.00pm 6.00am</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Smoking not allowed</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Pets not allowed</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Pool closed between 8.00pm 6.00am</Typography>
                 </Box>
 
+
+                <Box sx={{ display: dont ? "block" : "none" }}>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Pets not allowed</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Pool closed between 8.00pm 6.00am</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Smoking not allowed</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Pets not allowed</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Pool closed between 8.00pm 6.00am</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Smoking not allowed</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Pets not allowed</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Pool closed between 8.00pm 6.00am</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Smoking not allowed</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Pets not allowed</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Pool closed between 8.00pm 6.00am</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Smoking not allowed</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Pets not allowed</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Pool closed between 8.00pm 6.00am</Typography>
+                  </Box>
+
+
+                </Box>
               </Box>
 
             </Box>
@@ -112,7 +113,7 @@ export default function Dont({ DoDon }) {
           </Box>
 
           <Box className="doBox">
-            <Box className="doBoxHeader">
+            <Box className="doBoxHeader topBorder">
               <Typography>Don’ts</Typography>
             </Box>
             <Box className="doBoxText">
@@ -134,54 +135,61 @@ export default function Dont({ DoDon }) {
                   <img src={rightArrow} />
                   <Typography ml={1}>Smoking not allowed</Typography>
                 </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Pets not allowed</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Pool closed between 8.00pm 6.00am</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Smoking not allowed</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Pets not allowed</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Pool closed between 8.00pm 6.00am</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Smoking not allowed</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Pets not allowed</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Pool closed between 8.00pm 6.00am</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Smoking not allowed</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Pets not allowed</Typography>
-                </Box>
-                <Box className="amenitiesItem">
-                  <img src={rightArrow} />
-                  <Typography ml={1}>Pool closed between 8.00pm 6.00am</Typography>
+
+
+                <Box sx={{ display: dont ? "block" : "none" }}>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Pets not allowed</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Pool closed between 8.00pm 6.00am</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Smoking not allowed</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Pets not allowed</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Pool closed between 8.00pm 6.00am</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Smoking not allowed</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Pets not allowed</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Pool closed between 8.00pm 6.00am</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Smoking not allowed</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Pets not allowed</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Pool closed between 8.00pm 6.00am</Typography>
+                  </Box>
                 </Box>
               </Box>
             </Box>
           </Box>
 
+        </Box>
+        <Box mb={1} className="seeMoreBtn">
+          <Typography onClick={() => setDont(!dont)} pl={2} className='seeMoreText amenitiesSeeMoreBtn'>{dont ? "+ SEE LESS" : "+ SEE MORE"}</Typography>
         </Box>
 
 

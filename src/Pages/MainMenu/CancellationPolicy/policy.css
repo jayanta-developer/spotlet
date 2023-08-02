@@ -1,6 +1,6 @@
 .cancellationBox {
-  width: 683px;
-  height: 226px;
+  width: 100%;
+  height: auto;
   border-radius: 10px;
   border: 1px solid #eee;
   background: #fff;
@@ -10,7 +10,7 @@
   transition: all 0.5s;
 }
 .cancellationOpenBox {
-  width: 800px;
+  width: 100%;
   height: auto;
   border-radius: 10px;
   border: 1px solid #eee;
@@ -18,7 +18,7 @@
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
   flex-shrink: 0;
   margin-bottom: 20px;
-  padding: 16px 50px;
+  padding: 20px 0px;
   transition: all 0.5s;
 }
 .cancelTextBox {
@@ -41,4 +41,13 @@
 }
 .bottomBorder {
   border-bottom: 1px solid #ececec;
+}
+@media only screen and (min-width: 768px) {
+  .cancellationBox {
+    width: 683px;
+  }
+  .cancellationOpenBox {
+    width: 800px;
+    padding: 16px 50px;
+  }
 }

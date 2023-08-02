@@ -107,17 +107,15 @@ export default function Reviews({ Review }) {
           </Box>
           <Typography mr={1.5} className='descriptionHeaderText'>Reviews (7)</Typography>
 
-          <Box sx={{ marginRight: "10px" }} className="startLogos">
+          <Box className="startLogos">
             <img src={starYIcon} />
             <img src={starYIcon} />
             <img src={starYIcon} />
             <img src={starYIcon} />
             <img src={starYIcon} />
           </Box>
-          <Typography className='poppins' sx={{ color: "#888888" }}>4.0 (3377 Reviews)</Typography>
-          <Box sx={{ paddingLeft: "15%" }} className="seeMoreBtn">
-            <Typography onClick={() => setReview(!review)} pl={2} className='seeMoreText amenitiesSeeMoreBtn'>{review ? "+ SEE LESS" : "+ SEE MORE"}</Typography>
-          </Box>
+          <Typography className='poppins reviewHeaderRettingText' sx={{ color: "#888888" }}>4.0 (3377 Reviews)</Typography>
+
         </Box>
 
         <Box className="reviewText">
@@ -152,6 +150,9 @@ export default function Reviews({ Review }) {
             )
           }
 
+        </Box>
+        <Box mb={2} className="seeMoreBtn display">
+          <Typography onClick={() => setReview(!review)} pl={2} className='seeMoreText amenitiesSeeMoreBtn'>{review ? "+ SEE LESS" : "+ SEE MORE"}</Typography>
         </Box>
       </Box>
 

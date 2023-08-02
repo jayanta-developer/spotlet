@@ -2,12 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 //Components
-import NavBar from "./Pages/NavBar";
 import Home from "./Pages/Home";
-import Overview from "./Pages/Overview";
-import Properties from "./Pages/SimilarProperties";
 import Booking from "./Pages/Booking";
-import Footer from "./Pages/Footer";
+import BookingDetails from "./Pages/BookingDetails";
 
 export default function App() {
   return (
@@ -15,6 +12,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/booking" element={<Booking />} />
+        <Route path="/booking/details" element={<BookingDetails />} />
       </Routes>
     </>
   );

@@ -387,7 +387,7 @@
   position: sticky;
 }
 #hostDetails1 {
-  margin-top: 55px;
+  margin-top: 7px;
   top: 587px;
 }
 #hostDetails2 {
@@ -690,5 +690,8 @@
     width: auto;
     display: block;
     position: relative;
+  }
+  #hostDetails1 {
+    margin-top: 55px;
   }
 }

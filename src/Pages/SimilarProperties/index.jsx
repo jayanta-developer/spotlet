@@ -70,10 +70,10 @@ export default function Properties() {
   return (
     <>
       <Box className="propertiesContainer">
-        <Box className="propertiesHeader">
-          <Typography>Similar Properties</Typography>
-        </Box>
         <Box className="propertiesBox">
+          <Box className="propertiesHeader">
+            <Typography>Similar Properties</Typography>
+          </Box>
           <Box className="propertiesRenderBox">
             {propertiesCard(
               Pimage1,

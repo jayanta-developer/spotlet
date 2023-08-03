@@ -20,6 +20,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 .propertiesRenderBox {
   display: flex;
@@ -164,7 +165,7 @@
 @media only screen and (min-width: 768px) {
   .propertiesHeader p {
     font-size: 35px !important;
-    margin-left: 6%;
+    margin-left: 0%;
   }
   .propertiesHeader {
     margin-bottom: 34px;
@@ -193,5 +194,16 @@
   }
   .cardText1stHeader {
     font-size: 18px !important;
+  }
+  .propertiesBox {
+    width: 1276px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .propertiesContainer {
+    display: flex;
+    justify-content: center;
   }
 }

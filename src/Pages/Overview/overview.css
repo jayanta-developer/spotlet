@@ -533,7 +533,7 @@
   position: fixed;
   top: 74%;
   z-index: 9999;
-  display: none;
+  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;

@@ -43,6 +43,7 @@ export default function Home() {
   const [printBox, setPrintBox] = useState(false);
   const [Favorite, setFavorite] = useState(false);
   const [shareBox, setShareBox] = useState(false);
+  const [propertyNameVisibility, setPropertyNameVisibility] = useState(false)
   const ref = useRef(null);
   const handleClickOutside = (event) => {
 
@@ -289,13 +290,15 @@ export default function Home() {
 
           <Box className="venueLocation">
             <Box mb={1.5} className="locationHeader">
-              <Typography className='poppinsBold' variant='h5'>Coworking Space: </Typography>
-              <Typography sx={{ marginLeft: "10px", }} className='poppinsBold' variant='h5'>Serendipity Labs</Typography>
-              <Box className="ClickHereTab">
+              <Typography className='poppinsBold' variant='h5'>Restaurant</Typography>
+              {/* <Typography sx={{ marginLeft: "10px", }} className='poppinsBold' variant='h5'>Serendipity Labs</Typography> */}
+              <Box onClick={() => setPropertyNameVisibility(true)} className="ClickHereTab">
                 <Typography id='clickHereText'>Click Here</Typography>
               </Box>
             </Box>
-            <Typography className='locationId'>1DER58TYUIOP</Typography>
+            <Typography sx={{ display: propertyNameVisibility ? "block" : "none" }} className='locationId'>
+              Coworking Space: Serendipity Labs
+            </Typography>
             <Box className="locationSubText">
               <Box className="locationLogo"></Box>
               <Box className="CityLocation">

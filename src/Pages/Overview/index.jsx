@@ -156,29 +156,29 @@ export default function Overview() {
               </Box>
 
             </Box>
-            <Box className="venueDetails ">
+            <Box className="venueDetails venueDetailsScroll">
 
-              <Box sx={{ width: "85px" }} className="venueDetailsItem bottomVDT">
+              <Box sx={{ width: "85px" }} className="venueDetailsItem">
                 <img className='venueDetailsIcon' src={timeIcon} />
                 <Typography>8 hr min</Typography>
               </Box>
-              <Box sx={{ width: "94px" }} className="venueDetailsItem bottomVDT">
+              <Box sx={{ width: "94px" }} className="venueDetailsItem">
                 <img className='venueDetailsIcon' src={peopleIcon} />
                 <Typography>60 people</Typography>
               </Box>
-              <Box sx={{ width: "94px" }} className="venueDetailsItem bottomVDT">
+              <Box sx={{ width: "94px" }} className="venueDetailsItem ">
                 <img className='venueDetailsIcon' src={squerIcon} />
                 <Typography>1300 sq/ft </Typography>
               </Box>
-              <Box sx={{ width: "138px" }} className="venueDetailsItem bottomVDT">
+              <Box sx={{ width: "138px" }} className="venueDetailsItem ">
                 <img className='venueDetailsIcon' src={bulding} />
                 <Typography>parking</Typography>
               </Box>
-              <Box sx={{ width: "138px" }} className="venueDetailsItem bottomVDT">
+              <Box sx={{ width: "138px" }} className="venueDetailsItem ">
                 <img className='venueDetailsIcon' src={bulding} />
                 <Typography>street parking</Typography>
               </Box>
-              <Box sx={{ width: "121px" }} className="venueDetailsItem bottomVDT">
+              <Box sx={{ width: "121px" }} className="venueDetailsItem ">
                 <img className='venueDetailsIcon' src={videoIcon} />
                 <Typography>cc cameras</Typography>
               </Box>
@@ -204,6 +204,147 @@ export default function Overview() {
               </Box>
             </Box>
           </Box>
+
+          <Box className="bookingPaymentPage">
+
+            <Box className="buying_Box">
+              <Box className="booking_Request">
+                <Box className="priseBox">
+                  <Box className="priceText">
+                    <Typography className='poppins' sx={{ fontSize: "15px" }}>INR. </Typography>
+                    <Typography className='poppinsBold' sx={{ fontSize: "27px" }}> 1750/</Typography>
+                    <Typography className='poppins' sx={{ fontSize: "13px" }}>hr</Typography>
+                  </Box>
+                  <Box mt={1} className="priceSubText">
+                    <Typography sx={{ fontSize: "14px" }} className='po'>2 hr. minimum</Typography>
+                  </Box>
+                </Box>
+                <Box className="priseInputBox">
+
+                  <Box mb={2.5} className="priseInputItem">
+                    <img src={DownArrow} />
+                    <TextField sx={{ width: "305px" }} className='eventInput' placeholder='Select your Event' />
+                  </Box>
+
+                  <Box mb={2.5} className="priseInputItem">
+
+                    <Box className="DateFieldInput">
+
+                      <Box className="priseInputItem priseDateInput">
+                        <img src={DownArrow} />
+                        <input
+                          style={{
+                            width: "101px",
+                            borderRadius: "10px 0 0 10px",
+                            border: "1px solid #EAEAEA",
+                            padding: "0px 7px"
+                          }}
+                          className='eventInput pSize' placeholder='Start Date' />
+                      </Box>
+
+                      <Box className="priseInputItem priseDateInput">
+                        <img src={DownArrow} />
+                        <input
+                          style={{
+                            width: "101px",
+                            border: "1px solid #EAEAEA",
+                            padding: "0px 7px"
+                          }}
+
+                          className='eventInput pSize' placeholder='Start Time' />
+                      </Box>
+
+                      <Box className="priseInputItem priseDateInput">
+                        <img src={DownArrow} />
+                        <input
+                          style={{
+                            width: "101px",
+                            borderRadius: "0 10px 10px 0",
+                            border: "1px solid #EAEAEA",
+                            padding: "0px 7px"
+                          }}
+                          className='eventInput pSize' placeholder='End Time' />
+                      </Box>
+                    </Box>
+
+
+
+                    <Box sx={{ display: priceDay ? "flex" : "none" }} className="DateField_Input">
+                      <img onClick={() => setPriceDay(false)} className='dayCross' src={RedCross} />
+
+                      <Box className="priseInputItem priseDateInput">
+                        <img src={DownArrow} />
+                        <input
+                          style={{
+                            width: "101px",
+                            borderRadius: "10px 0 0 10px",
+                            border: "1px solid #EAEAEA",
+                            padding: "0px 7px"
+                          }}
+                          className='eventInput pSize' placeholder='Jul 26,2023' />
+                      </Box>
+
+                      <Box className="priseInputItem priseDateInput">
+                        <img src={DownArrow} />
+                        <input
+                          style={{
+                            width: "101px",
+                            border: "1px solid #EAEAEA",
+                            padding: "0px 7px"
+                          }}
+
+                          className='eventInput pSize' placeholder='Start Time' />
+                      </Box>
+
+                      <Box className="priseInputItem priseDateInput">
+                        <img src={DownArrow} />
+                        <input
+                          style={{
+                            width: "101px",
+                            borderRadius: "0 10px 10px 0",
+                            border: "1px solid #EAEAEA",
+                            padding: "0px 7px"
+                          }}
+                          className='eventInput pSize' placeholder='End Time' />
+                      </Box>
+                    </Box>
+
+                  </Box>
+                </Box>
+              </Box>
+
+
+              <Box mb={2.5} className="priseInputItem totalPriseBox">
+                <Typography onClick={() => setPriceDay(true)} sx={{ color: "#EA4335" }} className='TotalPriseText'>Add a day</Typography>
+                <Typography className='TotalPriseText'>Total hours: 0</Typography>
+              </Box>
+
+              <Box mb={2.5} className="priseInputItem">
+                <img src={DownArrow} />
+                <TextField sx={{ width: "305px" }} className='eventInput' placeholder='No. of Guests' />
+              </Box>
+
+              <Box mb={2.5} className="priseInputItem">
+                <Link className='BookingBtnLink' to={"/booking"}>
+                  <Box className="requestBookingBtn">
+                    <Typography className='redBtnText'>Request Booking</Typography>
+                  </Box>
+                </Link>
+              </Box>
+
+            </Box>
+
+          </Box>
+
+
+
+
+
+
+
+
+
+
 
           <Box className="Description mainItemBox">
             <Box className="DescriptionHeader">

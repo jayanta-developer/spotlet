@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 112px;
+  margin-top: 84px;
 }
 .coverContainer {
   position: relative;
@@ -305,7 +305,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 37px 15px;
+  /* margin: 37px 15px; */
+  margin: 24px 10px 7px 10px;
   position: relative;
 }
 .ClickHereTab {
@@ -335,7 +336,7 @@
   align-items: center;
 }
 .locationHeader h5 {
-  font-size: 16px !important;
+  font-size: 25px !important;
 }
 .locationId {
   color: #1a1a1a;
@@ -354,6 +355,7 @@
 .startLogos {
   display: flex;
   flex-direction: row;
+  margin-top: 2px;
 }
 .startLogos img {
   width: 25px;
@@ -400,6 +402,9 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .homeContainer {
+    margin-top: 112px;
+  }
   .venueLocation {
     width: 100%;
   }

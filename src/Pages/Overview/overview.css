@@ -581,6 +581,7 @@
   display: flex;
   justify-content: center;
   position: fixed;
+  z-index: 9;
 }
 .bookingPosition {
   top: 114px;

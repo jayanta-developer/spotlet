@@ -46,6 +46,7 @@
 .searchBar {
   /* margin: 0px 30px; */
   position: relative;
+  display: none;
 }
 .searchField {
   width: 293px;

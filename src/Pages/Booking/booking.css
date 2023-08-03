@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   background: #fff;
-  padding: 7px 208px;
+  padding: 15px 33px;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
 }
 .logBox {
@@ -18,19 +18,25 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .bookingContent {
   /* border: 1px solid; */
+  width: 100%;
 }
 .BookingInputBox {
-  margin-right: 10px;
+  margin-top: 111px;
+  margin-right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
 }
 .BookingDetailsBox {
-  margin-left: 10px;
+  margin-left: 0px;
 }
 .BookingHeader {
-  margin-bottom: 20px;
+  display: none;
 }
 .BookingHeaderUnderLine {
   width: 92px;
@@ -47,7 +53,7 @@
 }
 .bookingMainBox {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: center;
 }
 .headerLabel {
@@ -57,12 +63,14 @@
   margin-bottom: 32px;
 }
 .BInput1 {
+  width: 90%;
   display: flex;
   flex-direction: column;
   margin: 20px 0px;
   margin-bottom: 58px;
 }
 .BInput2 {
+  width: 90%;
   display: flex;
   flex-direction: column;
   margin: 20px 0px;
@@ -96,7 +104,7 @@
 }
 .eventInputBox {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   margin-bottom: 10px;
   position: relative;
@@ -104,11 +112,19 @@
 .eventInputBox input {
   height: 15px !important;
 }
+.TypeEventInput {
+  width: 100%;
+  margin-right: 0px;
+}
+.additionalInput {
+  width: 100%;
+  margin-left: 0px;
+}
 .aboutProjectInputBox input {
   height: 65px !important;
 }
 .BookingDetailsCard {
-  width: 517px;
+  width: 100%;
   height: 879px;
   flex-shrink: 0;
   border-radius: 10px;
@@ -118,7 +134,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
 }
 .projectNameInputBox input {
   height: 15px !important;
@@ -128,13 +143,15 @@
 }
 
 .PhoneInput {
-  width: 366px;
+  width: 100%;
   border-radius: 4px;
   height: 48px;
   border: rgba(128, 128, 128, 0.438) 1px solid;
   padding-left: 22px;
   display: flex;
   align-items: center;
+  margin-right: 0px;
+  margin-bottom: 13px;
 }
 .PhoneInputCountry {
   position: relative;
@@ -163,22 +180,32 @@
 }
 .ContactPersonIcon {
   position: absolute;
-  top: 16px;
-  right: 20px;
+  top: 88px;
+  right: 14px;
+}
+.emailInput {
+  width: 100%;
+  margin-left: 0px;
+  margin-bottom: 13px !important;
 }
 .EmailMessageIcon {
   position: absolute;
-  top: 16px;
-  right: 18px;
+  top: 83px;
+  right: 13px;
 }
 .AlternateContactIcon {
   position: absolute;
   top: 16px;
-  left: 336px;
+  right: 14px;
 }
 .bookingCheckBox {
+  width: 90%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 26px !important;
+}
+.bookingCheckBox label {
+  margin-bottom: 10px;
 }
 .BookingBtnBox {
   display: flex;
@@ -206,7 +233,7 @@
   line-height: 130% !important;
 }
 .BookingDetailsTowBox {
-  width: 479px;
+  width: 90%;
   /* height: 382px; */
   height: auto;
   flex-shrink: 0;
@@ -217,21 +244,19 @@
   flex-direction: column;
 }
 .BookingDetailsTopCard {
-  width: 477px;
-  height: 146px;
+  width: 90%;
+  height: 244px;
   flex-shrink: 0;
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 7px 7px;
+  flex-direction: column;
 }
 .BookingDetailsTopCardThamnal {
-  width: 187px;
+  width: 100%;
   height: 100%;
-  border-radius: 10px;
+
   overflow: hidden;
 }
 .BookingDetailsTopCardThamnal img {
@@ -240,11 +265,11 @@
   margin-right: 8px;
 }
 .BookingDetailsTopCardTextBox {
-  height: 100%;
+  height: 65%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 25px 0px 25px 19px;
+  padding: 10px;
 }
 .BookingDetailsTopCardHeader {
   color: #202020;
@@ -323,12 +348,13 @@
   line-height: 99.7% !important; /* 11.964px */
 }
 .BookingDateBox {
+  width: 90%;
   display: flex;
   justify-content: center;
   margin-bottom: 12px;
 }
 .BookingDate {
-  width: 476px;
+  width: 100%;
   height: 35px;
   flex-shrink: 0;
   border-radius: 4px;
@@ -339,7 +365,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding-right: 85px;
+  padding-right: 58px;
 }
 .BookingDate p {
   color: #5e5e5e;
@@ -352,15 +378,16 @@
 }
 .BookingEditIcon {
   position: absolute;
-  left: 365px;
+  right: -3px;
   top: -35px;
 }
 .BookingDeleteIcon {
   position: absolute;
-  left: 395px;
+  right: -31px;
   top: -35px;
 }
 .addDays {
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -393,6 +420,7 @@
   line-height: 99.7% !important; /* 12.961px */
 }
 .couponcodeBox {
+  width: 90%;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -407,6 +435,7 @@
   line-height: 99.7% !important; /* 15.952px */
 }
 .couponEnterField {
+  width: 90%;
   display: flex;
   justify-content: center;
   margin-bottom: 26px;
@@ -523,4 +552,176 @@
   font-style: normal;
   font-weight: 700 !important;
   line-height: 99.7% !important;
+}
+.BookingDetailsOneBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projectNameInput {
+  width: 100%;
+}
+.stageTowTypeEvent {
+  width: 100%;
+  margin-right: 0px;
+  margin-bottom: 16px !important;
+}
+.contactName {
+  width: 100%;
+  margin-left: 0px;
+  margin-bottom: 10px !important;
+}
+.alternantContactInput {
+  width: 100%;
+  margin-right: 0px;
+  margin-bottom: 23px !important;
+  margin-left: 0px !important;
+}
+@media only screen and (min-width: 768px) {
+  .bookingNav {
+    padding: 7px 208px;
+  }
+  .BookingHeader {
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 9%;
+  }
+  .BookingInputBox {
+    width: 45%;
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  .BookingDetailsBox {
+    width: 35%;
+    margin-left: 10px;
+  }
+  .bookingMainBox {
+    flex-direction: row;
+  }
+  .BookingDetailsCard {
+    width: 517px;
+    height: 879px;
+    padding: 15px 20px;
+  }
+  .BookingDetailsOneBox {
+    display: block;
+  }
+  .BookingDetailsTopCard {
+    width: 477px;
+    height: 146px;
+    flex-direction: row;
+    padding: 7px 7px;
+    align-items: center;
+  }
+  .BookingDetailsTopCardThamnal {
+    width: 187px;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .BookingDetailsTopCardTextBox {
+    height: 100%;
+    padding: 25px 0px 25px 19px;
+  }
+  .bookingContentBox {
+    margin-top: 50px;
+  }
+  .BookingDate {
+    width: 476px;
+    height: 35px;
+    padding-right: 85px;
+  }
+  .BookingEditIcon {
+    left: 365px;
+  }
+  .BookingDeleteIcon {
+    left: 395px;
+  }
+  .addDays {
+    width: 100%;
+  }
+  .couponEnterField {
+    width: 100%;
+  }
+  .BookingDetailsTowBox {
+    width: 479px;
+  }
+  .BookingDateBox {
+    width: 100%;
+  }
+  .BInput1 {
+    width: 100%;
+  }
+  .BInput2 {
+    width: 100%;
+  }
+  .eventInputBox {
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 0px;
+  }
+  .TypeEventInput {
+    width: 50% !important;
+    margin-right: 10px;
+  }
+  .additionalInput {
+    width: 50%;
+    margin-left: 10px !important;
+  }
+  .stageTowTypeEvent {
+    width: 50% !important;
+    margin-right: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  .contactName {
+    width: 50%;
+    margin-left: 0px !important;
+  }
+  .ContactPersonIcon {
+    top: 16px;
+    right: 20px;
+  }
+  .PhoneInput {
+  }
+  .EmailMessageIcon {
+    top: 16px;
+    right: 18px;
+  }
+  .emailInput {
+    width: 50%;
+    margin-left: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .alternantContactInput {
+    width: 50%;
+    margin-right: 10px !important;
+    /* margin-left: 8px !important; */
+  }
+  .AlternateContactIcon {
+    top: 16px;
+    right: 19px;
+  }
+  .bookingCheckBox {
+    width: 100%;
+  }
+  .bookingCheckBox label {
+    margin-bottom: 0px;
+  }
+  .BookingOneInputBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .projectNameInputBox {
+    width: 100%;
+  }
+  .aboutProjectInputBox {
+    width: 100%;
+  }
+  .contactBoxItem {
+    width: 50%;
+  }
+  .mr {
+    margin-right: 10px;
+  }
 }

@@ -9,7 +9,7 @@ import companyLogo from "../../Assets/images/companyNavlogo.png";
 import cross from "../../Assets/images/blackCross.svg";
 import person from "../../Assets/images/Booking/Vector.svg"
 import MessageIcon from "../../Assets/images/Booking/MessageIcon.svg"
-import cardThamnel from "../../Assets/images/Booking/luxury-sunset-poolside-relaxation-with-stunning-landscape-view-generated-by-ai 1.png"
+import cardThamnel from "../../Assets/images/BookingDetails/dfsdfsdfds.jpeg"
 import locationIcon from "../../Assets/images/Booking/location.svg"
 import starIcon from "../../Assets/images/star-48.png"
 import EditIcon from "../../Assets/images/Booking/EditIcon.svg"
@@ -62,7 +62,7 @@ export default function Booking() {
                   <Box className="BookingOneInputBox">
                     <Box className="eventInputBox">
 
-                      <FormControl fullWidth style={{ width: "49%", marginRight: "10px" }}>
+                      <FormControl sx={{ marginBottom: "10px" }} fullWidth className='TypeEventInput'>
                         <InputLabel id="demo-simple-select-label" style={{ top: "-5px" }}>Type of Event</InputLabel>
                         <Select
                           name="years"
@@ -78,7 +78,7 @@ export default function Booking() {
                         </Select>
                       </FormControl>
 
-                      <TextField sx={{ width: "366px", marginLeft: "10px" }} id="outlined-basic" label="No. of Attendees" variant="outlined" defaultValue={" "} />
+                      <TextField sx={{ marginBottom: "10px" }} className='additionalInput' id="outlined-basic" label="No. of Attendees" variant="outlined" defaultValue={" "} />
                     </Box>
                     <Box className="aboutProjectInputBox">
                       <TextField sx={{ width: "100%" }} id="outlined-basic" label="About your project" variant="outlined" defaultValue={" "} />
@@ -98,11 +98,11 @@ export default function Booking() {
 
                   <Box className="BookingOneInputBox">
                     <Box className="projectNameInputBox">
-                      <TextField sx={{ width: "752px" }} id="outlined-basic" label="Name of the Project" variant="outlined" defaultValue={"Project Name"} />
+                      <TextField className='projectNameInput' id="outlined-basic" label="Name of the Project" variant="outlined" defaultValue={"Project Name"} />
                     </Box>
                     <Box className="eventInputBox">
 
-                      <FormControl fullWidth style={{ width: "49%", marginRight: "10px" }}>
+                      <FormControl fullWidth className='stageTowTypeEvent' >
                         <InputLabel id="demo-simple-select-label" style={{ top: "-5px" }}>Type of Event</InputLabel>
                         <Select
                           name="years"
@@ -117,12 +117,12 @@ export default function Booking() {
                           <MenuItem value={"text"}>Text</MenuItem>
                         </Select>
                       </FormControl>
-                      <TextField sx={{ width: "366px", marginLeft: "10px" }} id="outlined-basic" label="Contact Person Name" variant="outlined" defaultValue={"Vijay Kumar"} />
+                      <TextField className='contactName' id="outlined-basic" label="Contact Person Name" variant="outlined" defaultValue={"Vijay Kumar"} />
                       <img className='ContactPersonIcon' src={person} />
 
                     </Box>
                     <Box className="eventInputBox">
-                      <Box sx={{ marginRight: "10px" }} mb={1} className="eventInputBox contactBoxItem home_card_input">
+                      <Box mb={1} className=" contactBoxItem home_card_input mr">
                         <PhoneInput
                           placeholder="Enter phone number"
                           value={phoneNumber}
@@ -130,13 +130,15 @@ export default function Booking() {
                           defaultCountry="IN"
                         />
                       </Box>
-                      <TextField sx={{ width: "366px", marginLeft: "10px" }} id="outlined-basic" label="Email address" variant="outlined" defaultValue={"info@mywebsite.com"} />
+                      <TextField className='emailInput' id="outlined-basic" label="Email address" variant="outlined" defaultValue={"info@mywebsite.com"} />
                       <img className='EmailMessageIcon' src={MessageIcon} />
                     </Box>
                     <Box className="eventInputBox">
-                      <TextField sx={{ width: "366px", marginRight: "10px" }} id="outlined-basic" label="Alternate Contact Person" variant="outlined" defaultValue={"JHON DOE"} placeholder='JHON DOE' />
+
+                      <TextField className='alternantContactInput' id="outlined-basic" label="Alternate Contact Person" variant="outlined" defaultValue={"JHON DOE"} placeholder='JHON DOE' />
                       <img className='AlternateContactIcon' src={person} />
-                      <Box sx={{ marginLeft: "10px" }} mb={1} className="eventInputBox contactBoxItem home_card_input">
+
+                      <Box mb={1} className=" contactBoxItem home_card_input ">
                         <PhoneInput
                           placeholder="Enter phone number"
                           value={phoneNumber}

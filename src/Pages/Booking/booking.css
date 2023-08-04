@@ -471,6 +471,8 @@
   font-style: normal;
   font-weight: 400 !important;
   line-height: 99.7% !important; /* 14.955px */
+  display: flex;
+  align-items: center;
 }
 .InrText {
   color: #262525;
@@ -576,6 +578,14 @@
   margin-right: 0px;
   margin-bottom: 23px !important;
   margin-left: 0px !important;
+}
+.bookingPriceTextBox svg {
+  margin-left: 5px;
+  cursor: pointer;
+}
+.bookingTextHeader svg {
+  margin-left: 5px;
+  cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
   .bookingNav {

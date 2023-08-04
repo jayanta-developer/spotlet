@@ -45,6 +45,7 @@ export default function Home() {
   const [shareBox, setShareBox] = useState(false);
   const [propertyNameVisibility, setPropertyNameVisibility] = useState(false)
   const ref = useRef(null);
+
   const handleClickOutside = (event) => {
 
     if (ref.current && !ref.current.contains(event.target)

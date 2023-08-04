@@ -1,0 +1,63 @@
+.top_TabBox {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 89px;
+  margin-right: 10px;
+}
+.Print_Box {
+  width: 346px;
+  height: 288px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 65px;
+  right: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.Share_Box {
+  width: 345px;
+  height: 239px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 69px;
+  padding: 20px;
+  right: 20px;
+}
+.topWhite_Tab {
+  width: 71px;
+  height: 29px;
+  border-radius: 9px;
+  /* background: #fff; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 6px;
+}
+@media only screen and (min-width: 768px) {
+  .top_TabBox {
+    right: 20px;
+    margin-right: 0px;
+  }
+  .Print_Box {
+    width: 401px;
+    height: 375px;
+    top: 140px;
+    right: 22px;
+  }
+  .Share_Box {
+    width: 401px;
+    height: 263px;
+    top: 140px;
+    right: 24px;
+  }
+}

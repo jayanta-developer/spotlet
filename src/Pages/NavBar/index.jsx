@@ -13,6 +13,7 @@ import redHeart from "../../Assets/images/redHartLogo.png"
 
 import Avatar from "../../Assets/images/Avatarprofile.png"
 import DownArrow from "../../Assets/images/downArrow.svg"
+import { Link } from 'react-router-dom';
 
 
 export default function NavBar() {
@@ -21,7 +22,9 @@ export default function NavBar() {
     <>
       <Box className="navBar">
         <Box className="companyLogo">
-          <img className='pointer' src={companyLogo} />
+          <Link to="/">
+            <img className='pointer' src={companyLogo} />
+          </Link>
         </Box>
 
         <Box className="searchBar">

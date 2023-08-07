@@ -34,7 +34,9 @@ export default function Booking() {
       <Box className="bookingContainer">
         <Box className="bookingNav">
           <Box className="logBox">
-            <img className='pointer' src={companyLogo} />
+            <Link to={"/"}>
+              <img className='pointer' src={companyLogo} />
+            </Link>
           </Box>
           <Box className="CrossBox">
             <Link to={"/"}>

@@ -146,7 +146,7 @@ export default function BookingDetails() {
                     </Box>
                     <Box className="SpecialRequestsItem">
                       <img src={RightArrow} />
-                      <Typography>If for any reason you wish to cancel a service before your flight </Typography>
+                      <Typography>If for any reason you wish to cancel a service before your flight.</Typography>
                     </Box>
                   </Box>
                 </Box>

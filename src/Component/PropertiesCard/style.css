@@ -1,0 +1,26 @@
+.paginationButton.disabled {
+  cursor: auto;
+  opacity: 0.5;
+}
+.paginationButton.active {
+  color: #ffffff;
+  font-size: 15px;
+  background: #ea4335;
+}
+.paginationContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+.paginationContainer span {
+  width: 29px;
+  height: 29px;
+  margin: 0px 10px;
+  cursor: pointer;
+  border: 1px solid #ea4335;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

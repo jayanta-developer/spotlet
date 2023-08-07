@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Booking from "./Pages/Booking";
 import BookingDetails from "./Pages/BookingDetails";
+import Favorites from "./Pages/Favorites";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/booking/details" element={<BookingDetails />} />
+        <Route path="/favorites" element={<Favorites />} />
       </Routes>
     </>
   );

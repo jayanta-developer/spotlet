@@ -68,7 +68,7 @@ export default function BookingDetails() {
                   <Typography className='poppins'>Lonavala, Maharashtra, India</Typography>
                 </Box>
                 <Divider className='divider' sx={{ margin: "0px 10px" }} orientation="vertical" flexItem />
-                <Box className="cityLocationTextBox">
+                <Box className="cityLocationTextBox cityLocationTextBox2">
                   <Box sx={{ marginRight: "10px" }} className="startLogos">
                     <img src={starIcon} />
                     <img src={starIcon} />

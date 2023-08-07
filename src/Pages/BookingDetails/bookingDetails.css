@@ -7,38 +7,40 @@
   align-items: center;
 }
 .coverBox {
-  width: 85%;
-  height: 743.255px;
+  width: 95%;
+  height: 429px;
   flex-shrink: 0;
   border-radius: 10px;
-  margin-top: 96px;
+  margin-top: 68px;
   padding-top: 30px;
   max-width: 1302px;
-  min-width: 750px;
+  min-width: 50px;
 }
 .BookingDetailContinent {
-  width: 85%;
+  width: 95%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .MapBox {
-  width: 85%;
+  width: 95%;
   height: 579px;
   /* max-width: 1302px; */
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
-  margin-bottom: 30px;
+  margin-bottom: 52px;
   max-width: 1302px;
 }
 .lastContentBox {
-  width: 85%;
-  height: 276px;
+  width: 95%;
+  height: 650px;
+  align-items: center;
   margin-bottom: 30px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
 .backButton {
@@ -57,8 +59,8 @@
 .coverPhotoBox {
   border-radius: 15px;
   overflow: hidden;
-  height: 70%;
-  margin-top: 30px;
+  height: 47%;
+  margin-top: 10px;
 }
 .coverPhoto {
   width: 100%;
@@ -68,20 +70,23 @@
   width: 100%;
   height: 100%;
 }
+.cityLocationTextBox2 {
+  margin-left: 43px;
+}
 
 .DetailBoxCardHeader {
   height: 65px;
   display: flex;
   align-items: center;
-  padding-left: 45px;
+  padding-left: 15px;
   border-bottom: 1px solid #e8e8e8;
 }
 
 .BookingDetailBox {
   margin: 0px 15px;
-  width: 50%;
+  width: 100%;
   max-width: 635px;
-  min-width: 584px;
+  min-width: 350px;
 }
 .BookingDetailBoxCard {
   width: 100%;
@@ -91,43 +96,43 @@
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
 }
 .lastBookingDetailBoxCard {
-  width: 50%;
+  width: 100%;
   border-radius: 10px;
   margin-bottom: 30px;
   background: #fff;
   max-width: 635px;
-  min-width: 584px;
+  min-width: 350px;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
 }
 /* Cards height */
 .VisitSummary {
-  height: 552px;
+  height: auto;
 }
 .UserDetails {
-  height: 322px;
+  height: auto;
 }
 .RejectedSummary {
-  height: 426px;
+  height: auto;
 }
 .BookingSummary {
-  height: 448px;
+  height: auto;
 }
 .EventSummary {
-  height: 317px;
+  height: auto;
 }
 .Paymentsummary {
-  height: 330px;
+  height: auto;
 }
 .HostDetails {
-  height: 175px;
+  height: auto;
 }
 .RefundSummary {
-  height: 276px;
-  margin: 0 15px;
+  height: auto;
+  margin-bottom: 30px;
 }
 .CancellationSummary {
-  height: 276px;
-  margin: 0 15px;
+  height: auto;
+  margin-bottom: 30px;
 }
 
 .DetailBoxCardHeader p {
@@ -146,25 +151,25 @@
 }
 /* Cards padding */
 .VisitSummaryContent {
-  padding: 45px;
+  padding: 15px;
 }
 .UserDetailsContent {
-  padding: 21px 45px;
+  padding: 21px 15px;
 }
 .RejectedSummaryContent {
-  padding: 21px 45px;
+  padding: 21px 15px;
 }
 .BookingSummaryContent {
-  padding: 45px 45px;
+  padding: 45px 15px;
 }
 .EventSummaryContent {
-  padding: 21px 45px;
+  padding: 21px 15px;
 }
 .PaymentSummaryContent {
-  padding: 21px 45px;
+  padding: 21px 15px;
 }
 .HostDetailsContent {
-  padding: 21px 45px;
+  padding: 21px 15px;
 }
 .MapBoxContent {
   padding: 21px 45px;
@@ -172,10 +177,10 @@
   /* height: 100%; */
 }
 .CancellationSummaryContent {
-  padding: 21px 30px 21px 45px;
+  padding: 21px 30px 21px 15px;
 }
 .RefundSummaryContent {
-  padding: 21px 45px;
+  padding: 21px 15px;
 }
 .DetailsCardRowBox {
   display: flex;
@@ -238,6 +243,7 @@
   margin-bottom: 20px !important;
 }
 .SpecialRequestsItem {
+  margin-bottom: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -268,7 +274,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 45px;
+  padding-left: 15px;
 }
 .MapHeaderText {
   color: #000;
@@ -298,4 +304,121 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .coverBox {
+    width: 85%;
+    height: 743.255px;
+    min-width: 750px;
+    margin-top: 96px;
+  }
+  .coverPhotoBox {
+    height: 70%;
+    margin-top: 30px;
+  }
+  .cityLocationTextBox2 {
+    margin-left: 0px;
+  }
+  .venueLocation {
+  }
+  .BookingDetailContinent {
+    width: 85%;
+    flex-direction: row;
+  }
+  /* Cards padding */
+  .VisitSummaryContent {
+    padding: 45px;
+  }
+  .UserDetailsContent {
+    padding: 21px 45px;
+  }
+  .RejectedSummaryContent {
+    padding: 21px 45px;
+  }
+  .BookingSummaryContent {
+    padding: 45px 45px;
+  }
+  .EventSummaryContent {
+    padding: 21px 45px;
+  }
+  .PaymentSummaryContent {
+    padding: 21px 45px;
+  }
+  .HostDetailsContent {
+    padding: 21px 45px;
+  }
+  .MapBoxContent {
+    padding: 21px 45px;
+    align-items: center;
+    /* height: 100%; */
+  }
+  .CancellationSummaryContent {
+    padding: 21px 30px 21px 45px;
+  }
+  .RefundSummaryContent {
+    padding: 21px 45px;
+  }
+
+  /* card height */
+
+  .VisitSummary {
+    height: 552px;
+  }
+  .UserDetails {
+    height: 322px;
+  }
+  .RejectedSummary {
+    height: 426px;
+  }
+  .BookingSummary {
+    height: 448px;
+  }
+  .EventSummary {
+    height: 317px;
+  }
+  .Paymentsummary {
+    height: 330px;
+  }
+  .HostDetails {
+    height: 175px;
+  }
+  .RefundSummary {
+    height: 276px;
+    margin: 0 15px;
+  }
+  .CancellationSummary {
+    height: 276px;
+    margin: 0 15px;
+  }
+
+  .BookingDetailBox {
+    width: 50%;
+    min-width: 584px;
+  }
+  .DetailBoxCardHeader {
+    padding-left: 45px;
+  }
+  .SpecialRequestsItem {
+    margin-bottom: 0px;
+  }
+  .lastContentBox {
+    width: 85%;
+    flex-direction: row;
+    height: 276px;
+  }
+  .lastBookingDetailBoxCard {
+    width: 50%;
+    min-width: 584px;
+  }
+  .MapBox {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+  .MapHeader {
+    padding-left: 45px;
+  }
+  .CancellationSummaryContent {
+    padding: 21px 30px 21px 45px;
+  }
+  .RefundSummaryContent {
+    padding: 21px 45px;
+  }
 }

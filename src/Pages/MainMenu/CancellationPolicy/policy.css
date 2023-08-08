@@ -1,3 +1,7 @@
+.cancelBox {
+  width: 100%;
+  position: relative;
+}
 .cancellationBox {
   width: 100%;
   height: auto;
@@ -42,6 +46,26 @@
 .bottomBorder {
   border-bottom: 1px solid #ececec;
 }
+.cancelPopUpBox {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: #fff;
+  z-index: 9;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cancelRedCrossMargin {
+  margin-left: 49%;
+}
+.cancelRedCrossMargin {
+  margin-left: 25%;
+}
+.CancelBoxScroll {
+  overflow: scroll;
+  height: 590px;
+  overflow-x: hidden;
+}
 @media only screen and (min-width: 768px) {
   .cancellationBox {
     width: 683px;
@@ -49,5 +73,8 @@
   .cancellationOpenBox {
     width: 800px;
     padding: 16px 50px;
+  }
+  .cancelRedCrossMargin {
+    margin-left: 49%;
   }
 }

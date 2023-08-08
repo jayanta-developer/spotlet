@@ -117,8 +117,8 @@
   border-radius: 10px;
   border: 1px solid #eee;
   background: #fff;
-  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
   flex-shrink: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-bottom: 20px;
   padding: 30px 33px;
   transition: width 0.5s;
@@ -209,8 +209,8 @@
   margin-bottom: 25px;
 }
 .ratingLogo {
-  width: 72px;
-  height: 72px;
+  width: 84px;
+  height: 69px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,22 +221,22 @@
 .ratingLogoBorder1 {
   position: absolute;
   left: -8px;
-  bottom: 0px;
+  bottom: -3px;
 }
 .ratingLogoBorder15 {
   position: absolute;
   left: -8px;
-  bottom: -9px;
+  bottom: -13px;
 }
 .ratingLogoBorder2 {
   position: absolute;
   left: -8px;
-  bottom: -31px;
+  bottom: -34px;
 }
 .ratingLogoBorder25 {
   position: absolute;
   left: -8px;
-  bottom: -41px;
+  bottom: -45px;
 }
 .ratingLogoBorder3 {
   position: absolute;
@@ -297,7 +297,7 @@
 .star_logo_box {
   display: flex;
   flex-direction: row;
-  margin-left: 92px;
+  margin-left: 2px;
 }
 .star_logo_box img {
   width: 15px;
@@ -355,7 +355,7 @@
   flex-direction: row;
 }
 .search_Field div {
-  width: 332px;
+  width: 306px;
 }
 .search_Input input {
   height: 1px !important;
@@ -368,6 +368,9 @@
 }
 .display {
   display: none;
+}
+.Name_Box_text {
+  width: 145px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -386,5 +389,8 @@
   }
   .display {
     display: block;
+  }
+  .reviewOpenContainer {
+    width: 683px;
   }
 }

@@ -24,6 +24,7 @@ import RedCross from "../../Assets/images/RedCross.svg";
 
 
 
+
 //component
 import Features from '../MainMenu/Features';
 import Dont from '../MainMenu/Do&Dont';
@@ -331,17 +332,8 @@ export default function Overview() {
                   </Box>
                 </Link>
               </Box>
-
             </Box>
-
           </Box>
-
-
-
-
-
-
-
 
 
 
@@ -354,22 +346,40 @@ export default function Overview() {
               <Typography className='descriptionHeaderText'>Description of the property</Typography>
             </Box>
 
-            <Box sx={{ height: seeDescription ? "auto" : "155px" }} className="descriptionTextBox">
-              {
-                seeDescription ?
-                  <Typography className='descriptionText'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry s standard dummy text ever since the 1500s, when an unknown printer took a & scrambled it to make a type specimen book. It has survived not only five centuries, galley of type. ake a type specimen book. It has survived Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry s standard dummy text ever since the 1500s, when an unknown printer took a & scrambled it to make a type specimen book. It has survived not only five centuries, galley of type. ake a type specimen book. It has survived Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry s standard dummy text ever since the 1500s, when an unknown printer took a & scrambled it to make a type specimen book. It has survived not only five centuries.</Typography>
-                  :
-                  <Typography className='descriptionText'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry s standard dummy text ever since the 1500s, when an unknown printer took a & scrambled it to make a type specimen book. It has survived <samp className='descriptionGrayText'>not only five centuries, galley of type. ake a type specimen book. It has survived Lorem Ipsum is simply dummy text of the printing and...</samp> </Typography>
-              }
+            <Box className="descriptionTextBox">
+              <Typography className='descriptionText'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry s standard dummy text ever since the 1500s, when an unknown printer took a & scrambled it to make a type specimen book. It has survived <samp className='descriptionGrayText'>not only five centuries, galley of type. ake a type specimen book. It has survived Lorem Ipsum is simply dummy text of the printing and...</samp> </Typography>
             </Box>
+
             <Box mb={1.5} className="seeMoreBtn">
-              <Typography onClick={() => setSeeDescription(!seeDescription)} pl={2} className='seeMoreText'>
-                {seeDescription ? "+ SEE LESS" : "+ SEE MORE"}
+              <Typography onClick={() => setSeeDescription(true)} pl={2} className='seeMoreText'>
+                + SEE MORE
               </Typography>
+            </Box>
+
+            {/* description PopUp */}
+            <Box sx={{ display: seeDescription ? "block" : "none" }} className="DescriptionPopUp">
+
+              <Box className="DescriptionHeader">
+                <Box ml={2} mr={2} className="descriptionIconBox">
+                  <img style={{ width: "100%" }} src={DiscriptionIcon} />
+                </Box>
+                <Typography className='descriptionHeaderText'>Description of the property</Typography>
+
+                <Box className="descriptionIconBox descriptionRedCrossMargin">
+                  <img onClick={() => setSeeDescription(false)} style={{ width: "100%", cursor: "pointer" }} src={RedCross} />
+                </Box>
+              </Box>
+
+              <Box pb={2} className="descriptionPopUpTextBox">
+                <Typography className='descriptionText'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry s standard dummy text ever since the 1500s, when an unknown printer took a & scrambled it to make a type specimen book. It has survived not only five centuries, galley of type. ake a type specimen book. It has survived Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry s standard dummy text ever since the 1500s, when an unknown printer took a & scrambled it to make a type specimen book. It has survived not only five centuries, galley of type. ake a type specimen book. It has survived Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry s standard dummy text ever since the 1500s, when an unknown printer took a & scrambled it to make a type specimen book. It has survived not only five centuries.</Typography>
+              </Box>
             </Box>
           </Box>
 
-          <Box ref={Amenities} className={seeAmenities ? "AmenitiesOpen" : "Amenities mainItemBox"}>
+
+
+
+          <Box ref={Amenities} className="Amenities mainItemBox">
 
             <Box className="amenitiesHeader">
               <Box ml={2} mr={2} className="AmenitiesIconBox">
@@ -378,7 +388,7 @@ export default function Overview() {
               <Typography className='descriptionHeaderText'>Amenities</Typography>
             </Box>
 
-            <Box className={seeAmenities ? "amenitiesTextBoxOpen" : "amenitiesTextBox"}>
+            <Box className="amenitiesTextBox">
 
               <Box className="amenitiesTextArya">
                 <Box className="amenitiesText">
@@ -439,8 +449,31 @@ export default function Overview() {
                   </Box>
                 </Box>
               </Box>
+            </Box>
+            <Box className="seeMoreBtn AmenitiesSeeMore">
+              <Typography
+                onClick={() => setSeeAmenities(true)}
+                pl={2}
+                className='seeMoreText amenitiesSeeMoreBtn'>+ SEE MORE</Typography>
+            </Box>
+          </Box>
 
-              <Box sx={{ display: seeAmenities ? "flex" : "none" }} className="amenitiesTextArya">
+          {/* Amenities Popup box */}
+          <Box sx={{ display: seeAmenities ? "block" : "none" }} className="amenitiesPopupBox">
+
+            <Box className="amenitiesHeader">
+              <Box ml={2} mr={2} className="AmenitiesIconBox">
+                <img style={{ width: "100%" }} src={animetor} />
+              </Box>
+              <Typography className='descriptionHeaderText'>Amenities</Typography>
+              <Box className="descriptionIconBox AmenitiesRedCrossMargin">
+                <img onClick={() => setSeeAmenities(false)} style={{ width: "100%", cursor: "pointer" }} src={RedCross} />
+              </Box>
+            </Box>
+
+            <Box className="amenitiesTextAryaBox">
+
+              <Box className="amenitiesTextArya">
                 <Box className="amenitiesText">
                   <Box className="amenitiesItem">
                     <img src={rightArrow} />
@@ -522,12 +555,88 @@ export default function Overview() {
                   </Box>
                 </Box>
               </Box>
-            </Box>
-            <Box mt={2} className="seeMoreBtn AmenitiesSeeMore">
-              <Typography
-                onClick={() => setSeeAmenities(!seeAmenities)}
-                pl={2}
-                className='seeMoreText amenitiesSeeMoreBtn'>{seeAmenities ? "+ SEE LESS" : "+ SEE MORE"}</Typography>
+              <Box className="amenitiesTextArya">
+                <Box className="amenitiesText">
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Kitchen</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Bathrooms </Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Sink </Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Large table</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Sound System</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Wifi</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Air Conditioning</Typography>
+                  </Box>
+                </Box>
+
+                <Box className="amenitiesText">
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Tableware Heat</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Heat</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Conference Phone</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Stage</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Green Screen</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Grill</Typography>
+                  </Box>
+                </Box>
+
+                <Box className="amenitiesText amenitiesTextVisibility ">
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Whiteboard</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Photography Lighting</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Power Tie-in</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Projector and Screen / TV</Typography>
+                  </Box>
+                  <Box className="amenitiesItem">
+                    <img src={rightArrow} />
+                    <Typography ml={1}>Private Entrance</Typography>
+                  </Box>
+                </Box>
+              </Box>
             </Box>
           </Box>
 

@@ -57,8 +57,31 @@
   flex-direction: row;
   padding-bottom: 5px;
 }
+.featuresBox {
+  position: relative;
+  width: 100%;
+}
+
+.featuresPopupBox {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  z-index: 9;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.featuresRedCrossMargin {
+  margin-left: 47%;
+}
+
 @media only screen and (min-width: 768px) {
   .mainItemBox {
     width: 683px;
+  }
+  .featuresRedCrossMargin {
+    margin-left: 66%;
   }
 }

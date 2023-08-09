@@ -85,7 +85,286 @@ export default function BookingDetails() {
 
 
         <Box className="BookingDetailContinent">
-          <Box className="BookingDetailBox">
+
+          <Box className="visitSummary BookingDetailBoxCard">
+            <Box className="DetailBoxCardHeader">
+              <Typography>Visit Summary</Typography>
+            </Box>
+            <Box className="DetailContent VisitSummaryContent">
+
+              <Box className="DetailsCardRowBox">
+                <Box className="labelBox">
+                  <Typography>Visitor Name</Typography>
+                  <Typography>Visitor Contact number</Typography>
+                  <Typography>Visit Date</Typography>
+                  <Typography>Visit Time</Typography>
+                </Box>
+                <Box className="dataBox">
+                  <Typography className='fontWeight'>Jhon Doe</Typography>
+                  <Typography className='fontWeight'>123-456-7890</Typography>
+                  <Typography className='fontWeight'>24/03/2023</Typography>
+                  <Typography className='fontWeight'>09:42 pm</Typography>
+                </Box>
+              </Box>
+              <Box className="DetailsCardRowBox">
+                <Box className="labelBox">
+                  <Typography>Alternate contact name</Typography>
+                  <Typography>Alternate contact number</Typography>
+                  <Typography>Number of persons visiting</Typography>
+                  <Typography>Visit Status</Typography>
+                </Box>
+                <Box className="dataBox">
+                  <Typography className='fontWeight'>Stiven Doe</Typography>
+                  <Typography className='fontWeight'>123-456-7890</Typography>
+                  <Typography className='fontWeight'>20</Typography>
+                  <Typography className='fontWeight GreenText'>Complete</Typography>
+                </Box>
+              </Box>
+              <Box className="DetailsCardRowBox specialTopMargin">
+                <Typography className="SpecialRequestsText">Special requests:</Typography>
+                <Box className="SpecialRequestsBox">
+                  <Box className="SpecialRequestsItem">
+                    <img src={RightArrow} />
+                    <Typography>If for any reason you wish to cancel a service before your flight </Typography>
+                  </Box>
+                  <Box className="SpecialRequestsItem">
+                    <img src={RightArrow} />
+                    <Typography>wish to cancel a service before your flight </Typography>
+                  </Box>
+                  <Box className="SpecialRequestsItem">
+                    <img src={RightArrow} />
+                    <Typography>If for any reason you wish to cancel a service before your flight.</Typography>
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
+
+          </Box>
+
+          <Box className="visitSummary BookingDetailBoxCard">
+            <Box className="DetailBoxCardHeader">
+              <Typography>Visit Summary</Typography>
+            </Box>
+            <Box className="DetailContent VisitSummaryContent">
+
+              <Box className="DetailsCardRowBox">
+                <Box className="labelBox">
+                  <Typography className='e6px'>Booking ID</Typography>
+                  <Typography>Location</Typography>
+                  <Typography>Booking Requested Date</Typography>
+                  <Typography>Booking Amount</Typography>
+                </Box>
+                <Box className="dataBox">
+                  <Typography className='fontWeight e6px'>BDS458IO568</Typography>
+                  <Typography className='fontWeight'>Lonavala, Maharashtra, India</Typography>
+                  <Typography className='fontWeight'>24/03/2020    09:42</Typography>
+                  <Typography className='fontWeight RedText'>INR 45000</Typography>
+                </Box>
+              </Box>
+              <Box className="DetailsCardRowBox">
+                <Box className="labelBox">
+                  <Typography className='e6px' >Event Dates and timings</Typography>
+                  <Typography>Booking approved</Typography>
+                  <Typography>Booking Rejected Date</Typography>
+                  <Typography>Booking Status</Typography>
+                </Box>
+                <Box className="dataBox dataBoxAlign">
+                  <Box className="eventDateBox">
+                    <Typography className='fontWeight'>03/04/2023   09.00am - 05.30pm</Typography>
+                    <Typography className='fontWeight'>03/04/2023   09.00am - 05.30pm</Typography>
+                    <Typography className='fontWeight'>03/04/2023   09.00am - 05.30pm</Typography>
+                  </Box>
+                  <Typography className='fontWeight'>03/04/2023     05.30pm</Typography>
+                  <Typography className='fontWeight'>03/04/2023     05.30pm</Typography>
+                  <Typography className='fontWeight GreenText'>Done</Typography>
+                </Box>
+              </Box>
+
+            </Box>
+
+          </Box>
+
+
+
+          <Box className="lastContentBox">
+            <Box className="EventSummary lastBookingDetailBoxCard">
+              <Box className="DetailBoxCardHeader">
+                <Typography>Event Summary</Typography>
+              </Box>
+              <Box className="DetailContent CancellationSummaryContent">
+                <Box className="DetailsCardRowBox">
+                  <Box className="labelBox">
+                    <Typography>Event and activity type</Typography>
+                    <Typography>No of Attendees</Typography>
+                  </Box>
+                  <Box className="dataBox">
+                    <Typography className='fontWeight'>Film Shooting </Typography>
+                    <Typography className='fontWeight RedText'>100</Typography>
+                  </Box>
+                </Box>
+                <Box className="DetailsCardRowBox">
+                  <Box className="labelBox">
+                    <Typography>Date & Time</Typography>
+                  </Box>
+                  <Box className="dataBox">
+                    <Typography className='fontWeight'>24/03/2020    09:42 Pm</Typography>
+                  </Box>
+                </Box>
+                <Box className="AboutProjectTextBox">
+                  <Box className="AboutProjectHeading">
+                    <Typography>About the project</Typography>
+                  </Box>
+                  <Box className="AboutProjectMainTextBox">
+                    <Typography mb={2}>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                      The majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,  hidden in the middle of text. </Typography>
+                    <Typography>The majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, hidden in the middle of text.</Typography>
+                  </Box>
+                </Box>
+              </Box>
+
+            </Box>
+
+            <Box className="UserSummary lastBookingDetailBoxCard">
+              <Box className="DetailBoxCardHeader">
+                <Typography>User Details</Typography>
+              </Box>
+              <Box className="DetailContent RefundSummaryContent">
+
+                <Box className="DetailsCardRowBox">
+                  <Box className="labelBox">
+                    <Typography>Name of the Project</Typography>
+                    <Typography>Booking Location as a</Typography>
+                  </Box>
+                  <Box className="dataBox">
+                    <Typography className='fontWeight'>Coworking Space: Serendipity <br /> Labs</Typography>
+                    <Typography className='fontWeight'>Individual Name</Typography>
+                  </Box>
+                </Box>
+                <Box className="DetailsCardRowBox">
+                  <Box className="labelBox">
+                    <Typography>Contact Person Named</Typography>
+                    <Typography>Contact Number</Typography>
+                  </Box>
+                  <Box className="dataBox">
+                    <Typography className='fontWeight'>JHON STIVEN</Typography>
+                    <Typography className='fontWeight GreenText'>123-456-7890</Typography>
+                  </Box>
+                </Box>
+                <Box className="DetailsCardRowBox">
+                  <Box className="labelBox">
+                    <Typography>Email Address</Typography>
+                  </Box>
+                  <Box className="dataBox">
+                    <Typography className='fontWeight RedText'>info@spotlet.com</Typography>
+                  </Box>
+                </Box>
+
+              </Box>
+            </Box>
+          </Box>
+
+          <Box className="visitSummary BookingDetailBoxCard">
+            <Box className="DetailBoxCardHeader">
+              <Typography>Rejected Summary</Typography>
+            </Box>
+            <Box className="DetailContent RejectedSummaryContent">
+
+              <Box className="DetailsCardRowBox">
+                <Box className="labelBox">
+                  <Typography className='e6px'>Rejected On</Typography>
+                  <Typography>Rejected Reason</Typography>
+                  <Typography>Notes</Typography>
+                </Box>
+                <Box className="dataBox">
+                  <Typography className='fontWeight e6px'>24/03/2023       08:45pm</Typography>
+                  <Typography className='fontWeight'>There are many variations of passages of </Typography>
+                  <Typography className='fontWeight'>There are many variations of passages of Lorem Ipsum available, </Typography>
+                </Box>
+              </Box>
+
+            </Box>
+
+          </Box>
+
+
+
+          <Box className="lastContentBox">
+            <Box className="EventSummary lastBookingDetailBoxCard">
+              <Box className="DetailBoxCardHeader">
+                <Typography>Payment summary</Typography>
+              </Box>
+              <Box className="DetailContent CancellationSummaryContent">
+                <Box className="DetailsCardRowBox">
+                  <Box className="labelBox">
+                    <Typography>Paid Date & Time</Typography>
+                    <Typography>Paid amount</Typography>
+                  </Box>
+                  <Box className="dataBox">
+                    <Typography className='fontWeight'>24/03/2020    09:42pm</Typography>
+                    <Typography className='fontWeight RedText'>INR 45000 </Typography>
+                  </Box>
+                </Box>
+                <Box className="DetailsCardRowBox">
+                  <Box className="labelBox">
+                    <Typography>Payment method</Typography>
+                    <Typography>Coupon used</Typography>
+                  </Box>
+                  <Box className="dataBox">
+                    <Box sx={{ display: "flex", flexDirection: "row" }}>
+                      <Typography className='fontWeight'>Card</Typography>
+                      <img style={{ width: "37px", height: "27px" }} src={visaIcon} />
+                    </Box>
+                    <Typography className='fontWeight YellowText'>INR45GFRT0025PIUYT</Typography>
+                  </Box>
+                </Box>
+                <Box className="DetailsCardRowBox">
+                  <Box className="labelBox">
+                    <Typography>Payment status</Typography>
+                  </Box>
+                  <Box className="dataBox">
+                    <Typography className='fontWeight GreenText'>Completed</Typography>
+                  </Box>
+                </Box>
+              </Box>
+
+            </Box>
+
+            <Box className="HostSummary lastBookingDetailBoxCard">
+              <Box className="DetailBoxCardHeader">
+                <Typography>Host Details</Typography>
+              </Box>
+              <Box className="DetailContent RefundSummaryContent">
+
+                <Box className="DetailsCardRowBox">
+                  <Box className="labelBox">
+                    <Typography>Host Name</Typography>
+                    <Typography>Host contact number</Typography>
+                  </Box>
+                  <Box className="dataBox">
+                    <Typography className='fontWeight'>JHON STIVEN DOE</Typography>
+                    <Typography className='fontWeight GreenText'>+123 456 7890</Typography>
+                  </Box>
+                </Box>
+                <Box className="DetailsCardRowBox">
+                  <Box className="labelBox">
+                    <Typography>Email Address</Typography>
+                  </Box>
+                  <Box className="dataBox">
+                    <Typography className='fontWeight RedText'>info@spotlet.com</Typography>
+                  </Box>
+                </Box>
+
+              </Box>
+            </Box>
+          </Box>
+
+
+
+
+
+
+
+          {/* <Box className="BookingDetailBox">
 
             <Box className="VisitSummary BookingDetailBoxCard">
               <Box className="DetailBoxCardHeader">
@@ -221,10 +500,10 @@ export default function BookingDetails() {
                 </Box>
               </Box>
             </Box>
-          </Box>
+          </Box> */}
 
 
-          <Box className="BookingDetailBox">
+          {/* <Box className="BookingDetailBox">
 
             <Box className="BookingSummary BookingDetailBoxCard">
               <Box className="DetailBoxCardHeader">
@@ -369,7 +648,7 @@ export default function BookingDetails() {
 
             </Box>
 
-          </Box>
+          </Box> */}
 
         </Box>
         <Box className="MapBox">

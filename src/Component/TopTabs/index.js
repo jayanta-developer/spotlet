@@ -15,7 +15,13 @@ import MessageIcon from "../../Assets/images/messagesIcon.svg";
 import WhatsAppIcon from "../../Assets/images/whatsappIcon.svg";
 import FacebookIcon from "../../Assets/images/facebookIcon.svg";
 
-export default function TopTabs() {
+export default function TopTabs({
+  printDisplay,
+  favoriteDisplay,
+  shareDisplay,
+  absolute,
+}) {
+  console.log(favoriteDisplay);
   const ref = useRef(null);
   const [printBox, setPrintBox] = useState(false);
   const [Favorite, setFavorite] = useState(false);
@@ -60,7 +66,10 @@ export default function TopTabs() {
   return (
     <>
       <Box className="topTabs">
-        <Box className="top_TabBox">
+        <Box
+          sx={{ position: absolute ? "absolute" : "initial" }}
+          className="top_TabBox"
+        >
           <Box
             onClick={() => setPrintBox(!printBox)}
             id="Print"
@@ -117,9 +126,13 @@ export default function TopTabs() {
             </Typography>
           </Box>
 
-          {/* <Box
+          <Box
             onClick={() => setFavorite(!Favorite)}
-            sx={{ width: "90px", background: "#fff" }}
+            sx={{
+              width: "90px",
+              background: "#fff",
+              display: favoriteDisplay ? "flex" : "none",
+            }}
             className="topWhiteTab pointer"
           >
             {Favorite ? (
@@ -136,7 +149,7 @@ export default function TopTabs() {
               />
             )}
             <Typography>Favorite</Typography>
-          </Box> */}
+          </Box>
 
           <Box
             onClick={() => setShareBox(!shareBox)}
@@ -249,65 +262,12 @@ export default function TopTabs() {
           sx={{ display: shareBox ? "block" : "none" }}
           className="Share_Box"
         >
-          <Box className="shareBoxHeader">
+          <Box ml={1} className="shareBoxHeader">
             <Typography className="shareBoxHeaderText">
               Share this location
             </Typography>
             <Box className="shareSubHeader">
               <Typography className="shareId">#SPOTL83712</Typography>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="4"
-                viewBox="0 0 8 4"
-                fill="none"
-              >
-                <circle cx="7" cy="2" r="2" fill="#525151" />
-              </svg>
-
-              <img src={Star1} />
-              <Typography className="shareBoxSubHeaderText">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="4"
-                  viewBox="0 0 8 4"
-                  fill="none"
-                >
-                  <circle cx="7" cy="2" r="2" fill="#525151" />
-                </svg>
-                4.0
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="4"
-                  viewBox="0 0 8 4"
-                  fill="none"
-                >
-                  <circle cx="7" cy="2" r="2" fill="#525151" />
-                </svg>
-                Spotle
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="4"
-                  viewBox="0 0 8 4"
-                  fill="none"
-                >
-                  <circle cx="7" cy="2" r="2" fill="#525151" />
-                </svg>
-                Verified
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="4"
-                  viewBox="0 0 8 4"
-                  fill="none"
-                >
-                  <circle cx="7" cy="2" r="2" fill="#525151" />
-                </svg>
-                Exclusive
-              </Typography>
             </Box>
           </Box>
           <Box className="shareItemBox">

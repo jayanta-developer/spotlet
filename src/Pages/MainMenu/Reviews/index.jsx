@@ -99,7 +99,6 @@ export default function Reviews({ Review }) {
     <>
       <Box ref={Review}
         className="reviewContainer"
-        sx={{ display: review ? "none" : "block" }}
       >
         <Box className="reviewHeader">
           <Box ml={2} mr={2} className="descriptionIconBox">

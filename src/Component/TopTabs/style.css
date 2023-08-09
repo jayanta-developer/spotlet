@@ -1,7 +1,6 @@
 .top_TabBox {
   display: flex;
   flex-direction: row;
-  position: absolute;
   top: 63px;
   margin-right: 10px;
 }

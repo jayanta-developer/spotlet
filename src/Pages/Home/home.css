@@ -9,7 +9,7 @@
   position: relative;
 }
 .coverGallerySlider {
-  display: Block;
+  display: block;
 }
 .coverGallery {
   display: none;
@@ -301,7 +301,7 @@
 
 .venueLocation {
   width: 94%;
-  height: 125px;
+  height: 150px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -380,7 +380,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 173px;
+  bottom: 194px;
   margin-right: 17px;
   cursor: pointer;
 }
@@ -416,12 +416,11 @@
     overflow: hidden;
     border-radius: 10px;
   }
-  .galleryImage {
-    width: 100%;
-  }
-
   .coverGallerySlider {
     display: none;
+  }
+  .galleryImage {
+    width: 100%;
   }
   .topTabs {
     width: auto;

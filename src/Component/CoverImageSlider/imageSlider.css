@@ -5,12 +5,13 @@
 
 .image-slider {
   position: relative;
-  max-width: 800px;
+  max-width: 1319px;
   margin: 0 auto;
 }
 
 .slider-container {
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .slides {
@@ -24,7 +25,8 @@
 }
 
 .thumbnail-container {
-  display: none;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .thumbnails img {
@@ -72,8 +74,29 @@
 }
 @media only screen and (min-width: 768px) {
   .thumbnail-container {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
+    margin-top: 23px;
+  }
+
+  .prev-button {
+    left: -65px;
+    width: 40px;
+  }
+  .prev-button img {
+    width: 100%;
+  }
+  .next-button img {
+    width: 100%;
+  }
+  .next-button {
+    width: 40px;
+    right: -61px;
+  }
+  .slides {
+    align-items: center;
+    height: 600px;
+  }
+  .thumbnails img {
+    width: 231px;
+    height: 143px;
   }
 }

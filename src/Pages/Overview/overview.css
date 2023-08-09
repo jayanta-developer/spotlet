@@ -249,19 +249,26 @@
 }
 
 .amenitiesPopupBox {
-  width: 95%;
+  width: 100%;
   height: auto;
-  z-index: 9999;
+  z-index: 9;
   position: absolute;
-  top: 1271px;
+  top: 1147px;
   background: #fff;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
 }
 .amenitiesTextAryaBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.amenitiesScrollBox {
+  overflow: scroll;
+  width: 100%;
+  height: 515px;
+  overflow-x: hidden;
 }
 
 .DisplayBookingRequest {
@@ -491,6 +498,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .totalPriseBox {
@@ -575,9 +583,9 @@
   /* margin-bottom: 10px; */
   padding: 20px;
 }
-.amenitiesTextVisibility {
+/* .amenitiesTextVisibility {
   display: none;
-}
+} */
 .bookingPaymentPage {
   display: block;
 }
@@ -652,6 +660,9 @@
 }
 .hostPosition {
   top: 430px;
+}
+.leftMargin {
+  margin-left: 0px;
 }
 @media only screen and (min-width: 768px) {
   .mainBox {
@@ -770,8 +781,13 @@
   .amenitiesPopupBox {
     width: 682px;
     top: 629px;
+    height: 515px;
+    overflow: hidden;
   }
   .AmenitiesRedCrossMargin {
     margin-left: 63%;
+  }
+  .leftMargin {
+    margin-left: 124px;
   }
 }

@@ -2,6 +2,12 @@ import React from "react";
 import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
 
 class MapContainer extends React.Component {
+  handleGoMapClick = () => {
+    const { latitude, longitude } = this.props;
+    const mapUrl = `https://www.google.com/maps/place/${latitude},${longitude}`;
+    window.open(mapUrl, "_blank");
+  };
+
   render() {
     const { latitude, longitude } = this.props;
 
@@ -11,14 +17,19 @@ class MapContainer extends React.Component {
     };
 
     return (
-      <Map
-        google={this.props.google}
-        zoom={15}
-        style={mapStyles}
-        initialCenter={{ lat: latitude, lng: longitude }}
-      >
-        <Marker position={{ lat: latitude, lng: longitude }} />
-      </Map>
+      <>
+        <div className="goMapButton" onClick={this.handleGoMapClick}>
+          Open Maps
+        </div>
+        <Map
+          google={this.props.google}
+          zoom={15}
+          style={mapStyles}
+          initialCenter={{ lat: latitude, lng: longitude }}
+        >
+          <Marker position={{ lat: latitude, lng: longitude }} />
+        </Map>
+      </>
     );
   }
 }

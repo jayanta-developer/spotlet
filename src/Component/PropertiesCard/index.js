@@ -14,7 +14,8 @@ export const propertiesCard = (
   fBoxHText,
   fBoxSText,
   locationHeader,
-  address
+  address,
+  iconArray
 ) => {
   return (
     <Box className="propertiesCard">
@@ -29,7 +30,10 @@ export const propertiesCard = (
         <img src={borderHeartLogo} />
       </Box>
       <Box className="logo_Box">
-        <img style={{ width: "25px", height: "25px" }} src={FilmIcon} />
+        {iconArray?.map((el) => (
+          <img className="propertyCardMIcons" src={el} />
+        ))}
+        {/* <img src={buildingIcon} /> */}
       </Box>
       <Box className="CardTextBox">
         <Box className="cardText">
@@ -52,11 +56,11 @@ export const propertiesCard = (
           <Typography className="cardLocationHeader">
             {locationHeader}
           </Typography>
-          <Box className="cardLocationBox">
-            <img style={{ width: "10px", height: "14px" }} src={LocationIcon} />
-            <span>{address}</span>
-          </Box>
         </Box>
+      </Box>
+      <Box className="cardLocationBox">
+        <img style={{ width: "10px", height: "14px" }} src={LocationIcon} />
+        <span>{address}</span>
       </Box>
     </Box>
   );

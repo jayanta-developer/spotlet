@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Box, Typography, Divider, Menu, MenuItem } from '@mui/material'
+import { useNavigate } from 'react-router-dom';
+
 
 import "./home.css"
 
@@ -45,6 +47,7 @@ export default function Home() {
   const [shareBox, setShareBox] = useState(false);
   const [propertyNameVisibility, setPropertyNameVisibility] = useState(false)
   const ref = useRef(null);
+  const navigate = useNavigate();
 
   const handleClickOutside = (event) => {
 
@@ -198,33 +201,10 @@ export default function Home() {
 
 
           <Box ref={ref} sx={{ display: shareBox ? "block" : "none" }} className="ShareBox" >
-            <Box className="shareBoxHeader">
+            <Box ml={1} className="shareBoxHeader">
               <Typography className='shareBoxHeaderText'>Share this location</Typography>
               <Box className="shareSubHeader">
                 <Typography className='shareId'>#SPOTL83712</Typography>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 8 4" fill="none">
-                  <circle cx="7" cy="2" r="2" fill="#525151" />
-                </svg>
-
-                <img src={Star1} />
-                <Typography className='shareBoxSubHeaderText'><svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 8 4" fill="none">
-                  <circle cx="7" cy="2" r="2" fill="#525151" />
-                </svg>
-
-                  4.0<svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 8 4" fill="none">
-                    <circle cx="7" cy="2" r="2" fill="#525151" />
-                  </svg>
-
-                  Spotle<svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 8 4" fill="none">
-                    <circle cx="7" cy="2" r="2" fill="#525151" />
-                  </svg>
-
-                  Verified<svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 8 4" fill="none">
-                    <circle cx="7" cy="2" r="2" fill="#525151" />
-                  </svg>
-
-                  Exclusive
-                </Typography>
               </Box>
 
             </Box>
@@ -280,7 +260,7 @@ export default function Home() {
             </Box>
           </Box>
           <Box className="ShowGalleryTabBox">
-            <Box className="ShowGalleryTab">
+            <Box onClick={() => navigate("/gallery")} className="ShowGalleryTab">
               <img src={ImageIcon} />
               <Typography ml={1}>Show ALL (18)</Typography>
             </Box>
@@ -291,7 +271,7 @@ export default function Home() {
 
           <Box className="venueLocation">
             <Box mb={1.5} className="locationHeader">
-              <Typography className='poppinsBold' variant='h5'>Restaurant</Typography>
+              <Typography className='poppinsBold' variant='h5'>#AJ5K4B5B3E</Typography>
               {/* <Typography sx={{ marginLeft: "10px", }} className='poppinsBold' variant='h5'>Serendipity Labs</Typography> */}
               <Box onClick={() => setPropertyNameVisibility(true)} className="ClickHereTab">
                 <Typography id='clickHereText'>Click Here</Typography>
@@ -299,6 +279,9 @@ export default function Home() {
             </Box>
             <Typography sx={{ display: propertyNameVisibility ? "block" : "none" }} className='locationId'>
               Coworking Space: Serendipity Labs
+            </Typography>
+            <Typography className='locationId'>
+              Restaurant
             </Typography>
             <Box className="locationSubText">
               <Box className="locationLogo"></Box>

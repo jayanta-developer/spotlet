@@ -8,7 +8,7 @@
 }
 .coverBox {
   width: 95%;
-  height: 429px;
+  height: 457px;
   flex-shrink: 0;
   border-radius: 10px;
   margin-top: 68px;
@@ -35,13 +35,20 @@
   max-width: 1302px;
 }
 .lastContentBox {
-  width: 95%;
-  height: 650px;
   /* align-items: center; */
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.eventWidth {
+  width: 100%;
+}
+.lastWidth {
+  width: 95%;
+}
+.PaymentWidth {
+  width: 100%;
 }
 .backButton {
   width: 123px;
@@ -119,6 +126,7 @@
 }
 .EventSummary {
   height: auto;
+  margin-bottom: 30px;
 }
 .Paymentsummary {
   height: auto;
@@ -187,12 +195,11 @@
   flex-direction: column;
   margin-bottom: 30px;
 }
-
 .labelBox {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 .labelBox p {
   width: 50%;
@@ -202,6 +209,7 @@
   font-style: normal;
   font-weight: 300 !important;
   line-height: 130% !important;
+  margin-bottom: 3px;
 }
 .AboutProjectHeading p {
   width: 50%;
@@ -211,6 +219,7 @@
   font-style: normal;
   font-weight: 300 !important;
   line-height: 130% !important;
+  margin-bottom: 5px;
 }
 .AboutProjectMainTextBox p {
   color: #464646;
@@ -224,7 +233,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 .dataBox p {
   width: 50%;
@@ -263,11 +272,12 @@
   margin-bottom: 5px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
 }
 .SpecialRequestsItem img {
   width: 12px;
   height: 12px;
+  margin-top: 8px;
 }
 .SpecialRequestsItem p {
   color: #1c1c1c;
@@ -326,10 +336,10 @@
 .eventDateBox {
   display: flex;
   flex-direction: column;
-  width: 606px;
+  width: 181px;
 }
 .e6px {
-  width: 606px !important;
+  width: 180px !important;
 }
 .dataBoxAlign {
   align-items: start !important;
@@ -337,7 +347,57 @@
 .eventDateBox p {
   width: 100% !important;
 }
+.textCenter {
+  text-align: center;
+}
+.fontS_11 {
+  font-size: 11px !important;
+}
+.fontS11 p {
+  font-size: 11px !important;
+}
+.fontS12 p {
+  font-size: 12px !important;
+}
+.mobileView {
+  display: block;
+}
+.desktopView {
+  display: none;
+}
+.fullWidth {
+  width: 100% !important;
+}
+.locationId {
+  color: #ea4335;
+  font-family: "Poppins-Bold" !important;
+  font-size: 19px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 130% !important;
+}
+.goMapButton {
+  width: 108px !important;
+  height: 28px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ea4335;
+  font-weight: 700;
+  z-index: 9;
+  background: #fff;
+  border-radius: 5px !important;
+  right: 88px;
+  top: 14px;
+  cursor: pointer;
+}
 @media only screen and (min-width: 768px) {
+  .mobileView {
+    display: none;
+  }
+  .desktopView {
+    display: block;
+  }
   .coverBox {
     width: 85%;
     height: 743.255px;
@@ -351,7 +411,8 @@
   .cityLocationTextBox2 {
     margin-left: 0px;
   }
-  .venueLocation {
+  .venueLocationH {
+    height: 111px !important;
   }
   .BookingDetailContinent {
     width: 85%;
@@ -407,9 +468,9 @@
   .BookingSummary {
     height: 448px;
   }
-  .EventSummary {
+  /* .EventSummary {
     height: 317px;
-  }
+  } */
   .Paymentsummary {
     height: 330px;
   }
@@ -435,7 +496,7 @@
   .EventSummary {
     height: auto;
     margin-right: 15px;
-    /* height: 489px; */
+    margin-bottom: 0;
   }
 
   .BookingDetailBox {
@@ -447,9 +508,9 @@
   }
   .SpecialRequestsItem {
     margin-bottom: 0px;
+    align-items: center;
   }
   .lastContentBox {
-    width: 100%;
     flex-direction: row;
     height: auto;
     max-width: 1302px;
@@ -476,5 +537,23 @@
   }
   .visitSummary {
     max-width: 1302px;
+  }
+  .SpecialRequestsItem img {
+    margin-top: 0px;
+  }
+  .e6px {
+    width: 606px !important;
+  }
+  .fontS11 p {
+    font-size: 14px !important;
+  }
+  .fontS12 p {
+    font-size: 15px !important;
+  }
+  .textCenter {
+    text-align: start;
+  }
+  .eventDateBox {
+    width: 606px;
   }
 }

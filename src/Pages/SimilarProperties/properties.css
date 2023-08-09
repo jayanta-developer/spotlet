@@ -50,7 +50,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: auto;
+  width: max-content;
   height: 40px;
   background: #fff;
   border: 1px solid #ffffff;
@@ -59,7 +59,7 @@
   padding: 0 10px;
   position: absolute;
   bottom: 115px;
-  left: 186px;
+  right: 12px;
 }
 .verifyTab {
   position: absolute;
@@ -145,8 +145,10 @@
   font-family: "Poppins-Bold" !important;
 }
 .cardLocationBox {
+  width: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-content: end;
 }
 .cardLocationBox img {
   width: 10px;
@@ -159,9 +161,14 @@
   font-size: 12px;
   color: #222;
   font-family: "Poppins-Regular" !important;
-  max-width: 115px;
   text-align: right;
 }
+.propertyCardMIcons {
+  width: 18px;
+  height: 18px;
+  margin: 0 5px;
+}
+
 @media only screen and (min-width: 768px) {
   .propertiesHeader p {
     font-size: 35px !important;
@@ -186,8 +193,8 @@
     left: 269px;
   }
   .logo_Box {
-    left: 241px;
-    bottom: 129px;
+    right: 15px;
+    bottom: 89px;
   }
   .CardTextBox {
     padding: 20px 8px 0px 11px;

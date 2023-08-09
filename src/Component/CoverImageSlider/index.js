@@ -12,7 +12,7 @@ import image5 from "../../Assets/images/galleryImages/3ba332a93ef229bce4889ecc7f
 
 const images = [image5, image1, image2, image3, image4];
 
-const ImageSlider = () => {
+const ImageSlider = ({ thumbnail }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const updateSlide = (index) => {
@@ -42,7 +42,10 @@ const ImageSlider = () => {
             ))}
           </div>
         </div>
-        <div className="thumbnail-container">
+        <div
+          style={{ display: thumbnail ? "flex" : "none" }}
+          className="thumbnail-container"
+        >
           <div className="thumbnails">
             {images.map((imageUrl, index) => (
               <img

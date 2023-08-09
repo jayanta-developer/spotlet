@@ -122,7 +122,9 @@
   margin-bottom: 20px;
   padding: 30px 33px;
   transition: width 0.5s;
-  position: relative;
+  position: absolute;
+  bottom: 26px;
+  z-index: 9;
 }
 .reviewRatingLogo {
   width: 40px;
@@ -209,8 +211,8 @@
   margin-bottom: 25px;
 }
 .ratingLogo {
-  width: 84px;
-  height: 69px;
+  width: 70px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,23 +222,23 @@
 }
 .ratingLogoBorder1 {
   position: absolute;
-  left: -8px;
-  bottom: -3px;
+  left: -10px;
+  bottom: -2px;
 }
 .ratingLogoBorder15 {
   position: absolute;
-  left: -8px;
-  bottom: -13px;
+  left: -9px;
+  bottom: -12px;
 }
 .ratingLogoBorder2 {
   position: absolute;
-  left: -8px;
+  left: -10px;
   bottom: -34px;
 }
 .ratingLogoBorder25 {
   position: absolute;
-  left: -8px;
-  bottom: -45px;
+  left: -10px;
+  bottom: -44px;
 }
 .ratingLogoBorder3 {
   position: absolute;
@@ -391,6 +393,6 @@
     display: block;
   }
   .reviewOpenContainer {
-    width: 683px;
+    /* width: 683px; */
   }
 }

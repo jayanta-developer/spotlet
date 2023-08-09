@@ -51,6 +51,7 @@
   .GalleryPropertyName {
     position: relative;
     right: 121px;
+    top: 0;
   }
   .GalleryPropertyName p {
     font-size: 25px !important;

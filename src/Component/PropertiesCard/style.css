@@ -24,3 +24,23 @@
   justify-content: center;
   align-items: center;
 }
+.removeText {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  align-items: center;
+  top: -25px;
+  cursor: pointer;
+}
+.crossLogo {
+  width: 10px;
+  height: 10px;
+}
+.removeText p {
+  color: #ea4335;
+  font-family: "Poppins-Regular" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 130% !important;
+}

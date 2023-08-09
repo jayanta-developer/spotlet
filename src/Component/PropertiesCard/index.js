@@ -9,16 +9,23 @@ import borderHeartLogo from "../../Assets/images/border-heart.svg";
 import GrayStar from "../../Assets/images/properitiseImage/GrayStar.png";
 import Star from "../../Assets/images/star-48.png";
 
+import RedCross from "../../Assets/images/red_cross.svg";
+
 export const propertiesCard = (
   img,
   fBoxHText,
   fBoxSText,
   locationHeader,
   address,
-  iconArray
+  iconArray,
+  remove
 ) => {
   return (
     <Box className="propertiesCard">
+      <Box className="removeText">
+        <img className="crossLogo" src={RedCross} />
+        <Typography ml={1}>Remove</Typography>
+      </Box>
       <Box className="imageBox">
         <img style={{ width: "100%", height: "100%" }} src={img} />
       </Box>

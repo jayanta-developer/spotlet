@@ -21,7 +21,6 @@ export default function TopTabs({
   shareDisplay,
   absolute,
 }) {
-  console.log(favoriteDisplay);
   const ref = useRef(null);
   const [printBox, setPrintBox] = useState(false);
   const [Favorite, setFavorite] = useState(false);

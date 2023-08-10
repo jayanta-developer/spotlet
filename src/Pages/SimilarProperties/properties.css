@@ -197,6 +197,10 @@
     right: 15px;
     bottom: 89px;
   }
+  .logo_BoxComparePage {
+    right: 15px !important;
+    bottom: 78px !important;
+  }
   .CardTextBox {
     padding: 20px 8px 0px 11px;
   }

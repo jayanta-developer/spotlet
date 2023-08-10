@@ -24,6 +24,7 @@ import { propertiesCard } from "../../Component/PropertiesCard"
 export default function CompareProperties() {
   const navigate = useNavigate();
   const remove = true
+  const page = "compare";
 
   const TinBox = (text1, text2, text3, text4) => {
     return (
@@ -116,7 +117,8 @@ export default function CompareProperties() {
               "Cafe",
               "Puppalguda, Sri Ram Nagar Colony",
               [buildingIcon, PersonIcon],
-              remove
+              remove,
+              page
             )}
 
             {propertiesCard(
@@ -126,7 +128,8 @@ export default function CompareProperties() {
               "Banquets Hall",
               "Miyapur, Indira Nagar Colony",
               [FilmIcon, PersonIcon],
-              remove
+              remove,
+              page
             )}
             {propertiesCard(
               Pimage3,
@@ -134,8 +137,9 @@ export default function CompareProperties() {
               "INR. 4000",
               "GYM",
               "Hyderabad, Sri Krishna Nagar",
-              [FilmIcon, buildingIcon],
-              remove
+              [FilmIcon, buildingIcon, PersonIcon],
+              remove,
+              page
             )}
 
 

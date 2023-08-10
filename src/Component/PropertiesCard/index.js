@@ -18,7 +18,8 @@ export const propertiesCard = (
   locationHeader,
   address,
   iconArray,
-  remove
+  remove,
+  page
 ) => {
   return (
     <Box className="propertiesCard">
@@ -36,9 +37,13 @@ export const propertiesCard = (
       <Box className="borderHeartLogo">
         <img src={borderHeartLogo} />
       </Box>
-      <Box className="logo_Box">
+      <Box
+        className={
+          page == "compare" ? "logo_Box logo_BoxComparePage" : "logo_Box"
+        }
+      >
         {iconArray?.map((el) => (
-          <img className="propertyCardMIcons" src={el} />
+          <img key={el} className="propertyCardMIcons" src={el} />
         ))}
         {/* <img src={buildingIcon} /> */}
       </Box>

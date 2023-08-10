@@ -21,6 +21,7 @@ import DownArrow from "../../Assets/images/GrayDownArrow.svg";
 import rightArrow from "../../Assets/images/rightArrow.svg"
 import Avatar from "../../Assets/images/427a1f62a2d277788a853d203733f8d5.png";
 import RedCross from "../../Assets/images/RedCross.svg";
+import CrossLine from "../../Assets/images/crossLine.png"
 
 
 
@@ -144,6 +145,7 @@ export default function Overview() {
             <Box className="venueDetails bottomBorder venueDetailsFirst">
 
               <Box sx={{ width: "173px" }} className="venueDetailsItem">
+                <img className='crossLine' src={CrossLine} />
                 <img className='venueDetailsIcon' src={videoIcon} />
                 <Typography>Film Shooting </Typography>
               </Box>
@@ -152,6 +154,7 @@ export default function Overview() {
                 <Typography>Corporate Event</Typography>
               </Box>
               <Box sx={{ width: "169px" }} className="venueDetailsItem">
+                <img className='crossLine' src={CrossLine} />
                 <img className='venueDetailsIcon' src={group} />
                 <Typography>Individual Event</Typography>
               </Box>
@@ -172,6 +175,7 @@ export default function Overview() {
                 <Typography>1300 sq/ft </Typography>
               </Box>
               <Box sx={{ width: "138px" }} className="venueDetailsItem ">
+                <img className='crossLine' src={CrossLine} />
                 <img className='venueDetailsIcon' src={bulding} />
                 <Typography>parking</Typography>
               </Box>

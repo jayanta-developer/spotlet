@@ -30,7 +30,6 @@ export default function Properties() {
               "Cafe",
               "Puppalguda, Sri Ram Nagar Colony",
               [buildingIcon, PersonIcon]
-
             )}
             {propertiesCard(
               Pimage2,

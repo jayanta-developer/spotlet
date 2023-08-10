@@ -23,7 +23,7 @@ export const propertiesCard = (
 ) => {
   return (
     <Box className="propertiesCard">
-      <Box className="removeText">
+      <Box className={remove ? "removeText" : "removeNoneText"}>
         <img className="crossLogo" src={RedCross} />
         <Typography ml={1}>Remove</Typography>
       </Box>

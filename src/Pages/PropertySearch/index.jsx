@@ -58,7 +58,7 @@ export default function PropertySearch() {
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.67594 0C10.493 0 10.6897 0.465729 10.108 1.04738L5.74715 5.40821C5.45623 5.69913 4.98042 5.69494 4.69384 5.40821L0.333015 1.04738C-0.245421 0.468948 -0.0507355 0 0.765044 0H9.67594Z" fill="#444444" />
                   </svg>
                 </Box>
-                <Typography className='filterItemSubHeader'>ex. FilmShooting</Typography>
+                <Typography className='filterItemSubHeader'>FilmShooting</Typography>
               </Box>
 
               <Box className="filterItem">
@@ -68,7 +68,7 @@ export default function PropertySearch() {
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.67594 0C10.493 0 10.6897 0.465729 10.108 1.04738L5.74715 5.40821C5.45623 5.69913 4.98042 5.69494 4.69384 5.40821L0.333015 1.04738C-0.245421 0.468948 -0.0507355 0 0.765044 0H9.67594Z" fill="#444444" />
                   </svg>
                 </Box>
-                <Typography className='filterItemSubHeader'>ex. Green Screen</Typography>
+                <Typography className='filterItemSubHeader'>Green Screen</Typography>
               </Box>
               <Box className="filterItem">
                 <Box className="filterItemHeaderBox">
@@ -77,7 +77,7 @@ export default function PropertySearch() {
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.67594 0C10.493 0 10.6897 0.465729 10.108 1.04738L5.74715 5.40821C5.45623 5.69913 4.98042 5.69494 4.69384 5.40821L0.333015 1.04738C-0.245421 0.468948 -0.0507355 0 0.765044 0H9.67594Z" fill="#444444" />
                   </svg>
                 </Box>
-                <Typography className='filterItemSubHeader'>ex. Beach House</Typography>
+                <Typography className='filterItemSubHeader'>Beach House</Typography>
               </Box>
               <Box className="filterItem">
                 <Box className="filterItemHeaderBox">
@@ -90,7 +90,7 @@ export default function PropertySearch() {
               </Box>
 
             </Box>
-            <Box className="MsearchBtn">
+            <Box className="MsearchBtn pointer">
               <Typography>Modify Search</Typography>
             </Box>
           </Box>
@@ -132,16 +132,15 @@ export default function PropertySearch() {
         <Box className="propertyCard_Map">
           <Box
             sx={{
-              width: mapSwitch ? "50%" : "100%",
               justifyContent: mapSwitch ? "start" : "space-between"
             }}
-            className="property_card_box">
+            className={mapSwitch ? "property_card_box propertyhW" : "property_card_box propertyfW"}>
             {propertiesCard(
               Pimage1,
               "#SWISS23808",
               "INR. 4000",
               "Cafe",
-              "Puppalguda, Sri Ram Nagar Colony",
+              "Puppalguda, Sri Ram Nagar",
               [buildingIcon, PersonIcon]
             )}
             {propertiesCard(
@@ -149,7 +148,7 @@ export default function PropertySearch() {
               "#SWISS23808",
               "INR. 4000",
               "Cafe",
-              "Puppalguda, Sri Ram Nagar Colony",
+              "Puppalguda, Sri Ram Nagar",
               [buildingIcon]
             )}
             {propertiesCard(
@@ -157,8 +156,8 @@ export default function PropertySearch() {
               "#SWISS23808",
               "INR. 4000",
               "Cafe",
-              "Puppalguda, Sri Ram Nagar Colony",
-              [buildingIcon, PersonIcon]
+              "Puppalguda, Sri Ram Nagar",
+              [FilmIcon]
             )}
             {propertiesCard(
               Pimage3,
@@ -173,15 +172,15 @@ export default function PropertySearch() {
               "#SWISS23808",
               "INR. 4000",
               "Cafe",
-              "Puppalguda, Sri Ram Nagar Colony",
-              [buildingIcon, PersonIcon]
+              "Puppalguda",
+              [buildingIcon, PersonIcon, FilmIcon]
             )}
             {propertiesCard(
               Pimage4,
               "#SWISS23808",
               "INR. 4000",
               "Cafe",
-              "Puppalguda, Sri Ram Nagar Colony",
+              "Puppalguda, Sri Ram",
               [buildingIcon, PersonIcon]
             )}
             {propertiesCard(
@@ -190,22 +189,22 @@ export default function PropertySearch() {
               "INR. 4000",
               "Cafe",
               "Puppalguda, Sri Ram Nagar Colony",
-              [buildingIcon, PersonIcon]
+              [FilmIcon, PersonIcon]
             )}
             {propertiesCard(
               Pimage4,
               "#SWISS23808",
               "INR. 4000",
               "Cafe",
-              "Puppalguda, Sri Ram Nagar Colony",
-              [buildingIcon, PersonIcon]
+              "Puppalguda",
+              [buildingIcon, PersonIcon, FilmIcon]
             )}
             {propertiesCard(
               Pimage1,
               "#SWISS23808",
               "INR. 4000",
               "Cafe",
-              "Puppalguda, Sri Ram Nagar Colony",
+              "Puppalguda, Sri Ram Nagar",
               [buildingIcon, PersonIcon]
             )}
 

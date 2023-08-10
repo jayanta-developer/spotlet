@@ -47,3 +47,57 @@
   font-weight: 400 !important;
   line-height: 130% !important;
 }
+.propertiesCard {
+  width: 280px;
+  height: 350px !important;
+  position: relative;
+  margin: 0px 10px;
+}
+.logo_Box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #ffffff;
+  box-shadow: 0 4px 4px #0000000a;
+  border-radius: 100px;
+  padding: 0 10px;
+  position: absolute;
+  bottom: 86px;
+  right: 12px;
+}
+.cardText1stHeader {
+  font-family: "Poppins-Bold" !important;
+  font-size: 18px !important;
+  margin-bottom: 5px !important;
+  font-weight: 600 !important;
+  color: #333;
+}
+.cardStarBox {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 7px;
+  align-items: center;
+}
+.borderHeartLogo {
+  position: absolute;
+  top: 19px;
+  left: 250px;
+}
+@media only screen and (min-width: 768px) {
+  .propertiesCard {
+    width: 280px;
+    height: 100%;
+    position: relative;
+    margin: 0px 10px;
+  }
+  .logo_Box {
+    right: 15px;
+  }
+  .borderHeartLogo {
+    /* left: 269px; */
+  }
+}

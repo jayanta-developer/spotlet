@@ -58,12 +58,12 @@ export const propertiesCard = (
 
         <Box className="cardText cardText2nd">
           <Box className="cardStarBox">
-            <img style={{ width: "16px", height: "16px" }} src={Star} />
-            <img style={{ width: "16px", height: "16px" }} src={Star} />
-            <img style={{ width: "16px", height: "16px" }} src={Star} />
-            <img style={{ width: "16px", height: "16px" }} src={Star} />
+            <img style={{ width: "14px", height: "14px" }} src={Star} />
+            <img style={{ width: "14px", height: "14px" }} src={Star} />
+            <img style={{ width: "14px", height: "14px" }} src={Star} />
+            <img style={{ width: "14px", height: "14px" }} src={Star} />
             <img style={{ width: "16px", height: "16px" }} src={GrayStar} />
-            <span>(4.1 (484))</span>
+            <span>(0)</span>
           </Box>
           <Typography className="cardLocationHeader">
             {locationHeader}

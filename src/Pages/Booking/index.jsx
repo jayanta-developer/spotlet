@@ -199,7 +199,7 @@ export default function Booking() {
                     </Box>
                     <Box className="redPriceBanarBox">
                       <Box className="redPriceBanar">
-                        <Typography className='inrText'>INR.</Typography>
+                        <Typography className='inr_Text'>INR.</Typography>
                         <Typography ml={1.5} className='redBanerPrice'>1750/</Typography>
                         <Typography mt={1} mr={1.5} className='hr'>hr</Typography>
                         <Typography className="banerLastText">2 hr. minimum</Typography>
@@ -309,9 +309,13 @@ export default function Booking() {
                           </svg>
                         </Typography>
                       </Box>
-                      <Box className="bookingPriceTextBox">
-                        <Typography className='BookingChargesText textSpamP'>Add GST @ 18%
-                          <span className='textSpam' >(taxes applicable on booking fee, convenience fee and cleaning fee)</span></Typography>
+                      <Box className="bookingPriceTextBox marginTB">
+                        <Box className="gstUperBox">
+                          <Typography className='textSpamP'>Add GST @ 18%
+                            <span className='textSpam' >(taxes applicable on booking</span>
+                            <span className='textSpam' > fee, convenience fee and cleaning fee)</span>
+                          </Typography>
+                        </Box>
                         <Typography className='InrText'>INR 5,900.00</Typography>
                       </Box>
 
@@ -320,7 +324,7 @@ export default function Booking() {
                       <Box className="bookingPriceTextBox">
                         <Box className="securityDepositSubBox">
                           <input type='checkBox' />
-                          <Typography ml={1.5} className='BookingChargesText'>Security Deposit (Refundable) :
+                          <Typography ml={1.5} className='BookingChargesText sSize'>Security Deposit (<span className='refSpan'>Refundable</span>) :
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                               <title>{IText}</title>
                               <path d="M5.99975 0C2.68648 0 0 2.68648 0 5.99975C0 9.31302 2.68648 12 5.99975 12C9.31302 12 12 9.31302 12 5.99975C12 2.68648 9.31302 0 5.99975 0ZM7.24876 9.29879C6.93994 9.4207 6.6941 9.51314 6.50971 9.57714C6.32584 9.64114 6.112 9.67314 5.8687 9.67314C5.49486 9.67314 5.20381 9.58171 4.99657 9.39937C4.78933 9.21702 4.68622 8.98591 4.68622 8.70502C4.68622 8.59581 4.69384 8.48406 4.70908 8.37029C4.72483 8.25651 4.74971 8.12851 4.78375 7.98476L5.17029 6.61943C5.20432 6.48838 5.23378 6.36394 5.25714 6.24813C5.28051 6.1313 5.29168 6.02413 5.29168 5.9266C5.29168 5.75289 5.25562 5.63098 5.184 5.56241C5.11137 5.49384 4.97473 5.46032 4.77105 5.46032C4.67149 5.46032 4.56889 5.47505 4.46375 5.50603C4.35962 5.53803 4.26921 5.56698 4.19505 5.59543L4.29714 5.17486C4.5501 5.07175 4.79238 4.98337 5.02349 4.91022C5.2546 4.83606 5.47302 4.79949 5.67873 4.79949C6.05003 4.79949 6.33651 4.8899 6.53816 5.0687C6.73879 5.248 6.83987 5.48114 6.83987 5.76762C6.83987 5.82705 6.83276 5.93168 6.81905 6.08102C6.80533 6.23086 6.77943 6.36749 6.74184 6.49295L6.35733 7.85422C6.32584 7.96343 6.2979 8.08838 6.27251 8.22806C6.24762 8.36775 6.23543 8.47441 6.23543 8.54603C6.23543 8.72686 6.27556 8.85029 6.35683 8.91581C6.43708 8.98133 6.57778 9.01435 6.77689 9.01435C6.87086 9.01435 6.976 8.99759 7.09486 8.96508C7.2127 8.93257 7.29803 8.90362 7.35187 8.87873L7.24876 9.29879ZM7.1807 3.77346C7.0014 3.94006 6.78552 4.02337 6.53308 4.02337C6.28114 4.02337 6.06375 3.94006 5.88292 3.77346C5.70311 3.60686 5.61219 3.40419 5.61219 3.16749C5.61219 2.9313 5.70362 2.72813 5.88292 2.56C6.06375 2.39137 6.28114 2.30756 6.53308 2.30756C6.78552 2.30756 7.00191 2.39137 7.1807 2.56C7.36 2.72813 7.4499 2.9313 7.4499 3.16749C7.4499 3.4047 7.36 3.60686 7.1807 3.77346Z" fill="#B3B3B3" />

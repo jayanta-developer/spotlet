@@ -44,7 +44,7 @@
 .prev-button,
 .next-button {
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   background: none;
   border: none;

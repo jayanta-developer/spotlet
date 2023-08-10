@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   margin-top: 84px;
+  position: relative;
 }
 .coverContainer {
   position: relative;
@@ -82,7 +83,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 .PrintDropDownPlaceholder {
   color: #928f8f;
@@ -400,7 +400,13 @@
 .divider {
   display: none;
 }
-
+.showGalleryBox {
+  position: absolute;
+  top: -113px;
+  z-index: 9999;
+  width: 100%;
+  height: 100vh;
+}
 @media only screen and (min-width: 768px) {
   .homeContainer {
     margin-top: 112px;

@@ -192,7 +192,7 @@
   position: relative;
 }
 .AmenitiesSeeMore {
-  margin-top: 0px;
+  margin-top: 24px;
 }
 .AmenitiesOpen {
   display: flex;
@@ -267,7 +267,7 @@
 .amenitiesScrollBox {
   overflow: scroll;
   width: 100%;
-  height: 515px;
+  height: 425px;
   overflow-x: hidden;
 }
 
@@ -559,8 +559,8 @@
   position: relative;
 }
 .crossLine {
-  width: 110px;
-  height: 63px;
+  width: 97px;
+  height: 52px;
   position: absolute;
   top: 17px;
 }
@@ -587,8 +587,9 @@
   flex-direction: row;
   overflow: hidden;
   width: 100%;
+
   /* margin-bottom: 10px; */
-  padding: 20px;
+  padding: 0px 20px 0px 20px;
 }
 /* .amenitiesTextVisibility {
   display: none;
@@ -671,6 +672,10 @@
 .leftMargin {
   margin-left: 0px;
 }
+.amenitiesTextArya {
+  height: auto;
+}
+
 @media only screen and (min-width: 768px) {
   .mainBox {
     margin: 0px 30px;
@@ -740,7 +745,7 @@
     font-size: 20px !important;
   }
   .AmenitiesSeeMore {
-    margin-top: 16px;
+    margin-top: 43px;
   }
   .Amenities {
     height: 373px;
@@ -751,6 +756,12 @@
     flex-direction: row;
     overflow: hidden;
     width: 100%;
+  }
+  .amenitiesTextAryaOpenHeight {
+    height: auto;
+  }
+  .amenitiesTextAryaCloseHeight {
+    height: 251px;
   }
   .amenitiesText {
     width: 35%;

@@ -30,7 +30,6 @@ export default function PropertySearch() {
   const latitude = 28.230553471285813
   const longitude = 75.97394025062951
 
-  console.log(mapSwitch);
 
   const handleMapSwitch = (e) => {
     setMapSwitch(e?.target?.checked)

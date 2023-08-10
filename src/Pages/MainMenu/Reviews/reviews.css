@@ -112,7 +112,7 @@
 }
 /* open review box */
 .reviewOpenContainer {
-  width: 800px;
+  /* width: 800px; */
   height: 800px;
   border-radius: 10px;
   border: 1px solid #eee;
@@ -127,9 +127,9 @@
   z-index: 9;
 }
 .reviewRatingLogo {
-  width: 40px;
+  width: 50px;
   height: 40px;
-  margin-top: 8px;
+  margin-top: 0px;
   border-radius: 50%;
 }
 
@@ -211,7 +211,7 @@
   margin-bottom: 25px;
 }
 .ratingLogo {
-  width: 70px;
+  width: 89px;
   height: 70px;
   display: flex;
   justify-content: center;
@@ -222,27 +222,27 @@
 }
 .ratingLogoBorder1 {
   position: absolute;
-  left: -10px;
-  bottom: -2px;
+  left: -4px;
+  bottom: -3px;
 }
 .ratingLogoBorder15 {
   position: absolute;
-  left: -9px;
+  left: -5px;
   bottom: -12px;
 }
 .ratingLogoBorder2 {
   position: absolute;
-  left: -10px;
+  left: -6px;
   bottom: -34px;
 }
 .ratingLogoBorder25 {
   position: absolute;
-  left: -10px;
+  left: -6px;
   bottom: -44px;
 }
 .ratingLogoBorder3 {
   position: absolute;
-  left: -8px;
+  left: -5px;
   bottom: -49px;
 }
 .ratingLogoText {
@@ -393,6 +393,6 @@
     display: block;
   }
   .reviewOpenContainer {
-    /* width: 683px; */
+    width: 683px;
   }
 }

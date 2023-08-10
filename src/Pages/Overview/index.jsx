@@ -154,7 +154,7 @@ export default function Overview() {
                 <Typography>Corporate Event</Typography>
               </Box>
               <Box sx={{ width: "169px" }} className="venueDetailsItem">
-                <img className='crossLine' src={CrossLine} />
+                {/* <img className='crossLine' src={CrossLine} /> */}
                 <img className='venueDetailsIcon' src={group} />
                 <Typography>Individual Event</Typography>
               </Box>
@@ -175,11 +175,11 @@ export default function Overview() {
                 <Typography>1300 sq/ft </Typography>
               </Box>
               <Box sx={{ width: "138px" }} className="venueDetailsItem ">
-                <img className='crossLine' src={CrossLine} />
                 <img className='venueDetailsIcon' src={bulding} />
                 <Typography>parking</Typography>
               </Box>
               <Box sx={{ width: "138px" }} className="venueDetailsItem ">
+                {/* <img className='crossLine' src={CrossLine} /> */}
                 <img className='venueDetailsIcon' src={bulding} />
                 <Typography>street parking</Typography>
               </Box>
@@ -394,7 +394,7 @@ export default function Overview() {
 
             <Box className="amenitiesTextBox">
 
-              <Box className="amenitiesTextArya">
+              <Box pt={2.5} className="amenitiesTextArya">
                 <Box className="amenitiesText">
                   <Box className="amenitiesItem">
                     <img src={rightArrow} />
@@ -481,8 +481,8 @@ export default function Overview() {
 
             <Box className="amenitiesScrollBox">
 
-              <Box className="amenitiesTextAryaBox">
-                <Box className="amenitiesTextArya">
+              <Box pt={2.5} className="amenitiesTextAryaBox">
+                <Box className={seeAmenities ? "amenitiesTextArya amenitiesTextAryaOpenHeight" : "amenitiesTextArya amenitiesTextAryaCloseHeight"}>
                   <Box className="amenitiesText">
                     <Box className="amenitiesItem">
                       <img src={rightArrow} />
@@ -494,7 +494,99 @@ export default function Overview() {
                     </Box>
                     <Box className="amenitiesItem">
                       <img src={rightArrow} />
+                      <Typography ml={1}>Kitchen</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Bathrooms </Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
                       <Typography ml={1}>Sink </Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Large table</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Large table</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Sound System</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Wifi</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Air Conditioning</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Kitchen</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Bathrooms </Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Kitchen</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Bathrooms </Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Sink </Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Large table</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Large table</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Sound System</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Wifi</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Air Conditioning</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Kitchen</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Bathrooms </Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Kitchen</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Bathrooms </Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Sink </Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Large table</Typography>
                     </Box>
                     <Box className="amenitiesItem">
                       <img src={rightArrow} />
@@ -522,6 +614,10 @@ export default function Overview() {
                     <Box className="amenitiesItem">
                       <img src={rightArrow} />
                       <Typography ml={1}>Photography Lighting</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Power Tie-in</Typography>
                     </Box>
                     <Box className="amenitiesItem">
                       <img src={rightArrow} />
@@ -533,98 +629,8 @@ export default function Overview() {
                     </Box>
                     <Box className="amenitiesItem">
                       <img src={rightArrow} />
-                      <Typography ml={1}>Private Entrance</Typography>
-                    </Box>
-                  </Box>
-                </Box>
-                <Box className="amenitiesTextArya ">
-                  <Box className="amenitiesText">
-                    <Box className="amenitiesItem">
-                      <img src={rightArrow} />
-                      <Typography ml={1}>Kitchen</Typography>
-                    </Box>
-                    <Box className="amenitiesItem">
-                      <img src={rightArrow} />
-                      <Typography ml={1}>Bathrooms </Typography>
-                    </Box>
-                    <Box className="amenitiesItem">
-                      <img src={rightArrow} />
                       <Typography ml={1}>Sink </Typography>
                     </Box>
-                    <Box className="amenitiesItem">
-                      <img src={rightArrow} />
-                      <Typography ml={1}>Large table</Typography>
-                    </Box>
-                    <Box className="amenitiesItem">
-                      <img src={rightArrow} />
-                      <Typography ml={1}>Sound System</Typography>
-                    </Box>
-                    <Box className="amenitiesItem">
-                      <img src={rightArrow} />
-                      <Typography ml={1}>Wifi</Typography>
-                    </Box>
-                  </Box>
-
-                  <Box className="amenitiesText leftMargin">
-                    <Box className="amenitiesItem">
-                      <img src={rightArrow} />
-                      <Typography ml={1}>Tableware Heat</Typography>
-                    </Box>
-                    <Box className="amenitiesItem">
-                      <img src={rightArrow} />
-                      <Typography ml={1}>Heat</Typography>
-                    </Box>
-                    <Box className="amenitiesItem">
-                      <img src={rightArrow} />
-                      <Typography ml={1}>Conference Phone</Typography>
-                    </Box>
-                    <Box className="amenitiesItem">
-                      <img src={rightArrow} />
-                      <Typography ml={1}>Stage</Typography>
-                    </Box>
-                    <Box className="amenitiesItem">
-                      <img src={rightArrow} />
-                      <Typography ml={1}>Green Screen</Typography>
-                    </Box>
-                    <Box className="amenitiesItem">
-                      <img src={rightArrow} />
-                      <Typography ml={1}>Grill</Typography>
-                    </Box>
-                  </Box>
-                </Box>
-                <Box className="amenitiesTextArya">
-                  <Box className="amenitiesText">
-                    <Box className="amenitiesItem">
-                      <img src={rightArrow} />
-                      <Typography ml={1}>Kitchen</Typography>
-                    </Box>
-                    <Box className="amenitiesItem">
-                      <img src={rightArrow} />
-                      <Typography ml={1}>Bathrooms </Typography>
-                    </Box>
-                    <Box className="amenitiesItem">
-                      <img src={rightArrow} />
-                      <Typography ml={1}>Sink </Typography>
-                    </Box>
-                    <Box className="amenitiesItem">
-                      <img src={rightArrow} />
-                      <Typography ml={1}>Large table</Typography>
-                    </Box>
-                    <Box className="amenitiesItem">
-                      <img src={rightArrow} />
-                      <Typography ml={1}>Sound System</Typography>
-                    </Box>
-                    <Box className="amenitiesItem">
-                      <img src={rightArrow} />
-                      <Typography ml={1}>Wifi</Typography>
-                    </Box>
-                    <Box className="amenitiesItem">
-                      <img src={rightArrow} />
-                      <Typography ml={1}>Air Conditioning</Typography>
-                    </Box>
-                  </Box>
-
-                  <Box className="amenitiesText amenitiesTextVisibility leftMargin">
                     <Box className="amenitiesItem">
                       <img src={rightArrow} />
                       <Typography ml={1}>Whiteboard</Typography>
@@ -636,6 +642,90 @@ export default function Overview() {
                     <Box className="amenitiesItem">
                       <img src={rightArrow} />
                       <Typography ml={1}>Power Tie-in</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Power Tie-in</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Projector and Screen / TV</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Sink </Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Large table</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Large table</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Sound System</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Photography Lighting</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Power Tie-in</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Power Tie-in</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Projector and Screen / TV</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Sink </Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Whiteboard</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Photography Lighting</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Power Tie-in</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Power Tie-in</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Projector and Screen / TV</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Sink </Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Large table</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Large table</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Sound System</Typography>
+                    </Box>
+                    <Box className="amenitiesItem">
+                      <img src={rightArrow} />
+                      <Typography ml={1}>Wifi</Typography>
                     </Box>
                     <Box className="amenitiesItem">
                       <img src={rightArrow} />

@@ -33,6 +33,7 @@ import ImageIcon from "../../Assets/images/galleryImages/icons8-gallery-48.png"
 
 ///Components
 import NavBar from "../NavBar";
+import Gallery from "../../Component/Gallery"
 import Overview from "../Overview";
 import Properties from "../SimilarProperties";
 import Footer from "../Footer";
@@ -45,6 +46,7 @@ export default function Home() {
   const [printBox, setPrintBox] = useState(false);
   const [Favorite, setFavorite] = useState(false);
   const [shareBox, setShareBox] = useState(false);
+  const [showGallery, setShowGallery] = useState(false);
   const [propertyNameVisibility, setPropertyNameVisibility] = useState(false)
   const ref = useRef(null);
   const navigate = useNavigate();
@@ -88,7 +90,9 @@ export default function Home() {
     <>
       <NavBar />
       <Box className="homeContainer">
-
+        <Box sx={{ display: showGallery ? "block" : "none" }} className="showGalleryBox">
+          <Gallery setShowGallery={setShowGallery} />
+        </Box>
         <Box className="topTabs">
           <Box className="topTabBox">
             <Box
@@ -260,7 +264,7 @@ export default function Home() {
             </Box>
           </Box>
           <Box className="ShowGalleryTabBox">
-            <Box onClick={() => navigate("/gallery")} className="ShowGalleryTab">
+            <Box onClick={() => setShowGallery(true)} className="ShowGalleryTab">
               <img src={ImageIcon} />
               <Typography ml={1}>Show ALL (18)</Typography>
             </Box>

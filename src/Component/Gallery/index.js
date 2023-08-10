@@ -8,17 +8,17 @@ import "./style.css";
 import NavBar from "../../Pages/NavBar";
 import TopTabs from "../../Component/TopTabs";
 
-export default function Gallery() {
+export default function Gallery({ setShowGallery }) {
   const navigate = useNavigate();
 
   return (
     <>
       <Box className="galleryContainer">
         <Box className="galleryHeader">
-          <Box onClick={() => navigate("/")} className="back_Button">
+          <Box onClick={() => setShowGallery(false)} className="back_Button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="11"
+              width="9"
               height="17"
               viewBox="0 0 11 17"
               fill="none"
@@ -30,7 +30,7 @@ export default function Gallery() {
                 stroke-linecap="round"
               />
             </svg>
-            <Typography ml={2}>BACK</Typography>
+            <Typography>BACK</Typography>
           </Box>
           <Box className="GalleryPropertyName">
             <Typography>Coworking Space: Serendipity Labs</Typography>

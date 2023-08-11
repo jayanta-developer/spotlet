@@ -44,15 +44,18 @@
   padding: 20px;
 }
 .rulesPopupBox {
-  width: 100%;
-  position: absolute;
-  top: 0;
+  width: 98%;
+  max-width: 681px;
+  position: fixed;
   background: #fff;
   display: flex;
   border-radius: 10px;
   flex-direction: column;
   z-index: 9;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .rulesRedCrossMargin {
   margin-left: 10%;

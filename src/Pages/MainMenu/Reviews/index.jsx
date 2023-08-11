@@ -20,7 +20,7 @@ import SearchIcon from '../../../Assets/images/search-normal.svg';
 
 
 
-export default function Reviews({ Review }) {
+export default function Reviews({ Review, setShowPopup }) {
   const [review, setReview] = useState(false)
 
 
@@ -151,70 +151,81 @@ export default function Reviews({ Review }) {
 
         </Box>
         <Box mb={2} className="seeMoreBtn display">
-          <Typography onClick={() => setReview(!review)} pl={2} className='seeMoreText amenitiesSeeMoreBtn'>{review ? "+ SEE LESS" : "+ SEE MORE"}</Typography>
+          <Typography onClick={() => {
+            setReview(true)
+            setShowPopup(true)
+          }} pl={2} className='seeMoreText amenitiesSeeMoreBtn'>{review ? "+ SEE LESS" : "+ SEE MORE"}</Typography>
         </Box>
       </Box>
 
       {/* open box */}
       <Box className="reviewOpenContainer" sx={{ display: review ? "block" : "none" }}>
         <Box className="ratingOpenHeader">
-          <img onClick={() => setReview(!review)} src={RedCross} />
+          <img onClick={() => {
+            setReview(false)
+            setShowPopup(false)
+          }} src={RedCross} />
         </Box>
         <Box className="ratingOpenTextBox">
+
           <Box className="reviewRating">
             <Box className="reviewRatingHeader">
               <Box className="reviewRatingLogo">
                 <img style={{ width: "100%" }} src={starIcon} />
               </Box>
               <Box className="reviewRatingHeaderText">
-                <Typography className='reviewOpenHeaderText'>Average rating</Typography>
-                <Box className="reviewRatingSubHeaderText">
-                  <Box className="reviewRatingStar">
-                    <img src={starYIcon} />
-                    <img src={starYIcon} />
-                    <img src={starYIcon} />
-                    <img src={starYIcon} />
-                    <img className='openRatingGraStar' src={starGrayIcon} />
-                  </Box>
-                  <Typography className='RatingSubHeaderText'>4.0 (3377 Reviews)</Typography>
-
-                </Box>
+                <Typography className='reviewOpenHeaderText'>Reviews</Typography>
               </Box>
             </Box>
+
+            <Box className="reviewRatingHeaderBox">
+              <Typography className='reviewSubHeaderText'>Average rating</Typography>
+              <Box className="reviewRatingSubHeaderText">
+                <Box className="reviewRatingStar">
+                  <img src={starYIcon} />
+                  <img src={starYIcon} />
+                  <img src={starYIcon} />
+                  <img src={starYIcon} />
+                  <img className='openRatingGraStar' src={starGrayIcon} />
+                </Box>
+                <Typography className='RatingSubHeaderText'>4.0 (3377 Reviews)</Typography>
+              </Box>
+            </Box>
+
             <Box className="ratingOpenContent">
 
               <Box className="ratingItem">
                 <Box className="ratingLogo">
                   <Typography className='ratingLogoText'>1.0</Typography>
-                  <img className='ratingLogoBorder1' src={r10} />
+                  <img className='ratingLogoBorder1 redBracket' src={r10} />
                 </Box>
                 <Typography className='ratingItemText'>wish to cancel a service before</Typography>
               </Box>
               <Box className="ratingItem">
                 <Box className="ratingLogo">
                   <Typography className='ratingLogoText'>1.5</Typography>
-                  <img className='ratingLogoBorder15' src={r15} />
+                  <img className='ratingLogoBorder15 redBracket' src={r15} />
                 </Box>
                 <Typography className='ratingItemText'>wish to cancel a service before</Typography>
               </Box>
               <Box className="ratingItem">
                 <Box className="ratingLogo">
                   <Typography className='ratingLogoText'>2.0</Typography>
-                  <img className='ratingLogoBorder2' src={r2} />
+                  <img className='ratingLogoBorder2 redBracket' src={r2} />
                 </Box>
                 <Typography className='ratingItemText'>wish to cancel a service before</Typography>
               </Box>
               <Box className="ratingItem">
                 <Box className="ratingLogo">
                   <Typography className='ratingLogoText'>2.5</Typography>
-                  <img className='ratingLogoBorder25' src={r25} />
+                  <img className='ratingLogoBorder25 redBracket' src={r25} />
                 </Box>
                 <Typography className='ratingItemText'>wish to cancel a service before</Typography>
               </Box>
               <Box className="ratingItem">
                 <Box className="ratingLogo">
                   <Typography className='ratingLogoText'>3.0</Typography>
-                  <img className='ratingLogoBorder3' src={r3} />
+                  <img className='ratingLogoBorder3 redBracket' src={r3} />
                 </Box>
                 <Typography className='ratingItemText'>wish to cancel a service before</Typography>
               </Box>
@@ -227,7 +238,6 @@ export default function Reviews({ Review }) {
           <Box className="reviewReview">
 
             <Box className="review_headerBox">
-              <Typography className='review_headerBoxText'>Reviews</Typography>
               <Box className="review_searchBar">
                 <Box className="search_Field">
                   <img style={{ width: "22px", position: "relative", left: "44px", zIndex: "9" }} src={SearchIcon} />

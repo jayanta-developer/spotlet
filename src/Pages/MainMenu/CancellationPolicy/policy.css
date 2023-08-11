@@ -47,13 +47,16 @@
   border-bottom: 1px solid #ececec;
 }
 .cancelPopUpBox {
-  width: 100%;
-  position: absolute;
-  top: 0;
+  width: 98%;
+  max-width: 681px;
+  position: fixed;
   background: #fff;
   z-index: 9;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .cancelRedCrossMargin {
   margin-left: 49%;

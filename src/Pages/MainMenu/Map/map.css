@@ -60,7 +60,7 @@
 
 @media only screen and (min-width: 768px) {
   .mapContainer {
-    width: 683px;
+    /* width: 683px; */
     height: 544px;
   }
   .mapBody {

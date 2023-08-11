@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Box, Typography, Divider } from "@mui/material";
 import ImageSlider from "../CoverImageSlider";
 import { useNavigate } from "react-router-dom";
@@ -8,8 +8,16 @@ import "./style.css";
 import NavBar from "../../Pages/NavBar";
 import TopTabs from "../../Component/TopTabs";
 
-export default function Gallery({ setShowGallery }) {
+export default function Gallery({ setShowGallery, showGallery }) {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (showGallery) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  }, [showGallery]);
 
   return (
     <>

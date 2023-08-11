@@ -9,7 +9,7 @@ import rightArrow from "../../../Assets/images/rightArrow.svg"
 import RedCross from "../../../Assets/images/RedCross.svg";
 
 
-export default function Rules({ Rule }) {
+export default function Rules({ Rule, setShowPopup }) {
   const [rule, setRule] = useState(false)
 
   return (
@@ -72,7 +72,10 @@ export default function Rules({ Rule }) {
             </Box>
           </Box>
           <Box className="seeMoreBtn">
-            <Typography onClick={() => setRule(!rule)} pl={2} className='seeMoreText amenitiesSeeMoreBtn'>{rule ? "+ SEE LESS" : "+ SEE MORE"}</Typography>
+            <Typography onClick={() => {
+              setRule(true)
+              setShowPopup(true)
+            }} pl={2} className='seeMoreText amenitiesSeeMoreBtn'>{rule ? "+ SEE LESS" : "+ SEE MORE"}</Typography>
           </Box>
 
         </Box>
@@ -87,7 +90,10 @@ export default function Rules({ Rule }) {
             </Box>
             <Typography className='descriptionHeaderText'>Rules</Typography>
             <Box className="descriptionIconBox rulesRedCrossMargin">
-              <img onClick={() => setRule(false)} style={{ width: "100%", cursor: "pointer" }} src={RedCross} />
+              <img onClick={() => {
+                setRule(false)
+                setShowPopup(false)
+              }} style={{ width: "100%", cursor: "pointer" }} src={RedCross} />
             </Box>
 
           </Box>

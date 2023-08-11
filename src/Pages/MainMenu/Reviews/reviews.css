@@ -112,19 +112,20 @@
 }
 /* open review box */
 .reviewOpenContainer {
-  /* width: 800px; */
+  width: 98%;
+  max-width: 681px;
+  position: fixed;
   height: 800px;
   border-radius: 10px;
   border: 1px solid #eee;
   background: #fff;
   flex-shrink: 0;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin-bottom: 20px;
-  padding: 30px 33px;
-  transition: width 0.5s;
-  position: absolute;
-  bottom: 26px;
+  /* padding: 30px 33px; */
   z-index: 9;
+  left: 50%;
+  top: 54%;
+  transform: translate(-50%, -50%);
 }
 .reviewRatingLogo {
   width: 50px;
@@ -144,8 +145,8 @@
   width: 42px;
   height: 42px;
   position: absolute;
-  left: 97%;
-  bottom: -25px;
+  left: 92%;
+  bottom: -52px;
   cursor: pointer;
 }
 .ratingOpenTextBox {
@@ -164,27 +165,45 @@
   margin-bottom: 7px;
 }
 .reviewRating {
-  width: 50%;
+  width: 35%;
+  padding: 10px 10px 10px 14px;
+  border-right: 1px solid #f1f1f1;
 }
 .reviewRatingHeader {
   display: flex;
   flex-direction: row;
   height: 64px;
   align-items: center;
-  margin-top: 11px;
+}
+.reviewOpenHeaderText {
+  margin-left: 7px !important;
 }
 .reviewRatingSubHeaderText {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+}
+.reviewRatingHeaderBox {
+  display: flex;
+  flex-direction: column;
+}
+.reviewSubHeaderText {
+  color: #3c3c3c;
+  font-family: "Poppins-Bold" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal !important;
+  margin-bottom: 4px !important;
 }
 .reviewRatingStar {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .reviewRatingStar img {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
 }
 .openRatingGraStar {
   width: 47px;
@@ -193,7 +212,7 @@
 .RatingSubHeaderText {
   color: #888;
   font-family: "Poppins-Regular" !important;
-  font-size: 16px !important;
+  font-size: 14px !important;
   font-style: normal;
   font-weight: 400 !important;
   line-height: 130% !important; /* 20.8px */
@@ -211,8 +230,8 @@
   margin-bottom: 25px;
 }
 .ratingLogo {
-  width: 89px;
-  height: 70px;
+  width: 106px;
+  height: 58px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,28 +241,32 @@
 }
 .ratingLogoBorder1 {
   position: absolute;
-  left: -4px;
-  bottom: -3px;
+  left: -8px;
+  bottom: -20px;
 }
 .ratingLogoBorder15 {
   position: absolute;
-  left: -5px;
-  bottom: -12px;
+  left: -7px;
+  bottom: -23px;
 }
 .ratingLogoBorder2 {
   position: absolute;
   left: -6px;
-  bottom: -34px;
+  bottom: -31px;
 }
 .ratingLogoBorder25 {
   position: absolute;
-  left: -6px;
-  bottom: -44px;
+  left: -5px;
+  bottom: -37px;
 }
 .ratingLogoBorder3 {
   position: absolute;
   left: -5px;
-  bottom: -49px;
+  bottom: -39px;
+}
+.redBracket {
+  width: 100px;
+  height: 129px;
 }
 .ratingLogoText {
   color: #000;
@@ -264,7 +287,8 @@
   margin-left: 20px !important;
 }
 .reviewReview {
-  width: 50%;
+  width: 65%;
+  padding: 30px 20px 20px 0px;
 }
 .review_headerBox {
   display: flex;
@@ -346,9 +370,6 @@
   font-weight: 400 !important;
   line-height: normal !important;
 }
-.reviewRatingHeaderText {
-  margin-left: 16px;
-}
 .search_Field {
   width: 332px;
   height: 34px;
@@ -377,7 +398,7 @@
 
 @media only screen and (min-width: 768px) {
   .reviewContainer {
-    width: 683px;
+    /* width: 683px; */
     height: auto;
   }
   .reviewHeaderRettingText {

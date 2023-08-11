@@ -39,6 +39,7 @@ import Properties from "../SimilarProperties";
 import Footer from "../Footer";
 
 import ImageSlider from "../../Component/CoverImageSlider"
+import coverPhoto from "../../Assets/images/galleryImages/cover photo.jpeg"
 
 
 
@@ -91,7 +92,7 @@ export default function Home() {
       <NavBar />
       <Box className="homeContainer">
         <Box sx={{ display: showGallery ? "block" : "none" }} className="showGalleryBox">
-          <Gallery setShowGallery={setShowGallery} />
+          <Gallery setShowGallery={setShowGallery} showGallery={showGallery} />
         </Box>
         <Box className="topTabs">
           <Box className="topTabBox">
@@ -249,19 +250,7 @@ export default function Home() {
           </Box>
 
           <Box className="coverGallery">
-            <Box className="firstGBox">
-              <img className='galleryImage' src={imageA} />
-            </Box>
-            <Box className="secondGBox">
-              <Box className="secondSBox">
-                <Box className="BgBox subImageBox"> <img className='galleryImage' src={imageE} /></Box>
-                <Box className="CgBox subImageBox"><img className='galleryImage' src={imageC} /></Box>
-              </Box>
-              <Box className="secondSBox">
-                <Box className="DgBox subImageBox"><img className='galleryImage' src={imageD} /></Box>
-                <Box className="EgBox subImageBox"><img className='galleryImage' src={imageB} /></Box>
-              </Box>
-            </Box>
+            <img style={{ width: "100%", height: "100%" }} src={coverPhoto} />
           </Box>
           <Box className="ShowGalleryTabBox">
             <Box onClick={() => setShowGallery(true)} className="ShowGalleryTab">
@@ -269,9 +258,6 @@ export default function Home() {
               <Typography ml={1}>Show ALL (18)</Typography>
             </Box>
           </Box>
-
-
-
 
           <Box className="venueLocation">
             <Box mb={1.5} className="locationHeader">

@@ -9,7 +9,7 @@ import rightArrow from "../../../Assets/images/rightArrow.svg"
 import RedCross from "../../../Assets/images/RedCross.svg";
 
 
-export default function Features({ Feature }) {
+export default function Features({ Feature, setShowPopup }) {
   const [features, setFeatures] = useState(false);
 
   return (
@@ -87,7 +87,10 @@ export default function Features({ Feature }) {
 
             <Box className="seeMoreBtn featuresSeeMoreBtn">
               <Typography
-                onClick={() => setFeatures(true)}
+                onClick={() => {
+                  setFeatures(true)
+                  setShowPopup(true)
+                }}
                 pl={2}
                 className='seeMoreText amenitiesSeeMoreBtn'>+ SEE MORE</Typography>
             </Box>
@@ -103,7 +106,10 @@ export default function Features({ Feature }) {
             </Box>
             <Typography className='descriptionHeaderText'>Features</Typography>
             <Box className="descriptionIconBox featuresRedCrossMargin">
-              <img onClick={() => setFeatures(false)} style={{ width: "100%", cursor: "pointer" }} src={RedCross} />
+              <img onClick={() => {
+                setFeatures(false)
+                setShowPopup(false)
+              }} style={{ width: "100%", cursor: "pointer" }} src={RedCross} />
             </Box>
           </Box>
 

@@ -44,7 +44,7 @@
 .prev-button,
 .next-button {
   position: absolute;
-  top: 40%;
+  top: 50%;
   transform: translateY(-50%);
   background: none;
   border: none;
@@ -99,4 +99,19 @@
     width: 231px;
     height: 143px;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .prev-button {
+    left: 24px;
+  }
+  .next-button {
+    right: 24px;
+  }
+  .prev-button,
+  .next-button {
+    top: 40%;
+  }
+}
+@media only screen and (min-width: 1000px) {
 }

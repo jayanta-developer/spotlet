@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import "./overview.css"
 import { Box, TextField, Typography } from '@mui/material';
@@ -10,6 +10,9 @@ import squerIcon from "../../Assets/images/venuDetailsIcon/download 1.svg"
 import videoIcon from "../../Assets/images/venuDetailsIcon/download (1) 1.svg"
 import bulding from "../../Assets/images/venuDetailsIcon/Vector (1).svg"
 import group from "../../Assets/images/venuDetailsIcon/download (3) 1.svg"
+import parkingIcon from "../../Assets/images/venuDetailsIcon/ParkingIcon.svg"
+import StreetParkingIcon from "../../Assets/images/venuDetailsIcon/streetParkingIcon.svg"
+import CCTVIcon from "../../Assets/images/venuDetailsIcon/ccTvIcon.svg"
 
 import verifyIcon from "../../Assets/images/verifyIcon.svg"
 import daimonIcon from "../../Assets/images/dimonIcon.svg"
@@ -41,10 +44,12 @@ export default function Overview() {
   const [seeDescription, setSeeDescription] = useState(false)
   const [seeAmenities, setSeeAmenities] = useState(false)
   const [priceDay, setPriceDay] = useState(false)
+  const [showPopup, setShowPopup] = useState(false);
 
   const [bookingRequest, setBookingRequest] = useState(false)
   const [host, setHost] = useState(false)
-
+  const [activeMenuItem, setActiveMenuItem] = useState(null);
+  console.log(activeMenuItem);
   const Overview = useRef(null);
   const Amenities = useRef(null);
   const Feature = useRef(null);
@@ -57,24 +62,66 @@ export default function Overview() {
 
 
 
+  // const scrollToSection = (ref) => {
+  //   if (ref && ref.current) {
+  //     ref.current.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // };
+
+  const handelScrollDecibel = () => {
+    // setShowPopup(false)
+  }
+
   const scrollToSection = (ref) => {
     if (ref && ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth' });
+      const scrollOptions = {
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+      };
+      const yOffset = -150;
+      const targetPosition = ref.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({
+        top: targetPosition,
+        ...scrollOptions
+      });
     }
   };
 
 
+  useEffect(() => {
+    //handel scroll
+    if (showPopup) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
 
 
+    const handleScroll = () => {
+      const sectionRefs = [Overview, Amenities, Feature, DoDon, Rule, Cancellation, Openinghours, Location, Review];
+      const yOffset = -150;
 
+      const visibleSectionIndex = sectionRefs.findIndex(ref => {
+        const refTop = ref.current.getBoundingClientRect().top + window.pageYOffset;
+        const refBottom = refTop + ref.current.offsetHeight;
+        return refTop <= window.pageYOffset + window.innerHeight / 2 + yOffset && refBottom >= window.pageYOffset + window.innerHeight / 2 + yOffset;
+      });
+      setActiveMenuItem(visibleSectionIndex);
+    };
 
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
 
-
+  }, [showPopup]);
 
 
   return (
     <>
       <Box className="overviewContainer">
+        {showPopup && <div onClick={handelScrollDecibel} className="popupBackdrop"></div>}
         <Box className="leftSideMenu">
           <Box className="menuBox">
             <Box onClick={() => scrollToSection(Overview)} className="menuItem ">
@@ -135,9 +182,7 @@ export default function Overview() {
           <Box onClick={() => scrollToSection(Review)} className="menuItem">
             <Typography>Reviews</Typography>
           </Box>
-
         </Box>
-
 
 
         <Box ref={Overview} className="mainBox">
@@ -175,16 +220,16 @@ export default function Overview() {
                 <Typography>1300 sq/ft </Typography>
               </Box>
               <Box sx={{ width: "138px" }} className="venueDetailsItem ">
-                <img className='venueDetailsIcon' src={bulding} />
+                <img className='venueDetailsIcon' src={parkingIcon} />
                 <Typography>parking</Typography>
               </Box>
               <Box sx={{ width: "138px" }} className="venueDetailsItem ">
                 {/* <img className='crossLine' src={CrossLine} /> */}
-                <img className='venueDetailsIcon' src={bulding} />
+                <img className='venueDetailsIcon' src={StreetParkingIcon} />
                 <Typography>street parking</Typography>
               </Box>
               <Box sx={{ width: "121px" }} className="venueDetailsItem ">
-                <img className='venueDetailsIcon' src={videoIcon} />
+                <img className='venueDetailsIcon' src={CCTVIcon} />
                 <Typography>cc cameras</Typography>
               </Box>
 
@@ -355,7 +400,11 @@ export default function Overview() {
             </Box>
 
             <Box mb={1.5} className="seeMoreBtn">
-              <Typography onClick={() => setSeeDescription(true)} pl={2} className='seeMoreText'>
+              <Typography onClick={() => {
+                setSeeDescription(true)
+                setShowPopup(true)
+              }}
+                pl={2} className='seeMoreText'>
                 + SEE MORE
               </Typography>
             </Box>
@@ -370,7 +419,11 @@ export default function Overview() {
                 <Typography className='descriptionHeaderText'>Description of the property</Typography>
 
                 <Box className="descriptionIconBox descriptionRedCrossMargin">
-                  <img onClick={() => setSeeDescription(false)} style={{ width: "100%", cursor: "pointer" }} src={RedCross} />
+                  <img onClick={() => {
+                    setSeeDescription(false)
+                    setShowPopup(false)
+
+                  }} style={{ width: "100%", cursor: "pointer" }} src={RedCross} />
                 </Box>
               </Box>
 
@@ -451,16 +504,15 @@ export default function Overview() {
                     <img src={rightArrow} />
                     <Typography ml={1}>Grill</Typography>
                   </Box>
-                  {/* <Box className="amenitiesItem">
-                    <img src={rightArrow} />
-                    <Typography ml={1}>Conference Phone</Typography>
-                  </Box> */}
                 </Box>
               </Box>
             </Box>
             <Box className="seeMoreBtn AmenitiesSeeMore">
               <Typography
-                onClick={() => setSeeAmenities(true)}
+                onClick={() => {
+                  setSeeAmenities(true)
+                  setShowPopup(true)
+                }}
                 pl={2}
                 className='seeMoreText amenitiesSeeMoreBtn'>+ SEE MORE</Typography>
             </Box>
@@ -475,7 +527,10 @@ export default function Overview() {
               </Box>
               <Typography className='descriptionHeaderText'>Amenities</Typography>
               <Box className="descriptionIconBox AmenitiesRedCrossMargin">
-                <img onClick={() => setSeeAmenities(false)} style={{ width: "100%", cursor: "pointer" }} src={RedCross} />
+                <img onClick={() => {
+                  setSeeAmenities(false)
+                  setShowPopup(false)
+                }} style={{ width: "100%", cursor: "pointer" }} src={RedCross} />
               </Box>
             </Box>
 
@@ -745,13 +800,13 @@ export default function Overview() {
 
           {/* component */}
 
-          <Features Feature={Feature} />
-          <Dont DoDon={DoDon} />
-          <Rules Rule={Rule} />
-          <CancellationPolicy Cancellation={Cancellation} />
+          <Features Feature={Feature} setShowPopup={setShowPopup} />
+          <Dont DoDon={DoDon} setShowPopup={setShowPopup} />
+          <Rules Rule={Rule} setShowPopup={setShowPopup} />
+          <CancellationPolicy Cancellation={Cancellation} setShowPopup={setShowPopup} />
           <OpeningTime Openinghours={Openinghours} />
           <Map Location={Location} />
-          <Reviews Review={Review} />
+          <Reviews Review={Review} setShowPopup={setShowPopup} />
         </Box>
 
         <Box className="buyingHoverBox">
@@ -773,7 +828,7 @@ export default function Overview() {
 
 
         <Box className={bookingRequest ? "buyingBox bookingPosition" : host ? "buyingBox hostPosition" : "buyingBox"}>
-          <Box className={bookingRequest ? "bookingRequest DisplayBookingRequest" : "bookingRequest DisplayNoneBookingRequest"}>
+          <Box className={bookingRequest ? "bookingRequest DisplayBookingRequest" : "bookingRequest"}>
             <Box className="priseBox">
               <Box className="priceText">
                 <Typography className='poppins' sx={{ fontSize: "15px" }}>INR. </Typography>
@@ -899,7 +954,7 @@ export default function Overview() {
             </Box>
           </Box>
 
-          <Box className={host ? "hostDetails hostDetailsDisplay" : "hostDetails hostDetailsDisplayNone"}
+          <Box className={host ? "hostDetails hostDetailsDisplay" : "hostDetails"}
             id={priceDay ? "hostDetails2" : "hostDetails1"}
           >
             <Box mt={1} className="hostDetailsBox">

@@ -101,7 +101,9 @@
   font-style: normal;
   font-weight: 400 !important;
   line-height: 26px !important;
-  margin-left: 15px;
+}
+.MenuMargin {
+  margin-left: 15px !important;
 }
 .menuItemBox {
   width: 302px;

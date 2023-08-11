@@ -131,12 +131,52 @@
   text-align: right;
 }
 .propertyCardMIcons {
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 16px;
   margin: 0 5px;
 }
-
+/* Tab */
 @media only screen and (min-width: 768px) {
+  .propertiesHeader p {
+    font-size: 35px !important;
+    margin-left: 0%;
+  }
+  .propertiesHeader {
+    margin-bottom: 34px;
+    margin-top: 45px;
+  }
+  .propertiesRenderBox {
+    width: 100%;
+    overflow: inherit;
+    overflow: scroll;
+  }
+  .propertiesCard {
+    width: 304px;
+  }
+
+  .logo_BoxComparePage {
+    right: 15px !important;
+    bottom: 78px !important;
+  }
+  .CardTextBox {
+    padding: 20px 8px 0px 11px;
+  }
+
+  .propertiesBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .propertiesContainer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 1200px) {
   .propertiesHeader p {
     font-size: 35px !important;
     margin-left: 0%;

@@ -9,7 +9,7 @@ import rightArrow from "../../../Assets/images/rightArrow.svg"
 import RedCross from "../../../Assets/images/RedCross.svg";
 
 
-export default function Dont({ DoDon }) {
+export default function Dont({ DoDon, setShowPopup }) {
   const [dont, setDont] = useState(false)
 
 
@@ -79,7 +79,10 @@ export default function Dont({ DoDon }) {
 
           </Box>
           <Box mb={1} className="seeMoreBtn">
-            <Typography onClick={() => setDont(!dont)} pl={2} className='seeMoreText amenitiesSeeMoreBtn'>+ SEE MORE</Typography>
+            <Typography onClick={() => {
+              setDont(true)
+              setShowPopup(true)
+            }} pl={2} className='seeMoreText amenitiesSeeMoreBtn'>+ SEE MORE</Typography>
           </Box>
 
 
@@ -94,7 +97,10 @@ export default function Dont({ DoDon }) {
             </Box>
             <Typography className='descriptionHeaderText'>Do’s & Don’ts</Typography>
             <Box className="descriptionIconBox dontRedCrossMargin">
-              <img onClick={() => setDont(false)} style={{ width: "100%", cursor: "pointer" }} src={RedCross} />
+              <img onClick={() => {
+                setDont(false)
+                setShowPopup(false)
+              }} style={{ width: "100%", cursor: "pointer" }} src={RedCross} />
             </Box>
           </Box>
 
@@ -141,7 +147,7 @@ export default function Dont({ DoDon }) {
                     <img src={rightArrow} />
                     <Typography ml={1}>Smoking not allowed</Typography>
                   </Box>
-                  <Box className="amenitiesItem">
+                  {/* <Box className="amenitiesItem">
                     <img src={rightArrow} />
                     <Typography ml={1}>Pets not allowed</Typography>
                   </Box>
@@ -152,7 +158,7 @@ export default function Dont({ DoDon }) {
                   <Box className="amenitiesItem">
                     <img src={rightArrow} />
                     <Typography ml={1}>Smoking not allowed</Typography>
-                  </Box>
+                  </Box> */}
                 </Box>
               </Box>
             </Box>
@@ -195,7 +201,7 @@ export default function Dont({ DoDon }) {
                     <img src={rightArrow} />
                     <Typography ml={1}>Smoking not allowed</Typography>
                   </Box>
-                  <Box className="amenitiesItem">
+                  {/* <Box className="amenitiesItem">
                     <img src={rightArrow} />
                     <Typography ml={1}>Smoking not allowed</Typography>
                   </Box>
@@ -206,7 +212,7 @@ export default function Dont({ DoDon }) {
                   <Box className="amenitiesItem">
                     <img src={rightArrow} />
                     <Typography ml={1}>Pool closed between 8.00pm 6.00am</Typography>
-                  </Box>
+                  </Box> */}
                   <Box className="amenitiesItem">
                     <img src={rightArrow} />
                     <Typography ml={1}>Smoking not allowed</Typography>

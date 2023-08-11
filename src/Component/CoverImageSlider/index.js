@@ -8,13 +8,13 @@ import image1 from "../../Assets/images/galleryImages/pexels-pixabay-147411.jpg"
 import image2 from "../../Assets/images/galleryImages/pexels-anon-754277.jpg";
 import image3 from "../../Assets/images/galleryImages/pexels-chris-goodwin-32870.jpg";
 import image4 from "../../Assets/images/galleryImages/4.jpg";
-import image5 from "../../Assets/images/galleryImages/3ba332a93ef229bce4889ecc7faf250e (1).jpeg";
+// import image5 from "../../Assets/images/galleryImages/3ba332a93ef229bce4889ecc7faf250e (1).jpeg";
 import image6 from "../../Assets/images/galleryImages/pexels-alex-qian-2343465.jpg";
 import image7 from "../../Assets/images/galleryImages/pexels-pixabay-259646.jpg";
 import image8 from "../../Assets/images/galleryImages/pexels-sergio-souza-1782154.jpg";
 import image9 from "../../Assets/images/galleryImages/pexels-alex-staudinger-1732414.jpg";
 
-const images = [image5, image2, image3, image1, image6, image7, image8, image9];
+const images = [image3, image2, image1, image6, image7, image8, image9];
 
 const ImageSlider = ({ thumbnail }) => {
   const [currentIndex, setCurrentIndex] = useState(0);

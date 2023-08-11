@@ -39,7 +39,7 @@
   position: absolute;
   top: 69px;
   padding: 20px;
-  right: 20px;
+  right: 14px;
 }
 .PrintBox {
   width: 346px;
@@ -266,34 +266,6 @@
   font-weight: 600 !important;
   line-height: 130% !important; /* 18.2px */
 }
-
-.firstGBox {
-  width: 721px;
-  height: 574px;
-  margin-right: 5px;
-}
-.secondGBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.secondSBox {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.BgBox {
-  margin: 0px 5px 5px 5px;
-}
-.CgBox {
-  margin: 0px 0px 5px 5px;
-}
-.DgBox {
-  margin: 5px 5px 0px 5px;
-}
-.EgBox {
-  margin: 5px 0px 0px 5px;
-}
 .subImageBox {
   width: 282px;
   height: 282px;
@@ -301,12 +273,11 @@
 
 .venueLocation {
   width: 94%;
-  height: 150px;
+  height: 180px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* margin: 37px 15px; */
-  margin: 24px 10px 7px 10px;
+  padding: 20px 10px;
   position: relative;
 }
 .ClickHereTab {
@@ -407,6 +378,8 @@
   width: 100%;
   height: 100vh;
 }
+
+/* Tab view*/
 @media only screen and (min-width: 768px) {
   .homeContainer {
     margin-top: 112px;
@@ -415,10 +388,9 @@
     width: 100%;
   }
   .coverGallery {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* border: 1px solid rgb(24, 144, 192); */
+    width: 100%;
+    height: 50%;
+    display: block;
     overflow: hidden;
     border-radius: 10px;
   }
@@ -428,18 +400,10 @@
   .galleryImage {
     width: 100%;
   }
-  .topTabs {
-    width: auto;
-  }
-  .topTabBox {
-    left: 383px;
-    margin-right: 0px;
-  }
   .PrintBox {
     width: 401px;
     height: 375px;
     top: 69px;
-    right: -459px;
   }
   .CancelBtn {
     width: 105px;
@@ -454,7 +418,6 @@
     width: 401px;
     height: 263px;
     top: 69px;
-    right: -636px;
   }
   .shareItem {
     width: 164px;
@@ -477,5 +440,28 @@
   }
   .locationId {
     font-size: 18px !important;
+  }
+}
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+  .coverContainer {
+    width: 85%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .venueLocation {
+    max-width: 1305px;
+  }
+  .topTabs {
+    width: 86%;
+    max-width: 1305px;
+  }
+  .ShowGalleryTabBox {
+    width: 100%;
+    max-width: 1305px;
+  }
+  .coverGallery {
+    max-width: 1305px;
   }
 }

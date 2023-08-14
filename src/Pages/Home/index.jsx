@@ -75,6 +75,11 @@ export default function Home() {
     }
   };
 
+  const openGallery = () => {
+    setShowGallery(true);
+    window.scrollTo(0, 0);
+  };
+
   useEffect(() => {
     document.addEventListener('click', handleClickOutside);
     document.addEventListener('click', handleClickOutsideShareBox);
@@ -253,7 +258,7 @@ export default function Home() {
             <img style={{ width: "100%", height: "100%" }} src={coverPhoto} />
           </Box>
           <Box className="ShowGalleryTabBox">
-            <Box onClick={() => setShowGallery(true)} className="ShowGalleryTab">
+            <Box onClick={openGallery} className="ShowGalleryTab">
               <img src={ImageIcon} />
               <Typography ml={1}>Show ALL (18)</Typography>
             </Box>
@@ -302,7 +307,7 @@ export default function Home() {
 
         </Box>
 
-      </Box>
+      </Box >
 
 
       <Overview />

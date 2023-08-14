@@ -33,8 +33,8 @@ export default function BookingDetails() {
       <NavBar />
       <Box className="bookingDetailsContainer">
         <Box className="coverBox">
+          <TopTabs absolute={true} />
           <Box className="backButtonBox">
-            <TopTabs absolute={true} />
             <Box onClick={() => navigate('/')} className="backButton">
               <svg xmlns="http://www.w3.org/2000/svg" width="8" height="15" viewBox="0 0 8 15" fill="none">
                 <path d="M6.5375 14.4479C6.37917 14.4479 6.22084 14.3896 6.09584 14.2646L0.6625 8.83125C-0.220833 7.94792 -0.220833 6.49792 0.6625 5.61458L6.09584 0.18125C6.3375 -0.0604167 6.7375 -0.0604167 6.97917 0.18125C7.22084 0.422917 7.22084 0.822917 6.97917 1.06458L1.54583 6.49792C1.14583 6.89792 1.14583 7.54792 1.54583 7.94792L6.97917 13.3812C7.22084 13.6229 7.22084 14.0229 6.97917 14.2646C6.85417 14.3812 6.69584 14.4479 6.5375 14.4479Z" fill="#1A1E25" />
@@ -116,7 +116,7 @@ export default function BookingDetails() {
                 </Box>
                 <Box className="DetailsCardRowBox">
                   <Box className="labelBox">
-                    <Typography>Alternate contact name</Typography>
+                    <Typography pr={1.5}>Alternate contact name</Typography>
                     <Typography>Alternate contact number</Typography>
                   </Box>
                   <Box className="dataBox">
@@ -190,7 +190,7 @@ export default function BookingDetails() {
 
           <Box className="visitSummary BookingDetailBoxCard">
             <Box className="DetailBoxCardHeader">
-              <Typography>Visit Summary</Typography>
+              <Typography>Booking Summary</Typography>
             </Box>
             <Box className="DetailContent VisitSummaryContent">
               <Box className="mobileView">
@@ -207,7 +207,7 @@ export default function BookingDetails() {
                 </Box>
                 <Box className="DetailsCardRowBox">
                   <Box className="labelBox">
-                    <Typography className='e6px'>Booking Requested Date</Typography>
+                    <Typography pr={1.5} className='e6px'>Booking Requested Date</Typography>
                     <Typography>Booking Amount</Typography>
                   </Box>
                   <Box className="dataBox">
@@ -217,7 +217,7 @@ export default function BookingDetails() {
                 </Box>
                 <Box className="DetailsCardRowBox">
                   <Box className="labelBox">
-                    <Typography>Event Dates and timings</Typography>
+                    <Typography pr={1.5}>Event Dates and timings</Typography>
                     <Typography>Booking approved</Typography>
                   </Box>
                   <Box className="dataBox">
@@ -226,12 +226,14 @@ export default function BookingDetails() {
                       <Typography className='fontWeight'>03/04/2023   09.00am - 05.30pm</Typography>
                       <Typography className='fontWeight'>03/04/2023   09.00am - 05.30pm</Typography>
                     </Box>
-                    <Typography className='fontWeight'>03/04/2023     05.30pm</Typography>
+                    <Box className="fontS11 bATextBox">
+                      <Typography className='fontWeight'>03/04/2023     05.30pm</Typography>
+                    </Box>
                   </Box>
                 </Box>
                 <Box className="DetailsCardRowBox">
                   <Box className="labelBox">
-                    <Typography className='e6px'>Booking Rejected Date</Typography>
+                    <Typography className='e6px' pr={1.5}>Booking Rejected Date</Typography>
                     <Typography>Booking Status</Typography>
                   </Box>
                   <Box className="dataBox">
@@ -292,7 +294,7 @@ export default function BookingDetails() {
               <Box className="DetailContent CancellationSummaryContent">
                 <Box className="DetailsCardRowBox">
                   <Box className="labelBox">
-                    <Typography>Event and activity type</Typography>
+                    <Typography pr={1.5}>Event and activity type</Typography>
                     <Typography>No of Attendees</Typography>
                   </Box>
                   <Box className="dataBox">
@@ -335,13 +337,13 @@ export default function BookingDetails() {
                   </Box>
                   <Box className="dataBox">
                     <Typography className='fontWeight desktopView'>Coworking Space: Serendipity<br /> Labs</Typography>
-                    <Typography className='fontWeight mobileView'>Coworking Space: Serendipity Labs</Typography>
+                    <Typography pr={1.5} className='fontWeight mobileView'>Coworking Space: Serendipity Labs</Typography>
                     <Typography className='fontWeight'>Individual Name</Typography>
                   </Box>
                 </Box>
                 <Box className="DetailsCardRowBox">
                   <Box className="labelBox">
-                    <Typography>Contact Person Named</Typography>
+                    <Typography pr={1.5}>Contact Person Named</Typography>
                     <Typography>Contact Number</Typography>
                   </Box>
                   <Box className="dataBox">
@@ -375,7 +377,7 @@ export default function BookingDetails() {
 
                   </Box>
                   <Box className="dataBox">
-                    <Typography className='fontWeight e6px'>24/03/2023       08:45pm</Typography>
+                    <Typography pr={1.5} className='fontWeight e6px'>24/03/2023       08:45pm</Typography>
                     <Typography className='fontWeight'>There are many variations of passages of </Typography>
                   </Box>
                 </Box>
@@ -533,11 +535,11 @@ export default function BookingDetails() {
 
               <Box className="DetailsCardRowBox">
                 <Box className="labelBox">
-                  <Typography>Refund Processed Date</Typography>
+                  <Typography pr={1.5}>Refund Processed Date</Typography>
                   <Typography>Refund amount</Typography>
                 </Box>
                 <Box className="dataBox">
-                  <Typography className='fontWeight'>Refund process will be done 1 week</Typography>
+                  <Typography pr={1.5} className='fontWeight'>Refund process will be done 1 week</Typography>
                   <Typography className='fontWeight RedText'>INR 40000</Typography>
                 </Box>
               </Box>
@@ -547,7 +549,7 @@ export default function BookingDetails() {
                   <Typography>Refund Status</Typography>
                 </Box>
                 <Box className="dataBox">
-                  <Typography className='fontWeight'>Refunded to the same account</Typography>
+                  <Typography pr={1.5} className='fontWeight'>Refunded to the same account</Typography>
                   <Typography className='fontWeight RedText'>processing</Typography>
                 </Box>
               </Box>

@@ -15,162 +15,7 @@
 .coverGallery {
   display: none;
 }
-.topTabs {
-  width: 100%;
-  display: flex;
-  justify-content: right;
-  position: relative;
-  z-index: 1;
-}
-.topTabBox {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  top: 22px;
-  margin-right: 10px;
-}
-.ShareBox {
-  width: 345px;
-  height: 239px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  background: #fff;
-  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
-  position: absolute;
-  top: 69px;
-  padding: 20px;
-  right: 14px;
-}
-.PrintBox {
-  width: 346px;
-  height: 288px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  background: #fff;
-  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
-  position: absolute;
-  top: 65px;
-  right: 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 20px;
-}
-.printHeaderText {
-  color: #202020;
-  font-family: "Poppins-Bold" !important;
-  font-size: 19px !important;
-  font-style: normal;
-  font-weight: 600 !important;
-  line-height: 26px !important;
-}
-.printInputField {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  padding-left: 10px;
-  margin-bottom: 10px;
-}
-.PrintDropDown {
-  width: 206px;
-  height: 36px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  border: 1px solid #e3e3e3;
-  background: #fff;
-  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.PrintDropDownPlaceholder {
-  color: #928f8f;
-  font-family: "Poppins-Regular" !important;
-  font-size: 13px !important;
-  font-style: normal;
-  font-weight: 400 !important;
-  line-height: 130% !important;
-}
-.PrintDropDown img {
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  left: 182px;
-}
-.printInputFieldLabel {
-  color: #212121;
-  font-family: "Poppins-Regular" !important;
-  font-size: 14px !important;
-  font-weight: 500 !important;
-  line-height: 130% !important;
-}
-.printInputFieldLabel {
-  color: #212121;
-  font-family: "Poppins-Regular" !important;
-  font-size: 14px !important;
-  font-weight: 700 !important;
-  line-height: 130% !important;
-}
-.printButton {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.PrintPreviewBtn {
-  width: 139px;
-  height: 32px;
-  flex-shrink: 0;
-  border-radius: 4px;
-  border: 1px solid #ea4335;
-  background: #fff;
-  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.CancelBtn {
-  width: 78px;
-  height: 32px;
-  flex-shrink: 0;
-  border-radius: 4px;
-  border: 1px solid #ea4335;
-  background: #fff;
-  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0px 7px;
-}
 
-.saveBtn {
-  width: 81px;
-  height: 32px;
-  flex-shrink: 0;
-  border-radius: 4px;
-  border: 1px solid #ea4335;
-  background: #ea4335;
-  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.PrintPreviewBtn p {
-  color: #ea4335;
-  font-family: "Poppins-Regular" !important;
-  font-size: 13px !important;
-  font-style: normal !important;
-  font-weight: 400 !important;
-  line-height: 130% !important;
-}
-.CancelBtn p {
-  color: #ea4335;
-  font-family: "Poppins-Regular" !important;
-  font-size: 13px !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  line-height: 130% !important;
-}
 .whiteBtnText {
   color: #fff;
   font-family: "Poppins-Regular" !important;
@@ -257,14 +102,6 @@
   width: 20px;
   height: 20px;
   margin: 0px 15px 0px 19px;
-}
-.shareItemText {
-  color: #212121;
-  font-family: "Poppins-Bold" !important;
-  font-size: 14px !important;
-  font-style: normal;
-  font-weight: 600 !important;
-  line-height: 130% !important; /* 18.2px */
 }
 .subImageBox {
   width: 282px;
@@ -386,6 +223,7 @@
   }
   .venueLocation {
     width: 100%;
+    margin: 20px 0;
   }
   .coverGallery {
     width: 100%;
@@ -400,30 +238,7 @@
   .galleryImage {
     width: 100%;
   }
-  .PrintBox {
-    width: 401px;
-    height: 375px;
-    top: 69px;
-  }
-  .CancelBtn {
-    width: 105px;
-  }
-  .saveBtn {
-    width: 105px;
-  }
-  .bottomMargin {
-    margin-bottom: 85px;
-  }
-  .ShareBox {
-    width: 401px;
-    height: 263px;
-    top: 69px;
-  }
-  .shareItem {
-    width: 164px;
-    height: 50px;
-    margin: 4px 5px;
-  }
+
   .ShowGalleryTab {
     width: 170px;
     height: 47px;
@@ -453,10 +268,7 @@
   .venueLocation {
     max-width: 1305px;
   }
-  .topTabs {
-    width: 86%;
-    max-width: 1305px;
-  }
+
   .ShowGalleryTabBox {
     width: 100%;
     max-width: 1305px;

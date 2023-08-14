@@ -20,6 +20,8 @@ export default function TopTabs({
   favoriteDisplay,
   shareDisplay,
   absolute,
+  homePage,
+  top,
 }) {
   const ref = useRef(null);
   const [printBox, setPrintBox] = useState(false);
@@ -64,9 +66,12 @@ export default function TopTabs({
 
   return (
     <>
-      <Box className="topTabs">
+      <Box className={homePage ? "topTabs homePageTopTab" : "topTabs"}>
         <Box
-          sx={{ position: absolute ? "absolute" : "initial" }}
+          sx={{
+            position: absolute ? "absolute" : "initial",
+            top: top || "84px",
+          }}
           className="top_TabBox"
         >
           <Box
@@ -196,7 +201,7 @@ export default function TopTabs({
         <Box
           ref={ref}
           sx={{ display: printBox ? "block" : "none" }}
-          className="Print_Box"
+          className={homePage ? "Print_Box home_Print_Box" : "Print_Box"}
           id="printBox"
           onClick={(event) => event.stopPropagation()}
         >
@@ -259,7 +264,7 @@ export default function TopTabs({
         <Box
           ref={ref}
           sx={{ display: shareBox ? "block" : "none" }}
-          className="Share_Box"
+          className={homePage ? "Share_Box home_Share_Box" : "Share_Box"}
         >
           <Box ml={1} className="shareBoxHeader">
             <Typography className="shareBoxHeaderText">

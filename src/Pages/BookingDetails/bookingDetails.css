@@ -368,6 +368,13 @@
 .fullWidth {
   width: 100% !important;
 }
+.bATextBox {
+  width: 50%;
+  margin-left: 10px;
+}
+.bATextBox p {
+  width: 100%;
+}
 .locationId {
   color: #ea4335;
   font-family: "Poppins-Bold" !important;

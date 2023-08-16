@@ -192,3 +192,60 @@
 .imgC img:hover + .message {
   display: block;
 }
+.responsiveLabelText {
+  display: block;
+}
+/* Tab view*/
+@media only screen and (min-width: 768px) {
+  .subCLabel {
+    display: none;
+  }
+  .basicPlan {
+    width: 260px;
+  }
+  .standardPlan {
+    width: 260px;
+  }
+  .premiumPlan {
+    width: 260px;
+  }
+  .getStartButton {
+    width: 225px;
+  }
+  .planItemsText p {
+    font-size: 12px !important;
+  }
+  .planeItem p {
+    padding-left: 16px;
+  }
+  .responsiveLabelText {
+    padding-left: 9px !important;
+    font-weight: 800 !important;
+    font-size: 12px;
+  }
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+  .subCLabel {
+    display: flex;
+  }
+  .basicPlan {
+    width: 325px;
+  }
+  .standardPlan {
+    width: 325px;
+  }
+  .premiumPlan {
+    width: 325px;
+  }
+  .getStartButton {
+    width: 279px;
+  }
+  .responsiveLabelText {
+    display: none;
+  }
+  .planItemsText p {
+    font-size: 16px !important;
+  }
+}

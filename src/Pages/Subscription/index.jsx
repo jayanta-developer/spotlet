@@ -107,30 +107,39 @@ export default function Subscription() {
 
             <Box className="planItems planItemsText">
               <Box className="planeItem tinBackground">
+                <Typography variant='h7' className='responsiveLabelText' >Property Name -</Typography>
                 <Typography mr={1.5}>1DER58TYUIOP</Typography>
               </Box>
               <Box className="planeItem WhiteBackground">
+                <Typography variant='h7' className='responsiveLabelText' >Image Upload Limit -</Typography>
                 <Typography mr={1.5}>Up to 5 images</Typography>
               </Box>
               <Box className="planeItem tinBackground">
+                <Typography variant='h7' className='responsiveLabelText' >Video Upload -</Typography>
                 <Typography mr={1.5}>Not available</Typography>
               </Box>
               <Box className="planeItem WhiteBackground">
+                <Typography variant='h7' className='responsiveLabelText' >Search Priority -</Typography>
                 <Typography mr={1.5}>Lower Priority</Typography>
               </Box>
               <Box className="planeItem tinBackground">
+                <Typography variant='h7' className='responsiveLabelText'>Professional approach -</Typography>
                 <Typography mr={1.5}>Not available</Typography>
               </Box>
               <Box className="planeItem WhiteBackground">
+                <Typography variant='h7' className='responsiveLabelText' >Theme Options -</Typography>
                 <Typography mr={1.5}>Not available</Typography>
               </Box>
               <Box className="planeItem tinBackground">
+                <Typography variant='h7' className='responsiveLabelText' >Modifications Listing -</Typography>
                 <Typography mr={1.5}>Not available</Typography>
               </Box>
               <Box className="planeItem WhiteBackground">
+                <Typography variant='h7' className='responsiveLabelText' >Social Media Promotion -</Typography>
                 <Typography mr={1.5}>Not available</Typography>
               </Box>
               <Box className="planeItem tinBackground">
+                <Typography variant='h7' className='responsiveLabelText' >Discount In (%) -</Typography>
                 <Typography mr={1.5}>Free</Typography>
               </Box>
             </Box>

@@ -26,7 +26,6 @@
   padding: 0px 10%;
 }
 .footerItem {
-  /* border: 1px solid white; */
   width: 95%;
   display: flex;
   flex-direction: column;
@@ -99,7 +98,8 @@
     height: 283px;
   }
   .footerItem {
-    width: 15%;
+    width: 18%;
+    margin: 0px 6px;
   }
   .footerCologos {
     width: 20%;
@@ -114,5 +114,8 @@
 @media only screen and (min-width: 1000px) {
   .footerLogoSubText {
     line-height: 1.5 !important;
+  }
+  .footerItem {
+    width: 95%;
   }
 }

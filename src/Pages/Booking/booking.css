@@ -238,7 +238,7 @@
 }
 .BookingDetailsTowBox {
   width: 90%;
-  /* height: 382px; */
+  min-width: 337.5px;
   height: auto;
   flex-shrink: 0;
   border-radius: 10px;

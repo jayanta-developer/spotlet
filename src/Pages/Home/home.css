@@ -242,6 +242,7 @@
   .ShowGalleryTab {
     width: 170px;
     height: 47px;
+    bottom: 238px;
   }
   .locationHeader h5 {
     font-size: 25px !important;

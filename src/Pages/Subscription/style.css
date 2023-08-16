@@ -1,0 +1,194 @@
+.subscriptionContainer {
+  width: 100%;
+  margin-top: 105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subscriptionHeaderBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 61px;
+  margin-top: 25px;
+}
+.subscriptionHeader p {
+  color: #1a1a1a;
+  font-family: "Poppins-Bold" !important;
+  font-size: 37px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: normal !important;
+}
+.backButtonPosition {
+  position: absolute;
+  left: 10%;
+}
+
+.subscriptionPlanBox {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  margin-bottom: 133px;
+}
+.planeItem p {
+  color: #252525;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal !important;
+  padding-left: 17px;
+}
+.planeItem {
+  height: 63px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.subCLabel {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+}
+.subCLabel img {
+  cursor: pointer;
+}
+.tinBackground {
+  background: #edf3ff;
+}
+.WhiteBackground {
+  background: #ffffff;
+}
+.basicPlan {
+  width: 325px;
+  padding: 24px 0px;
+}
+.standardPlan {
+  width: 325px;
+  padding: 24px 0px;
+  border-radius: 21px;
+  border: 1px solid #ffcac6;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+}
+.premiumPlan {
+  width: 325px;
+  padding: 24px 0px;
+}
+.basicPlanHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 49px;
+}
+.getStartButton {
+  width: 279px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.getStartButton p {
+  color: #fff;
+  font-family: "Poppins-Bold" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: normal !important;
+}
+.planItems {
+  display: flex;
+  flex-direction: column;
+}
+.planHeaderLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 13px;
+}
+.planeHeaderText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.planeHeaderText p {
+  /* color: #140301; */
+  font-family: "Poppins-Regular" !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+.planPrice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.planPrice p {
+  /* color: #140301; */
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 27px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+.planItemsText p {
+  color: #030418;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+.leftBorderRadius {
+  border-radius: 10px 0px 0px 10px;
+}
+.rightBorderRadius {
+  border-radius: 0px 10px 10px 0px;
+}
+.lastPlanText p {
+  color: #02041d;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+.PerAnnumText p {
+  color: #ea4335;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+.imgC {
+  position: relative;
+}
+.message {
+  width: 318px;
+  display: none;
+  position: absolute;
+  top: 69%;
+  left: 66%;
+  transform: translateX(-50%);
+  background-color: #c9e0fdfa;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+  color: #000000;
+  z-index: 1;
+}
+
+.imgC img:hover + .message {
+  display: block;
+}

@@ -6,24 +6,20 @@ import "./bookingDetails.css";
 import NavBar from '../NavBar';
 import TopTabs from '../../Component/TopTabs';
 import Footer from "../Footer";
-
 import GoogleMap from '../../Component/GoogleMap';
 
 
-import coverPhoto from "../../Assets/images/BookingDetails/dfsdfsdfds - Copy.jpeg"
-import starIcon from "../../Assets/images/star-48.png"
+import coverPhoto from "../../Assets/images/BookingDetails/dfsdfsdfds - Copy.jpeg";
+import starIcon from "../../Assets/images/star-48.png";
 import locationIcon from "../../Assets/images/Group 54.svg";
-import RightArrow from "../../Assets/images/BookingDetails/RoundEightArrow.svg"
-import visaIcon from "../../Assets/images/BookingDetails/Visa.png"
-
-
+import RightArrow from "../../Assets/images/BookingDetails/RoundEightArrow.svg";
+import visaIcon from "../../Assets/images/BookingDetails/Visa.png";
 
 
 
 export default function BookingDetails() {
   const navigate = useNavigate();
   const [propertyNameVisibility, setPropertyNameVisibility] = useState(false)
-
 
   const latitude = 28.230553471285813
   const longitude = 75.97394025062951

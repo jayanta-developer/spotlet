@@ -34,6 +34,9 @@
 }
 .BookingDetailsBox {
   margin-left: 0px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 .BookingHeader {
   display: none;
@@ -55,6 +58,7 @@
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
+  align-items: center;
 }
 .headerLabel {
   display: flex;
@@ -370,7 +374,7 @@
 .BookingDate p {
   color: #5e5e5e;
   font-family: "Poppins-Regular" !important;
-  font-size: 14px !important;
+  font-size: 11px !important;
   font-style: normal;
   font-weight: 300 !important;
   line-height: 99.7% !important;
@@ -477,7 +481,7 @@
 .InrText {
   color: #262525;
   font-family: "Poppins-Regular" !important;
-  font-size: 16px !important;
+  font-size: 13px !important;
   font-style: normal;
   font-weight: 700 !important;
   line-height: 99.7% !important;
@@ -598,11 +602,14 @@
 .gstUperBox {
   display: flex;
   flex-direction: row;
-  width: 242px;
+  width: 196px;
+}
+.SdPrise {
+  width: 74px;
 }
 @media only screen and (min-width: 768px) {
   .bookingNav {
-    padding: 7px 208px;
+    padding: 7px 54px;
   }
   .BookingHeader {
     display: block;
@@ -610,19 +617,18 @@
     padding-left: 9%;
   }
   .BookingInputBox {
-    width: 45%;
+    width: 90%;
     margin-top: 0px;
-    margin-right: 10px;
   }
   .BookingDetailsBox {
-    width: 35%;
-    margin-left: 10px;
+    width: 100%;
   }
   .bookingMainBox {
-    flex-direction: row;
+    flex-direction: column;
   }
+
   .BookingDetailsCard {
-    width: 517px;
+    width: 80%;
     height: 879px;
     padding: 15px 20px;
   }
@@ -768,5 +774,35 @@
   }
   .sSize {
     font-size: 13px !important;
+  }
+  .InrText {
+    font-size: 16px !important;
+  }
+  .SdPrise {
+    width: 84px;
+  }
+  .BookingDate p {
+    font-size: 14px !important;
+  }
+}
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+  .bookingNav {
+    padding: 7px 208px;
+  }
+  .bookingMainBox {
+    flex-direction: row;
+  }
+  .BookingDetailsBox {
+    width: 35%;
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+  .BookingInputBox {
+    width: 45%;
+    margin-right: 10px;
+  }
+  .BookingDetailsCard {
+    width: 517px;
   }
 }

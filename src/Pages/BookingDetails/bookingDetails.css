@@ -16,6 +16,9 @@
   max-width: 1302px;
   min-width: 50px;
 }
+.coverBox .topTabs .top_TabBox {
+  top: 62px;
+}
 .BookingDetailContinent {
   width: 95%;
   display: flex;
@@ -35,17 +38,15 @@
   max-width: 1302px;
 }
 .lastContentBox {
-  /* align-items: center; */
+  width: 100%;
+  align-items: center;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.eventWidth {
-  width: 100%;
-}
 .lastWidth {
-  width: 95%;
+  width: 85%;
 }
 .PaymentWidth {
   width: 100%;
@@ -189,6 +190,7 @@
 }
 .RefundSummaryContent {
   padding: 21px 15px;
+  margin-left: 0px;
 }
 .DetailsCardRowBox {
   display: flex;
@@ -399,6 +401,9 @@
   cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
+  .coverBox .topTabs .top_TabBox {
+    top: 84px;
+  }
   .mobileView {
     display: none;
   }
@@ -486,24 +491,21 @@
   }
   .RefundSummary {
     height: 276px;
-    margin-left: 15px;
   }
   .UserSummary {
-    margin-left: 15px;
+    margin-left: 0px;
     height: 489px;
   }
   .HostSummary {
-    margin-left: 15px;
+    margin-left: 0px;
     height: auto;
   }
   .CancellationSummary {
     height: 276px;
-    margin-right: 15px;
   }
   .EventSummary {
     height: auto;
-    margin-right: 15px;
-    margin-bottom: 0;
+    margin-bottom: 30;
   }
 
   .BookingDetailBox {
@@ -518,16 +520,15 @@
     align-items: center;
   }
   .lastContentBox {
-    flex-direction: row;
     height: auto;
     max-width: 1302px;
   }
   .lastBookingDetailBoxCard {
-    width: 50%;
-    min-width: 584px;
+    width: 100%;
+    max-width: 1302px;
   }
   .MapBox {
-    width: 95%;
+    width: 85%;
     margin-bottom: 30px;
   }
   .MapHeader {
@@ -562,5 +563,38 @@
   }
   .eventDateBox {
     width: 606px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .lastContentBox {
+    flex-direction: row;
+    align-items: start;
+  }
+  .lastBookingDetailBoxCard {
+    width: 50%;
+    min-width: 584px;
+  }
+  .EventSummary {
+    margin-right: 15px;
+    margin-bottom: 0px;
+  }
+  .UserSummary {
+    margin-left: 15px;
+    min-height: 494.56px;
+  }
+  .HostSummary {
+    margin-left: 15px;
+    height: 333px;
+  }
+  .CancellationSummary {
+    margin-right: 15px;
+  }
+  .RefundSummary {
+    margin-left: 15px;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1486px) {
+  .UserSummary {
+    height: 514.56px !important;
   }
 }

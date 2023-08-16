@@ -85,6 +85,9 @@
   height: 20px;
   margin: 0px 5px;
 }
+.footerLogoSubText {
+  line-height: 1.5 !important;
+}
 @media only screen and (min-width: 768px) {
   .footer {
     height: 333px;
@@ -103,5 +106,13 @@
   }
   .RightsBox p {
     font-size: 14px !important;
+  }
+  .footerLogoSubText {
+    line-height: 1 !important;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .footerLogoSubText {
+    line-height: 1.5 !important;
   }
 }

@@ -172,30 +172,39 @@ export default function Subscription() {
             </Box>
             <Box className="planItems planItemsText">
               <Box className="planeItem ">
+                <Typography variant='h7' className='responsiveLabel2ndText' >Property Name -</Typography>
                 <Typography mr={1.5}>Coworking Space</Typography>
               </Box>
               <Box className="planeItem WhiteBackground">
+                <Typography variant='h7' className='responsiveLabel2ndText' >Image Upload Limit -</Typography>
                 <Typography mr={1.5}>Up to 25 images</Typography>
               </Box>
               <Box className="planeItem ">
+                <Typography variant='h7' className='responsiveLabel2ndText' >Video Upload -</Typography>
                 <Typography mr={1.5}>Up to 10 Mb</Typography>
               </Box>
               <Box className="planeItem WhiteBackground">
+                <Typography variant='h7' className='responsiveLabel2ndText' >Search Priority -</Typography>
                 <Typography mr={1.5}>Medium Priority</Typography>
               </Box>
               <Box className="planeItem ">
+                <Typography variant='h7' className='responsiveLabel2ndText'>Professional approach -</Typography>
                 <Typography mr={1.5}>Yes</Typography>
               </Box>
               <Box className="planeItem WhiteBackground">
+                <Typography variant='h7' className='responsiveLabel2ndText' >Theme Options -</Typography>
                 <Typography mr={1.5}>Not available</Typography>
               </Box>
               <Box className="planeItem ">
+                <Typography variant='h7' className='responsiveLabel2ndText' >Modifications Listing -</Typography>
                 <Typography mr={1.5}>Yes</Typography>
               </Box>
               <Box className="planeItem WhiteBackground">
+                <Typography variant='h7' className='responsiveLabel2ndText' >Social Media Promotion -</Typography>
                 <Typography mr={1.5}>Yes</Typography>
               </Box>
               <Box className="planeItem ">
+                <Typography variant='h7' className='responsiveLabel2ndText' >Discount In (%) -</Typography>
                 <Typography mr={1.5}>80%</Typography>
               </Box>
             </Box>
@@ -227,30 +236,39 @@ export default function Subscription() {
 
             <Box className="planItems planItemsText">
               <Box className="planeItem tinBackground rightBorderRadius">
+                <Typography variant='h7' className='responsiveLabel2ndText' >Property Name -</Typography>
                 <Typography mr={1.5}>Coworking Space</Typography>
               </Box>
               <Box className="planeItem WhiteBackground">
+                <Typography variant='h7' className='responsiveLabel2ndText' >Image Upload Limit -</Typography>
                 <Typography mr={1.5}>Up to 50 images</Typography>
               </Box>
               <Box className="planeItem tinBackground rightBorderRadius">
+                <Typography variant='h7' className='responsiveLabel2ndText' >Video Upload -</Typography>
                 <Typography mr={1.5}>Higher Priority</Typography>
               </Box>
               <Box className="planeItem WhiteBackground">
+                <Typography variant='h7' className='responsiveLabel2ndText' >Search Priority -</Typography>
                 <Typography mr={1.5}>Higher Priority</Typography>
               </Box>
               <Box className="planeItem tinBackground rightBorderRadius">
+                <Typography variant='h7' className='responsiveLabel2ndText'>Professional approach -</Typography>
                 <Typography mr={1.5}>Yes</Typography>
               </Box>
               <Box className="planeItem WhiteBackground">
+                <Typography variant='h7' className='responsiveLabel2ndText' >Theme Options -</Typography>
                 <Typography mr={1.5}>Yes</Typography>
               </Box>
               <Box className="planeItem tinBackground rightBorderRadius">
+                <Typography variant='h7' className='responsiveLabel2ndText' >Modifications Listing -</Typography>
                 <Typography mr={1.5}>Yes</Typography>
               </Box>
               <Box className="planeItem WhiteBackground">
+                <Typography variant='h7' className='responsiveLabel2ndText' >Social Media Promotion -</Typography>
                 <Typography mr={1.5}>Yes</Typography>
               </Box>
               <Box className="planeItem tinBackground rightBorderRadius">
+                <Typography variant='h7' className='responsiveLabel2ndText' >Discount In (%) -</Typography>
                 <Typography mr={1.5}>80%</Typography>
               </Box>
             </Box>

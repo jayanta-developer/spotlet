@@ -24,7 +24,7 @@ export default function Footer() {
             <Box className="footerItem footerCologos">
               <img style={{ width: "138px", height: "24px", marginBottom: "20px" }} src={spotlet} />
               <Typography className='footerLogoSubText'>
-                SpotLet is a platform where hosts, guests, clients and customers come together to find their dream spaces! It’s a collaboration of ideas, places and people to create beautiful moments and memories.
+                SpotLet is a platform where hosts, guests, clients and customers come together to find their dream spaces. It’s a collaboration of ideas, places and people to create beautiful moments and memories.
               </Typography>
             </Box>
 

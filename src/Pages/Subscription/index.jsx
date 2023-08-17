@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom';
 
 
 import "./style.css"
-import basicPlan from "../../Assets/images/Plans/BasicPlanIcon.png"
-import standardPlan from "../../Assets/images/Plans/standaraPlanIcon.png"
-import premiumPlan from "../../Assets/images/Plans/spotlet/Group 5244.png"
+import basic_Plan from "../../Assets/images/Plans/BasicPlanIcon.png"
+import standard_Plan from "../../Assets/images/Plans/standaraPlanIcon.png"
+import premium_Plan from "../../Assets/images/Plans/spotlet/Group 5244.png"
 import iIcon from "../../Assets/images/Plans/Iicon.svg"
 
 //Component
@@ -97,7 +97,7 @@ export default function Subscription() {
             className="basicPlan">
             <Box className="basicPlanHeader">
               <Box className="planHeaderLogo">
-                <img style={{ width: "100%", height: "100%" }} src={basicPlan} />
+                <img style={{ width: "100%", height: "100%" }} src={basic_Plan} />
               </Box>
               <Box className="planeHeaderText">
                 <Typography>Basic Plan</Typography>
@@ -160,7 +160,7 @@ export default function Subscription() {
             className="standardPlan">
             <Box className="basicPlanHeader">
               <Box className="planHeaderLogo">
-                <img style={{ width: "100%", height: "100%" }} src={standardPlan} />
+                <img style={{ width: "100%", height: "100%" }} src={standard_Plan} />
               </Box>
               <Box className="planeHeaderText">
                 <Typography sx={{ color: "#EA4335" }}>Standard Plan</Typography>
@@ -226,7 +226,7 @@ export default function Subscription() {
             className="premiumPlan">
             <Box className="basicPlanHeader">
               <Box className="planHeaderLogo">
-                <img style={{ width: "100%", height: "100%" }} src={premiumPlan} />
+                <img style={{ width: "100%", height: "100%" }} src={premium_Plan} />
               </Box>
               <Box className="planeHeaderText">
                 <Typography>Premium Plan</Typography>

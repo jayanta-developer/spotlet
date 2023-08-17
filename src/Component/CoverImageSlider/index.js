@@ -13,8 +13,18 @@ import image6 from "../../Assets/images/galleryImages/pexels-alex-qian-2343465.j
 import image7 from "../../Assets/images/galleryImages/pexels-pixabay-259646.jpg";
 import image8 from "../../Assets/images/galleryImages/pexels-sergio-souza-1782154.jpg";
 import image9 from "../../Assets/images/galleryImages/pexels-alex-staudinger-1732414.jpg";
+import image10 from "../../Assets/images/galleryImages/Screenshot 2023-08-17 102155.png";
 
-const images = [image3, image2, image1, image6, image7, image8, image9];
+const images = [
+  image3,
+  image2,
+  image1,
+  image6,
+  image7,
+  image8,
+  image9,
+  // image10,
+];
 
 const ImageSlider = ({ thumbnail }) => {
   const [currentIndex, setCurrentIndex] = useState(0);

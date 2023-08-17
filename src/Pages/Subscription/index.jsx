@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
@@ -14,6 +14,10 @@ import NavBar from '../NavBar';
 import Footer from '../Footer';
 
 export default function Subscription() {
+  const [basicPlan, setBasicPlan] = useState(false)
+  const [standardPlan, setStandardPlan] = useState(false)
+  const [premiumPlan, setPremiumPlan] = useState(false)
+
   const navigate = useNavigate();
 
   return (
@@ -87,7 +91,10 @@ export default function Subscription() {
           </Box>
 
 
-          <Box className="basicPlan">
+          <Box
+            onMouseEnter={() => setBasicPlan(true)}
+            onMouseLeave={() => setBasicPlan(false)}
+            className="basicPlan">
             <Box className="basicPlanHeader">
               <Box className="planHeaderLogo">
                 <img style={{ width: "100%", height: "100%" }} src={basicPlan} />
@@ -106,7 +113,7 @@ export default function Subscription() {
             </Box>
 
             <Box className="planItems planItemsText">
-              <Box className="planeItem tinBackground">
+              <Box className={basicPlan ? "planeItem MobileTin" : "planeItem tinBackground"}>
                 <Typography variant='h7' className='responsiveLabelText' >Property Name -</Typography>
                 <Typography mr={1.5}>1DER58TYUIOP</Typography>
               </Box>
@@ -114,7 +121,7 @@ export default function Subscription() {
                 <Typography variant='h7' className='responsiveLabelText' >Image Upload Limit -</Typography>
                 <Typography mr={1.5}>Up to 5 images</Typography>
               </Box>
-              <Box className="planeItem tinBackground">
+              <Box className={basicPlan ? "planeItem MobileTin" : "planeItem tinBackground"}>
                 <Typography variant='h7' className='responsiveLabelText' >Video Upload -</Typography>
                 <Typography mr={1.5}>Not available</Typography>
               </Box>
@@ -122,7 +129,7 @@ export default function Subscription() {
                 <Typography variant='h7' className='responsiveLabelText' >Search Priority -</Typography>
                 <Typography mr={1.5}>Lower Priority</Typography>
               </Box>
-              <Box className="planeItem tinBackground">
+              <Box className={basicPlan ? "planeItem MobileTin" : "planeItem tinBackground"}>
                 <Typography variant='h7' className='responsiveLabelText'>Professional approach -</Typography>
                 <Typography mr={1.5}>Not available</Typography>
               </Box>
@@ -130,7 +137,7 @@ export default function Subscription() {
                 <Typography variant='h7' className='responsiveLabelText' >Theme Options -</Typography>
                 <Typography mr={1.5}>Not available</Typography>
               </Box>
-              <Box className="planeItem tinBackground">
+              <Box className={basicPlan ? "planeItem MobileTin" : "planeItem tinBackground"}>
                 <Typography variant='h7' className='responsiveLabelText' >Modifications Listing -</Typography>
                 <Typography mr={1.5}>Not available</Typography>
               </Box>
@@ -138,7 +145,7 @@ export default function Subscription() {
                 <Typography variant='h7' className='responsiveLabelText' >Social Media Promotion -</Typography>
                 <Typography mr={1.5}>Not available</Typography>
               </Box>
-              <Box className="planeItem tinBackground">
+              <Box className={basicPlan ? "planeItem MobileTin" : "planeItem tinBackground"}>
                 <Typography variant='h7' className='responsiveLabelText' >Discount In (%) -</Typography>
                 <Typography mr={1.5}>Free</Typography>
               </Box>
@@ -147,7 +154,10 @@ export default function Subscription() {
           </Box>
 
 
-          <Box className="standardPlan">
+          <Box
+            onMouseEnter={() => setStandardPlan(true)}
+            onMouseLeave={() => setStandardPlan(false)}
+            className="standardPlan">
             <Box className="basicPlanHeader">
               <Box className="planHeaderLogo">
                 <img style={{ width: "100%", height: "100%" }} src={standardPlan} />
@@ -171,7 +181,7 @@ export default function Subscription() {
               </Box>
             </Box>
             <Box className="planItems planItemsText">
-              <Box className="planeItem ">
+              <Box className={standardPlan ? "planeItem MobileTin ActiveTabTin" : "planeItem TabTin tinBackground"}>
                 <Typography variant='h7' className='responsiveLabel2ndText' >Property Name -</Typography>
                 <Typography mr={1.5}>Coworking Space</Typography>
               </Box>
@@ -179,7 +189,7 @@ export default function Subscription() {
                 <Typography variant='h7' className='responsiveLabel2ndText' >Image Upload Limit -</Typography>
                 <Typography mr={1.5}>Up to 25 images</Typography>
               </Box>
-              <Box className="planeItem ">
+              <Box className={standardPlan ? "planeItem MobileTin ActiveTabTin" : "planeItem TabTin"}>
                 <Typography variant='h7' className='responsiveLabel2ndText' >Video Upload -</Typography>
                 <Typography mr={1.5}>Up to 10 Mb</Typography>
               </Box>
@@ -187,7 +197,7 @@ export default function Subscription() {
                 <Typography variant='h7' className='responsiveLabel2ndText' >Search Priority -</Typography>
                 <Typography mr={1.5}>Medium Priority</Typography>
               </Box>
-              <Box className="planeItem ">
+              <Box className={standardPlan ? "planeItem MobileTin ActiveTabTin" : "planeItem TabTin"}>
                 <Typography variant='h7' className='responsiveLabel2ndText'>Professional approach -</Typography>
                 <Typography mr={1.5}>Yes</Typography>
               </Box>
@@ -195,7 +205,7 @@ export default function Subscription() {
                 <Typography variant='h7' className='responsiveLabel2ndText' >Theme Options -</Typography>
                 <Typography mr={1.5}>Not available</Typography>
               </Box>
-              <Box className="planeItem ">
+              <Box className={standardPlan ? "planeItem MobileTin ActiveTabTin" : "planeItem TabTin"}>
                 <Typography variant='h7' className='responsiveLabel2ndText' >Modifications Listing -</Typography>
                 <Typography mr={1.5}>Yes</Typography>
               </Box>
@@ -203,14 +213,17 @@ export default function Subscription() {
                 <Typography variant='h7' className='responsiveLabel2ndText' >Social Media Promotion -</Typography>
                 <Typography mr={1.5}>Yes</Typography>
               </Box>
-              <Box className="planeItem ">
+              <Box className={standardPlan ? "planeItem MobileTin ActiveTabTin" : "planeItem TabTin"}>
                 <Typography variant='h7' className='responsiveLabel2ndText' >Discount In (%) -</Typography>
                 <Typography mr={1.5}>80%</Typography>
               </Box>
             </Box>
 
           </Box>
-          <Box className="premiumPlan">
+          <Box
+            onMouseEnter={() => setPremiumPlan(true)}
+            onMouseLeave={() => setPremiumPlan(false)}
+            className="premiumPlan">
             <Box className="basicPlanHeader">
               <Box className="planHeaderLogo">
                 <img style={{ width: "100%", height: "100%" }} src={premiumPlan} />
@@ -235,7 +248,7 @@ export default function Subscription() {
             </Box>
 
             <Box className="planItems planItemsText">
-              <Box className="planeItem tinBackground rightBorderRadius">
+              <Box className={premiumPlan ? "planeItem MobileTin" : "planeItem tinBackground rightBorderRadius"}>
                 <Typography variant='h7' className='responsiveLabel2ndText' >Property Name -</Typography>
                 <Typography mr={1.5}>Coworking Space</Typography>
               </Box>
@@ -243,7 +256,7 @@ export default function Subscription() {
                 <Typography variant='h7' className='responsiveLabel2ndText' >Image Upload Limit -</Typography>
                 <Typography mr={1.5}>Up to 50 images</Typography>
               </Box>
-              <Box className="planeItem tinBackground rightBorderRadius">
+              <Box className={premiumPlan ? "planeItem MobileTin" : "planeItem tinBackground rightBorderRadius"}>
                 <Typography variant='h7' className='responsiveLabel2ndText' >Video Upload -</Typography>
                 <Typography mr={1.5}>Higher Priority</Typography>
               </Box>
@@ -251,7 +264,7 @@ export default function Subscription() {
                 <Typography variant='h7' className='responsiveLabel2ndText' >Search Priority -</Typography>
                 <Typography mr={1.5}>Higher Priority</Typography>
               </Box>
-              <Box className="planeItem tinBackground rightBorderRadius">
+              <Box className={premiumPlan ? "planeItem MobileTin" : "planeItem tinBackground rightBorderRadius"}>
                 <Typography variant='h7' className='responsiveLabel2ndText'>Professional approach -</Typography>
                 <Typography mr={1.5}>Yes</Typography>
               </Box>
@@ -259,7 +272,7 @@ export default function Subscription() {
                 <Typography variant='h7' className='responsiveLabel2ndText' >Theme Options -</Typography>
                 <Typography mr={1.5}>Yes</Typography>
               </Box>
-              <Box className="planeItem tinBackground rightBorderRadius">
+              <Box className={premiumPlan ? "planeItem MobileTin" : "planeItem tinBackground rightBorderRadius"}>
                 <Typography variant='h7' className='responsiveLabel2ndText' >Modifications Listing -</Typography>
                 <Typography mr={1.5}>Yes</Typography>
               </Box>
@@ -267,7 +280,7 @@ export default function Subscription() {
                 <Typography variant='h7' className='responsiveLabel2ndText' >Social Media Promotion -</Typography>
                 <Typography mr={1.5}>Yes</Typography>
               </Box>
-              <Box className="planeItem tinBackground rightBorderRadius">
+              <Box className={premiumPlan ? "planeItem MobileTin" : "planeItem tinBackground rightBorderRadius"}>
                 <Typography variant='h7' className='responsiveLabel2ndText' >Discount In (%) -</Typography>
                 <Typography mr={1.5}>80%</Typography>
               </Box>

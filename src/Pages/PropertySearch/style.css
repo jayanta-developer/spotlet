@@ -25,15 +25,24 @@
   margin-top: 15px;
 }
 .filterBox {
+  width: 100%;
   display: flex;
   height: 65px;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 950px;
+  min-width: 550px;
 }
 .filterItem {
   width: 97px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+  cursor: pointer;
+}
+.filterItemSideBorder {
+  border-right: 1px solid #e8e8e8;
 }
 .filterItemHeaderBox {
   display: flex;
@@ -118,6 +127,7 @@
   flex-shrink: 0;
   border-radius: 7px;
   background: #f2f2f2;
+  position: relative;
 }
 .filter_btn_text {
   color: #555;
@@ -196,28 +206,75 @@
   background-color: #fff;
   border-radius: 50%;
 }
+.EventList {
+  flex-direction: column;
+  width: 189px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #fff;
+  z-index: 1;
+  padding: 2px;
+}
+.eventItem {
+  text-align: center;
+  height: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #fff;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(128 128 128 / 25%);
+  z-index: 1;
+  transition: background 0.5s;
+}
+.eventItem p {
+  color: #484848;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 20px !important;
+  letter-spacing: 0.13px !important;
+  padding-left: 16px;
+  transition: font-size 0.2s;
+}
+.eventItem:hover {
+  border-radius: 8px;
+  border: 1px solid #ea4335;
+  background: rgb(255, 209, 205);
+}
+.eventItem:hover p {
+  font-size: 17px !important;
+}
+.storByPopUpBox {
+  position: absolute;
+  top: 49px;
+  z-index: 1;
+}
 @media only screen and (min-width: 768px) {
   .propertySearchContainer {
     margin-top: 128px;
   }
   .propertySHeader {
     width: 75%;
+    min-width: 771px;
+    max-width: 1166px;
     height: 176px;
     padding: 20px 17px;
   }
   .filterItem {
-    width: 229px;
+    width: 20%;
     height: 100%;
   }
   .property_search_Field div {
-    width: 80%;
+    width: 85%;
   }
   .filterItemHeader {
     font-size: 20px !important;
-    margin-right: 16px !important;
+    margin-right: 11px !important;
   }
   .filterItemSubHeader {
-    font-size: 19px !important;
+    font-size: 15px !important;
   }
   .bottomFilterWB {
     flex-direction: row;

@@ -3,6 +3,16 @@ import { Link } from 'react-router-dom';
 import "./overview.css"
 import { Box, TextField, Typography } from '@mui/material';
 
+//venueDetails none icon
+import FilmShootingNoneIcon from "../../Assets/images/FilmShootingNoneIcon.svg";
+import CorporateEventNoneIcon from "../../Assets/images/CorporateNoneIcon.svg"
+import IndividualEventNoneIcon from "../../Assets/images/IndividualNoneIcon.svg"
+import ParkingNoneIcon from "../../Assets/images/ParkingNoneIcon.svg"
+import StreetParkingNoneIcon from "../../Assets/images/StreetParkingNoneIcon.svg"
+import CCTVNoneIcon from "../../Assets/images/CcTvNoneIcon.svg"
+
+
+
 //venueDetails icon
 import timeIcon from "../../Assets/images/venuDetailsIcon/download (2) 1.svg"
 import peopleIcon from "../../Assets/images/venuDetailsIcon/Vector.svg"
@@ -189,18 +199,21 @@ export default function Overview() {
           <Box className="venueDetailsBox">
             <Box className="venueDetails bottomBorder venueDetailsFirst">
 
-              <Box sx={{ width: "173px" }} className="venueDetailsItem">
-                <img className='crossLine' src={CrossLine} />
-                <img className='venueDetailsIcon' src={videoIcon} />
+              <Box sx={{ width: "221px" }} className="venueDetailsItem">
+                {/* <img className='venueDetailsIcon' src={videoIcon} /> */}
+                <img className='venueDetailsIcon' src={FilmShootingNoneIcon} />
                 <Typography>Film Shooting </Typography>
               </Box>
-              <Box sx={{ width: "146px" }} className="venueDetailsItem">
-                <img className='venueDetailsIcon' src={bulding} />
+
+              <Box sx={{ width: "221px" }} className="venueDetailsItem">
+                {/* <img className='venueDetailsIcon' src={bulding} /> */}
+                <img className='venueDetailsIcon' src={CorporateEventNoneIcon} />
                 <Typography>Corporate Event</Typography>
               </Box>
-              <Box sx={{ width: "169px" }} className="venueDetailsItem">
-                {/* <img className='crossLine' src={CrossLine} /> */}
-                <img className='venueDetailsIcon' src={group} />
+
+              <Box sx={{ width: "221px" }} className="venueDetailsItem">
+                {/* <img className='venueDetailsIcon' src={group} /> */}
+                <img className='venueDetailsIcon' src={IndividualEventNoneIcon} />
                 <Typography>Individual Event</Typography>
               </Box>
 
@@ -220,16 +233,18 @@ export default function Overview() {
                 <Typography>1300 sq/ft </Typography>
               </Box>
               <Box sx={{ width: "138px" }} className="venueDetailsItem ">
-                <img className='venueDetailsIcon' src={parkingIcon} />
+                {/* <img className='venueDetailsIcon' src={parkingIcon} /> */}
+                <img className='venueDetailsIcon' src={ParkingNoneIcon} />
                 <Typography>parking</Typography>
               </Box>
               <Box sx={{ width: "138px" }} className="venueDetailsItem ">
-                {/* <img className='crossLine' src={CrossLine} /> */}
-                <img className='venueDetailsIcon' src={StreetParkingIcon} />
+                {/* <img className='venueDetailsIcon' src={StreetParkingIcon} /> */}
+                <img className='venueDetailsIcon' src={StreetParkingNoneIcon} />
                 <Typography>street parking</Typography>
               </Box>
               <Box sx={{ width: "121px" }} className="venueDetailsItem ">
-                <img className='venueDetailsIcon' src={CCTVIcon} />
+                {/* <img className='venueDetailsIcon' src={CCTVIcon} /> */}
+                <img className='venueDetailsIcon' src={CCTVNoneIcon} />
                 <Typography>cc cameras</Typography>
               </Box>
 

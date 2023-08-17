@@ -116,6 +116,7 @@
   flex-direction: column;
   padding: 20px 10px;
   position: relative;
+  margin: 32px 0px;
 }
 .ClickHereTab {
   width: 65px;
@@ -188,7 +189,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 194px;
+  bottom: 255px;
   margin-right: 17px;
   cursor: pointer;
 }
@@ -223,7 +224,7 @@
   }
   .venueLocation {
     width: 100%;
-    margin: 20px 0;
+    margin: 0px 0;
   }
   .coverGallery {
     width: 100%;
@@ -238,11 +239,10 @@
   .galleryImage {
     width: 100%;
   }
-
   .ShowGalleryTab {
     width: 170px;
     height: 47px;
-    bottom: 238px;
+    bottom: 202px;
   }
   .locationHeader h5 {
     font-size: 25px !important;
@@ -268,6 +268,7 @@
   }
   .venueLocation {
     max-width: 1305px;
+    margin: 20px 0;
   }
 
   .ShowGalleryTabBox {
@@ -276,5 +277,8 @@
   }
   .coverGallery {
     max-width: 1305px;
+  }
+  .ShowGalleryTab {
+    bottom: 238px;
   }
 }

@@ -197,7 +197,7 @@ export default function Overview() {
 
         <Box ref={Overview} className="mainBox">
           <Box className="venueDetailsBox">
-            <Box className="venueDetails bottomBorder venueDetailsFirst">
+            <Box mb={1} className="venueDetails venueDetailsFirst">
 
               <Box sx={{ width: "221px" }} className="venueDetailsItem">
                 {/* <img className='venueDetailsIcon' src={videoIcon} /> */}

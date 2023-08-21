@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Box, Typography, TextField } from '@mui/material';
+import React, { useState, useEffect, useRef } from 'react';
+import { Box, Typography, TextField, Slider, Checkbox } from '@mui/material';
+import { pink } from '@mui/material/colors';
 import { styled } from '@mui/material/styles';
 import "./style.css"
 
@@ -13,6 +14,12 @@ import Pimage4 from "../../Assets/images/properitiseImage/WhatsApp Image 2023-07
 import buildingIcon from "../../Assets/images/properitiseImage/BildingIcon.png";
 import FilmIcon from "../../Assets/images/properitiseImage/FlimBoxIcon.png";
 import PersonIcon from "../../Assets/images/properitiseImage/PersonIcon.png";
+import RedCross from "../../Assets/images/RedCross.svg";
+import videoCameraIcon from "../../Assets/images/VideoCameraIcon.svg"
+import GroupPeopleIcon from "../../Assets/images/GroupOfIcon.svg"
+import IndividualEventIcon from "../../Assets/images/IndividualEventIcon.png"
+import YellowStar from "../../Assets/images/YellowStar.svg"
+import WhiteStar from "../../Assets/images/WhiteStar.svg"
 
 
 //components
@@ -23,32 +30,88 @@ import GoogleMap from '../../Component/GoogleMap';
 
 
 
+//slider fun
+const minDistance = 10;
+
+function valuetext(value) {
+  return `${value}°C`;
+}
+
 
 export default function PropertySearch() {
   const [mapSwitch, setMapSwitch] = useState(false)
+  const [showPopup, setShowPopup] = useState(false);
+  const [showFilterPupUp, setFilterPupUp] = useState(false)
+  const [searchQuery, setSearchQuery] = useState("");
+  const [value1, setValue1] = useState([0, 37]);
+  const [amenitiesShow, setAmenitiesShow] = useState(false)
+  const [featuresShow, setFeaturesShow] = useState(false)
 
   const [eventPopUp, setEventPopUp] = useState(false)
   const [eventList, setEventList] = useState("");
-  const eventArray = ["eventList-1", "eventList-2", "eventList-3", "eventList-4", "eventList-5"]
+  const eventArray = ["DANDI MARCH DAY", "CONSUMERS DAY", "	IMMUNIZATION DAY", "WORLD FORESTRY DAY", "WORLD TB DAY"]
+  const [filteredEvents, setFilteredEvents] = useState(eventArray);
 
   const [activityPopUp, setActivityPopUp] = useState(false)
   const [activityList, setActivityList] = useState("");
   const activityArray = ["activityList-1", "activityList-2", "activityList-3", "activityList-4", "activityList-5"]
+  const [filteredActivity, setFilteredActivity] = useState(activityArray);
 
   const [locationPopUp, setLocationPopUp] = useState(false)
   const [locationList, setLocationList] = useState("");
-  const locationArray = ["locationList-1", "locationList-2", "locationList-3", "locationList-4", "locationList-5"]
+  const locationArray = ["New York", "Los Angeles", "Chicago", "Houston", "Miami", "Seattle", "Boston", "San Francisco", "Dallas", "Philadelphia"]
+  const [filteredLocation, setFilteredLocation] = useState(locationArray);
 
   const [cityPopUp, setCityPopUp] = useState(false)
   const [cityList, setCityList] = useState("");
-  const cityArray = ["cityList-1", "cityList-2", "cityList-3", "cityList-4", "cityList-5"]
+  const cityArray = ["New York", "Los Angeles", "Chicago", "Houston", "Miami", "Seattle", "Boston", "San Francisco", "Dallas", "Philadelphia"]
+  const [filteredCities, setFilteredCities] = useState(cityArray);
 
   const [storByPopUp, setStorByPopUp] = useState(false)
   const [storByList, setStorByList] = useState("");
   const storByArray = ["Price Low to High", "Price High to Low", "Verified", "Exclusive", "Featured"]
 
+  const [fcityPopUp, setFCityPopUp] = useState(false)
+  const [fcityList, setFCityList] = useState("");
+
+  const [fAreaPopUp, setFAreaPopUp] = useState(false)
+  const [fAreaList, setFAreaList] = useState("");
+
+
+
+
+
   const latitude = 28.230553471285813;
   const longitude = 75.97394025062951;
+
+
+  const handleSearchChange = (event) => {
+    console.log(event);
+    if (event.target.id === "Event") {
+      const query = event.target.value;
+      setSearchQuery(query);
+      const filteredEvents = eventArray.filter(val => val.toLowerCase().includes(query.toLowerCase()));
+      setFilteredEvents(filteredEvents);
+    }
+    if (event.target.id === "City") {
+      const query = event.target.value;
+      setSearchQuery(query);
+      const filteredCities = cityArray.filter(val => val.toLowerCase().includes(query.toLowerCase()));
+      setFilteredCities(filteredCities);
+    }
+    if (event.target.id === "Activity") {
+      const query = event.target.value;
+      setSearchQuery(query);
+      const filteredActivity = activityArray.filter(val => val.toLowerCase().includes(query.toLowerCase()));
+      setFilteredActivity(filteredActivity);
+    }
+    if (event.target.id === "Location") {
+      const query = event.target.value;
+      setSearchQuery(query);
+      const filteredLocation = locationArray.filter(val => val.toLowerCase().includes(query.toLowerCase()));
+      setFilteredLocation(filteredLocation);
+    }
+  };
 
 
   const handelPopUpClick = (e) => {
@@ -56,32 +119,382 @@ export default function PropertySearch() {
     if (e?.target?.id === "Event") {
       setEventPopUp(true)
     } else {
-      setEventPopUp(false)
+      // setEventPopUp(false)
     }
     //Activity
     if (e?.target?.id === "Activity") {
       setActivityPopUp(true)
     } else {
-      setActivityPopUp(false)
+      // setActivityPopUp(false)
     }
     //Location
     if (e?.target?.id === "Location") {
       setLocationPopUp(true)
     } else {
-      setLocationPopUp(false)
+      // setLocationPopUp(false)
     }
     //City
     if (e?.target?.id === "City") {
       setCityPopUp(true)
     } else {
-      setCityPopUp(false)
+      // setCityPopUp(false)
     }
     //StorBy
     if (e?.target?.id === "storBy") {
       setStorByPopUp(true)
     } else {
-      setStorByPopUp(false)
+      // setStorByPopUp(false)
     }
+    //Filter Box
+    if (e?.target?.id === "FCity") {
+      setFCityPopUp(true)
+    }
+    if (e?.target?.id === "FArea") {
+      setFAreaPopUp(true)
+    }
+  }
+
+  const openFilterPopUp = (e) => {
+    setShowPopup(true)
+    setFilterPupUp(true)
+  }
+
+  //price slider function
+  const handleChange1 = (event, newValue, activeThumb) => {
+    if (!Array.isArray(newValue)) {
+      return;
+    }
+
+    if (activeThumb === 0) {
+      setValue1([Math.min(newValue[0], value1[1] - minDistance), value1[1]]);
+    } else {
+      setValue1([value1[0], Math.max(newValue[1], value1[0] + minDistance)]);
+    }
+  };
+
+
+
+  const filterPopUp = () => {
+    return (
+      <Box sx={{ display: showFilterPupUp ? "block" : "none" }} className="filterPopUpBox">
+        <Box className="filterPupNav">
+          <Box className="filterNavItem1"><Typography>Filters</Typography></Box>
+          <Box className="filterNavItem2">
+            <img
+              onClick={() => {
+                setShowPopup(false)
+                setFilterPupUp(false)
+                console.log("close");
+              }}
+              style={{ width: "50px", height: "50px", cursor: "pointer" }} src={RedCross} />
+          </Box>
+        </Box>
+
+        <Box className="filterPopUpscrollBox">
+          <Box className="popUpCotenantBox">
+
+            <Box className="priceFilterBox">
+              <Box className="priceFilterHeader">
+                <Typography>Price</Typography>
+              </Box>
+              <Box className="priceFilterLabelBox">
+
+                <Box className="priceFilterLabelItem">
+                  <Typography className="priceFLabelText">From</Typography>
+                  <Box className="priceFromBox">
+                    <Typography className='priceFromInrText'>INR.</Typography>
+                    <Typography className='priceFromInrPrice'>10,000</Typography>
+                  </Box>
+                </Box>
+
+                <Box className="priceFilterLabelItem">
+                  <Typography className="priceFLabelText">To</Typography>
+                  <Box className="priceFromBox">
+                    <Typography className='priceFromInrText'>INR.</Typography>
+                    <Typography className='priceFromInrPrice'>50,000</Typography>
+                  </Box>
+                </Box>
+              </Box>
+              <Box px={1.5} className="priceFilterSlider">
+                <Slider
+                  getAriaLabel={() => 'Minimum distance'}
+                  value={value1}
+                  onChange={handleChange1}
+                  valueLabelDisplay="auto"
+                  getAriaValueText={valuetext}
+                  disableSwap
+                />
+              </Box>
+
+            </Box>
+
+            <Box className="ActivitiesFilterBox">
+              <Box className="priceFilterHeader">
+                <Typography>Activities</Typography>
+              </Box>
+              <Box className="activitiesContainer">
+                <Box className="activitiesBoxItem">
+                  <img src={videoCameraIcon} />
+                  <Typography>Film Shooting</Typography>
+                </Box>
+                <Box className="activitiesBoxItem">
+                  <img src={GroupPeopleIcon} />
+                  <Typography>Corporate Event</Typography>
+                </Box>
+                <Box className="activitiesBoxItem">
+                  <img src={IndividualEventIcon} />
+                  <Typography>Individual Event</Typography>
+                </Box>
+              </Box>
+            </Box>
+
+            <Box className="City_AreaBox">
+              <Box className="priceFilterHeader">
+                <Typography>City & Area</Typography>
+              </Box>
+              <Box className="City_AreaContainer">
+                <Box className="AreaContainerItem">
+                  <Box className="AreaContainerDrop">
+                    <Typography className='areaHederText'>City</Typography>
+                    <Box id="FCity" onClick={handelPopUpClick} className="cityDropDown">
+                      <Typography id="FCity">{fcityList || "Select a City"}</Typography>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none">
+                        <path id="FCity" fill-rule="evenodd" clip-rule="evenodd" d="M9.67594 0C10.493 0 10.6897 0.465729 10.108 1.04738L5.74715 5.40821C5.45623 5.69913 4.98042 5.69494 4.69384 5.40821L0.333015 1.04738C-0.245421 0.468948 -0.0507355 0 0.765044 0H9.67594Z" fill="#444444" />
+                      </svg>
+                    </Box>
+                    <Box sx={{ display: fcityPopUp ? "flex" : "none" }} className="EventList">
+                      {
+                        filteredCities.map((eventData, index) => (
+                          <Box key={index} onClick={e => {
+                            setFCityList(e?.target?.innerText)
+                          }} className="eventItem">
+                            <Typography>{eventData}</Typography>
+                          </Box>
+                        ))
+                      }
+                    </Box>
+
+                  </Box>
+
+                </Box>
+
+                <Box className="AreaContainerItem">
+                  <Box className="AreaContainerDrop">
+                    <Typography className='areaHederText'>City</Typography>
+                    <Box id="FArea" onClick={handelPopUpClick} className="cityDropDown">
+                      <Typography id="FArea">{fAreaList || "Select a Area"}</Typography>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none">
+                        <path id="FArea" fill-rule="evenodd" clip-rule="evenodd" d="M9.67594 0C10.493 0 10.6897 0.465729 10.108 1.04738L5.74715 5.40821C5.45623 5.69913 4.98042 5.69494 4.69384 5.40821L0.333015 1.04738C-0.245421 0.468948 -0.0507355 0 0.765044 0H9.67594Z" fill="#444444" />
+                      </svg>
+                    </Box>
+                    <Box sx={{ display: fAreaPopUp ? "flex" : "none" }} className="EventList">
+                      {
+                        filteredCities.map((eventData, index) => (
+                          <Box key={index} onClick={e => {
+                            setFAreaList(e?.target?.innerText)
+                          }} className="eventItem">
+                            <Typography>{eventData}</Typography>
+                          </Box>
+                        ))
+                      }
+                    </Box>
+
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
+
+            <Box className="Amenities_FeaturesBox">
+              <Box className="priceFilterHeader">
+                <Typography>Amenities and Features</Typography>
+              </Box>
+              <Box className="Amenities_FeaturesContainer">
+                <Box className="AmenitiesBox">
+                  <Typography className='AmenitiesHeaderText'>Amenities</Typography>
+                  <Typography onClick={() => setAmenitiesShow(!amenitiesShow)} className={amenitiesShow ? 'ShowMoreText AmenitiesShowActive' : 'ShowMoreText AmenitiesShow'}>{amenitiesShow ? "Show Less" : "Show More"}</Typography>
+                  <Box sx={{ height: amenitiesShow ? "210px" : "126px" }} className="Check_Box">
+
+                    <Box className="check_box_item">
+                      <Checkbox
+                      // sx={{ color: pink[800], '&.Mui-checked': { color: pink[600] } }}
+                      />
+                      <Typography>Wifi</Typography>
+                    </Box>
+
+                    <Box className="check_box_item">
+                      <Checkbox />
+                      <Typography>Kitchen</Typography>
+                    </Box>
+                    <Box className="check_box_item">
+                      <Checkbox />
+                      <Typography>Washing machine</Typography>
+                    </Box>
+                    <Box className="check_box_item">
+                      <Checkbox />
+                      <Typography>Dryer</Typography>
+                    </Box>
+                    <Box className="check_box_item">
+                      <Checkbox />
+                      <Typography>Air conditioning</Typography>
+                    </Box>
+                    <Box className="check_box_item">
+                      <Checkbox />
+                      <Typography>Heating</Typography>
+                    </Box>
+                    <Box className="check_box_item">
+                      <Checkbox />
+                      <Typography>Kitchen</Typography>
+                    </Box>
+                    <Box className="check_box_item">
+                      <Checkbox />
+                      <Typography>Washing machine</Typography>
+                    </Box>
+                    <Box className="check_box_item">
+                      <Checkbox />
+                      <Typography>Air conditioning</Typography>
+                    </Box>
+                    <Box className="check_box_item">
+                      <Checkbox />
+                      <Typography>Wifi</Typography>
+                    </Box>
+
+                  </Box>
+                </Box>
+                <Box className="FeaturesBox">
+                  <Typography className='FeaturesHeaderText'>Features</Typography>
+                  <Typography onClick={() => setFeaturesShow(!featuresShow)} className={featuresShow ? 'ShowMoreText FeaturesShowActive' : 'ShowMoreText FeaturesShow'}>{featuresShow ? "Show Less" : "Show More"}</Typography>
+                  <Box sx={{ height: featuresShow ? "210px" : "126px" }} className="Check_Box">
+
+                    <Box className="check_box_item">
+                      <Checkbox
+                      // sx={{ color: pink[800], '&.Mui-checked': { color: pink[600] } }}
+                      />
+                      <Typography>Wifi</Typography>
+                    </Box>
+
+                    <Box className="check_box_item">
+                      <Checkbox />
+                      <Typography>Kitchen</Typography>
+                    </Box>
+                    <Box className="check_box_item">
+                      <Checkbox />
+                      <Typography>Washing machine</Typography>
+                    </Box>
+                    <Box className="check_box_item">
+                      <Checkbox />
+                      <Typography>Dryer</Typography>
+                    </Box>
+                    <Box className="check_box_item">
+                      <Checkbox />
+                      <Typography>Air conditioning</Typography>
+                    </Box>
+                    <Box className="check_box_item">
+                      <Checkbox />
+                      <Typography>Heating</Typography>
+                    </Box>
+                    <Box className="check_box_item">
+                      <Checkbox />
+                      <Typography>Kitchen</Typography>
+                    </Box>
+                    <Box className="check_box_item">
+                      <Checkbox />
+                      <Typography>Washing machine</Typography>
+                    </Box>
+                    <Box className="check_box_item">
+                      <Checkbox />
+                      <Typography>Air conditioning</Typography>
+                    </Box>
+                    <Box className="check_box_item">
+                      <Checkbox />
+                      <Typography>Wifi</Typography>
+                    </Box>
+
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
+
+            <Box className="PropertiesCheckBox">
+              <Box className="PropertiesCheckItem">
+                <Box className="propertiesCheckInput">
+                  <Checkbox sx={{ color: pink[800], '&.Mui-checked': { color: pink[600] } }} />
+                </Box>
+                <Box className="PropertiesTextBox">
+                  <Typography className='PropertiesHeaderText'>All Verified Properties</Typography>
+                  <Typography className='PropertiesSbuText'>All Spotlet Verified listings you can book from</Typography>
+                </Box>
+              </Box>
+              <Box className="PropertiesCheckItem">
+                <Box className="propertiesCheckInput">
+                  <Checkbox sx={{ color: pink[800], '&.Mui-checked': { color: pink[600] } }} />
+                </Box>
+                <Box className="PropertiesTextBox">
+                  <Typography className='PropertiesHeaderText'>All Verified Properties</Typography>
+                  <Typography className='PropertiesSbuText'>All Spotlet Verified listings you can book from</Typography>
+                </Box>
+              </Box>
+              <Box className="PropertiesCheckItem">
+                <Box className="propertiesCheckInput">
+                  <Checkbox sx={{ color: pink[800], '&.Mui-checked': { color: pink[600] } }} />
+                </Box>
+                <Box className="PropertiesTextBox">
+                  <Typography className='PropertiesHeaderText'>All Verified Properties</Typography>
+                  <Typography className='PropertiesSbuText'>All Spotlet Verified listings you can book from</Typography>
+                </Box>
+              </Box>
+
+              <Box className="PropertiesCheckItem"></Box>
+              <Box className="PropertiesCheckItem"></Box>
+            </Box>
+            <Box className="CustomerReviewBox">
+              <Box className="priceFilterHeader">
+                <Typography>Customer Review</Typography>
+              </Box>
+              <Box className="CustomerReviewContainer">
+                <Box className="startBox">
+                  <img src={YellowStar} />
+                  <img src={YellowStar} />
+                  <img src={YellowStar} />
+                  <img src={YellowStar} />
+                  <img src={YellowStar} />
+                </Box>
+                <Box className="startBox">
+                  <img src={YellowStar} />
+                  <img src={YellowStar} />
+                  <img src={YellowStar} />
+                  <img src={YellowStar} />
+                  <img src={WhiteStar} />
+                </Box>
+                <Box className="startBox">
+                  <img src={YellowStar} />
+                  <img src={YellowStar} />
+                  <img src={YellowStar} />
+                  <img src={WhiteStar} />
+                  <img src={WhiteStar} />
+                </Box>
+                <Box className="startBox">
+                  <img src={YellowStar} />
+                  <img src={YellowStar} />
+                  <img src={WhiteStar} />
+                  <img src={WhiteStar} />
+                  <img src={WhiteStar} />
+                </Box>
+                <Box className="startBox">
+                  <img src={YellowStar} />
+                  <img src={WhiteStar} />
+                  <img src={WhiteStar} />
+                  <img src={WhiteStar} />
+                  <img src={WhiteStar} />
+                </Box>
+              </Box>
+            </Box>
+
+
+          </Box>
+
+        </Box>
+      </Box>
+    )
   }
 
   useEffect(() => {
@@ -106,15 +519,31 @@ export default function PropertySearch() {
       if (e.target.id !== "storBy") {
         setStorByPopUp(false)
       }
+      //Filter Box
+      if (e?.target?.id !== "FCity") {
+        setFCityPopUp(false)
+      }
+      if (e?.target?.id !== "FArea") {
+        setFAreaPopUp(false)
+      }
     };
-
     document.addEventListener("click", handleOutsideClick);
   })
+
+  useEffect(() => {
+    //handel scroll
+    if (showPopup) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }, [showPopup, showFilterPupUp]);
 
   return (
     <>
       <NavBar />
       <Box className="propertySearchContainer">
+        {showPopup && <div className="popupBackdrop"></div>}
         <Box className="propertySHeader">
           <Box className="searchBox">
             <Box className="property_search_Field">
@@ -135,9 +564,13 @@ export default function PropertySearch() {
                 </Box>
                 <Typography className='filterItemSubHeader'>{eventList || eventArray[0]}</Typography>
                 <Box sx={{ display: eventPopUp ? "flex" : "none" }} className="EventList">
+                  <input className='PopUpSearchField' id="Event" type="text" value={searchQuery} onChange={handleSearchChange} placeholder="Search for event" />
                   {
-                    eventArray.map(eventData => (
-                      <Box key={eventData} onClick={e => { setEventList(e?.target?.innerText) }} className="eventItem">
+                    filteredEvents.map((eventData, index) => (
+                      <Box key={index} onClick={e => {
+                        setEventList(e?.target?.innerText)
+                        setSearchQuery("")
+                      }} className="eventItem">
                         <Typography>{eventData}</Typography>
                       </Box>
                     ))
@@ -154,10 +587,14 @@ export default function PropertySearch() {
                 </Box>
                 <Typography className='filterItemSubHeader'>{activityList || activityArray[0]}</Typography>
                 <Box sx={{ display: activityPopUp ? "flex" : "none" }} className="EventList">
+                  <input className='PopUpSearchField' id="Activity" type="text" value={searchQuery} onChange={handleSearchChange} placeholder="Search for Activity" />
                   {
-                    activityArray.map(activityData => (
-                      <Box key={activityData} onClick={e => { setActivityList(e?.target?.innerText) }} className="eventItem">
-                        <Typography>{activityData}</Typography>
+                    filteredActivity.map((eventData, index) => (
+                      <Box key={index} onClick={e => {
+                        setActivityList(e?.target?.innerText)
+                        setSearchQuery("")
+                      }} className="eventItem">
+                        <Typography>{eventData}</Typography>
                       </Box>
                     ))
                   }
@@ -170,12 +607,16 @@ export default function PropertySearch() {
                     <path id="Location" fill-rule="evenodd" clip-rule="evenodd" d="M9.67594 0C10.493 0 10.6897 0.465729 10.108 1.04738L5.74715 5.40821C5.45623 5.69913 4.98042 5.69494 4.69384 5.40821L0.333015 1.04738C-0.245421 0.468948 -0.0507355 0 0.765044 0H9.67594Z" fill="#444444" />
                   </svg>
                 </Box>
-                <Typography className='filterItemSubHeader'>{locationList || locationArray[0]}</Typography>
+                <Typography className='filterItemSubHeader'>{locationList || locationArray[2]}</Typography>
                 <Box sx={{ display: locationPopUp ? "flex" : "none" }} className="EventList">
+                  <input className='PopUpSearchField' id="Location" type="text" value={searchQuery} onChange={handleSearchChange} placeholder="Search for Location" />
                   {
-                    locationArray.map(locationData => (
-                      <Box key={locationData} onClick={e => { setLocationList(e?.target?.innerText) }} className="eventItem">
-                        <Typography>{locationData}</Typography>
+                    filteredLocation.map((eventData, index) => (
+                      <Box key={index} onClick={e => {
+                        setLocationList(e?.target?.innerText)
+                        setSearchQuery("")
+                      }} className="eventItem">
+                        <Typography>{eventData}</Typography>
                       </Box>
                     ))
                   }
@@ -190,9 +631,13 @@ export default function PropertySearch() {
                 </Box>
                 <Typography className='filterItemSubHeader'>{cityList || cityArray[0]}</Typography>
                 <Box sx={{ display: cityPopUp ? "flex" : "none" }} className="EventList">
+                  <input className='PopUpSearchField' id="City" type="text" value={searchQuery} onChange={handleSearchChange} placeholder="Search for a city" />
                   {
-                    cityArray.map(cityData => (
-                      <Box key={cityData} onClick={e => { setCityList(e?.target?.innerText) }} className="eventItem">
+                    filteredCities.map((cityData, index) => (
+                      <Box key={index} onClick={e => {
+                        setCityList(e?.target?.innerText)
+                        setSearchQuery("")
+                      }} className="eventItem">
                         <Typography>{cityData}</Typography>
                       </Box>
                     ))
@@ -208,11 +653,13 @@ export default function PropertySearch() {
         </Box>
 
         <Box className="secondFilterBox">
-          <Box className="filterButton pointer">
+          <Box
+            className="filterButton pointer">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" fill="none">
-              <path d="M11.2483 0.618164L7.20589 8.17569V15.3817L4.21806 13.8V8.17575L-8.96454e-05 0.618227L11.2483 0.618164Z" fill="#555555" />
+              <path onClick={openFilterPopUp} d="M11.2483 0.618164L7.20589 8.17569V15.3817L4.21806 13.8V8.17575L-8.96454e-05 0.618227L11.2483 0.618164Z" fill="#555555" />
             </svg>
-            <Typography ml={1} className='filter_btn_text'>Filter</Typography>
+            <Typography onClick={openFilterPopUp} ml={1} className='filter_btn_text'>Filter</Typography>
+            {filterPopUp()}
           </Box>
 
           <Box id="storBy" onClick={handelPopUpClick} mx={2} className="shortByBtn pointer">
@@ -225,7 +672,7 @@ export default function PropertySearch() {
             </svg>
             <Typography id="storBy" ml={1} className='filter_btn_text'>Sort by</Typography>
             <Box className="storByPopUpBox">
-              <Box sx={{ display: storByPopUp ? "flex" : "none" }} className="EventList">
+              <Box sx={{ display: storByPopUp ? "flex" : "none" }} className="EventList storByPopUpPosition">
                 {
                   storByArray.map(storByData => (
                     <Box key={storByData} onClick={e => { setStorByList(e?.target?.innerText) }} className="eventItem">

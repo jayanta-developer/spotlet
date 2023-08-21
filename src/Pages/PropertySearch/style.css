@@ -40,6 +40,7 @@
   flex-direction: column;
   align-items: start;
   cursor: pointer;
+  position: relative;
 }
 .filterItemSideBorder {
   border-right: 1px solid #e8e8e8;
@@ -214,6 +215,12 @@
   background-color: #fff;
   z-index: 1;
   padding: 2px;
+  position: absolute;
+  top: 64px;
+}
+.storByPopUpPosition {
+  top: 6px;
+  right: -60px;
 }
 .eventItem {
   text-align: center;
@@ -251,6 +258,337 @@
   top: 49px;
   z-index: 1;
 }
+.PopUpSearchField {
+  border: 1px solid #ea4335;
+  background: rgb(255, 209, 205);
+  border-radius: 8px;
+  height: 30px;
+  padding: 5px;
+}
+.PopUpSearchField:focus {
+  outline: none;
+}
+.filterPopUpBox {
+  width: 850px;
+  max-width: 681px;
+  height: auto;
+  z-index: 9;
+  position: fixed;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  padding: 20px 40px;
+  height: 89vh;
+}
+.filterPopUpscrollBox {
+  width: 100%;
+  height: 93%;
+  /* border: 1px solid; */
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.filterPupNav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 13px; */
+}
+.filterNavItem1 {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+.filterNavItem2 {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+}
+.filterNavItem2 img {
+  position: relative;
+  right: -49px;
+  top: -8px;
+}
+.filterPupNav p {
+  color: #444;
+  font-family: "Poppins-Regular" !important;
+  font-size: 24px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+.popUpCotenantBox {
+  display: flex;
+  flex-direction: column;
+}
+.priceFilterBox {
+  width: 100%;
+  border-top: 1px solid #e8e8e8;
+}
+.priceFilterHeader {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.priceFilterHeader p {
+  color: #444;
+  font-family: "Poppins-Regular" !important;
+  font-size: 25px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 195.16% !important;
+}
+.priceFilterLabelBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.priceFromBox {
+  width: 130px;
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #8b8b8b;
+  margin-left: 10px;
+}
+.priceFilterLabelItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.priceFromInrText {
+  color: #000;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+.priceFromInrPrice {
+  color: #000;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal !important;
+}
+.ActivitiesFilterBox {
+  border-top: 1px solid #e8e8e8;
+}
+.activitiesContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.activitiesBoxItem {
+  width: 149px;
+  height: 85px;
+  padding: 19px 16px;
+  border-radius: 11.639px;
+  border: 0.5px solid rgba(34, 34, 34, 0.5);
+  background: #fff;
+  margin-right: 16px;
+}
+.activitiesBoxItem img {
+  margin-left: 15px;
+}
+.activitiesBoxItem p {
+  color: #000;
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 16px !important;
+}
+.City_AreaBox {
+  border-top: 1px solid #e8e8e8;
+  margin-top: 20px;
+}
+.City_AreaContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.AreaContainerItem {
+  width: 50%;
+}
+.areaHederText {
+  color: #444;
+  font-family: "Poppins-Regular" !important;
+  font-size: 25px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 195.16% !important;
+}
+.cityDropDown {
+  width: 282px;
+  height: 37px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid gray;
+  padding: 0 10px;
+}
+.cityDropDown p {
+  color: rgba(45, 55, 72, 0.53);
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  letter-spacing: 0.16px !important;
+}
+.Amenities_FeaturesBox {
+  border-top: 1px solid #e8e8e8;
+  margin-top: 20px;
+}
+.Amenities_FeaturesContainer {
+  display: flex;
+  flex-direction: column;
+}
+.AmenitiesBox {
+  position: relative;
+  margin-top: 10px;
+}
+.AmenitiesHeaderText {
+  color: #222;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+  margin-left: 12px !important;
+}
+.Check_Box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.check_box_item {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.check_box_item p {
+  color: #222;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+}
+.ShowMoreText {
+  color: #444;
+  margin-right: 5px !important;
+  font-family: "Poppins-Regular" !important;
+  font-size: 11px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 24px !important;
+}
+.AmenitiesShow {
+  position: absolute;
+  top: 130px;
+  right: 0px;
+}
+.AmenitiesShowActive {
+  position: absolute;
+  top: 203px;
+  right: 0px;
+}
+.FeaturesBox {
+  position: relative;
+  margin-top: 10px;
+}
+.FeaturesShow {
+  position: absolute;
+  top: 123px;
+  right: 0px;
+}
+.FeaturesShowActive {
+  position: absolute;
+  top: 203px;
+  right: 0px;
+}
+.FeaturesHeaderText {
+  color: #222;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+  margin-left: 12px !important;
+}
+.PropertiesCheckBox {
+  border-top: 1px solid #e8e8e8;
+  margin-top: 20px;
+  padding: 10px 0px;
+}
+.PropertiesCheckItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.PropertiesCheckBox {
+  display: flex;
+  flex-direction: column;
+}
+.PropertiesTextBox {
+  display: flex;
+  flex-direction: column;
+}
+.PropertiesHeaderText {
+  color: #000;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 195.16% !important;
+}
+.PropertiesSbuText {
+  color: #000;
+  font-family: "Poppins-Regular" !important;
+  font-size: 10px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 195.16% !important;
+}
+.CustomerReviewBox {
+  border-top: 1px solid #e8e8e8;
+  margin-top: 20px;
+}
+.CustomerReviewContainer {
+  display: flex;
+  flex-direction: column;
+}
+.startBox {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+.startBox img {
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+}
+
 @media only screen and (min-width: 768px) {
   .propertySearchContainer {
     margin-top: 128px;

@@ -280,7 +280,7 @@ export default function PropertySearch() {
 
                 <Box className="AreaContainerItem">
                   <Box className="AreaContainerDrop">
-                    <Typography className='areaHederText'>City</Typography>
+                    <Typography className='areaHederText'>Area</Typography>
                     <Box id="FArea" onClick={handelPopUpClick} className="cityDropDown">
                       <Typography id="FArea">{fAreaList || "Select a Area"}</Typography>
                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none">
@@ -563,7 +563,7 @@ export default function PropertySearch() {
                   </svg>
                 </Box>
                 <Typography className='filterItemSubHeader'>{eventList || eventArray[0]}</Typography>
-                <Box sx={{ display: eventPopUp ? "flex" : "none" }} className="EventList">
+                <Box sx={{ display: eventPopUp ? "flex" : "none" }} className="EventList EventList1">
                   <input className='PopUpSearchField' id="Event" type="text" value={searchQuery} onChange={handleSearchChange} placeholder="Search for event" />
                   {
                     filteredEvents.map((eventData, index) => (
@@ -630,7 +630,7 @@ export default function PropertySearch() {
                   </svg>
                 </Box>
                 <Typography className='filterItemSubHeader'>{cityList || cityArray[0]}</Typography>
-                <Box sx={{ display: cityPopUp ? "flex" : "none" }} className="EventList">
+                <Box sx={{ display: cityPopUp ? "flex" : "none" }} className="EventList CityEventList">
                   <input className='PopUpSearchField' id="City" type="text" value={searchQuery} onChange={handleSearchChange} placeholder="Search for a city" />
                   {
                     filteredCities.map((cityData, index) => (

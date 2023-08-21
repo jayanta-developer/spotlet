@@ -31,14 +31,14 @@
   flex-direction: row;
   justify-content: space-between;
   max-width: 950px;
-  min-width: 550px;
+  min-width: 370px;
 }
 .filterItem {
   width: 97px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   cursor: pointer;
   position: relative;
 }
@@ -66,6 +66,7 @@
   font-style: normal;
   font-weight: 400 !important;
   line-height: normal !important;
+  text-align: center;
 }
 
 .MsearchBtn {
@@ -77,6 +78,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 9px;
 }
 .MsearchBtn p {
   color: #fff;
@@ -218,6 +220,12 @@
   position: absolute;
   top: 64px;
 }
+.EventList1 {
+  left: 3px;
+}
+.CityEventList {
+  right: 6px;
+}
 .storByPopUpPosition {
   top: 6px;
   right: -60px;
@@ -269,7 +277,7 @@
   outline: none;
 }
 .filterPopUpBox {
-  width: 850px;
+  width: 98%;
   max-width: 681px;
   height: auto;
   z-index: 9;
@@ -281,7 +289,7 @@
   left: 50%;
   top: 55%;
   transform: translate(-50%, -50%);
-  padding: 20px 40px;
+  padding: 20px 10px;
   height: 89vh;
 }
 .filterPopUpscrollBox {
@@ -311,7 +319,7 @@
 }
 .filterNavItem2 img {
   position: relative;
-  right: -49px;
+  right: -17px;
   top: -8px;
 }
 .filterPupNav p {
@@ -401,7 +409,7 @@
   margin-right: 16px;
 }
 .activitiesBoxItem img {
-  margin-left: 15px;
+  margin-left: 22px;
 }
 .activitiesBoxItem p {
   color: #000;
@@ -433,7 +441,7 @@
   line-height: 195.16% !important;
 }
 .cityDropDown {
-  width: 282px;
+  width: 173px;
   height: 37px;
   display: flex;
   flex-direction: row;
@@ -588,7 +596,7 @@
   height: 20px;
   margin: 2px;
 }
-
+/* Tab view */
 @media only screen and (min-width: 768px) {
   .propertySearchContainer {
     margin-top: 128px;
@@ -603,16 +611,16 @@
   .filterItem {
     width: 20%;
     height: 100%;
+    align-items: start;
   }
-  .property_search_Field div {
-    width: 85%;
-  }
+
   .filterItemHeader {
     font-size: 20px !important;
     margin-right: 11px !important;
   }
   .filterItemSubHeader {
-    font-size: 15px !important;
+    font-size: 12px !important;
+    text-align: start;
   }
   .bottomFilterWB {
     flex-direction: row;
@@ -625,24 +633,71 @@
     min-width: 654px;
   }
   .propertyCard_Map {
-    width: 75%;
+    width: 80%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     align-items: start;
   }
   .property_map_box {
     width: 50%;
   }
   .property_map_box > div > div:nth-child(2) {
-    width: 35% !important;
+    width: 78% !important;
   }
   .property_map_box > div > div > div:nth-child(1) {
-    height: 100vh !important;
+    height: 70vh !important;
   }
   .secondFilterBox {
     width: 75%;
+    justify-content: center;
   }
   .propertyhW {
     width: 50%;
+    margin-top: 800px;
+  }
+  .filterBox {
+    min-width: 550px;
+  }
+  .EventList1 {
+    left: inherit;
+  }
+  .CityEventList {
+    right: inherit;
+  }
+  .MsearchBtn {
+    margin-top: 0;
+  }
+  .filterPopUpBox {
+    width: 850px;
+    padding: 20px 40px;
+  }
+  .filterNavItem2 img {
+    right: -49px;
+  }
+  .cityDropDown {
+    width: 282px;
+  }
+  .activitiesBoxItem img {
+    margin-left: 15px;
+  }
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+  .secondFilterBox {
+    justify-content: end;
+  }
+  .propertyCard_Map {
+    flex-direction: row;
+  }
+  .propertyhW {
+    width: 50%;
+    margin-top: 0px;
+  }
+  .property_map_box > div > div:nth-child(2) {
+    width: 37% !important;
+  }
+  .property_search_Field div {
+    width: 85%;
   }
 }

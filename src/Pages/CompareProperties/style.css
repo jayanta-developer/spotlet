@@ -6,7 +6,7 @@
   flex-direction: column;
 }
 .compareHeader {
-  width: 75%;
+  width: 95%;
   height: 198px;
   display: flex;
   flex-direction: column;
@@ -22,9 +22,9 @@
 }
 
 .compareHederText {
+  font-size: 27px !important;
   color: #000;
   font-family: "Poppins-Bold" !important;
-  font-size: 36px !important;
   font-style: normal;
   font-weight: 700 !important;
   line-height: 130% !important;
@@ -45,8 +45,8 @@
   margin: 15px 0;
 }
 .differentButton {
-  width: 280px;
-  height: 45px;
+  width: 154px;
+  height: 36px;
   flex-shrink: 0;
   border-radius: 6px;
   border: 1px solid #ea4335;
@@ -57,16 +57,16 @@
   align-items: center;
 }
 .differentButton p {
+  font-size: 13px !important;
   color: #ea4335;
   font-family: "Poppins-Regular" !important;
-  font-size: 16px !important;
   font-style: normal;
   font-weight: 400 !important;
   line-height: 130% !important;
 }
 .removeButton {
-  width: 170px;
-  height: 45px;
+  width: 154px;
+  height: 36px;
   flex-shrink: 0;
   border-radius: 6px;
   border: 1px solid #ea4335;
@@ -78,18 +78,46 @@
   align-items: center;
 }
 .removeButton p {
+  font-size: 13px !important;
   color: #ea4335;
   font-family: "Poppins-Regular" !important;
-  font-size: 16px !important;
   font-style: normal;
   font-weight: 400 !important;
   line-height: 130% !important;
 }
 .compareProjectBox {
   width: 75%;
-  height: 980px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
 }
-
+.CompareItem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 72px;
+}
+.property_items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.ratingLogoBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 45px;
+  align-items: center;
+  background: #edf3ff;
+  padding: 0 24px;
+  justify-content: center;
+}
+.ratingLogoBoxText {
+  margin-right: 92px !important;
+}
 .productCardBox {
   display: flex;
   flex-direction: row;
@@ -141,4 +169,68 @@
   width: 246px;
   display: flex;
   align-items: center;
+}
+.firstCompareItem {
+  display: none;
+}
+/* Tab view*/
+@media only screen and (min-width: 768px) {
+  .compareProjectBox {
+    width: 80%;
+  }
+  .tinBox {
+    padding: 0 10px;
+  }
+  .whiteBox {
+    padding: 0 10px;
+  }
+  .compareHederText {
+    font-size: 36px !important;
+  }
+  .differentButton {
+    width: 280px;
+    height: 45px;
+  }
+  .differentButton p {
+    font-size: 16px !important;
+  }
+  .removeButton {
+    width: 170px;
+    height: 45px;
+  }
+  .removeButton p {
+    font-size: 16px !important;
+  }
+  .ratingLogoBoxText {
+    margin-right: 100px !important;
+  }
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+  .compareHeader {
+    width: 75%;
+  }
+  .compareProjectBox {
+    width: 75%;
+    flex-direction: row;
+    height: 980px;
+    align-items: end;
+  }
+  .firstCompareItem {
+    display: block;
+  }
+  .CompareItem {
+    align-items: normal;
+    margin-bottom: 0;
+  }
+  .tinBox {
+    border-radius: 0px;
+  }
+  .ratingLogoBox {
+    justify-content: start;
+  }
+  .ratingLogoBoxText {
+    margin-right: 0px;
+  }
 }

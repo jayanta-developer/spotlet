@@ -490,7 +490,7 @@ export default function BookingDetails() {
             </Typography>
           </Box>
           <Box className="DetailContent MapBoxContent">
-            {/* <GoogleMap latitude={latitude} longitude={longitude} /> */}
+            <GoogleMap latitude={latitude} longitude={longitude} />
           </Box>
 
         </Box>

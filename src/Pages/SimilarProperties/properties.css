@@ -1,6 +1,6 @@
 .propertiesContainer {
   width: 100%;
-  height: 500px;
+  height: auto;
   margin-bottom: 5%;
 }
 .propertiesHeader {
@@ -29,9 +29,11 @@
   flex-direction: row;
   justify-content: space-between;
   overflow: scroll;
+  overflow-y: hidden;
 }
 .propertiesRenderBox > * {
   flex: 0 0 280px;
+  margin: 0 10px;
 }
 
 .imageBox {
@@ -144,6 +146,7 @@
   .propertiesHeader {
     margin-bottom: 34px;
     margin-top: 45px;
+    padding-left: 20px;
   }
   .propertiesRenderBox {
     width: 100%;

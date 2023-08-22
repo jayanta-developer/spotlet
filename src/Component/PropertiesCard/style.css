@@ -51,7 +51,7 @@
   width: 280px;
   height: 350px !important;
   position: relative;
-  margin: 0px 10px;
+  margin: 0px 20px;
 }
 .logo_Box {
   display: flex;
@@ -87,17 +87,30 @@
   top: 19px;
   left: 250px;
 }
+.comparerTextBox {
+  display: flex;
+  flex-direction: row;
+}
 @media only screen and (min-width: 768px) {
   .propertiesCard {
     width: 280px;
     height: 100%;
     position: relative;
-    margin: 0px 10px;
+    margin: 0px 15px;
   }
   .logo_Box {
     right: 15px;
   }
   .borderHeartLogo {
     /* left: 269px; */
+  }
+  .removeNoneText {
+    display: none;
+  }
+}
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+  .removeNoneText {
+    display: none;
   }
 }

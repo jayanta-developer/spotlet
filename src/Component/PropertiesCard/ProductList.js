@@ -3,6 +3,10 @@ import "./style.css";
 // import ProductCard from "./ProductCard";
 import { propertiesCard } from "./index";
 
+import buildingIcon from "../../Assets/images/properitiseImage/BildingIcon.png";
+import FilmIcon from "../../Assets/images/properitiseImage/FlimBoxIcon.png";
+import PersonIcon from "../../Assets/images/properitiseImage/PersonIcon.png";
+
 const ProductList = ({ productsPerPage, products }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [displayedProducts, setDisplayedProducts] = useState([]);
@@ -25,15 +29,20 @@ const ProductList = ({ productsPerPage, products }) => {
   };
 
   return (
-    <div>
+    <div style={{ width: "100%" }}>
       <div className="productContainer">
         {displayedProducts.map((product, index) =>
           // <ProductCard key={index} name={product.name} price={product.price} />
           propertiesCard(
             product.image,
             product.cardId,
+            product.price,
             product.location,
-            product.subLocation
+            product.subLocation,
+            product.iconArray,
+            product.remove,
+            product.compare,
+            product.bottomM
           )
         )}
       </div>

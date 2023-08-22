@@ -4,6 +4,7 @@
   align-items: center;
   margin-top: 132px;
   justify-content: center;
+  position: relative;
 }
 .favoritesContainer {
   width: 85%;
@@ -40,8 +41,8 @@
   line-height: 130% !important;
 }
 .compareButton {
-  width: 210px;
-  height: 48px;
+  width: 150px;
+  height: 35px;
   flex-shrink: 0;
   border-radius: 72px;
   background: #ea4335;
@@ -50,16 +51,16 @@
   justify-content: center;
 }
 .compareButton p {
+  font-size: 11px !important;
   color: #fff;
   font-family: "Poppins-Regular" !important;
-  font-size: 15px !important;
   font-style: normal;
   font-weight: 500 !important;
   line-height: normal !important;
 }
 .storyButton {
-  width: 131px;
-  height: 48px;
+  width: 100px;
+  height: 35px;
   flex-shrink: 0;
   border-radius: 72px;
   border: 0.8px solid #e3e3e7;
@@ -69,7 +70,7 @@
   align-items: center;
 }
 .headerItems {
-  margin: 0px 15px;
+  margin: 0px 3px;
 }
 .search_Bar {
   position: relative;
@@ -86,9 +87,6 @@
   display: flex;
   flex-direction: column;
   margin-right: 10px;
-}
-.CardBox {
-  width: 75%;
 }
 .menuItem {
   cursor: pointer;
@@ -137,18 +135,225 @@
   margin-right: 5px !important;
 }
 .CardBox {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-left: 10px;
+  margin-bottom: 30px;
 }
 .productContainer {
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .productContainer span {
   margin: 0 15px;
+}
+.CreateListBtn {
+  width: 100px;
+  height: 35px;
+  background: #2e0704;
+}
+.CreateListBtn p {
+  font-size: 11px !important;
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 26px !important;
+}
+.createListPopUp {
+  width: 572px;
+  height: 500px;
+  z-index: 9;
+  position: fixed;
+  background: #fff;
+  border-radius: 33px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+.whiteCrossImage {
+  position: absolute;
+  top: -37px;
+  right: -40px;
+  border-radius: 10px;
+}
+.listBoxHeader {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.listHeaderText {
+  color: #1f212a;
+  font-family: "Poppins-Regular" !important;
+  font-size: 26px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: normal !important;
+}
+.listSubText {
+  color: #000;
+  font-family: "Poppins-Regular" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: normal !important;
+}
+.listNameBox p {
+  color: #000;
+  font-family: "Poppins-Regular" !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 130% !important;
+}
+.listNameInput {
+  width: 100%;
+  background: #f2f2f3;
+}
+.listNameInput input {
+  height: 9px;
+}
+.descriptionInput {
+  width: 100%;
+  /* height: 300px !important; */
+}
+.descriptionInput input {
+  background: #f2f2f3;
+  height: 115px;
+  text-align: start;
+}
+.listButtonBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-top: 36px;
+}
+.grayCancelBtn {
+  width: 137px;
+  height: 41px;
+  flex-shrink: 0;
+  width: 137px;
+  height: 41px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 72px;
+  border: 0.8px solid #e3e3e7;
+  background: #f2f2f3;
+}
+.grayCancelBtn p {
+  color: #201f1f;
+  font-family: "Poppins-Regular" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 130% !important;
+}
+.ListCreateBtn {
+  width: 123px;
+  height: 41px;
+  flex-shrink: 0;
+  border-radius: 72px;
+  background: #ea4335;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ListCreateBtn p {
+  color: #fff;
+  font-family: "Poppins-Regular" !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 130% !important;
+}
+.naveFirstBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.favoritesHeaderSearchBar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 79px;
+}
+.NavSecondBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.favoritesHeader {
+  width: 100%;
+  height: 213px;
+  height: auto;
+  flex-direction: column;
+  align-items: start;
+}
+/* Tab view*/
+@media only screen and (min-width: 768px) {
+  .favoritesHeaderTextBox {
+    margin-bottom: 20px;
+  }
+  .favoritesHeader {
+    height: auto;
+  }
+  .storyButton {
+    width: 131px;
+    height: 48px;
+  }
+  .CreateListBtn {
+    width: 165px;
+    height: 48px;
+  }
+  .compareButton {
+    width: 210px;
+    height: 48px;
+  }
+  .headerItems {
+    margin: 0px 15px;
+  }
+  .CreateListBtn p {
+    font-size: 17px !important;
+  }
+  .compareButton p {
+    font-size: 15px !important;
+  }
+  .favoritesHeaderSearchBar {
+    margin-top: 26px;
+  }
+  .NavSecondBox {
+    margin-top: 20px;
+  }
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+  .favoritesHeader {
+    flex-direction: row;
+  }
+  .naveFirstBox {
+    flex-direction: row;
+  }
+  .favoritesHeaderTextBox {
+    width: 372px;
+  }
+  .favoritesHeaderSearchBar {
+    width: 253px;
+    margin-top: 0;
+  }
+  .NavSecondBox {
+    width: 50%;
+    margin-top: 0px;
+  }
 }

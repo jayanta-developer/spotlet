@@ -8,8 +8,9 @@ import verifyIcon from "../../Assets/images/image 24.png";
 import borderHeartLogo from "../../Assets/images/border-heart.svg";
 import GrayStar from "../../Assets/images/properitiseImage/GrayStar.png";
 import Star from "../../Assets/images/star-48.png";
-
 import RedCross from "../../Assets/images/red_cross.svg";
+
+import "./style.css";
 
 export const propertiesCard = (
   img,
@@ -19,11 +20,20 @@ export const propertiesCard = (
   address,
   iconArray,
   remove,
-  page
+  page,
+  compare,
+  bottomM
 ) => {
+  console.log(bottomM);
   return (
-    <Box className="propertiesCard">
-      <Box className={remove ? "removeText" : "removeNoneText"}>
+    <Box
+      sx={{ marginBottom: compare ? "50px" : "" }}
+      className="propertiesCard"
+    >
+      <Box
+        sx={{ display: remove ? "block" : "none" }}
+        className={remove ? "removeText" : "removeNoneText"}
+      >
         <img className="crossLogo" src={RedCross} />
         <Typography ml={1}>Remove</Typography>
       </Box>
@@ -73,6 +83,14 @@ export const propertiesCard = (
       <Box className="cardLocationBox">
         <img style={{ width: "10px", height: "14px" }} src={LocationIcon} />
         <span>{address}</span>
+      </Box>
+      <Box
+        sx={{ display: compare ? "flex" : "none" }}
+        mt={1.5}
+        className="comparerTextBox"
+      >
+        <input type="checkbox" />
+        <Typography ml={2}>Compare properties</Typography>
       </Box>
     </Box>
   );

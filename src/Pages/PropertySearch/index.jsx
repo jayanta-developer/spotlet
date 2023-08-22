@@ -779,7 +779,7 @@ export default function PropertySearch() {
 
           </Box>
           <Box sx={{ display: mapSwitch ? "block" : "none" }} className="property_map_box">
-            <GoogleMap latitude={latitude} longitude={longitude} />
+            {/* <GoogleMap latitude={latitude} longitude={longitude} /> */}
           </Box>
 
         </Box>

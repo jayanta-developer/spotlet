@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Box, Typography, TextField } from '@mui/material';
+import { useNavigate } from "react-router-dom";
 import "./style.css"
 
 import SearchIcon from '../../Assets/images/search-normal.svg';
@@ -26,6 +27,7 @@ import ProductList from "../../Component/PropertiesCard/ProductList"
 
 
 export default function Favorites() {
+  const navigate = useNavigate();
   const remove = false;
   const compare = true;
   const productsPerPage = 12;
@@ -286,7 +288,7 @@ export default function Favorites() {
             className="grayCancelBtn pointer">
             <Typography>Cancel</Typography>
           </Box>
-          <Box ml={3} className="ListCreateBtn pointer">
+          <Box onClick={navigate("/favoritesList")} ml={3} className="ListCreateBtn pointer">
             <Typography>Create List</Typography>
           </Box>
         </Box>

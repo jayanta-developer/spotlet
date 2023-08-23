@@ -300,6 +300,147 @@
   flex-direction: column;
   align-items: start;
 }
+
+/* FavoritesList */
+.favoritesListContainer {
+  width: 100%;
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.favoritesListHeader {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.favoritesListHeaderText p {
+  color: #000;
+  font-family: "Poppins-Regular" !important;
+  font-size: 27px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+.favoritesListAddBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #ea4335;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+}
+.favoritesRedAddBtn {
+  color: #ea4335;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 130% !important;
+}
+.favoriteListItemBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.favoritesCard {
+  width: 302px;
+  height: 281px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+  margin: 10px 10px;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+}
+.optionIcon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.favoritesCardCover img {
+  width: 143px;
+  height: 143px;
+}
+.favoritesCardTest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.FCardTitle {
+  color: #1a1a1a;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+}
+.FCardDate {
+  color: #ea4335;
+  font-family: "Poppins-Regular" !important;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 130% !important;
+}
+.favoritesOptionPupUP {
+  width: 109px;
+  height: auto;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  right: 37px;
+  border-radius: 3px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.FCardOptionItem {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s;
+}
+.FCardOptionItem:hover {
+  background-color: #f1f1f1;
+}
+.FCardOptionItemB {
+  border-bottom: 1px solid rgba(184, 184, 184, 0.116);
+}
+.FCardOptionItem p {
+  color: #000;
+  font-family: "Poppins-Regular" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: 39px !important;
+}
+
 /* Tab view*/
 @media only screen and (min-width: 768px) {
   .favoritesHeaderTextBox {
@@ -341,6 +482,14 @@
   .listButtonBox {
     justify-content: end;
   }
+  /* FavoritesList */
+  .favoritesListHeader {
+    width: 90%;
+  }
+  .favoriteListItemBox {
+    width: 90%;
+    justify-content: center;
+  }
 }
 
 /* Desktop view */
@@ -362,5 +511,14 @@
   .NavSecondBox {
     width: 50%;
     margin-top: 0px;
+  }
+  /* FavoritesList */
+
+  .favoritesListHeader {
+    width: 1250px;
+  }
+  .favoriteListItemBox {
+    width: 1288px;
+    justify-content: space-between;
   }
 }

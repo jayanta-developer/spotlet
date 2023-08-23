@@ -68,6 +68,205 @@
 .NavTextVisibility {
   display: none;
 }
+.NotificationPupUp {
+  display: flex;
+  flex-direction: column;
+  width: 1300px;
+  height: 766px;
+  border-radius: 33px;
+  border: 3px solid #e3e6f1;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 130px;
+  overflow: hidden;
+}
+.notificationHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 47px;
+  border-bottom: 1px solid #e2e5f0;
+}
+.notificationHeaderBox1 {
+}
+.notificationHeaderBox2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.notiHeaderText {
+  color: #1f212a;
+  font-family: "Poppins-Regular" !important;
+  font-size: 30px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal !important;
+}
+.notiSubText {
+  color: #0060e1;
+  font-family: "Poppins-Regular" !important;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+.notificationContainer {
+  display: flex;
+  flex-direction: row;
+}
+.notiLeftBox {
+  width: 440px;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  overflow: scroll;
+  height: 669px;
+}
+.top_Date {
+  padding-left: 20px;
+  margin: 5px 0;
+}
+.top_Date p {
+  color: #59657e;
+  font-family: "Poppins-Regular" !important;
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+.NotiUserRow {
+  height: 124px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  align-items: center;
+  border-bottom: 1px solid #e2e5f0;
+  position: relative;
+  padding-right: 20px;
+}
+.photoBox {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.userPhoto {
+  position: relative;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.NotiUserPhoto {
+  width: 100%;
+  height: 100%;
+}
+.NotiRedDot {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 82px;
+  left: 88px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+.notiUserInfo {
+  display: flex;
+  flex-direction: column;
+}
+.notiUserName {
+  color: #1f212a;
+  font-family: "Poppins-Regular" !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 21px !important;
+}
+.notiUserInfo span {
+  color: #59657e;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: 21px !important;
+}
+.userNotiDate {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-top: 5px;
+}
+.userNotiDate p {
+  color: #777272;
+  font-family: "Poppins-Regular" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: normal !important;
+  margin-top: 1px;
+}
+.notiRightBox {
+  width: 857px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 50px 0px 50px;
+}
+.user_info {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 22px;
+}
+.user_infoText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.User_name {
+  color: #1f212a;
+  font-family: "Poppins-Regular" !important;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+.User_date {
+  color: #1d1d1d;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal !important;
+}
+.user_Summary {
+  display: flex;
+  flex-direction: column;
+}
+.user_Summary_text {
+  color: #000;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 20px !important;
+  margin-bottom: 10px !important;
+}
+.user_Summary_sub_text {
+  color: #1c1c1c;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: 25px !important;
+}
 @media only screen and (min-width: 768px) {
   .navBar {
     height: 96px;

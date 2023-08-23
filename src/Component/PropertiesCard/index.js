@@ -24,7 +24,6 @@ export const propertiesCard = (
   compare,
   bottomM
 ) => {
-  console.log(bottomM);
   return (
     <Box
       sx={{ marginBottom: compare ? "50px" : "" }}

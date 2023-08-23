@@ -59,7 +59,7 @@ export default function Overview() {
   const [bookingRequest, setBookingRequest] = useState(false)
   const [host, setHost] = useState(false)
   const [activeMenuItem, setActiveMenuItem] = useState(null);
-  console.log(activeMenuItem);
+
   const Overview = useRef(null);
   const Amenities = useRef(null);
   const Feature = useRef(null);

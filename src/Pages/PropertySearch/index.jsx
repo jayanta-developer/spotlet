@@ -86,7 +86,6 @@ export default function PropertySearch() {
 
 
   const handleSearchChange = (event) => {
-    console.log(event);
     if (event.target.id === "Event") {
       const query = event.target.value;
       setSearchQuery(query);
@@ -184,7 +183,6 @@ export default function PropertySearch() {
               onClick={() => {
                 setShowPopup(false)
                 setFilterPupUp(false)
-                console.log("close");
               }}
               style={{ width: "50px", height: "50px", cursor: "pointer" }} src={RedCross} />
           </Box>

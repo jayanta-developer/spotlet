@@ -167,7 +167,7 @@
   line-height: 26px !important;
 }
 .createListPopUp {
-  width: 572px;
+  width: 373px;
   height: 500px;
   z-index: 9;
   position: fixed;
@@ -233,7 +233,7 @@
 .listButtonBox {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: center;
   margin-top: 36px;
 }
 .grayCancelBtn {
@@ -335,6 +335,12 @@
   .NavSecondBox {
     margin-top: 20px;
   }
+  .createListPopUp {
+    width: 572px;
+  }
+  .listButtonBox {
+    justify-content: end;
+  }
 }
 
 /* Desktop view */
@@ -343,6 +349,7 @@
     flex-direction: row;
   }
   .naveFirstBox {
+    width: 50%;
     flex-direction: row;
   }
   .favoritesHeaderTextBox {

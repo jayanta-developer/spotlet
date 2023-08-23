@@ -318,14 +318,9 @@ export default function Favorites() {
                   </Box>
                 </Box>
               </Box>
-
-
-
-
             </Box>
 
             <Box className="NavSecondBox">
-
               <Box className="favoritesHeaderSortBy headerItems">
                 <Box className="storyButton pointer">
                   <Typography mr={2}>Sort by</Typography>
@@ -348,10 +343,6 @@ export default function Favorites() {
                 </Box>
               </Box>
             </Box>
-
-
-
-
           </Box>
 
 

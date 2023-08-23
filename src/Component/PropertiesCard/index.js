@@ -31,7 +31,7 @@ export const propertiesCard = (
       className="propertiesCard"
     >
       <Box
-        sx={{ display: remove ? "block" : "none" }}
+        sx={{ display: remove ? "flex" : "none" }}
         className={remove ? "removeText" : "removeNoneText"}
       >
         <img className="crossLogo" src={RedCross} />

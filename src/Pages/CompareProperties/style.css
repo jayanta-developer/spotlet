@@ -17,6 +17,7 @@
   width: 100%;
   display: flex;
   justify-content: start;
+  margin-bottom: 20px;
 }
 .compareHederTextBox {
 }
@@ -104,6 +105,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 23px;
 }
 .ratingLogoBox {
   width: 100%;
@@ -116,7 +118,7 @@
   justify-content: center;
 }
 .ratingLogoBoxText {
-  margin-right: 92px !important;
+  margin-right: 82px !important;
 }
 .productCardBox {
   display: flex;
@@ -204,18 +206,26 @@
   .ratingLogoBoxText {
     margin-right: 100px !important;
   }
+  .compareHeader {
+    margin-bottom: 50px;
+  }
+  .compareBackButton {
+    margin-bottom: 0px;
+  }
 }
 
 /* Desktop view */
 @media only screen and (min-width: 1000px) {
   .compareHeader {
     width: 75%;
+    margin-bottom: 0px;
   }
   .compareProjectBox {
     width: 75%;
     flex-direction: row;
-    height: 980px;
+    height: 914px;
     align-items: end;
+    margin-bottom: 100px;
   }
   .firstCompareItem {
     display: block;

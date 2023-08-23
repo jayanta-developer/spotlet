@@ -150,7 +150,7 @@ export default function Reviews({ Review, setShowPopup }) {
           }
 
         </Box>
-        <Box mb={2} className="seeMoreBtn display">
+        <Box mb={2} className="seeMoreBtn ">
           <Typography onClick={() => {
             setReview(true)
             setShowPopup(true)

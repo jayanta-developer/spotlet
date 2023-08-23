@@ -235,17 +235,17 @@ export default function Overview() {
               <Box sx={{ width: "138px" }} className="venueDetailsItem ">
                 {/* <img className='venueDetailsIcon' src={parkingIcon} /> */}
                 <img className='venueDetailsIcon' src={ParkingNoneIcon} />
-                <Typography>parking</Typography>
+                <Typography>Parking</Typography>
               </Box>
               <Box sx={{ width: "138px" }} className="venueDetailsItem ">
                 {/* <img className='venueDetailsIcon' src={StreetParkingIcon} /> */}
                 <img className='venueDetailsIcon' src={StreetParkingNoneIcon} />
-                <Typography>street parking</Typography>
+                <Typography>Street parking</Typography>
               </Box>
               <Box sx={{ width: "121px" }} className="venueDetailsItem ">
                 {/* <img className='venueDetailsIcon' src={CCTVIcon} /> */}
                 <img className='venueDetailsIcon' src={CCTVNoneIcon} />
-                <Typography>cc cameras</Typography>
+                <Typography>CC cameras</Typography>
               </Box>
 
             </Box>

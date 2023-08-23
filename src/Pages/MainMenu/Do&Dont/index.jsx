@@ -104,7 +104,7 @@ export default function Dont({ DoDon, setShowPopup }) {
             </Box>
           </Box>
 
-          <Box className="doTextBox">
+          <Box className="doTextPupUpBox doTextBox">
             <Box className="doBox">
               <Box className="doBoxHeader sideBorder sideBorder">
                 <Typography>Do’s</Typography>

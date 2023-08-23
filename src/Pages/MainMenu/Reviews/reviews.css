@@ -115,16 +115,15 @@
   width: 98%;
   max-width: 681px;
   position: fixed;
-  height: 800px;
+  height: 767px;
   border-radius: 10px;
   border: 1px solid #eee;
   background: #fff;
   flex-shrink: 0;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  /* padding: 30px 33px; */
   z-index: 9;
   left: 50%;
-  top: 54%;
+  top: 55%;
   transform: translate(-50%, -50%);
 }
 .reviewRatingLogo {
@@ -145,7 +144,7 @@
   width: 42px;
   height: 42px;
   position: absolute;
-  left: 92%;
+  left: 86%;
   bottom: -52px;
   cursor: pointer;
 }
@@ -153,7 +152,9 @@
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 .reviewOpenHeaderText {
   color: #3c3c3c;
@@ -163,9 +164,11 @@
   font-weight: 600 !important;
   line-height: normal !important;
   margin-bottom: 7px;
+  margin-top: 6px !important;
+  margin-left: 7px !important;
 }
 .reviewRating {
-  width: 35%;
+  width: 100%;
   padding: 10px 10px 10px 14px;
   border-right: 1px solid #f1f1f1;
 }
@@ -174,9 +177,6 @@
   flex-direction: row;
   height: 64px;
   align-items: center;
-}
-.reviewOpenHeaderText {
-  margin-left: 7px !important;
 }
 .reviewRatingSubHeaderText {
   display: flex;
@@ -230,7 +230,7 @@
   margin-bottom: 25px;
 }
 .ratingLogo {
-  width: 106px;
+  width: 58px;
   height: 58px;
   display: flex;
   justify-content: center;
@@ -287,7 +287,7 @@
   margin-left: 20px !important;
 }
 .reviewReview {
-  width: 65%;
+  width: 100%;
   padding: 30px 20px 20px 0px;
 }
 .review_headerBox {
@@ -330,9 +330,7 @@
   height: 15px;
 }
 .review_Open_contentBox {
-  height: 86%;
-  overflow: scroll;
-  overflow-x: hidden;
+  height: 100%;
 }
 .review_open_box {
   width: 100%;
@@ -415,5 +413,27 @@
   }
   .reviewOpenContainer {
     width: 683px;
+    top: 54%;
+    height: 800px;
+  }
+  .ratingOpenTextBox {
+    flex-direction: row;
+  }
+  .reviewRating {
+    width: 35%;
+  }
+  .reviewReview {
+    width: 65%;
+  }
+  .review_Open_contentBox {
+    height: 86%;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .ratingOpenHeader img {
+    left: 92%;
+  }
+  .ratingLogo {
+    width: 106px;
   }
 }

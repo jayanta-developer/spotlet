@@ -24,7 +24,7 @@ export default function Features({ Feature, setShowPopup }) {
             <Typography className='descriptionHeaderText'>Features</Typography>
           </Box>
 
-          <Box className="amenitiesTextBox">
+          <Box pt={2} className="amenitiesTextBox">
             <Box className="amenitiesTextArya">
               <Box className="amenitiesText">
                 <Box className="amenitiesItem">

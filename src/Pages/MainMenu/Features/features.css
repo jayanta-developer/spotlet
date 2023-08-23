@@ -73,7 +73,7 @@
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   left: 50%;
-  top: 50%;
+  top: 53%;
   transform: translate(-50%, -50%);
 }
 .featuresRedCrossMargin {
@@ -86,7 +86,7 @@
   overflow-x: hidden;
 }
 .featuresSeeMoreBtn {
-  margin-top: 43px;
+  margin-top: 30px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -97,6 +97,6 @@
     margin-left: 66%;
   }
   .featuresSeeMoreBtn {
-    margin-top: 63px;
+    margin-top: 48px;
   }
 }

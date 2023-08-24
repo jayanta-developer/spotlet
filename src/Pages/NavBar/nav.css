@@ -68,8 +68,68 @@
 .NavTextVisibility {
   display: none;
 }
-.NotificationPupUp {
+/* Notification PopUp */
+.notificationSPopUp {
+  width: 480px;
+  height: 724px;
+  flex-direction: column;
+  flex-shrink: 0;
+  border-radius: 33px;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 130px;
+}
+.notificationSHeader {
+  height: 333px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e2e5f0;
+  position: relative;
+}
+.notificationSHeader p {
+  color: #1f212a;
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 24px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+.notificationSContainer {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.notificationPopUpSeeAllBtn {
+  height: 293px;
+  border-radius: 0px 0px 33px 33px;
+  background: #ea4335;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notificationPopUpSeeAllBtn p {
+  color: #fff;
+  font-family: "Poppins-Regular" !important;
+  font-size: 19px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+.sNotiUserTime {
+  position: absolute;
+  top: 4px;
+  right: -102px;
+  width: 84px;
+}
+.SNotiUserInfo {
+  width: 236px;
+}
+/* Notification popup */
+.NotificationPupUp {
   flex-direction: column;
   width: 1300px;
   height: 766px;
@@ -87,7 +147,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 47px;
+  padding: 16px 80px 16px 47px;
   border-bottom: 1px solid #e2e5f0;
 }
 .notificationHeaderBox1 {
@@ -96,6 +156,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: relative;
 }
 .notiHeaderText {
   color: #1f212a;
@@ -138,6 +199,7 @@
 }
 .NotiUserRow {
   height: 124px;
+  max-height: 124px;
   display: flex;
   flex-direction: row;
   padding-left: 20px;
@@ -145,6 +207,7 @@
   border-bottom: 1px solid #e2e5f0;
   position: relative;
   padding-right: 20px;
+  flex: 0 0 124px;
 }
 .photoBox {
   width: 100px;
@@ -180,6 +243,7 @@
 .notiUserInfo {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .notiUserName {
   color: #1f212a;
@@ -228,7 +292,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  margin-left: 35px;
 }
 .User_name {
   color: #1f212a;
@@ -243,7 +307,7 @@
   font-family: "Poppins-Regular" !important;
   font-size: 15px !important;
   font-style: normal;
-  font-weight: 500 !important;
+  font-weight: 700 !important;
   line-height: normal !important;
 }
 .user_Summary {
@@ -266,6 +330,18 @@
   font-style: normal;
   font-weight: 300 !important;
   line-height: 25px !important;
+}
+.whiteCrossIcon {
+  position: absolute;
+  right: -111px;
+  top: -58px;
+  cursor: pointer;
+}
+.white_CrossIcon {
+  position: absolute;
+  right: -30px;
+  top: -26px;
+  cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
   .navBar {

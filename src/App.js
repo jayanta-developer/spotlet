@@ -11,6 +11,7 @@ import FavoritesList from "./Pages/Favorites/FavoritesList";
 import CompareProperties from "./Pages/CompareProperties";
 import PropertySearch from "./Pages/PropertySearch";
 import Subscription from "./Pages/Subscription";
+import CreateCoupon from "./Pages/CreateCoupon";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/booking/details" element={<BookingDetails />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/favoritesList" element={<FavoritesList />} />
+        <Route path="/coupon/create" element={<CreateCoupon />} />
         <Route path="/compare" element={<CompareProperties />} />
         <Route path="/property-search" element={<PropertySearch />} />
         <Route path="/subscription" element={<Subscription />} />

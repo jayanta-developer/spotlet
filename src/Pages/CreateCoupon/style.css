@@ -3,12 +3,163 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 145px;
+  margin-bottom: 80px;
 }
 .CreateCouponBox {
   width: 1300px;
   height: 783px;
+  display: flex;
+  flex-direction: column;
   flex-shrink: 0;
   border-radius: 16px;
   background: #fff;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+}
+.couponNavBar {
+  width: 100%;
+  height: 100px;
+  border-bottom: #ededed 1px solid;
+  padding: 39px 30px 0 30px;
+}
+.couponNavBar p {
+  color: #000;
+  font-family: "Poppins-Bold" !important;
+  font-size: 27px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal;
+}
+.FirstInnerBox {
+  height: 363px;
+  border-bottom: #ededed 1px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 33px;
+}
+.cupInputBox {
+  width: 393px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.coupon {
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.coupon input {
+  width: 393px !important;
+  height: 18px !important;
+}
+.InputLabelText {
+  color: #202020;
+  font-family: "Poppins-Regular" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 130% !important;
+  margin-bottom: 17px !important;
+}
+.SecondFieldBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.SecondRadioBox {
+  padding: 0 17px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.radioLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.radioLabel input {
+  cursor: pointer;
+}
+.radioLabelText {
+  color: #202020;
+  font-family: "Poppins-Regular" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 130% !important;
+  margin-left: 5px !important;
+}
+.SecondInnerBox {
+  padding-top: 30px;
+}
+.couponBookingIDInputFieldBox {
+  width: 393px;
+}
+.couponLocationIDInputFieldBox {
+  width: 393px;
+}
+.couponEmailIDInputFieldBox {
+  width: 393px;
+}
+.CouponButtonBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-top: 43px;
+  padding-right: 31px;
+}
+.CouponButtonBox p {
+  color: #fff;
+  font-family: "Poppins-Regular" !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 130% !important;
+}
+.couponCancelBtn {
+  width: 172px;
+  height: 51px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #170302;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s;
+}
+.couponCancelBtn:hover {
+  background: #380905;
+}
+.couponCodeBtn {
+  width: 393px;
+  height: 51px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #ea4335;
+  background: #ea4335;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 23px !important;
+  transition: background 0.5s;
+}
+.couponCodeBtn:hover {
+  background: #c73a2d;
+}
+/* Tab view*/
+@media only screen and (min-width: 768px) {
+  .CreateCouponBox {
+    width: 100%;
+  }
+}
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+  .CreateCouponBox {
+    width: 1300px;
+  }
 }

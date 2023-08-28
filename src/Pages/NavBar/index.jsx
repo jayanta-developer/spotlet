@@ -203,7 +203,7 @@ export default function NavBar() {
 
           <Box className="notificationContainer">
             <Box className="notiLeftBox">
-              <Box className="top_Date">
+              <Box className="top_Date disMob">
                 <Typography>TODAY</Typography>
               </Box>
               {

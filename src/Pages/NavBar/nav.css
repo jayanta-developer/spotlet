@@ -70,15 +70,15 @@
 }
 /* Notification PopUp */
 .notificationSPopUp {
-  width: 480px;
-  height: 724px;
+  width: 368px;
+  height: 569px;
   flex-direction: column;
   flex-shrink: 0;
   border-radius: 33px;
   background: #fff;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
   position: absolute;
-  top: 130px;
+  top: 96px;
 }
 .notificationSHeader {
   height: 333px;
@@ -121,8 +121,8 @@
 }
 .sNotiUserTime {
   position: absolute;
-  top: 4px;
-  right: -102px;
+  top: -29px;
+  right: 145px;
   width: 84px;
 }
 .SNotiUserInfo {
@@ -131,23 +131,23 @@
 /* Notification popup */
 .NotificationPupUp {
   flex-direction: column;
-  width: 1300px;
+  width: 97%;
   height: 766px;
   border-radius: 33px;
   border: 3px solid #e3e6f1;
   background: #fff;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
   position: absolute;
-  top: 130px;
+  top: 93px;
   overflow: hidden;
 }
 .notificationHeader {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 80px 16px 47px;
+  padding: 16px 12px 16px 12px;
   border-bottom: 1px solid #e2e5f0;
 }
 .notificationHeaderBox1 {
@@ -176,14 +176,15 @@
 }
 .notificationContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .notiLeftBox {
-  width: 440px;
+  width: 100%;
   background: #fff;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
   overflow: scroll;
-  height: 669px;
+  display: flex;
+  flex-direction: row;
 }
 .top_Date {
   padding-left: 20px;
@@ -207,7 +208,7 @@
   border-bottom: 1px solid #e2e5f0;
   position: relative;
   padding-right: 20px;
-  flex: 0 0 124px;
+  flex: 0 0 395px;
 }
 .photoBox {
   width: 100px;
@@ -216,8 +217,8 @@
   align-items: center;
 }
 .userPhoto {
-  position: relative;
   width: 85px;
+  position: relative;
   height: 85px;
   border-radius: 50%;
   overflow: hidden;
@@ -278,10 +279,11 @@
   margin-top: 1px;
 }
 .notiRightBox {
-  width: 857px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  padding: 50px 50px 0px 50px;
+  height: 56vh;
+  overflow: scroll;
 }
 .user_info {
   display: flex;
@@ -333,8 +335,8 @@
 }
 .whiteCrossIcon {
   position: absolute;
-  right: -111px;
-  top: -58px;
+  right: -54px;
+  top: -118px;
   cursor: pointer;
 }
 .white_CrossIcon {
@@ -342,6 +344,15 @@
   right: -30px;
   top: -26px;
   cursor: pointer;
+}
+.disMob {
+  display: none;
+}
+.search_Field {
+  width: 220px !important;
+}
+.search_Field div {
+  width: 210px !important;
 }
 @media only screen and (min-width: 768px) {
   .navBar {
@@ -399,5 +410,72 @@
   }
   .NavTextVisibility {
     display: block;
+  }
+  /* Nav popup */
+  .NotificationPupUp {
+    width: 803px;
+    top: 130px;
+  }
+  .notiLeftBox {
+    width: 609px;
+    height: 669px;
+    flex-direction: column;
+  }
+  .notiRightBox {
+    width: 857px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px 0px 50px;
+    overflow: scroll;
+    height: 638px;
+    overflow-x: hidden;
+  }
+  .notificationSPopUp {
+    width: 480px;
+    height: 724px;
+    top: 130px;
+  }
+  .notificationContainer {
+    flex-direction: row;
+  }
+  .NotiUserRow {
+    flex: 0 0 124px;
+  }
+  .notificationHeader {
+    padding: 16px 80px 16px 47px;
+    flex-direction: row;
+  }
+  .disMob {
+    display: block;
+  }
+  .search_Field {
+    width: 332px !important;
+  }
+  .search_Field div {
+    width: 306px !important;
+  }
+  .sNotiUserTime {
+    top: 4px;
+    right: -102px;
+  }
+  .whiteCrossIcon {
+    right: -111px;
+    top: -58px;
+  }
+}
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+  .NotificationPupUp {
+    width: 1300px;
+    height: 766px;
+  }
+  .notiLeftBox {
+    width: 440px;
+  }
+  .notiRightBox {
+    width: 857px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px 0px 50px;
   }
 }

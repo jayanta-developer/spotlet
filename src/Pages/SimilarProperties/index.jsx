@@ -28,7 +28,7 @@ export default function Properties() {
               "#SWISS23808",
               "INR. 4000",
               "Cafe",
-              "Puppalguda, Sri Ram Nagar Colony",
+              "Sri Ram Nagar",
               [buildingIcon, PersonIcon]
             )}
             {propertiesCard(
@@ -36,7 +36,7 @@ export default function Properties() {
               "#FUNLA36332",
               "INR. 4000",
               "Banquets Hall",
-              "Miyapur, Indira Nagar Colony",
+              "Miyapur",
               [FilmIcon, PersonIcon]
             )}
             {propertiesCard(
@@ -44,7 +44,7 @@ export default function Properties() {
               "#SUPRE95269",
               "INR. 4000",
               "GYM",
-              "Hyderabad, Sri Krishna Nagar",
+              "Hyderabad",
               [FilmIcon, buildingIcon]
             )}
             {propertiesCard(
@@ -52,7 +52,7 @@ export default function Properties() {
               "#FILMN33108",
               "INR. 4000",
               "Studio Floors",
-              "Hyderabad, Film Nagar",
+              "Hyderabad",
               [buildingIcon, FilmIcon, PersonIcon]
             )}
 

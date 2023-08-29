@@ -114,7 +114,7 @@ export default function CompareProperties() {
                 "#SWISS23808",
                 "INR. 4000",
                 "Cafe",
-                "Puppalguda, Sri Ram Nagar Colony",
+                "Puppalguda",
                 [buildingIcon, PersonIcon],
                 remove,
                 page
@@ -150,7 +150,7 @@ export default function CompareProperties() {
                 "#SUPRE95269",
                 "INR. 4000",
                 "GYM",
-                "Hyderabad, Sri Krishna Nagar",
+                "Hyderabad",
                 [FilmIcon, buildingIcon, PersonIcon],
                 remove,
                 page
@@ -186,7 +186,7 @@ export default function CompareProperties() {
                 "#SUPRE95269",
                 "INR. 4000",
                 "GYM",
-                "Hyderabad, Sri Krishna Nagar",
+                "Sri Krishna Nagar",
                 [FilmIcon, buildingIcon, PersonIcon],
                 remove,
                 page

@@ -379,7 +379,7 @@
   width: 306px;
 }
 .search_Input input {
-  height: 1px !important;
+  height: 10px !important;
   background-color: #f2f2f3;
   border-radius: 22px;
   padding-left: 55px;

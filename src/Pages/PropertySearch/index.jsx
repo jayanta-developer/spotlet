@@ -545,8 +545,8 @@ export default function PropertySearch() {
         <Box className="propertySHeader">
           <Box className="searchBox">
             <Box className="property_search_Field">
-              <img style={{ width: "22px", position: "absolute", left: "20px", top: "6px", zIndex: "9" }} src={SearchIcon} />
-              <TextField className='search_Input' sx={{ width: "100%" }} placeholder='Search reviews' />
+              <img style={{ width: "22px", position: "absolute", left: "20px", top: "10px", zIndex: "9" }} src={SearchIcon} />
+              <TextField className='search_Input' sx={{ width: "100%" }} placeholder='Search by name, id, area' />
             </Box>
           </Box>
 

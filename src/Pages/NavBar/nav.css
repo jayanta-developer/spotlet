@@ -71,7 +71,7 @@
 /* Notification PopUp */
 .notificationSPopUp {
   width: 368px;
-  height: 569px;
+  height: 489px;
   flex-direction: column;
   flex-shrink: 0;
   border-radius: 33px;
@@ -131,7 +131,7 @@
 /* Notification popup */
 .NotificationPupUp {
   flex-direction: column;
-  width: 97%;
+  width: 368px;
   height: 766px;
   border-radius: 33px;
   border: 3px solid #e3e6f1;
@@ -432,7 +432,7 @@
   }
   .notificationSPopUp {
     width: 480px;
-    height: 724px;
+    height: 682px;
     top: 130px;
   }
   .notificationContainer {

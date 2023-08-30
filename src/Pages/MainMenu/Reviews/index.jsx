@@ -240,7 +240,7 @@ export default function Reviews({ Review, setShowPopup }) {
             <Box className="review_headerBox">
               <Box className="review_searchBar">
                 <Box className="search_Field">
-                  <img style={{ width: "22px", position: "relative", left: "44px", top: "4px", zIndex: "9" }} src={SearchIcon} />
+                  <img style={{ width: "22px", position: "relative", left: "44px", zIndex: "9" }} src={SearchIcon} />
                   <TextField className='search_Input' sx={{ width: "100%" }} placeholder='Search reviews' />
                 </Box>
               </Box>

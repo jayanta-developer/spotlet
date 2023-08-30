@@ -370,7 +370,7 @@
 }
 .search_Field {
   width: 332px;
-  height: 34px;
+  /* height: 34px; */
   /* border: 1px solid; */
   display: flex;
   flex-direction: row;

@@ -12,6 +12,7 @@ import CompareProperties from "./Pages/CompareProperties";
 import PropertySearch from "./Pages/PropertySearch";
 import Subscription from "./Pages/Subscription";
 import CreateCoupon from "./Pages/CreateCoupon";
+import UserPlans from "./Pages/UserPlans";
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="/compare" element={<CompareProperties />} />
         <Route path="/property-search" element={<PropertySearch />} />
         <Route path="/subscription" element={<Subscription />} />
+        <Route path="/user/plans" element={<UserPlans />} />
       </Routes>
     </>
   );

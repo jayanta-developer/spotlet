@@ -13,6 +13,8 @@ import PropertySearch from "./Pages/PropertySearch";
 import Subscription from "./Pages/Subscription";
 import CreateCoupon from "./Pages/CreateCoupon";
 import UserPlans from "./Pages/UserPlans";
+import Blog from "./Pages/Blog";
+import Terms from "./Pages/Terms&Conditions";
 
 export default function App() {
   return (
@@ -29,6 +31,9 @@ export default function App() {
         <Route path="/property-search" element={<PropertySearch />} />
         <Route path="/subscription" element={<Subscription />} />
         <Route path="/user/plans" element={<UserPlans />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/Terms-and-Conditions" element={<Terms />} />
+        <Route path="/Privacy-Policy" element={<Blog />} />
       </Routes>
     </>
   );

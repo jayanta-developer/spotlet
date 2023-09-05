@@ -15,6 +15,7 @@ import CreateCoupon from "./Pages/CreateCoupon";
 import UserPlans from "./Pages/UserPlans";
 import Blog from "./Pages/Blog";
 import Terms from "./Pages/Terms&Conditions";
+import Policy from "./Pages/Privacy&Policy";
 
 export default function App() {
   return (
@@ -33,7 +34,7 @@ export default function App() {
         <Route path="/user/plans" element={<UserPlans />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/Terms-and-Conditions" element={<Terms />} />
-        <Route path="/Privacy-Policy" element={<Blog />} />
+        <Route path="/Privacy-Policy" element={<Policy />} />
       </Routes>
     </>
   );

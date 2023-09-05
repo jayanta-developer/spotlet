@@ -13,7 +13,6 @@ import NavBar from '../NavBar';
 import Footer from '../Footer';
 
 
-
 export default function CreateCoupon() {
   const [couponType, setCouponType] = useState('single');
   const [couponPopUp, setCouponPopUp] = useState(false)

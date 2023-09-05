@@ -30,6 +30,7 @@
   font-style: normal;
   font-weight: 600 !important;
   line-height: normal;
+  text-align: center;
 }
 .FirstInnerBox {
   height: auto;
@@ -41,7 +42,7 @@
   align-items: center;
 }
 .cupInputBox {
-  width: 393px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -99,13 +100,13 @@
   padding-top: 30px;
 }
 .couponBookingIDInputFieldBox {
-  width: 393px;
+  width: 100%;
 }
 .couponLocationIDInputFieldBox {
-  width: 393px;
+  width: 100%;
 }
 .couponEmailIDInputFieldBox {
-  width: 393px;
+  width: 100%;
 }
 .CouponButtonBox {
   width: 100%;
@@ -139,7 +140,7 @@
   background: #380905;
 }
 .couponCodeBtn {
-  width: 393px;
+  width: 350px;
   height: 51px;
   flex-shrink: 0;
   border-radius: 4px;
@@ -189,23 +190,23 @@
 /* Tab view*/
 @media only screen and (min-width: 768px) {
   .CreateCouponBox {
-    height: 990px;
+    height: auto;
     padding: 0;
     padding: 25px;
   }
   .FirstInnerBox {
     flex-wrap: wrap;
     flex-direction: row;
-    height: 458px;
+    height: auto;
     padding: 10px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: start;
   }
   .SecondFieldBox {
     flex-wrap: wrap;
     flex-direction: row;
     padding: 10px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: start;
   }
   .CouponButtonBox {
@@ -217,7 +218,23 @@
     margin-bottom: 0;
   }
   .couponCodeBtn {
+    width: 393px;
     margin-left: 23px !important;
+  }
+  .SecondRadioBox {
+    justify-content: center;
+  }
+  .cupInputBox {
+    width: 393px;
+  }
+  .couponBookingIDInputFieldBox {
+    width: 393px;
+  }
+  .couponLocationIDInputFieldBox {
+    width: 393px;
+  }
+  .couponEmailIDInputFieldBox {
+    width: 393px;
   }
 }
 /* Desktop view */
@@ -228,5 +245,15 @@
   }
   .FirstInnerBox {
     height: 363px;
+    justify-content: space-between;
+  }
+  .SecondFieldBox {
+    justify-content: space-between;
+  }
+  .SecondRadioBox {
+    justify-content: start;
+  }
+  .couponNavBar p {
+    text-align: inherit;
   }
 }

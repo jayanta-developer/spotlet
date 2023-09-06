@@ -74,6 +74,7 @@ export default function CreateCoupon() {
                 <TextField placeholder='1GR589POIUY8956' />
               </Box>
               <Box className="coupon couponNameInputFieldBox">
+                <Typography className='InputLabelText'>Coupon Amount / Discount</Typography>
                 <TextField placeholder='Enter your coupon name' />
               </Box>
               <Box className="coupon couponActivationDateInputFieldBox">

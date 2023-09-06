@@ -186,7 +186,12 @@
 .CDItems:hover {
   background: #ea44352f;
 }
-
+.couponAmountDesktop {
+  display: none !important;
+}
+.couponAmountMobile {
+  display: flex !important;
+}
 /* Tab view*/
 @media only screen and (min-width: 768px) {
   .CreateCouponBox {
@@ -276,5 +281,11 @@
   }
   .couponContainer {
     margin-top: 145px;
+  }
+  .couponAmountDesktop {
+    display: flex !important;
+  }
+  .couponAmountMobile {
+    display: none !important;
   }
 }

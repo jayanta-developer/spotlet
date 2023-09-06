@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import { Box, TextField, Typography, Pagination, Card, CardMedia, CardContent, Button } from "@mui/material";
-// import bannerPhoto from "../../Assets/images/b";
+import bannerPhoto from "../../Assets/images/blog-banner.png";
 import iconauthor from "../../Assets/images/icon-author.png";
 import icondate from "../../Assets/images/icon-date.png";
 import iconlike from "../../Assets/images/icon-like.png";

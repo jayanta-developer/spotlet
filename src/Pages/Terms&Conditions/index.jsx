@@ -52,8 +52,8 @@ export default function Terms() {
             Please carefully review these Terms of Service as they contain
             crucial information regarding your legal rights, remedies, and
             obligations. They include various limitations and exclusions, a
-            clause governing the jurisdiction and venue for dispute resolution,
-            and obligations to comply with applicable laws and regulations.
+            clause governing the jurisdiction and venue for <span className="span600">dispute resolution,
+              and obligations to comply</span> with applicable laws and regulations.
             Specifically, it is important for property listers to understand the
             legal requirements applicable in their respective states.
           </Typography>
@@ -68,8 +68,8 @@ export default function Terms() {
             including but not limited to motion pictures, television, other
             creative productions, commercial ventures, corporate events, and
             individual events (collectively referred to as the "Services").
-            These Services are accessible through the website www.spotlet.in and
-            any other websites where SpotLet makes the Services available
+            These Services are accessible through the website <span className="span700">www.spotlet.in</span> and
+            any other websites where <span className="span600"> SpotLet makes the Services available</span>
             (collectively referred to as the "Site").
           </Typography>
           <Typography variant="body1" gutterBottom>
@@ -78,69 +78,69 @@ export default function Terms() {
             (referred to as "SpotLet," "we," "us," or "our") governing your use
             of the Site or Services. Additionally, with regard to any payments
             or payouts conducted through the Site, these Terms of Service also
-            apply to your relationship with Stripe/Razorpay, a third-party
-            payment processor ("Stripe/Razorpay").
+            apply to <span className="span600"> your relationship with Stripe/Razorpay, a third-party
+              payment processor</span> ("Stripe/Razorpay").
           </Typography>
           <Typography variant="body1" gutterBottom>
             <ul>
               <li>
-                "Booking Request Period" refers to the specific duration,
-                determined at SpotLet's sole discretion, starting from when a
+                <span className="span600">"Booking Request </span> Period" refers to the specific duration,
+                determined at <span className="span600">SpotLet's sole discretion,</span> starting from when a
                 Renter submits a booking request, during which a Lister can
                 decide to accept or reject the request. The exact length of the
                 Booking Request Period may vary depending on the location and
                 will be stated on the Site or Services.
               </li>
               <li>
-                "Collective Content" encompasses both User Content and SpotLet
+                <span className="span600"> "Collective Content"</span> encompasses both User Content and SpotLet
                 Content.
               </li>
               <li>
-                "Content" includes text, graphics, images, music, software,
+                <span className="span600">"Content"</span> includes text, graphics, images, music, software,
                 audio, video, information, or any other materials.
               </li>
               <li>
-                "SpotLet Content" comprises all the Content made available by
+                <span className="span600">"SpotLet Content"</span> comprises all the Content made available by
                 SpotLet through the Site, Services, official social media
                 channels, and related promotional campaigns. This includes any
                 Content licensed from third parties, excluding User Content.
               </li>
               <li>
-                "Lister" refers to a User who creates a Listing through the Site
+                <span className="span600">"Lister"</span> refers to a User who creates a Listing through the Site
                 and Services.
               </li>
               <li>
-                "Listing" represents a Property listed by a Lister for rental
+                <span className="span600">"Listing"</span> represents a Property listed by a Lister for rental
                 availability through the Site and Services.
               </li>
               <li>
-                "User" pertains to an individual who completes SpotLet's account
-                registration process, including Listers and Renters, as
+                <span className="span600">"User"</span> pertains to an individual who completes <span className="span600"> SpotLet's account
+                  registration process,</span> including Listers and Renters, as
                 described in detail under "Account Registration" below.
               </li>
               <li>
-                "User Content" encompasses all the Content that a User posts,
+                <span className="span600">"User Content"</span> encompasses all the Content that a User posts,
                 uploads, publishes, submits, transmits, or includes in their
                 Listing, User profile, or SpotLet promotional campaign, which is
-                made available through the Site or Services.
+                made available through <span className="span600"> the Site or Services.</span>
               </li>
               <li>
-                "Property" denotes residential, commercial, and other types of
+                <span className="span600">"Property"</span> denotes residential, commercial, and other types of
                 properties.
               </li>
               <li>
-                "Renter" signifies a User who requests a booking of a Listing
-                from a Lister through the Site or Services.
+                <span className="span600">"Renter"</span> signifies a User who requests a  <span className="span600">booking of a Listing
+                  from a Lister</span> through the Site or Services.
               </li>
               <li>
-                "Tax" or "Taxes" encompasses any applicable taxes, such as
+                <span className="span600">"Tax" or "Taxes"</span> encompasses any applicable taxes, such as
                 value-added taxes (VAT), goods and services taxes, transient
                 occupancy taxes, tourist or visitor taxes, property or lodging
                 taxes, fees (e.g., convention center fees) that property
                 providers may be legally obligated to collect and remit to
                 governmental agencies, and other similar indirect taxes imposed
                 at the municipal, state, federal, or national level, as well as
-                income taxes for individuals or corporations.
+                income <span className="span600"> taxes for individuals or corporations</span>.
               </li>
             </ul>
           </Typography>
@@ -149,13 +149,13 @@ export default function Terms() {
             2. TERMS OF SERVICE:
           </Typography>
           <Typography variant="body1" gutterBottom>
-            2.1 By utilizing the Site or Services, you hereby agree to comply
-            with and be legally bound by the terms and conditions set forth in
+            2.1 By utilizing the Site or Services, you hereby<span className="span600"> agree to comply
+              with and be legally</span> bound by the terms and conditions set forth in
             these Terms of Service ("Terms"), regardless of whether or not you
             become a registered user of the Services. These Terms govern your
             access to and use of the Site, Services, and all Collective Content
             (as defined below), establishing a binding legal agreement between
-            you and SpotLet. We also urge you to carefully review our Privacy
+            you and <span className="span600"> SpotLet. We also urge you to carefully</span> review our Privacy
             Policy located at http://SpotLet.in/privacy.
           </Typography>
           <Typography variant="body1" gutterBottom>
@@ -164,13 +164,13 @@ export default function Terms() {
             have separate terms and conditions, standards, guidelines, or
             policies posted, or may require you to accept additional terms and
             conditions. In the event of a conflict between these Terms and the
-            terms and conditions posted for a particular area of the Site,
-            Services, or Collective Content, the latter terms and conditions
+            terms and conditions posted for a<span className="span600"> particular area of the Site,
+              Services, or Collective Content</span>, the latter terms and conditions
             shall take precedence regarding your use of or access to that
             specific area of the Site, Services, or Collective Content.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            2.3 If you do not agree to these Terms, you have no right to obtain
+            <span className="span600">2.3 If you do not agree to these Terms,</span> you have no right to obtain
             information from the Site or Services or continue using them.
             Failure to adhere to these Terms in your use of the Site or Services
             may subject you to civil and criminal penalties.
@@ -236,8 +236,8 @@ export default function Terms() {
             4. ELIGIBILITY:
           </Typography>
           <Typography variant="body1" gutterBottom>
-            4.1 The Site and Services are exclusively intended for individuals
-            aged 18 years or older. Access to or use of the Site or Services by
+            4.1 The Site and Services are exclusively<span className="span600">intended for individuals
+              aged 18 years or older.</span>  Access to or use of the Site or Services by
             individuals under the age of 18 is expressly prohibited. By
             accessing or using the Site or Services, you represent and warrant
             that you are 18 years of age or older.
@@ -246,7 +246,7 @@ export default function Terms() {
             5. HOW THE SITE AND SERVICES OPERATE:
           </Typography>
           <Typography variant="body1" gutterBottom>
-            5.1 The Site and Services function as a platform for facilitating
+            <span className="span600">5.1 The Site and Services function as a platform</span> for facilitating
             the listing and booking of properties. Listers include properties in
             Listings on the Site and Services. As an unregistered visitor, you
             can view Listings; however, to book a property or create a Listing,
@@ -256,12 +256,12 @@ export default function Terms() {
             5.2 SpotLet provides an online platform and technology that enables
             Renters and Listers to connect and arrange property bookings
             directly with each other. SpotLet does not own or operate
-            properties, nor does it provide properties. SpotLet's role is
+            properties, nor<span className="span600"> does it provide properties. SpotLet's role is</span>
             limited to facilitating the availability of the Site and Services.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            5.3 It's important to note that SpotLet does not control the content
-            of Listings, nor does it guarantee the condition, legality, or
+            5.3 It's important to note that SpotLet does not<span className="span600">  control the content
+              of Listings,</span> nor does it guarantee the condition, legality, or
             suitability of any properties. SpotLet is not responsible for any
             Listings or properties, and any bookings are made at the User's own
             risk.
@@ -271,13 +271,13 @@ export default function Terms() {
           </Typography>
           <Typography variant="body1" gutterBottom>
             6.1 To access certain features, book a property, or create a
-            Listing, you must register and create a SpotLet Account. You can
+            Listing, you must register and create a<span className="span600">  SpotLet</span> Account. You can
             register directly on the Site or through third-party social
-            networking sites (SNS) by linking your SpotLet Account with your SNS
-            Account. By linking your accounts, you grant SpotLet access to your
+            networking sites (SNS) by linking your<span className="span600">  SpotLet </span>Account with your SNS
+            Account. By linking your accounts, you grant<span className="span600">  SpotLet access</span> to your
             SNS Content for use on the Site and Services. You are responsible
             for maintaining the confidentiality of your password and notifying
-            SpotLet of any unauthorized use of your SpotLet Account.
+            <span className="span600"> SpotLet</span> of any unauthorized use of your <span className="span600"> SpotLet</span> Account.
           </Typography>
           <Typography variant="h3" gutterBottom>
             7. PROPERTY LISTINGS:

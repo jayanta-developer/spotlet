@@ -83,6 +83,12 @@
   list-style: decimal;
   padding: 0 0 5px 20px;
 }
+.span600 {
+  font-weight: 600 !important;
+}
+.span700 {
+  font-weight: 700 !important;
+}
 
 /* Tab view*/
 @media only screen and (max-width: 760px) {

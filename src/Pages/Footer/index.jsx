@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material'
+import { Link } from "react-router-dom";
 
 import "./footer.css"
 import spotlet from "../../Assets/images/spotlet-name-logo.svg";
@@ -119,12 +120,16 @@ export default function Footer() {
                   <Typography>Cancellation</Typography>
                 </Box>
                 <Box className="footerSubText">
-                  <img className='RightArrow' src={RightArrow} />
-                  <Typography>Privacy Policy</Typography>
+                  <Link className="linkTag" to={"http://localhost:3000/Privacy-Policy"}>
+                    <img className='RightArrow' src={RightArrow} />
+                    <Typography>Privacy Policy</Typography>
+                  </Link>
                 </Box>
                 <Box className="footerSubText">
-                  <img className='RightArrow' src={RightArrow} />
-                  <Typography>Terms and Conditions</Typography>
+                  <Link className="linkTag" to={"http://localhost:3000/Terms-and-Conditions"}>
+                    <img className='RightArrow' src={RightArrow} />
+                    <Typography>Terms and Conditions</Typography>
+                  </Link>
                 </Box>
                 <Box className="footerSubText">
                   <img className='RightArrow' src={RightArrow} />

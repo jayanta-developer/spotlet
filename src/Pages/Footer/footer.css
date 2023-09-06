@@ -87,6 +87,12 @@
 .footerLogoSubText {
   line-height: 1.5 !important;
 }
+.linkTag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
 @media only screen and (min-width: 768px) {
   .footer {
     height: 333px;

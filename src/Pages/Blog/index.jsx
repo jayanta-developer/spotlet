@@ -32,7 +32,7 @@ export default function Blog() {
         </Box>
         <Box className="blog-content">
           <Box className="blog-top">
-            <Typography variant="h2" gutterBottom>
+            <Typography className="blogHeader" variant="h2" gutterBottom>
               Our Latest Blog
             </Typography>
             <Box className="blogfilter">

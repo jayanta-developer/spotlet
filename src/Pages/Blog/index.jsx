@@ -8,7 +8,7 @@ import {
   Card,
   CardMedia,
   CardContent,
-  Button
+  Button,
 } from "@mui/material";
 
 import bannerPhoto from "../../Assets/images/blog-banner.png";
@@ -86,10 +86,18 @@ export default function Blog() {
                 </Typography>
                 <Typography className="meta" variant="body1" gutterBottom>
                   <ul>
-                    <li><img src={iconauthor} /> By Admin</li>
-                    <li><img src={icondate} /> December 2, 2019</li>
-                    <li><img src={iconlike} /> 20</li>
-                    <li><img src={iconshare} /> Share</li>
+                    <li>
+                      <img src={iconauthor} /> By Admin
+                    </li>
+                    <li>
+                      <img src={icondate} /> December 2, 2019
+                    </li>
+                    <li>
+                      <img src={iconlike} /> 20
+                    </li>
+                    <li>
+                      <img src={iconshare} /> Share
+                    </li>
                   </ul>
                 </Typography>
                 <Typography variant="body1" gutterBottom>
@@ -99,7 +107,9 @@ export default function Blog() {
                   the Semantics, a large language ocean. A small river named
                   Duden…
                 </Typography>
-                <Button className="readmore" variant="contained" size="large">Keep Reading</Button>
+                <Button className="readmore" variant="contained" size="large">
+                  Keep Reading
+                </Button>
               </CardContent>
             </Card>
             <Card className="blog">
@@ -117,10 +127,18 @@ export default function Blog() {
                 </Typography>
                 <Typography className="meta" variant="body1" gutterBottom>
                   <ul>
-                    <li><img src={iconauthor} /> By Admin</li>
-                    <li><img src={icondate} /> December 2, 2019</li>
-                    <li><img src={iconlike} /> 20</li>
-                    <li><img src={iconshare} /> Share</li>
+                    <li>
+                      <img src={iconauthor} /> By Admin
+                    </li>
+                    <li>
+                      <img src={icondate} /> December 2, 2019
+                    </li>
+                    <li>
+                      <img src={iconlike} /> 20
+                    </li>
+                    <li>
+                      <img src={iconshare} /> Share
+                    </li>
                   </ul>
                 </Typography>
                 <Typography variant="body1" gutterBottom>
@@ -130,7 +148,9 @@ export default function Blog() {
                   the Semantics, a large language ocean. A small river named
                   Duden…
                 </Typography>
-                <Button className="readmore" variant="contained" size="large">Keep Reading</Button>
+                <Button className="readmore" variant="contained" size="large">
+                  Keep Reading
+                </Button>
               </CardContent>
             </Card>
             <Card className="blog">
@@ -148,10 +168,18 @@ export default function Blog() {
                 </Typography>
                 <Typography className="meta" variant="body1" gutterBottom>
                   <ul>
-                    <li><img src={iconauthor} /> By Admin</li>
-                    <li><img src={icondate} /> December 2, 2019</li>
-                    <li><img src={iconlike} /> 20</li>
-                    <li><img src={iconshare} /> Share</li>
+                    <li>
+                      <img src={iconauthor} /> By Admin
+                    </li>
+                    <li>
+                      <img src={icondate} /> December 2, 2019
+                    </li>
+                    <li>
+                      <img src={iconlike} /> 20
+                    </li>
+                    <li>
+                      <img src={iconshare} /> Share
+                    </li>
                   </ul>
                 </Typography>
                 <Typography variant="body1" gutterBottom>
@@ -161,7 +189,9 @@ export default function Blog() {
                   the Semantics, a large language ocean. A small river named
                   Duden…
                 </Typography>
-                <Button className="readmore" variant="contained" size="large">Keep Reading</Button>
+                <Button className="readmore" variant="contained" size="large">
+                  Keep Reading
+                </Button>
               </CardContent>
             </Card>
             <Card className="blog">
@@ -179,10 +209,18 @@ export default function Blog() {
                 </Typography>
                 <Typography className="meta" variant="body1" gutterBottom>
                   <ul>
-                    <li><img src={iconauthor} /> By Admin</li>
-                    <li><img src={icondate} /> December 2, 2019</li>
-                    <li><img src={iconlike} /> 20</li>
-                    <li><img src={iconshare} /> Share</li>
+                    <li>
+                      <img src={iconauthor} /> By Admin
+                    </li>
+                    <li>
+                      <img src={icondate} /> December 2, 2019
+                    </li>
+                    <li>
+                      <img src={iconlike} /> 20
+                    </li>
+                    <li>
+                      <img src={iconshare} /> Share
+                    </li>
                   </ul>
                 </Typography>
                 <Typography variant="body1" gutterBottom>
@@ -192,7 +230,9 @@ export default function Blog() {
                   the Semantics, a large language ocean. A small river named
                   Duden…
                 </Typography>
-                <Button className="readmore" variant="contained" size="large">Keep Reading</Button>
+                <Button className="readmore" variant="contained" size="large">
+                  Keep Reading
+                </Button>
               </CardContent>
             </Card>
           </Box>

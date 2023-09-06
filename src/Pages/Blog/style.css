@@ -102,7 +102,7 @@
   content: "";
   width: 52px;
   height: 52px;
-  background: url(./icon-search.png) no-repeat center;
+  background: url(../../Assets/images/icon-search.png) no-repeat center;
   position: absolute;
   right: 5px;
   top: 0;
@@ -116,7 +116,7 @@
   content: "";
   width: 52px;
   height: 52px;
-  background: url(./icon-filter.png) no-repeat center;
+  background: url(../../Assets/images/icon-filter.png) no-repeat center;
   position: absolute;
   right: 5px;
   top: 0;
@@ -130,7 +130,7 @@
   content: "";
   width: 52px;
   height: 52px;
-  background: url(./icon-sortby.png) no-repeat center;
+  background: url(../../Assets//images/icon-sortby.png) no-repeat center;
   position: absolute;
   right: 5px;
   top: 0;

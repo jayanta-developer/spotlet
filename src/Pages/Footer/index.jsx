@@ -144,7 +144,7 @@ export default function Footer() {
         </Box>
         <Box className="footerSubBody">
           <Box className="RightsBox">
-            <Typography>@2023 Spotlet. All rights Reserved.</Typography>
+            <Typography>&copy; 2023 Spotlet. All rights Reserved.</Typography>
           </Box>
 
           <Box className="socialMediaBox">

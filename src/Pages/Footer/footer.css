@@ -3,6 +3,7 @@
   height: auto;
   background-color: #131313;
 }
+
 .footerMainBody {
   width: 100%;
   height: auto;
@@ -10,21 +11,30 @@
   flex-direction: row;
   justify-content: center;
 }
+
 .footerBox {
-  width: 90%;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1330px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0px 15px;
+  gap: 50px;
 }
+
 .footerSubBody {
+  margin: 0 auto;
   width: 100%;
+  max-width: 1330px;
   height: 48px;
   border-top: 1px solid #202020;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0px 10%;
+  padding: 0px 15px;
 }
+
 .footerItem {
   width: 95%;
   display: flex;
@@ -36,10 +46,12 @@
 .footerSubItem {
   margin-top: 13px;
 }
+
 .footerLogoSubText {
   font-size: 14px;
   color: #c9c9c9;
 }
+
 .footerItemHeader {
   color: #fff;
   text-transform: uppercase;
@@ -47,12 +59,14 @@
   margin-bottom: 15px;
   font-family: "Poppins-Bold" !important;
 }
+
 .footerSubText {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 6px 0px;
 }
+
 .footerSubText p {
   color: #c9c9c9;
   font-size: 14px !important;
@@ -60,62 +74,77 @@
   font-family: "Poppins-Regular" !important;
   cursor: pointer;
 }
+
 .RightArrow {
   width: 10px;
   height: 10px;
 }
+
 .RightsBox {
   display: flex;
   align-items: center;
 }
+
 .RightsBox p {
   font-size: 8px !important;
   font-family: "Poppins-Regular" !important;
   color: #c9c9c9;
 }
+
 .socialMediaBox {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
+
 .socialMediaBox img {
   width: 20px;
   height: 20px;
   margin: 0px 5px;
 }
+
 .footerLogoSubText {
   line-height: 1.5 !important;
 }
+
 @media only screen and (min-width: 768px) {
   .footer {
     height: 333px;
   }
+
   .footerBox {
     flex-direction: row;
   }
+
   .footerMainBody {
     height: 283px;
   }
+
   .footerItem {
-    width: 18%;
-    margin: 0px 6px;
+    width: 20%;
+    margin: 0px;
   }
+
   .footerCologos {
     width: 20%;
   }
+
   .RightsBox p {
     font-size: 14px !important;
   }
+
   .footerLogoSubText {
     line-height: 1 !important;
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .footerLogoSubText {
     line-height: 1.5 !important;
   }
+
   .footerItem {
-    width: 95%;
+    width: 100%;
   }
 }

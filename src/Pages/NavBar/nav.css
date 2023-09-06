@@ -12,6 +12,7 @@
   top: 0px;
   z-index: 9999;
 }
+
 .profileTab {
   width: 50px;
   height: 50px;
@@ -23,9 +24,11 @@
   padding: 5px;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
 }
+
 .profileNameVisibility {
   display: none;
 }
+
 .avatarBox {
   width: 40px;
   height: 40px;
@@ -33,21 +36,25 @@
   overflow: hidden;
   position: relative;
 }
+
 .profileTabDownarrow {
   position: absolute;
   margin-left: 47px;
 }
+
 .notificationIcons img {
   width: 22px;
   height: 22px;
   margin: 0px 10px;
   cursor: pointer;
 }
+
 .searchBar {
   /* margin: 0px 30px; */
   position: relative;
   display: none;
 }
+
 .searchField {
   width: 293px;
   display: flex;
@@ -56,18 +63,22 @@
   right: -135px;
   top: 26px;
 }
+
 .searchInput input {
   height: 0px !important;
   padding-left: 55px;
   background-color: #f2f2f3;
   border-radius: 22px;
 }
+
 .searchInput fieldset {
   border-radius: 72px !important;
 }
+
 .NavTextVisibility {
   display: none;
 }
+
 /* Notification PopUp */
 .notificationSPopUp {
   width: 368px;
@@ -80,6 +91,7 @@
   position: absolute;
   top: 96px;
 }
+
 .notificationSHeader {
   height: 333px;
   display: flex;
@@ -88,6 +100,7 @@
   border-bottom: 1px solid #e2e5f0;
   position: relative;
 }
+
 .notificationSHeader p {
   color: #1f212a;
   text-align: center;
@@ -97,12 +110,14 @@
   font-weight: 600 !important;
   line-height: normal !important;
 }
+
 .notificationSContainer {
   display: flex;
   flex-direction: column;
   overflow: scroll;
   overflow-x: hidden;
 }
+
 .notificationPopUpSeeAllBtn {
   height: 293px;
   border-radius: 0px 0px 33px 33px;
@@ -111,6 +126,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .notificationPopUpSeeAllBtn p {
   color: #fff;
   font-family: "Poppins-Regular" !important;
@@ -119,15 +135,18 @@
   font-weight: 600 !important;
   line-height: normal !important;
 }
+
 .sNotiUserTime {
   position: absolute;
   top: -29px;
   right: 145px;
   width: 84px;
 }
+
 .SNotiUserInfo {
   width: 236px;
 }
+
 /* Notification popup */
 .NotificationPupUp {
   flex-direction: column;
@@ -141,6 +160,7 @@
   top: 93px;
   overflow: hidden;
 }
+
 .notificationHeader {
   width: 100%;
   display: flex;
@@ -150,14 +170,16 @@
   padding: 16px 12px 16px 12px;
   border-bottom: 1px solid #e2e5f0;
 }
-.notificationHeaderBox1 {
-}
+
+.notificationHeaderBox1 {}
+
 .notificationHeaderBox2 {
   display: flex;
   flex-direction: row;
   align-items: center;
   position: relative;
 }
+
 .notiHeaderText {
   color: #1f212a;
   font-family: "Poppins-Regular" !important;
@@ -166,6 +188,7 @@
   font-weight: 500 !important;
   line-height: normal !important;
 }
+
 .notiSubText {
   color: #0060e1;
   font-family: "Poppins-Regular" !important;
@@ -174,10 +197,12 @@
   font-weight: 400 !important;
   line-height: normal !important;
 }
+
 .notificationContainer {
   display: flex;
   flex-direction: column;
 }
+
 .notiLeftBox {
   width: 100%;
   background: #fff;
@@ -186,10 +211,12 @@
   display: flex;
   flex-direction: row;
 }
+
 .top_Date {
   padding-left: 20px;
   margin: 5px 0;
 }
+
 .top_Date p {
   color: #59657e;
   font-family: "Poppins-Regular" !important;
@@ -198,6 +225,7 @@
   font-weight: 600 !important;
   line-height: normal !important;
 }
+
 .NotiUserRow {
   height: 124px;
   max-height: 124px;
@@ -210,12 +238,14 @@
   padding-right: 20px;
   flex: 0 0 395px;
 }
+
 .photoBox {
   width: 100px;
   height: 100%;
   display: flex;
   align-items: center;
 }
+
 .userPhoto {
   width: 85px;
   position: relative;
@@ -224,10 +254,12 @@
   overflow: hidden;
   margin-right: 10px;
 }
+
 .NotiUserPhoto {
   width: 100%;
   height: 100%;
 }
+
 .NotiRedDot {
   width: 16px;
   height: 16px;
@@ -241,11 +273,13 @@
   border-radius: 50%;
   z-index: 1;
 }
+
 .notiUserInfo {
   display: flex;
   flex-direction: column;
   position: relative;
 }
+
 .notiUserName {
   color: #1f212a;
   font-family: "Poppins-Regular" !important;
@@ -254,6 +288,7 @@
   font-weight: 600 !important;
   line-height: 21px !important;
 }
+
 .notiUserInfo span {
   color: #59657e;
   font-family: "Poppins-Regular" !important;
@@ -262,6 +297,7 @@
   font-weight: 300 !important;
   line-height: 21px !important;
 }
+
 .userNotiDate {
   display: flex;
   flex-direction: row;
@@ -269,6 +305,7 @@
   align-items: center;
   margin-top: 5px;
 }
+
 .userNotiDate p {
   color: #777272;
   font-family: "Poppins-Regular" !important;
@@ -278,6 +315,7 @@
   line-height: normal !important;
   margin-top: 1px;
 }
+
 .notiRightBox {
   padding: 10px;
   display: flex;
@@ -285,17 +323,20 @@
   height: 56vh;
   overflow: scroll;
 }
+
 .user_info {
   display: flex;
   flex-direction: row;
   margin-bottom: 22px;
 }
+
 .user_infoText {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 35px;
 }
+
 .User_name {
   color: #1f212a;
   font-family: "Poppins-Regular" !important;
@@ -304,6 +345,7 @@
   font-weight: 600 !important;
   line-height: normal !important;
 }
+
 .User_date {
   color: #1d1d1d;
   font-family: "Poppins-Regular" !important;
@@ -312,10 +354,12 @@
   font-weight: 700 !important;
   line-height: normal !important;
 }
+
 .user_Summary {
   display: flex;
   flex-direction: column;
 }
+
 .user_Summary_text {
   color: #000;
   font-family: "Poppins-Regular" !important;
@@ -325,6 +369,7 @@
   line-height: 20px !important;
   margin-bottom: 10px !important;
 }
+
 .user_Summary_sub_text {
   color: #1c1c1c;
   font-family: "Poppins-Regular" !important;
@@ -333,37 +378,46 @@
   font-weight: 300 !important;
   line-height: 25px !important;
 }
+
 .whiteCrossIcon {
   position: absolute;
   right: -54px;
   top: -118px;
   cursor: pointer;
 }
+
 .white_CrossIcon {
   position: absolute;
   right: -30px;
   top: -26px;
   cursor: pointer;
 }
+
 .disMob {
   display: none;
 }
+
 .search_Field {
   width: 220px !important;
 }
+
 .search_Field div {
   width: 210px !important;
 }
+
 @media only screen and (min-width: 768px) {
   .navBar {
     height: 96px;
   }
+
   .companyLogo {
     /* margin: 0px 30px; */
   }
+
   .searchBar {
     /* margin: 0px 30px; */
   }
+
   .searchField {
     width: 352px;
     height: 46px;
@@ -373,12 +427,14 @@
     right: 0;
     top: 0;
   }
+
   .searchInput input {
     height: 11px !important;
     padding-left: 55px;
     background-color: #f2f2f3;
     border-radius: 22px;
   }
+
   .searchInput fieldset {
     border-radius: 72px !important;
   }
@@ -387,40 +443,55 @@
     /* margin: 0px 30px; */
     min-width: 126px;
   }
+
   .host {
     /* margin: 0px 30px; */
     min-width: 123px;
   }
+
   .booking {
     /* margin: 0px 30px; */
   }
+
   .profile {
     /* margin: 0px 30px; */
   }
+
   .profileTab {
     width: 195px;
     height: 54px;
     padding: 7px;
   }
+
   .profileNameVisibility {
     display: block;
   }
+
   .profileTabDownarrow {
     margin-left: 159px;
   }
+
+  .top-links {
+    display: flex;
+    gap: 50px;
+  }
+
   .NavTextVisibility {
     display: block;
   }
+
   /* Nav popup */
   .NotificationPupUp {
     width: 803px;
     top: 130px;
   }
+
   .notiLeftBox {
     width: 609px;
     height: 669px;
     flex-direction: column;
   }
+
   .notiRightBox {
     width: 857px;
     display: flex;
@@ -430,48 +501,60 @@
     height: 638px;
     overflow-x: hidden;
   }
+
   .notificationSPopUp {
     width: 480px;
     height: 682px;
     top: 130px;
   }
+
   .notificationContainer {
     flex-direction: row;
   }
+
   .NotiUserRow {
     flex: 0 0 124px;
   }
+
   .notificationHeader {
     padding: 16px 80px 16px 47px;
     flex-direction: row;
   }
+
   .disMob {
     display: block;
   }
+
   .search_Field {
     width: 332px !important;
   }
+
   .search_Field div {
     width: 306px !important;
   }
+
   .sNotiUserTime {
     top: 4px;
     right: -102px;
   }
+
   .whiteCrossIcon {
     right: -111px;
     top: -58px;
   }
 }
+
 /* Desktop view */
 @media only screen and (min-width: 1000px) {
   .NotificationPupUp {
     width: 1300px;
     height: 766px;
   }
+
   .notiLeftBox {
     width: 440px;
   }
+
   .notiRightBox {
     width: 857px;
     display: flex;

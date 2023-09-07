@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 //Components
 import Home from "./Pages/Home";
-import Gallery from "./Component/Gallery";
 import Booking from "./Pages/Booking";
 import BookingDetails from "./Pages/BookingDetails";
 import Favorites from "./Pages/Favorites";
@@ -14,6 +13,8 @@ import Subscription from "./Pages/Subscription";
 import CreateCoupon from "./Pages/CreateCoupon";
 import UserPlans from "./Pages/UserPlans";
 import Blog from "./Pages/Blog";
+import BlogDetails from "./Pages/BlogDetails";
+import AboutUs from "./Pages/AboutUs";
 import Terms from "./Pages/Terms&Conditions";
 import Policy from "./Pages/Privacy&Policy";
 
@@ -22,7 +23,6 @@ export default function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/gallery" element={<Gallery />} /> */}
         <Route path="/booking" element={<Booking />} />
         <Route path="/booking/details" element={<BookingDetails />} />
         <Route path="/favorites" element={<Favorites />} />
@@ -33,6 +33,8 @@ export default function App() {
         <Route path="/subscription" element={<Subscription />} />
         <Route path="/user/plans" element={<UserPlans />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/Details" element={<BlogDetails />} />
+        <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/Terms-and-Conditions" element={<Terms />} />
         <Route path="/Privacy-Policy" element={<Policy />} />
       </Routes>

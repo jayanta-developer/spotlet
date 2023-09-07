@@ -30,13 +30,13 @@
 .banner-content h1 {
   font-size: 42px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .banner-content h6 {
   font-size: 18px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: 700px;
 }
 
@@ -83,9 +83,15 @@
   list-style: decimal;
   padding: 0 0 5px 20px;
 }
+.span600 {
+  font-weight: 600 !important;
+}
+.span700 {
+  font-weight: 700 !important;
+}
 
 /* Tab view*/
-@media only screen and (max-width:760px) {
+@media only screen and (max-width: 760px) {
   .banner-content {
     padding: 50px 15px;
     min-height: 200px;
@@ -102,11 +108,10 @@
   .terms-content {
     padding: 30px 15px;
   }
-
 }
 
 /* Desktop view */
-@media only screen and (min-width:761px) and (max-width:1023px) {
+@media only screen and (min-width: 761px) and (max-width: 1023px) {
   .banner-content {
     padding: 100px 15px;
     min-height: 200px;
@@ -114,6 +119,17 @@
 
   .terms-content {
     padding: 30px 15px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1320px) {
+  .banner-content {
+    padding: 100px 15px;
+    min-height: 200px;
+  }
+
+  .terms-content {
+    padding: 50px 15px;
   }
 }
 

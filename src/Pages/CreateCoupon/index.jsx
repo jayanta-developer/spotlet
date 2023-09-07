@@ -13,7 +13,6 @@ import NavBar from '../NavBar';
 import Footer from '../Footer';
 
 
-
 export default function CreateCoupon() {
   const [couponType, setCouponType] = useState('single');
   const [couponPopUp, setCouponPopUp] = useState(false)
@@ -61,6 +60,10 @@ export default function CreateCoupon() {
                   }
                 </Box>
               </Box>
+              <Box className="coupon couponNameInputFieldBox couponAmountMobile">
+                <Typography className='InputLabelText'>Coupon Amount / Discount</Typography>
+                <TextField placeholder='Enter your coupon name' />
+              </Box>
               <Box className="coupon couponMinimumBookingInputFieldBox">
                 <Typography className='InputLabelText'>Minimum booking</Typography>
                 <TextField placeholder='Minimum booking' />
@@ -74,7 +77,8 @@ export default function CreateCoupon() {
                 <Typography className='InputLabelText'>Coupon ID</Typography>
                 <TextField placeholder='1GR589POIUY8956' />
               </Box>
-              <Box className="coupon couponNameInputFieldBox">
+              <Box className="coupon couponNameInputFieldBox couponAmountDesktop coupon">
+                <Typography className='InputLabelText'>Coupon Amount / Discount</Typography>
                 <TextField placeholder='Enter your coupon name' />
               </Box>
               <Box className="coupon couponActivationDateInputFieldBox">

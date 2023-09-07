@@ -30,13 +30,13 @@
 .banner-content h1 {
   font-size: 42px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .banner-content h6 {
   font-size: 18px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: 700px;
 }
 
@@ -78,7 +78,7 @@
 }
 
 /* Tab view*/
-@media only screen and (max-width:760px) {
+@media only screen and (max-width: 760px) {
   .banner-content {
     padding: 50px 15px;
     min-height: 200px;
@@ -95,11 +95,10 @@
   .policy-content {
     padding: 30px 15px;
   }
-
 }
 
 /* Desktop view */
-@media only screen and (min-width:761px) and (max-width:1023px) {
+@media only screen and (min-width: 761px) and (max-width: 1023px) {
   .banner-content {
     padding: 100px 15px;
     min-height: 200px;
@@ -107,6 +106,17 @@
 
   .policy-content {
     padding: 30px 15px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1320px) {
+  .banner-content {
+    padding: 100px 15px;
+    min-height: 200px;
+  }
+
+  .policy-content {
+    padding: 50px 15px;
   }
 }
 

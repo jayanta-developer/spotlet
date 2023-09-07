@@ -36,16 +36,20 @@ export default function Footer() {
               </Typography>
               <Box className="footerSubItem">
                 <Box className="footerSubText">
-                  <img className='RightArrow' src={RightArrow} />
-                  <Typography>About Us</Typography>
+                  <Link className="linkTag" to={"http://localhost:3000/aboutUs"}>
+                    <img className='RightArrow' src={RightArrow} />
+                    <Typography>About Us</Typography>
+                  </Link>
                 </Box>
                 <Box className="footerSubText">
                   <img className='RightArrow' src={RightArrow} />
                   <Typography>Careers</Typography>
                 </Box>
                 <Box className="footerSubText">
-                  <img className='RightArrow' src={RightArrow} />
-                  <Typography>Blogs</Typography>
+                  <Link className="linkTag" to={"http://localhost:3000/blog/Details"}>
+                    <img className='RightArrow' src={RightArrow} />
+                    <Typography>Blogs</Typography>
+                  </Link>
                 </Box>
                 <Box className="footerSubText">
                   <img className='RightArrow' src={RightArrow} />

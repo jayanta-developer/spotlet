@@ -52,13 +52,16 @@ export default function Terms() {
             Please carefully review these Terms of Service as they contain
             crucial information regarding your legal rights, remedies, and
             obligations. They include various limitations and exclusions, a
-            clause governing the jurisdiction and venue for <span className="span600">dispute resolution,
-              and obligations to comply</span> with applicable laws and regulations.
-            Specifically, it is important for property listers to understand the
-            legal requirements applicable in their respective states.
+            clause governing the jurisdiction and venue for{" "}
+            <span className="span600">
+              dispute resolution, and obligations to comply
+            </span>{" "}
+            with applicable laws and regulations. Specifically, it is important
+            for property listers to understand the legal requirements applicable
+            in their respective states.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            1. KEY TERMS:
+            1. Key terms:
           </Typography>
 
           <Typography variant="body1" gutterBottom>
@@ -68,8 +71,13 @@ export default function Terms() {
             including but not limited to motion pictures, television, other
             creative productions, commercial ventures, corporate events, and
             individual events (collectively referred to as the "Services").
-            These Services are accessible through the website <span className="span700">www.spotlet.in</span> and
-            any other websites where <span className="span600"> SpotLet makes the Services available</span>
+            These Services are accessible through the website{" "}
+            <span className="span700">www.spotlet.in</span> and any other
+            websites where{" "}
+            <span className="span600">
+              {" "}
+              SpotLet makes the Services available
+            </span>
             (collectively referred to as the "Site").
           </Typography>
           <Typography variant="body1" gutterBottom>
@@ -78,85 +86,117 @@ export default function Terms() {
             (referred to as "SpotLet," "we," "us," or "our") governing your use
             of the Site or Services. Additionally, with regard to any payments
             or payouts conducted through the Site, these Terms of Service also
-            apply to <span className="span600"> your relationship with Stripe/Razorpay, a third-party
-              payment processor</span> ("Stripe/Razorpay").
+            apply to{" "}
+            <span className="span600">
+              {" "}
+              your relationship with Stripe/Razorpay, a third-party payment
+              processor
+            </span>{" "}
+            ("Stripe/Razorpay").
           </Typography>
           <Typography variant="body1" gutterBottom>
             <ul>
               <li>
-                <span className="span600">"Booking Request </span> Period" refers to the specific duration,
-                determined at <span className="span600">SpotLet's sole discretion,</span> starting from when a
-                Renter submits a booking request, during which a Lister can
-                decide to accept or reject the request. The exact length of the
-                Booking Request Period may vary depending on the location and
-                will be stated on the Site or Services.
+                <span className="span600">"Booking Request </span> Period"
+                refers to the specific duration, determined at{" "}
+                <span className="span600">SpotLet's sole discretion,</span>{" "}
+                starting from when a Renter submits a booking request, during
+                which a Lister can decide to accept or reject the request. The
+                exact length of the Booking Request Period may vary depending on
+                the location and will be stated on the Site or Services.
               </li>
               <li>
-                <span className="span600"> "Collective Content"</span> encompasses both User Content and SpotLet
-                Content.
+                <span className="span600"> "Collective Content"</span>{" "}
+                encompasses both User Content and SpotLet Content.
               </li>
               <li>
-                <span className="span600">"Content"</span> includes text, graphics, images, music, software,
-                audio, video, information, or any other materials.
+                <span className="span600">"Content"</span> includes text,
+                graphics, images, music, software, audio, video, information, or
+                any other materials.
               </li>
               <li>
-                <span className="span600">"SpotLet Content"</span> comprises all the Content made available by
-                SpotLet through the Site, Services, official social media
-                channels, and related promotional campaigns. This includes any
-                Content licensed from third parties, excluding User Content.
+                <span className="span600">"SpotLet Content"</span> comprises all
+                the Content made available by SpotLet through the Site,
+                Services, official social media channels, and related
+                promotional campaigns. This includes any Content licensed from
+                third parties, excluding User Content.
               </li>
               <li>
-                <span className="span600">"Lister"</span> refers to a User who creates a Listing through the Site
-                and Services.
+                <span className="span600">"Lister"</span> refers to a User who
+                creates a Listing through the Site and Services.
               </li>
               <li>
-                <span className="span600">"Listing"</span> represents a Property listed by a Lister for rental
-                availability through the Site and Services.
+                <span className="span600">"Listing"</span> represents a Property
+                listed by a Lister for rental availability through the Site and
+                Services.
               </li>
               <li>
-                <span className="span600">"User"</span> pertains to an individual who completes <span className="span600"> SpotLet's account
-                  registration process,</span> including Listers and Renters, as
-                described in detail under "Account Registration" below.
+                <span className="span600">"User"</span> pertains to an
+                individual who completes{" "}
+                <span className="span600">
+                  {" "}
+                  SpotLet's account registration process,
+                </span>{" "}
+                including Listers and Renters, as described in detail under
+                "Account Registration" below.
               </li>
               <li>
-                <span className="span600">"User Content"</span> encompasses all the Content that a User posts,
-                uploads, publishes, submits, transmits, or includes in their
-                Listing, User profile, or SpotLet promotional campaign, which is
-                made available through <span className="span600"> the Site or Services.</span>
+                <span className="span600">"User Content"</span> encompasses all
+                the Content that a User posts, uploads, publishes, submits,
+                transmits, or includes in their Listing, User profile, or
+                SpotLet promotional campaign, which is made available through{" "}
+                <span className="span600"> the Site or Services.</span>
               </li>
               <li>
-                <span className="span600">"Property"</span> denotes residential, commercial, and other types of
-                properties.
+                <span className="span600">"Property"</span> denotes residential,
+                commercial, and other types of properties.
               </li>
               <li>
-                <span className="span600">"Renter"</span> signifies a User who requests a  <span className="span600">booking of a Listing
-                  from a Lister</span> through the Site or Services.
+                <span className="span600">"Renter"</span> signifies a User who
+                requests a{" "}
+                <span className="span600">
+                  booking of a Listing from a Lister
+                </span>{" "}
+                through the Site or Services.
               </li>
               <li>
-                <span className="span600">"Tax" or "Taxes"</span> encompasses any applicable taxes, such as
-                value-added taxes (VAT), goods and services taxes, transient
-                occupancy taxes, tourist or visitor taxes, property or lodging
-                taxes, fees (e.g., convention center fees) that property
-                providers may be legally obligated to collect and remit to
-                governmental agencies, and other similar indirect taxes imposed
-                at the municipal, state, federal, or national level, as well as
-                income <span className="span600"> taxes for individuals or corporations</span>.
+                <span className="span600">"Tax" or "Taxes"</span> encompasses
+                any applicable taxes, such as value-added taxes (VAT), goods and
+                services taxes, transient occupancy taxes, tourist or visitor
+                taxes, property or lodging taxes, fees (e.g., convention center
+                fees) that property providers may be legally obligated to
+                collect and remit to governmental agencies, and other similar
+                indirect taxes imposed at the municipal, state, federal, or
+                national level, as well as income{" "}
+                <span className="span600">
+                  {" "}
+                  taxes for individuals or corporations
+                </span>
+                .
               </li>
             </ul>
           </Typography>
 
           <Typography variant="h3" gutterBottom>
-            2. TERMS OF SERVICE:
+            2. Terms of service:
           </Typography>
           <Typography variant="body1" gutterBottom>
-            2.1 By utilizing the Site or Services, you hereby<span className="span600"> agree to comply
-              with and be legally</span> bound by the terms and conditions set forth in
-            these Terms of Service ("Terms"), regardless of whether or not you
-            become a registered user of the Services. These Terms govern your
-            access to and use of the Site, Services, and all Collective Content
-            (as defined below), establishing a binding legal agreement between
-            you and <span className="span600"> SpotLet. We also urge you to carefully</span> review our Privacy
-            Policy located at http://SpotLet.in/privacy.
+            2.1 By utilizing the Site or Services, you hereby
+            <span className="span600">
+              {" "}
+              agree to comply with and be legally
+            </span>{" "}
+            bound by the terms and conditions set forth in these Terms of
+            Service ("Terms"), regardless of whether or not you become a
+            registered user of the Services. These Terms govern your access to
+            and use of the Site, Services, and all Collective Content (as
+            defined below), establishing a binding legal agreement between you
+            and{" "}
+            <span className="span600">
+              {" "}
+              SpotLet. We also urge you to carefully
+            </span>{" "}
+            review our Privacy Policy located at http://SpotLet.in/privacy.
           </Typography>
           <Typography variant="body1" gutterBottom>
             2.2 Furthermore, specific areas of the Site (and your access to or
@@ -164,40 +204,57 @@ export default function Terms() {
             have separate terms and conditions, standards, guidelines, or
             policies posted, or may require you to accept additional terms and
             conditions. In the event of a conflict between these Terms and the
-            terms and conditions posted for a<span className="span600"> particular area of the Site,
-              Services, or Collective Content</span>, the latter terms and conditions
-            shall take precedence regarding your use of or access to that
-            specific area of the Site, Services, or Collective Content.
+            terms and conditions posted for a
+            <span className="span600">
+              {" "}
+              particular area of the Site, Services, or Collective Content
+            </span>
+            , the latter terms and conditions shall take precedence regarding
+            your use of or access to that specific area of the Site, Services,
+            or Collective Content.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            <span className="span600">2.3 If you do not agree to these Terms,</span> you have no right to obtain
-            information from the Site or Services or continue using them.
-            Failure to adhere to these Terms in your use of the Site or Services
-            may subject you to civil and criminal penalties.
+            <span className="span600">
+              2.3 If you do not agree to these Terms,
+            </span>{" "}
+            you have no right to obtain information from the Site or Services or
+            continue using them. Failure to adhere to these Terms in your use of
+            the Site or Services may subject you to civil and criminal
+            penalties.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            The site and services provide an online platform through which listers can create listings for properties,
-            and renters can learn about and directly book properties from the listers. You understand and agree that
-            spotlet is not a party ato any agreements made between listers and renters, not does spotlet act as a
-            real estate broker, agent, or insurer. Spotlet has no control over the conduct of listers, renters, and
-            other users of the site and services, or over any properties, and disclaims all liability in this regard
-            to the fullest extent  permitted by law.
+            The site and services provide an online platform through which
+            listers can create listings for properties, and renters can learn
+            about and directly book properties from the listers. You understand
+            and agree that spotlet is not a party ato any agreements made
+            between listers and renters, not does spotlet act as a real estate
+            broker, agent, or insurer. Spotlet has no control over the conduct
+            of listers, renters, and other users of the site and services, or
+            over any properties, and disclaims all liability in this regard to
+            the fullest extent permitted by law.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            If you choose to create a listing on spotlet, you acknowledge and agree that your relationship with spotlet
-            is limited to being a uer and an independent, third-party contractor. You do not serve as an employee,
-            agent, join venturer, or partner of spotlet for any reason. You act solely on your own behalf and for your
-            own benefit, and not on behalf fo or for the benefit of spotlet. sptlet does not control, and has no right to
-            control, your listing, your offline activities associated with your listing, or any other matters related to
-            any other matters related to any listing that you provide, as a user, you agree not to engage in any activity that
-            creates a false impressing that you are endorsed by, partnered with or acting on behalf of of for the
-            benefit of spotlet, including improperly using any spotlet intellectual property.
+            If you choose to create a listing on spotlet, you acknowledge and
+            agree that your relationship with spotlet is limited to being a uer
+            and an independent, third-party contractor. You do not serve as an
+            employee, agent, join venturer, or partner of spotlet for any
+            reason. You act solely on your own behalf and for your own benefit,
+            and not on behalf fo or for the benefit of spotlet. sptlet does not
+            control, and has no right to control, your listing, your offline
+            activities associated with your listing, or any other matters
+            related to any other matters related to any listing that you
+            provide, as a user, you agree not to engage in any activity that
+            creates a false impressing that you are endorsed by, partnered with
+            or acting on behalf of of for the benefit of spotlet, including
+            improperly using any spotlet intellectual property.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            By accessing or using the site or services, or by downloading or posting any content form or on the site or through the
-            services, you acknowledge and agree the you have read, understand, and accept theses terms. This applies whether or
-            not you have registered with the site. Of you do not agree to these terms, you have no right to access or use
-            the sit, services, or collective content.
+            By accessing or using the site or services, or by downloading or
+            posting any content form or on the site or through the services, you
+            acknowledge and agree the you have read, understand, and accept
+            theses terms. This applies whether or not you have registered with
+            the site. Of you do not agree to these terms, you have no right to
+            access or use the sit, services, or collective content.
           </Typography>
           <Typography variant="body1" gutterBottom>
             If you accept or agree to these Terms on behalf of a company or
@@ -207,10 +264,13 @@ export default function Terms() {
             that company or legal entity.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            3. MODIFICATION:
+            3. Modification:
           </Typography>
           <Typography variant="body1" gutterBottom>
-            <span className="span600">3.1 SpotLet reserves the sole right to modify the Site or Services,</span>
+            <span className="span600">
+              3.1 SpotLet reserves the sole right to modify the Site or
+              Services,
+            </span>
             as well as these Terms, including the Service Fees, at any time and
             without prior notice. If any modifications are made, we will either
             post the modified version on the Site or provide you with notice of
@@ -223,79 +283,102 @@ export default function Terms() {
             and Services.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            4. ELIGIBILITY:
+            4. Eligibility:
           </Typography>
           <Typography variant="body1" gutterBottom>
-            4.1 The Site and Services are exclusively<span className="span600">intended for individuals
-              aged 18 years or older.</span>  Access to or use of the Site or Services by
-            individuals under the age of 18 is expressly prohibited. By
-            accessing or using the Site or Services, you represent and warrant
-            that you are 18 years of age or older.
+            4.1 The Site and Services are exclusively
+            <span className="span600">
+              intended for individuals aged 18 years or older.
+            </span>{" "}
+            Access to or use of the Site or Services by individuals under the
+            age of 18 is expressly prohibited. By accessing or using the Site or
+            Services, you represent and warrant that you are 18 years of age or
+            older.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            5. HOW THE SITE AND SERVICES OPERATE:
+            5. How the site and services operate:
           </Typography>
           <Typography variant="body1" gutterBottom>
-            <span className="span600">5.1 The Site and Services function as a platform</span> for facilitating
-            the listing and booking of properties. Listers include properties in
-            Listings on the Site and Services. As an unregistered visitor, you
-            can view Listings; however, to book a property or create a Listing,
-            you must first register and create a SpotLet Account.
+            <span className="span600">
+              5.1 The Site and Services function as a platform
+            </span>{" "}
+            for facilitating the listing and booking of properties. Listers
+            include properties in Listings on the Site and Services. As an
+            unregistered visitor, you can view Listings; however, to book a
+            property or create a Listing, you must first register and create a
+            SpotLet Account.
           </Typography>
           <Typography variant="body1" gutterBottom>
             5.2 SpotLet provides an online platform and technology that enables
             Renters and Listers to connect and arrange property bookings
             directly with each other. SpotLet does not own or operate
-            properties, nor<span className="span600"> does it provide properties. SpotLet's role is</span>
+            properties, nor
+            <span className="span600">
+              {" "}
+              does it provide properties. SpotLet's role is
+            </span>
             limited to facilitating the availability of the Site and Services.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            5.3 It's important to note that SpotLet does not<span className="span600">  control the content
-              of Listings,</span> nor does it guarantee the condition, legality, or
-            suitability of any properties. SpotLet is not responsible for any
-            Listings or properties, and any bookings are made at the User's own
-            risk.
+            5.3 It's important to note that SpotLet does not
+            <span className="span600"> control the content of Listings,</span>{" "}
+            nor does it guarantee the condition, legality, or suitability of any
+            properties. SpotLet is not responsible for any Listings or
+            properties, and any bookings are made at the User's own risk.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            6. REGISTERING AN ACCOUNT:
+            6. Registering an account:
           </Typography>
           <Typography variant="body1" gutterBottom>
             6.1 To access certain features, book a property, or create a
-            Listing, you must register and create a<span className="span600">  SpotLet</span> Account. You can
-            register directly on the Site or through third-party social
-            networking sites (SNS) by linking your<span className="span600">  SpotLet </span>Account with your SNS
-            Account. By linking your accounts, you grant<span className="span600">  SpotLet access</span> to your
-            SNS Content for use on the Site and Services. You are responsible
-            for maintaining the confidentiality of your password and notifying
-            <span className="span600"> SpotLet</span> of any unauthorized use of your <span className="span600"> SpotLet</span> Account.
+            Listing, you must register and create a
+            <span className="span600"> SpotLet</span> Account. You can register
+            directly on the Site or through third-party social networking sites
+            (SNS) by linking your<span className="span600"> SpotLet </span>
+            Account with your SNS Account. By linking your accounts, you grant
+            <span className="span600"> SpotLet access</span> to your SNS Content
+            for use on the Site and Services. You are responsible for
+            maintaining the confidentiality of your password and notifying
+            <span className="span600"> SpotLet</span> of any unauthorized use of
+            your <span className="span600"> SpotLet</span> Account.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            7. PROPERTY LISTINGS:
+            7. Property listings:
           </Typography>
           <Typography variant="body1" gutterBottom>
-            <span className="span600">7.1 As a User, you can create Listings for properties.</span> When creating
-            a Listing, you provide information about the property's details,
-            availability, pricing, and rules. All Properties must have valid
-            physical addresses to be featured in Listings on the Site and
-            Services. The placement and ranking of Listings in search results
-            may depend on various factors.
+            <span className="span600">
+              7.1 As a User, you can create Listings for properties.
+            </span>{" "}
+            When creating a Listing, you provide information about the
+            property's details, availability, pricing, and rules. All Properties
+            must have valid physical addresses to be featured in Listings on the
+            Site and Services. The placement and ranking of Listings in search
+            results may depend on various factors.
           </Typography>
           <Typography variant="body1" gutterBottom>
             7.2 Other Users can book your property based on the information
-            provided in your Listing.<span className="span600"> Once a Renter requests a booking,</span> you
-            cannot ask for a higher price than the booking request. You are
+            provided in your Listing.
+            <span className="span600"> Once a Renter requests a booking,</span>{" "}
+            you cannot ask for a higher price than the booking request. You are
             solely responsible for the Listings and User Content you post,
-            ensuring compliance with agreements, laws, and regulations. <span className="span600">SpotLet
-              reserves the right to remove </span>or disable access to any Listing that
-            violates these Terms or is deemed objectionable.
+            ensuring compliance with agreements, laws, and regulations.{" "}
+            <span className="span600">
+              SpotLet reserves the right to remove{" "}
+            </span>
+            or disable access to any Listing that violates these Terms or is
+            deemed objectionable.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            <span className="span600"> 7.3 SpotLet does not act as an insurer or contracting agent for
-              Listers.</span> Any agreement between a Lister and Renter is solely between
-            them, and SpotLet is not a party to it. Listers are responsible for
-            their acts and omissions, as well as those of individuals present at
-            the property at their request, excluding the Renter and their
-            invited guests.
+            <span className="span600">
+              {" "}
+              7.3 SpotLet does not act as an insurer or contracting agent for
+              Listers.
+            </span>{" "}
+            Any agreement between a Lister and Renter is solely between them,
+            and SpotLet is not a party to it. Listers are responsible for their
+            acts and omissions, as well as those of individuals present at the
+            property at their request, excluding the Renter and their invited
+            guests.
           </Typography>
           <Typography variant="body1" gutterBottom>
             7.4 SpotLet may offer photographers to take photographs of
@@ -306,68 +389,90 @@ export default function Terms() {
             advertising and other purposes without compensation
           </Typography>
           <Typography variant="body1" gutterBottom>
-            <span className="span600">7.5 Please note that the rephrased text is a summary</span> and may not
-            capture all the nuances of the original document. It's always
-            recommended to refer to the original source for complete and
+            <span className="span600">
+              7.5 Please note that the rephrased text is a summary
+            </span>{" "}
+            and may not capture all the nuances of the original document. It's
+            always recommended to refer to the original source for complete and
             accurate information.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            8. NO END OR SEMENT:
+            8. No end or sement:
           </Typography>
           <Typography variant="body1" gutterBottom>
             8.1 SpotLet does not provide endorsements for any User, Listing, or
-            Property. <span className="span600">The Images displayed are solely intended to represent a
-              photographic</span> depiction of the Property at the time the photo was
-            taken. The Images should not be interpreted as an endorsement by
-            SpotLet of any User, Listing, or Property.
+            Property.{" "}
+            <span className="span600">
+              The Images displayed are solely intended to represent a
+              photographic
+            </span>{" "}
+            depiction of the Property at the time the photo was taken. The
+            Images should not be interpreted as an endorsement by SpotLet of any
+            User, Listing, or Property.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            <span className="span600">8.2 Users are obligated under these Terms</span> to provide accurate
-            information. While SpotLet may request Users to provide government
-            identification, date of birth, or other information directly or
-            through third parties for transparency, fraud prevention, or
-            detection purposes, SpotLet does not make any <span className="span600">representations,
-              confirmations, or endorsements regarding the identity or background
-              of any User.</span>
+            <span className="span600">
+              8.2 Users are obligated under these Terms
+            </span>{" "}
+            to provide accurate information. While SpotLet may request Users to
+            provide government identification, date of birth, or other
+            information directly or through third parties for transparency,
+            fraud prevention, or detection purposes, SpotLet does not make any{" "}
+            <span className="span600">
+              representations, confirmations, or endorsements regarding the
+              identity or background of any User.
+            </span>
           </Typography>
           <Typography variant="body1" gutterBottom>
             8.3 By creating a SpotLet Account, you acknowledge that SpotLet may,
-            at its discretion,<span className="span600"> request a consumer report on you from a Consumer</span>
+            at its discretion,
+            <span className="span600">
+              {" "}
+              request a consumer report on you from a Consumer
+            </span>
             Reporting Agency. If such a request is made, SpotLet will handle the
             consumer report in compliance with applicable laws, including the
             Fair Credit Reporting Act.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            8.4 References on<span className="span600"> the Site or Services to a User being "verified" or
-              "connected" (or similar language) indicate only that the User</span> has
-            completed a relevant verification or identification process. These
-            descriptions do not constitute an endorsement, certification, or
-            guarantee by SpotLet regarding the User's identity, trustworthiness,
-            safety, or suitability. Instead, these descriptions are provided as
-            useful information for you to consider when making your own
-            decisions about the identity and suitability of others you interact
-            with through the Site and Services. It is recommended that you
-            exercise due diligence and care when choosing to stay with a Lister
-            or accepting a booking request from a Renter, or when engaging with
-            any other User. SpotLet is not liable for any damages or harm
-            resulting from your interactions with other Users.
+            8.4 References on
+            <span className="span600">
+              {" "}
+              the Site or Services to a User being "verified" or "connected" (or
+              similar language) indicate only that the User
+            </span>{" "}
+            has completed a relevant verification or identification process.
+            These descriptions do not constitute an endorsement, certification,
+            or guarantee by SpotLet regarding the User's identity,
+            trustworthiness, safety, or suitability. Instead, these descriptions
+            are provided as useful information for you to consider when making
+            your own decisions about the identity and suitability of others you
+            interact with through the Site and Services. It is recommended that
+            you exercise due diligence and care when choosing to stay with a
+            Lister or accepting a booking request from a Renter, or when
+            engaging with any other User. SpotLet is not liable for any damages
+            or harm resulting from your interactions with other Users.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            <span className="span600"> 8.5 By using the Site or Services, you agree that any legal remedy
-              or liability you seek</span> regarding the actions or omissions of other
-            Users or third parties will be limited to a claim against the
-            specific Users or third parties responsible for the harm. You agree
-            not to hold SpotLet liable or seek legal remedies from SpotLet for
-            such actions or omissions. Therefore, it is encouraged that you
-            communicate directly with other Users on the Site and Services
-            regarding any bookings or Listings you make. This limitation does
-            not apply to a Lister's claim against SpotLet concerning the
-            remittance of payments received from a Renter on behalf of the
-            Lister, which is subject to the limitations described in the
-            "Limitation of Liability" section below.
+            <span className="span600">
+              {" "}
+              8.5 By using the Site or Services, you agree that any legal remedy
+              or liability you seek
+            </span>{" "}
+            regarding the actions or omissions of other Users or third parties
+            will be limited to a claim against the specific Users or third
+            parties responsible for the harm. You agree not to hold SpotLet
+            liable or seek legal remedies from SpotLet for such actions or
+            omissions. Therefore, it is encouraged that you communicate directly
+            with other Users on the Site and Services regarding any bookings or
+            Listings you make. This limitation does not apply to a Lister's
+            claim against SpotLet concerning the remittance of payments received
+            from a Renter on behalf of the Lister, which is subject to the
+            limitations described in the "Limitation of Liability" section
+            below.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            9. BOOKINGS AND FINANCIAL TERMS:
+            9. Bookings and financial terms:
           </Typography>
           <Typography variant="subtitle1" gutterBottom>
             A. Key Definitions
@@ -649,9 +754,8 @@ export default function Terms() {
               </li>
             </ul>
           </Typography>
-
           <Typography variant="h3" gutterBottom>
-            11. RENTING A PROPERTY ON SPOTLET:
+            11. Renting a property on Spotlet:
           </Typography>
           <Typography variant="body1" gutterBottom>
             11.1 As a Renter, it is your responsibility to obtain all necessary
@@ -664,7 +768,7 @@ export default function Terms() {
             Property during the Booking Period.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            12. DAMAGE TO PROPERTIES:
+            12. Damage To Properties:
           </Typography>
           <Typography variant="body1" gutterBottom>
             12.1 As a Renter, you are liable for leaving the Property in the
@@ -723,7 +827,7 @@ export default function Terms() {
             of the SpotLet cancellation policy.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            13. INSURANCE:
+            13. Insurance:
           </Typography>
           <Typography variant="body1" gutterBottom>
             13.1 SpotLet requires Listers and Renters to obtain insurance or
@@ -739,7 +843,7 @@ export default function Terms() {
             Insurance.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            14. OVERSTAYING WITHOUT THE LISTER'S CONSENT:
+            14. Overstaying Without The Lister's Consent:
           </Typography>
           <Typography variant="body1" gutterBottom>
             14.1 Renters acknowledge that a confirmed booking grants them a
@@ -767,7 +871,7 @@ export default function Terms() {
             the Location Agreement.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            15. USER CONDUCT:
+            15. User Conduct:
           </Typography>
           <Typography variant="body1" gutterBottom>
             15.1 You acknowledge and accept that you are solely responsible for
@@ -890,7 +994,7 @@ export default function Terms() {
             objectionable Collective Content at its sole discretion.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            16. REPORTING MISCONDUCT:
+            16. Reporting Misconduct:
           </Typography>
           <Typography variant="body1" gutterBottom>
             16.1 If you encounter or host someone who engages in inappropriate
@@ -901,7 +1005,7 @@ export default function Terms() {
             additional liability.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            17. PRIVACY:
+            17. Privacy:
           </Typography>
           <Typography variant="body1" gutterBottom>
             17.1 You agree that SpotLet's collection and use of your personal
@@ -909,7 +1013,7 @@ export default function Terms() {
             updated from time to time.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            18. OWNERSHIP OF INTELLECTUAL PROPERTY AND RIGHTS NOTICES:
+            18. Ownership Of Intellectual Property And Rights Notices:
           </Typography>
           <Typography variant="body1" gutterBottom>
             18.1 The Site, Services, and Collective Content are protected by
@@ -932,7 +1036,7 @@ export default function Terms() {
             the Site, Services, and Collective Content.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            19. LICENSE FOR SPOTLET CONTENT AND USER CONTENT:
+            19. License For Spotlet Content And User Content:
           </Typography>
           <Typography variant="body1" gutterBottom>
             19.1 Subject to your compliance with these Terms, SpotLet grants you
@@ -950,7 +1054,7 @@ export default function Terms() {
             expressly granted in these Terms.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            20. USER CONTENT:
+            20. User Content:
           </Typography>
           <Typography variant="body1" gutterBottom>
             20.1 At our discretion, we may allow you to post, upload, publish,
@@ -977,7 +1081,7 @@ export default function Terms() {
             proprietary rights, or any applicable law or regulation.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            21. LINKS:
+            21. Links:
           </Typography>
           <Typography variant="body1" gutterBottom>
             21.1 The Site and Services may include links to third-party websites
@@ -989,7 +1093,7 @@ export default function Terms() {
             You assume all responsibility and risk for your use of any third.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            22. TERM AND TERMINATION, SUSPENSION, AND OTHER ACTIONS:
+            22. Term And Termination, Suspension, And Other Actions:
           </Typography>
           <Typography variant="subtitle1" gutterBottom>
             A. Duration
@@ -1079,7 +1183,7 @@ export default function Terms() {
             termination of this Agreement will remain in effect.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            23. DISCLAIMERS:
+            23. Disclaimers:
           </Typography>
           <Typography variant="body1" gutterBottom>
             23.1 By choosing to utilize the Site, Services, or Collective
@@ -1125,7 +1229,7 @@ export default function Terms() {
             other third parties.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            24. LIMITATION OF LIABILITY:
+            24. Limitation Of Liability:
           </Typography>
           <Typography variant="body1" gutterBottom>
             24.1 SpotLet users are responsible for their own actions and
@@ -1162,7 +1266,7 @@ export default function Terms() {
             please contact SpotLet at info@spotlet.info
           </Typography>
           <Typography variant="h3" gutterBottom>
-            25. INDEMNIFICATION:
+            25. Indemnification:
           </Typography>
           <Typography variant="body1" gutterBottom>
             25.1 You hereby agree to indemnify, defend, and hold harmless
@@ -1179,7 +1283,7 @@ export default function Terms() {
             direct, incidental, consequential, or otherwise.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            26. ENTIRE AGREEMENT:
+            26. Entire Agreement:
           </Typography>
           <Typography variant="body1" gutterBottom>
             26.1 These Terms, along with any additional SpotLet policies,
@@ -1195,7 +1299,7 @@ export default function Terms() {
             Payment Services).
           </Typography>
           <Typography variant="h3" gutterBottom>
-            27. ASSIGNMENT:
+            27. Assignment:
           </Typography>
           <Typography variant="body1" gutterBottom>
             27.1 You may not assign or transfer these Terms, whether by
@@ -1208,7 +1312,7 @@ export default function Terms() {
             assigns.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            28. NOTICES:
+            28. Notices:
           </Typography>
           <Typography variant="body1" gutterBottom>
             28.1 All notices or other communications permitted or required under
@@ -1219,7 +1323,22 @@ export default function Terms() {
             the notice is transmitted.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            29. CONTROLLING LAW AND JURISDICTION:
+            29. Controlling Law and Jurisdiction:
+          </Typography>
+          <Typography variant="body1" gutterBottom>
+            29.1 These Terms and your use of the Services will be interpreted in
+            accordance with the laws of India, without regard to their
+            conflict-of-law provisions. You and SpotLet agree to submit to the
+            personal jurisdiction of the state court located in Telangana state,
+            India, for any actions in which the parties retain the right to seek
+            injunctive or other equitable relief to prevent the actual or
+            threatened infringement, misappropriation, or violation of a party's
+            copyrights, trademarks, trade secrets, patents, or other
+            intellectual property rights, as stated in the Dispute Resolution
+            provision below.
+          </Typography>
+          <Typography variant="h3" gutterBottom>
+            30. Dispute Resolution:
           </Typography>
           <Typography variant="body1" gutterBottom>
             30.1 If you reside in India, you and SpotLet agree that any dispute,
@@ -1270,7 +1389,7 @@ export default function Terms() {
             final.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            30. DISPUTE RESOLUTION:
+            31. Dispute Resolution:
           </Typography>
           <Typography variant="body1" gutterBottom>
             31.1 You acknowledge your responsibility to take all necessary
@@ -1284,21 +1403,7 @@ export default function Terms() {
             time of your Booking.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            31. DISPUTE RESOLUTION:
-          </Typography>
-          <Typography variant="body1" gutterBottom>
-            31.1 You acknowledge your responsibility to take all necessary
-            health, safety, and hygiene measures to protect yourself, Listers,
-            and Renters from potential infectious diseases or any other
-            unhealthy, unsafe, or unsanitary conditions. You also acknowledge
-            that you have read and will comply with SpotLet's COVID-19 Health &
-            Safety Measures ("Safety Measures"). SpotLet reserves the right to
-            update these Safety Measures periodically at its discretion, so
-            please review them frequently, including the current version at the
-            time of your Booking.
-          </Typography>
-          <Typography variant="h3" gutterBottom>
-            32. GENERAL:
+            32. General:
           </Typography>
           <Typography variant="body1" gutterBottom>
             32.1 The failure of SpotLet to enforce any right or provision in
@@ -1313,36 +1418,36 @@ export default function Terms() {
             full force and effect.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            33. THIRD-PARTY BENEFICIARY:
+            33. Third-Party Benefictary:
           </Typography>
           <Typography variant="body1" gutterBottom>
             33.1 These Terms do not grant rights or remedies to any person or
             entity other than the parties involved.
           </Typography>
           <Typography variant="h3" gutterBottom>
-            34. CONTACTING SPOTLET:
+            34. Contacting Spotlet:
           </Typography>
           <Typography variant="body1" gutterBottom>
             34.1 If you have any questions about these Terms, please contact
             SpotLet
           </Typography>
           <Typography variant="h3" gutterBottom>
-            35. FEEDBACK:
+            35. Feedback:
           </Typography>
           <Typography variant="body1" gutterBottom>
-            35.1 SpotLet welcomes and encourages your feedback, comments, and
-            suggestions for improving the Site and Services ("Feedback"). You
-            may submit Feedback via email, through the "Contact" section of the
-            Site, or through other communication channels. You acknowledge and
-            agree that all Feedback you provide becomes the sole and exclusive
-            property of SpotLet. You hereby assign and agree to assign all
-            rights, title, and interest in the Feedback, including worldwide
-            patent, copyright, trade secret, moral, and other proprietary or
-            intellectual property rights, to SpotLet. You also waive any moral
-            rights you may have in such Feedback. If requested by SpotLet, you
-            will assist in acquiring, perfecting, and maintaining SpotLet's
-            intellectual property rights and other legal protections for the
-            Feedback, at SpotLet's expense.
+            35.1 SpotLet welcomes and encourages your feedback, comments, and{" "}
+            <span className="span600">suggestions for improving</span> the Site
+            and Services ("Feedback"). You may submit Feedback via email,
+            through the "Contact" section of the Site, or through other
+            communication channels. You acknowledge and agree that all Feedback
+            you provide becomes the sole and exclusive property of SpotLet. You
+            hereby assign and agree to assign all rights, title, and interest in
+            the Feedback, including worldwide patent, copyright, trade secret,
+            moral, and other proprietary or intellectual property rights, to
+            SpotLet. You also waive any moral rights you may have in such
+            Feedback. If requested by SpotLet, you will assist in acquiring,
+            perfecting, and maintaining SpotLet's intellectual property rights
+            and other legal protections for the Feedback, at SpotLet's expense.
           </Typography>
         </Box>
       </Box>

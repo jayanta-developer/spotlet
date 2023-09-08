@@ -1,10 +1,313 @@
 .aboutUsContainer {
   width: 100%;
+  margin-top: 96px;
 }
+
+.about-bg {
+  background-color: black;
+  position: relative;
+  z-index: 1;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.about-bg .banner-content {
+  padding: 150px 0;
+  margin: 0 auto;
+  max-width: 1300px;
+  min-height: 450px;
+}
+
+.about-bg .banner-content h1 {
+  font-size: 42px;
+  font-weight: 300;
+  color: #ffffff;
+  max-width: 680px;
+}
+
+.about-bg .banner-content h6 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  max-width: 700px;
+}
+
+.about-content {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2D2D2D;
+  padding: 5px 0;
+}
+
+.about-content h4 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #2D2D2D;
+  padding: 5px 0;
+}
+
+.about-content p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #1A1A1A;
+  padding: 5px 0;
+}
+
+.about-company {
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-company h2 {
+  color: #EA4335;
+}
+
+.about-company article {
+  flex: calc(100% - 560px);
+  max-width: calc(100% - 560px);
+}
+
+.about-company figure {
+  flex: 510px;
+  max-width: 510px;
+}
+
+.guests-hosts {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.guests-hosts .for-guests {
+  flex: 50%;
+  max-width: 50%;
+  min-height: 750px;
+  background-color: #eeeaef;
+  border-radius: 35px 0 0 35px;
+  padding: 40px;
+}
+
+.guests-hosts .for-hosts {
+  flex: 50%;
+  max-width: 50%;
+  min-height: 750px;
+  background-color: #d2cfd2;
+  border-radius: 0 35px 35px 0;
+  padding: 40px;
+}
+
+.company-difference {
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 1300px;
+}
+
+.world-opportunities {
+  margin: 0 auto;
+  padding: 100px 0;
+  background-color: #f2f6f5;
+}
+
+.MuiContainer-maxWidthLg {
+  max-width: 1300px;
+  padding: 0 !important;
+}
+
+.join-us {
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 1300px;
+}
+
+.vision-mission {
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 1300px;
+}
+
+
+
+
+
+
+
 /* Tab view*/
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 760px) {
+  .about-bg .banner-content {
+    padding: 50px 15px;
+    min-height: 200px;
+  }
+
+  .about-bg .banner-content h1 {
+    font-size: 24px;
+  }
+
+  .about-bg .banner-content h6 {
+    font-size: 16px;
+  }
+
+  .about-content h2 {
+    font-size: 24px;
+  }
+
+  .about-content h4 {
+    font-size: 20px;
+  }
+
+  .about-content p {
+    font-size: 15px;
+  }
+
+  .about-company {
+    padding: 30px 15px;
+    flex-wrap: wrap;
+  }
+
+  .about-company article {
+    flex: calc(100% - 0px);
+    max-width: calc(100% - 0px);
+  }
+
+  .about-company figure {
+    flex: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .guests-hosts {
+    padding: 30px 15px;
+  }
+
+  .company-difference {
+    padding: 30px 15px;
+  }
+
+  .world-opportunities {
+    padding: 30px 15px;
+  }
+
+  .MuiContainer-maxWidthLg {
+    padding: 30px 15px;
+  }
+
+  .join-us {
+    padding: 30px 15px;
+  }
+
+  .vision-mission {
+    padding: 30px 15px;
+  }
 }
 
 /* Desktop view */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 761px) and (max-width: 1023px) {
+  .about-bg .banner-content {
+    padding: 100px 15px;
+    min-height: 200px;
+  }
+
+  .about-company {
+    padding: 30px 15px;
+    flex-wrap: wrap;
+  }
+
+  .about-company article {
+    flex: calc(100% - 0px);
+    max-width: calc(100% - 0px);
+  }
+
+  .about-company figure {
+    flex: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .guests-hosts {
+    padding: 30px 15px;
+  }
+
+  .company-difference {
+    padding: 30px 15px;
+  }
+
+  .world-opportunities {
+    padding: 30px 15px;
+  }
+
+  .MuiContainer-maxWidthLg {
+    padding: 30px 15px;
+  }
+
+  .join-us {
+    padding: 30px 15px;
+  }
+
+  .vision-mission {
+    padding: 30px 15px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1320px) {
+  .about-bg .banner-content {
+    padding: 100px 15px;
+    min-height: 200px;
+  }
+
+  .about-company {
+    padding: 50px 15px;
+    flex-wrap: wrap;
+  }
+
+  .about-company article {
+    flex: calc(100% - 450px);
+    max-width: calc(100% - 450px);
+  }
+
+  .about-company figure {
+    flex: 400px;
+    max-width: 400px;
+  }
+
+  .guests-hosts {
+    padding: 30px 15px;
+  }
+
+  .company-difference {
+    padding: 30px 15px;
+  }
+
+  .world-opportunities {
+    padding: 30px 15px;
+  }
+
+  .MuiContainer-maxWidthLg {
+    padding: 30px 15px;
+  }
+
+  .join-us {
+    padding: 30px 15px;
+  }
+
+  .vision-mission {
+    padding: 30px 15px;
+  }
 }

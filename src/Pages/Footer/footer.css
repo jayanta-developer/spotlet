@@ -107,23 +107,18 @@
 .footerLogoSubText {
   line-height: 1.5 !important;
 }
+
 .linkTag {
   display: flex;
   flex-direction: row;
   align-items: center;
   text-decoration: none;
 }
-@media only screen and (min-width: 768px) {
-  .footer {
-    height: 333px;
-  }
 
+@media only screen and (min-width: 768px) {
   .footerBox {
     flex-direction: row;
-  }
-
-  .footerMainBody {
-    height: 283px;
+    gap: 50px;
   }
 
   .footerItem {
@@ -151,5 +146,81 @@
 
   .footerItem {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .footerBox {
+    padding: 30px 15px;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: inherit;
+  }
+
+  .footerItem {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footerItem:nth-child(2),
+  .footerItem:nth-child(3),
+  .footerItem:nth-child(4),
+  .footerItem:nth-child(5) {
+    width: 47%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footerSubBody {
+    flex-wrap: wrap-reverse;
+    height: auto;
+  }
+
+  .RightsBox {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .RightsBox p {
+    text-align: center;
+    font-size: .9rem !important;
+    padding: 15px;
+  }
+
+  .socialMediaBox {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 761px) and (max-width: 1023px) {
+  .footerBox {
+    padding: 30px 15px;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: inherit;
+  }
+
+  .footerItem {
+    width: 100%;
+    padding: 15px 0;
+    margin: 0;
+  }
+
+  .footerItem:nth-child(2),
+  .footerItem:nth-child(3),
+  .footerItem:nth-child(4),
+  .footerItem:nth-child(5) {
+    width: 23%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+  .footerBox {
+    gap: 30px;
   }
 }

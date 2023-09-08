@@ -53,6 +53,19 @@
   padding: 5px 0;
 }
 
+.about-content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2D2D2D;
+  padding: 5px 0;
+}
+
+.about-content h3 span {
+  display: block;
+  font-weight: 400;
+  font-style: italic;
+}
+
 .about-content h4 {
   font-size: 25px;
   font-weight: 700;
@@ -115,10 +128,120 @@
   padding: 40px;
 }
 
+.guests-hosts .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guests-hosts .heading figure {
+  flex: 110px;
+  max-width: 110px;
+  width: 110px;
+  height: 110px;
+  background-color: #EA4335;
+  border-radius: 50%;
+  padding: 8px 4px 0 4px;
+}
+
+.guests-hosts .heading figure .css-1wlk0hk-MuiAvatar-root {
+  width: 102px;
+  height: 102px;
+}
+
+.guests-hosts .heading article {
+  flex: calc(100% - 130px);
+  max-width: calc(100% - 130px);
+}
+
+.guests-hosts .title {
+  display: flex;
+  justify-content: center;
+  background-color: #EA4335;
+  width: 120px;
+  padding: 10px 15px;
+  border-radius: 10px 10px 0 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.guests-hosts .content {
+  padding: 30px;
+  border-radius: 0px 10px 10px 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.guests-hosts .content p {
+  margin: 0;
+  padding: 0;
+}
+
+.guests-hosts .readmore {
+  margin-top: 30px !important;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .company-difference {
   margin: 0 auto;
   padding: 100px 0;
   max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-difference article {
+  flex: calc(100% - 550px);
+  max-width: calc(100% - 550px);
+}
+
+.company-difference figure {
+  flex: 500px;
+  max-width: 500px;
+}
+
+.company-difference figure img {
+  border-radius: 40px;
+}
+
+.icon-content {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-content .icon {
+  flex: 100px;
+  max-width: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: #EA4335;
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-content .content {
+  flex: calc(100% - 150px);
+  max-width: calc(100% - 150px);
+}
+
+.icon-content .content h6 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.icon-content .content p {
+  margin: 0;
+  padding: 0;
 }
 
 .world-opportunities {
@@ -127,9 +250,26 @@
   background-color: #f2f6f5;
 }
 
-.MuiContainer-maxWidthLg {
+.company-opportunities {
+  margin: 0 auto;
+  padding: 0;
   max-width: 1300px;
-  padding: 0 !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-opportunities article {
+  flex: calc(100% - 550px);
+  max-width: calc(100% - 550px);
+}
+
+.company-opportunities figure {
+  flex: 500px;
+  max-width: 500px;
+}
+
+.company-opportunities figure img {
+  border-radius: 40px;
 }
 
 .join-us {
@@ -138,15 +278,65 @@
   max-width: 1300px;
 }
 
-.vision-mission {
-  margin: 0 auto;
-  padding: 100px 0;
-  max-width: 1300px;
+.join-content {
+  position: relative;
+  width: 100%;
+  min-height: 340px;
+  border-radius: 35px;
+  overflow: hidden;
+  padding: 90px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
 }
 
+.join-content img {
+  border-radius: 35px;
+}
 
+.join-content h2,
+.join-content p {
+  color: #ffffff;
+}
 
+.join-content .readmore {
+  width: 300px;
+  font-size: 18px;
+  font-weight: 600;
+}
 
+.join-content article {
+  flex: calc(100% - 300px);
+}
+
+.join-content aside {
+  flex: 300px;
+}
+
+.vision-mission {
+  margin: 0 auto;
+  padding: 30px 0 100px 0;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  text-align: center; 
+}
+
+.text-center {
+  text-align: center;
+}
+
+.vision-mission .box {
+  flex: 50%;
+  border-radius: 12px;
+  border: 1px solid #E6E6E6;
+  background: #FFF;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  padding: 50px;
+}
 
 
 
@@ -195,26 +385,147 @@
 
   .guests-hosts {
     padding: 30px 15px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .guests-hosts .for-guests {
+    flex: 100%;
+    max-width: 100%;
+    min-height: inherit;
+    border-radius: 35px 35px 0 0;
+    padding: 20px;
+  }
+
+  .guests-hosts .for-hosts {
+    flex: 100%;
+    max-width: 100%;
+    min-height: inherit;
+    border-radius: 0 0 35px 35px;
+    padding: 20px;
+  }
+
+  .guests-hosts .heading figure {
+    flex: 80px;
+    max-width: 80px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .guests-hosts .heading figure .css-1wlk0hk-MuiAvatar-root {
+    width: 72px;
+    height: 72px;
+  }
+
+  .guests-hosts .heading article {
+    flex: calc(100% - 100px);
+    max-width: calc(100% - 100px);
+  }
+
+  .guests-hosts .title {
+    font-size: 16px;
+  }
+
+  .guests-hosts .content {
+    padding: 20px;
+  }
+
+  .about-content h3 span {
+    font-size: 18px;
+  }
+
+  .guests-hosts .readmore {
+    width: 100%;
+    font-size: 16px;
   }
 
   .company-difference {
     padding: 30px 15px;
+    flex-wrap: wrap;
+  }
+
+  .company-difference article {
+    flex: calc(100% - 0px);
+    max-width: calc(100% - 0px);
+  }
+
+  .company-difference figure {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .icon-content {
+    padding: 10px 0;
+  }
+
+  .icon-content .icon {
+    flex: 80px;
+    max-width: 80px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .icon-content .content {
+    flex: calc(100% - 100px);
+    max-width: calc(100% - 100px);
+  }
+
+  .icon-content .content h6 {
+    font-size: 18px;
   }
 
   .world-opportunities {
     padding: 30px 15px;
   }
 
-  .MuiContainer-maxWidthLg {
-    padding: 30px 15px;
+  .company-opportunities {
+    flex-wrap: wrap-reverse;
+  }
+
+  .company-opportunities article {
+    flex: calc(100% - 0px);
+    max-width: calc(100% - 0px);
+  }
+
+  .company-opportunities figure {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 
   .join-us {
     padding: 30px 15px;
   }
 
+  .join-content {
+    padding: 30px;
+    gap: 0px;
+    flex-wrap: wrap;
+  }
+
+  .join-content .readmore {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .join-content article {
+    flex: calc(100% - 0px);
+  }
+
+  .join-content aside {
+    flex: 100%;
+  }
+
   .vision-mission {
     padding: 30px 15px;
+    flex-wrap: wrap;
+  }
+
+  .vision-mission .box {
+    flex: 100%;
+    padding: 30px;
   }
 }
 
@@ -231,14 +542,13 @@
   }
 
   .about-company article {
-    flex: calc(100% - 0px);
-    max-width: calc(100% - 0px);
+    flex: calc(100% - 330px);
+    max-width: calc(100% - 330px);
   }
 
   .about-company figure {
-    flex: 100%;
-    max-width: 100%;
-    margin-top: 20px;
+    flex: 300px;
+    max-width: 300px;
   }
 
   .guests-hosts {
@@ -246,19 +556,58 @@
   }
 
   .company-difference {
-    padding: 30px 15px;
+    padding: 50px 15px;
+  }
+
+  .company-difference article {
+    flex: calc(100% - 330px);
+    max-width: calc(100% - 330px);
+  }
+
+  .company-difference figure {
+    flex: 300px;
+    max-width: 300px;
+  }
+
+  .icon-content {
+    padding: 10px 0;
+  }
+
+  .icon-content .icon {
+    flex: 80px;
+    max-width: 80px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .icon-content .content {
+    flex: calc(100% - 100px);
+    max-width: calc(100% - 100px);
   }
 
   .world-opportunities {
-    padding: 30px 15px;
+    padding: 50px 15px;
   }
 
-  .MuiContainer-maxWidthLg {
-    padding: 30px 15px;
+  .company-opportunities article {
+    flex: calc(100% - 330px);
+    max-width: calc(100% - 330px);
+  }
+
+  .company-opportunities figure {
+    flex: 300px;
+    max-width: 300px;
   }
 
   .join-us {
-    padding: 30px 15px;
+    margin: 0 auto;
+    padding: 50px 15px;
+    max-width: 1300px;
+  }
+
+  .join-content {
+    padding: 50px;
+    gap: 30px;
   }
 
   .vision-mission {
@@ -273,7 +622,7 @@
   }
 
   .about-company {
-    padding: 50px 15px;
+    padding: 70px 15px;
     flex-wrap: wrap;
   }
 
@@ -288,26 +637,26 @@
   }
 
   .guests-hosts {
-    padding: 30px 15px;
+    padding: 70px 15px;
   }
 
   .company-difference {
-    padding: 30px 15px;
+    padding: 70px 15px;
   }
 
   .world-opportunities {
-    padding: 30px 15px;
+    padding: 70px 15px;
   }
 
   .MuiContainer-maxWidthLg {
-    padding: 30px 15px;
+    padding: 70px 15px;
   }
 
   .join-us {
-    padding: 30px 15px;
+    padding: 70px 15px;
   }
 
   .vision-mission {
-    padding: 30px 15px;
+    padding: 30px 15px 70px 15px;
   }
 }

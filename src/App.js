@@ -17,7 +17,7 @@ import BlogDetails from "./Pages/BlogDetails";
 import AboutUs from "./Pages/AboutUs";
 import Terms from "./Pages/Terms&Conditions";
 import Policy from "./Pages/Privacy&Policy";
-
+// "google-maps-react": "^2.0.6",
 export default function App() {
   return (
     <>

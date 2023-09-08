@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+// "google-maps-react": "^2.0.6",
 
 ### `npm start`
 

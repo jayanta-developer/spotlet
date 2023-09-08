@@ -49,14 +49,14 @@
 .about-content h2 {
   font-size: 32px;
   font-weight: 700;
-  color: #2D2D2D;
+  color: #2d2d2d;
   padding: 5px 0;
 }
 
 .about-content h3 {
   font-size: 28px;
   font-weight: 700;
-  color: #2D2D2D;
+  color: #2d2d2d;
   padding: 5px 0;
 }
 
@@ -69,14 +69,14 @@
 .about-content h4 {
   font-size: 25px;
   font-weight: 700;
-  color: #2D2D2D;
+  color: #2d2d2d;
   padding: 5px 0;
 }
 
 .about-content p {
   font-size: 17px;
-  font-weight: 400;
-  color: #1A1A1A;
+  font-weight: 500;
+  color: #1a1a1a;
   padding: 5px 0;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .about-company h2 {
-  color: #EA4335;
+  color: #ea4335;
 }
 
 .about-company article {
@@ -139,7 +139,7 @@
   max-width: 110px;
   width: 110px;
   height: 110px;
-  background-color: #EA4335;
+  background-color: #ea4335;
   border-radius: 50%;
   padding: 8px 4px 0 4px;
 }
@@ -157,7 +157,7 @@
 .guests-hosts .title {
   display: flex;
   justify-content: center;
-  background-color: #EA4335;
+  background-color: #ea4335;
   width: 120px;
   padding: 10px 15px;
   border-radius: 10px 10px 0 0;
@@ -172,6 +172,9 @@
   padding: 30px;
   border-radius: 0px 10px 10px 10px;
   background: rgba(255, 255, 255, 0.5);
+}
+.content0 {
+  background-color: #e9e4e4 !important;
 }
 
 .guests-hosts .content p {
@@ -220,7 +223,7 @@
   max-width: 100px;
   width: 100px;
   height: 100px;
-  background-color: #EA4335;
+  background-color: #ea4335;
   padding: 15px;
   border-radius: 15px;
   display: flex;
@@ -322,7 +325,7 @@
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  text-align: center; 
+  text-align: center;
 }
 
 .text-center {
@@ -332,13 +335,14 @@
 .vision-mission .box {
   flex: 50%;
   border-radius: 12px;
-  border: 1px solid #E6E6E6;
-  background: #FFF;
+  border: 1px solid #e6e6e6;
+  background: #fff;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
   padding: 50px;
 }
-
-
+.opportunitiesSubText {
+  font-weight: 700 !important;
+}
 
 /* Tab view*/
 @media only screen and (max-width: 760px) {

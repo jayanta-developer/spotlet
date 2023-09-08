@@ -34,8 +34,9 @@ export default function AboutUs() {
             <Typography variant="h1" gutterBottom>
               We Celebrate{" "}
               <span className="span700">
-                Happiness and Togetherness Every Day
+                Happiness and Togetherness
               </span>{" "}
+              Every Day
             </Typography>
             <Typography variant="subtitle1">
               We assure you of no hidden fees in all our properties. Pay for
@@ -93,7 +94,7 @@ export default function AboutUs() {
                 </article>
               </Box>
               <Box className="title">Discover</Box>
-              <Box className="content">
+              <Box className="content content0">
                 <Typography variant="body1">
                   Explore a treasure trove of unique spaces that you won't find
                   anywhere else. From grand ballrooms to intimate gardens, we
@@ -101,7 +102,7 @@ export default function AboutUs() {
                 </Typography>
               </Box>
               <Box className="title">Create</Box>
-              <Box className="content">
+              <Box className="content content0">
                 <Typography variant="body1">
                   Your events and projects deserve more than just a backdrop.
                   They deserve a stage. With SpotLet, you can create memorable
@@ -213,7 +214,7 @@ export default function AboutUs() {
                 <Typography variant="h2" gutterBottom>
                   A World of Opportunities
                 </Typography>
-                <Typography variant="body1" gutterBottom>
+                <Typography className="opportunitiesSubText" variant="body1" gutterBottom>
                   At SpotLet, we're revolutionizing how spaces are discovered
                   and shared. Our platform caters to a wide range of needs:
                 </Typography>
@@ -271,7 +272,7 @@ export default function AboutUs() {
               <img src={joinbg} className="image-overlay" />
               <article>
                 <Typography variant="h2" gutterBottom>
-                  A World of Opportunities
+                  Join Us on this Journey
                 </Typography>
                 <Typography variant="body1">
                   SpotLet is more than a service – it's a movement that
@@ -294,7 +295,7 @@ export default function AboutUs() {
           </Typography>
           <Box className="vision-mission">
             <Box className="box">
-            <img src={vision} />
+              <img src={vision} />
               <Typography variant="h3" gutterBottom>
                 Vision
               </Typography>
@@ -307,17 +308,17 @@ export default function AboutUs() {
               </Typography>
             </Box>
             <Box className="box">
-            <img src={mission} />
-            <Typography variant="h3" gutterBottom>
-              Mission
-            </Typography>
-            <Typography variant="body1">
-              To transform the way Film Shootings, Corporate Events, and
-              Individual Events are envisioned and executed by connecting hosts
-              with exceptional spaces to guests seeking the perfect backdrop for
-              their creative endeavors and celebrations.
-            </Typography>
-            </Box>            
+              <img src={mission} />
+              <Typography variant="h3" gutterBottom>
+                Mission
+              </Typography>
+              <Typography variant="body1">
+                To transform the way Film Shootings, Corporate Events, and
+                Individual Events are envisioned and executed by connecting hosts
+                with exceptional spaces to guests seeking the perfect backdrop for
+                their creative endeavors and celebrations.
+              </Typography>
+            </Box>
           </Box>
         </Box>
       </Box>

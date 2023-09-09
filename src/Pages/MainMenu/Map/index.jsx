@@ -27,10 +27,10 @@ export default function Map({ Location }) {
         </Box>
 
         <Box className="mapBodyBox">
-          {/* <Box className="mapBody"> */}
-          <GoogleMap latitude={latitude} longitude={longitude} />
+          <Box className="mapBody">
+          {/* <GoogleMap latitude={latitude} longitude={longitude} /> */}
 
-          {/* </Box> */}
+          </Box>
         </Box>
 
       </Box >

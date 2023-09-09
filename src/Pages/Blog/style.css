@@ -61,7 +61,7 @@
 }
 
 .blog-content p {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   color: #143146;
   padding: 5px 0;
@@ -179,6 +179,8 @@
 
 .readmore {
   margin-top: 10px !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
   background-color: #ea4335 !important;
   border-radius: 10px !important;
   text-transform: none !important;

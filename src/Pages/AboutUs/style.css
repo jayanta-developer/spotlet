@@ -75,7 +75,7 @@
 
 .about-content p {
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 400;
   color: #1a1a1a;
   padding: 5px 0;
 }
@@ -301,7 +301,7 @@
 
 .join-content h2,
 .join-content p {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .join-content .readmore {
@@ -541,7 +541,7 @@
   }
 
   .about-company {
-    padding: 30px 15px;
+    padding: 50px 15px;
     flex-wrap: wrap;
   }
 
@@ -556,7 +556,7 @@
   }
 
   .guests-hosts {
-    padding: 30px 15px;
+    padding: 50px 15px;
   }
 
   .company-difference {

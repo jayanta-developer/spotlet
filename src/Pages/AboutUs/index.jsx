@@ -275,7 +275,7 @@ export default function AboutUs() {
                   Join Us on this Journey
                 </Typography>
                 <Typography variant="body1">
-                  SpotLet is more than a service – it's a movement that
+                  SpotLet is more than a service - it's a movement that
                   celebrates creativity, connection, and the magic of spaces.
                   Whether you're a guest seeking the perfect location or a host
                   eager to showcase your property, you're part of our story.

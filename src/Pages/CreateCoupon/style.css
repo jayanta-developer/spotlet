@@ -261,6 +261,7 @@
   .FirstInnerBox {
     height: 363px;
     justify-content: space-between;
+    align-items: end;
   }
   .SecondFieldBox {
     justify-content: space-between;

@@ -1,0 +1,10 @@
+.guestContainer {
+  width: 100%;
+}
+/* Tab view*/
+@media only screen and (min-width: 768px) {
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+}

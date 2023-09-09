@@ -15,6 +15,10 @@ import UserPlans from "./Pages/UserPlans";
 import Blog from "./Pages/Blog";
 import BlogDetails from "./Pages/BlogDetails";
 import AboutUs from "./Pages/AboutUs";
+import Careers from "./Pages/Careers";
+import Events from "./Pages/Events";
+import Guest from "./Pages/Guest";
+import Host from "./Pages/Host";
 import Terms from "./Pages/Terms&Conditions";
 import Policy from "./Pages/Privacy&Policy";
 // "google-maps-react": "^2.0.6",
@@ -35,6 +39,10 @@ export default function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/Details" element={<BlogDetails />} />
         <Route path="/aboutUs" element={<AboutUs />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/guest" element={<Guest />} />
+        <Route path="/host" element={<Host />} />
         <Route path="/Terms-and-Conditions" element={<Terms />} />
         <Route path="/Privacy-Policy" element={<Policy />} />
       </Routes>

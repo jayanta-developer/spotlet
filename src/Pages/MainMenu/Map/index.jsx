@@ -1,11 +1,17 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react';
+import GoogleMap from '../../../Component/GoogleMap';
+
 
 import "./map.css"
 
 import locationIcon from "../../../Assets/images/locationIcon.png"
 
 export default function Map({ Location }) {
+  const latitude = 28.230553471285813
+  const longitude = 75.97394025062951
+
+
   return (
     <>
       <Box ref={Location} className="mapContainer">
@@ -21,8 +27,10 @@ export default function Map({ Location }) {
         </Box>
 
         <Box className="mapBodyBox">
-          <Box className="mapBody">
-          </Box>
+          {/* <Box className="mapBody"> */}
+          <GoogleMap latitude={latitude} longitude={longitude} />
+
+          {/* </Box> */}
         </Box>
 
       </Box >

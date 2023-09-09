@@ -1,11 +1,474 @@
 .CareersContainer {
   width: 100%;
+  margin-top: 96px;
+}
+
+.careers-bg {
+  background-color: black;
+  position: relative;
+  z-index: 1;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.careers-content {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.careers-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2d2d2d;
+  padding: 5px 0;
+}
+
+.careers-content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2d2d2d;
+  padding: 5px 0;
+}
+
+.careers-content h4 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #2d2d2d;
+  padding: 5px 0;
+}
+
+.careers-content h5 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2d2d2d;
+}
+
+.careers-content p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #1a1a1a;
+  padding: 5px 0;
+}
+
+.join-team {
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.join-team article {
+  flex: calc(100% - 560px);
+  max-width: calc(100% - 560px);
+}
+
+.join-team figure {
+  flex: 510px;
+  max-width: 510px;
+}
+
+.why-work {
+  margin: 0 auto;
+  padding: 100px 0;
+  background-color: #f2f6f5;
+}
+
+.work-container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.work-container article {
+  flex: calc(100% - 550px);
+  max-width: calc(100% - 550px);
+}
+
+.work-container figure {
+  flex: 500px;
+  max-width: 500px;
+}
+
+.max-1000 {
+  margin: 0 auto !important;
+  max-width: 1000px;
+}
+
+.why-work-with-us {
+  margin: 0 auto;
+  padding: 0 0 100px 0;
+  max-width: 1300px;
+}
+
+.whywork-container {
+  margin: 50px auto 0 auto;
+  padding: 0;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.whywork-container .our {
+  flex: 50%;
+  max-width: 50%;
+  border-radius: 12px;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  padding: 15px 30px;
+}
+
+.whywork-container .our .icon-content {
+  align-items: start;
+}
+
+.current-opernings {
+  margin: 0 auto;
+  padding: 100px 0;
+  background-color: #f2f6f5;
+}
+
+.opernings-top {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.opernings-mid {
+  margin: 30px auto 50px auto;
+  padding: 0;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.job-opernings {
+  flex: 50%;
+  max-width: 50%;
+  border-radius: 12px !important;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12) !important;
+  padding: 30px;
+}
+
+.job-opernings hr {
+  margin: 15px auto;
+}
+
+.company-name {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  color: #000000;
+  padding: 10px 0 0 0;
+}
+
+.job-info {
+  padding: 0 !important;
+  height: auto !important;
+  background: none !important;
+  border-radius: none !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  color: #000000;
+}
+
+.job-info .MuiChip-avatar {
+  margin-left: 0 !important;
+  margin-right: -6px !important;
+}
+
+.job-info .css-1pqm26d-MuiAvatar-img {
+  width: auto !important;
+  height: auto !important;
+}
+
+.mar5 {
+  margin-top: 10px;
+}
+
+.posted-apply {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.posted-apply ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.posted-apply ul li {
+  margin: 0 30px 0 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+  display: inline-block;
+}
+
+.btn-apply {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  background-color: #ea4335 !important;
+  border-radius: 10px !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+  padding: 6px 30px !important;
+}
+
+.span500 {
+  font-weight: 500 !important;
+}
+
+.job-descriptions ul {
+  margin: 0 0 0 15px;
+  padding: 0;
+  list-style: disc;
+}
+
+.job-descriptions ul li {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 10px 0 0 0;
+}
+
+.job-other-details ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.job-other-details ul li {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 10px 0 0 0;
+}
+
+.opernings-bot {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.opernings-bot .css-lqq3n7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  background-color: #ea4335 !important;
+  color: #ffffff !important;
+}
+
+.modalbox {
+  max-width: 730px;
+  border-radius: 30px;
+}
+
+.form-auto-scroll {
+  max-height: 500px;
+  overflow: auto;
+}
+
+.modalbox h5 {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0 0 10px 0;
+}
+
+.modalbox p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #202020;
+  padding: 5px 0;
+}
+
+.modalbox input {
+  font-size: 14px !important;
 }
 
 /* Tab view*/
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 760px) {
+  .careers-content h2 {
+    font-size: 24px;
+  }
+
+  .careers-content h4 {
+    font-size: 20px;
+  }
+
+  .careers-content p {
+    font-size: 15px;
+  }
+
+  .join-team {
+    padding: 30px 15px;
+    flex-wrap: wrap;
+  }
+
+  .join-team article {
+    flex: calc(100% - 0px);
+    max-width: calc(100% - 0px);
+  }
+
+  .join-team figure {
+    flex: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .why-work {
+    padding: 30px 15px;
+  }
+
+  .work-container {
+    flex-wrap: wrap;
+  }
+
+  .work-container article {
+    flex: calc(100% - 0px);
+    max-width: calc(100% - 0px);
+  }
+
+  .work-container figure {
+    flex: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .why-work-with-us {
+    padding: 30px 15px;
+    flex-wrap: wrap;
+  }
+
+  .whywork-container {
+    margin: 30px auto 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .whywork-container .our {
+    flex: 100%;
+    max-width: 100%;
+    padding: 15px 30px;
+  }
+
+  .current-opernings {
+    padding: 30px 15px;
+    flex-wrap: wrap;
+  }
+
+  .opernings-mid {
+    margin: 30px auto;
+    flex-wrap: wrap;
+  }
+
+  .job-opernings {
+    flex: 100%;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .modalbox {
+    max-width: 340px;
+    max-height: 600px;
+    border-radius: 30px;
+    overflow: auto;
+  }
+
+  .opernings-top {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
 }
 
 /* Desktop view */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 761px) and (max-width: 1023px) {
+  .join-team {
+    padding: 50px 15px;
+  }
+
+  .join-team article {
+    flex: calc(100% - 330px);
+    max-width: calc(100% - 330px);
+  }
+
+  .join-team figure {
+    flex: 300px;
+    max-width: 300px;
+  }
+
+  .why-work {
+    padding: 50px 15px;
+  }
+
+  .work-container article {
+    flex: calc(100% - 330px);
+    max-width: calc(100% - 330px);
+  }
+
+  .work-container figure {
+    flex: 300px;
+    max-width: 300px;
+  }
+
+  .why-work-with-us {
+    padding: 50px 15px;
+  }
+
+  .current-opernings {
+    padding: 50px 15px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1320px) {
+  .join-team {
+    padding: 100px 15px;
+  }
+
+  .why-work {
+    padding: 100px 15px;
+  }
+
+  .join-team article {
+    flex: calc(100% - 450px);
+    max-width: calc(100% - 450px);
+  }
+
+  .join-team figure {
+    flex: 400px;
+    max-width: 400px;
+  }
+
+  .work-container article {
+    flex: calc(100% - 450px);
+    max-width: calc(100% - 450px);
+  }
+
+  .work-container figure {
+    flex: 400px;
+    max-width: 400px;
+  }
+
+  .why-work-with-us {
+    padding: 100px 15px;
+  }
+
+  .current-opernings {
+    padding: 100px 15px;
+  }
 }

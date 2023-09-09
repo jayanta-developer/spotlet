@@ -80,7 +80,7 @@
 .why-work {
   margin: 0 auto;
   padding: 100px 0;
-  background-color: #f2f6f5;
+  background-color: #fffafa;
 }
 
 .work-container {
@@ -139,7 +139,7 @@
 .current-opernings {
   margin: 0 auto;
   padding: 100px 0;
-  background-color: #f2f6f5;
+  background-color: #fffafa;
 }
 
 .opernings-top {
@@ -269,7 +269,8 @@
   text-align: center;
 }
 
-.opernings-bot .css-lqq3n7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+.opernings-bot
+  .css-lqq3n7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
   background-color: #ea4335 !important;
   color: #ffffff !important;
 }

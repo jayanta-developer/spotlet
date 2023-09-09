@@ -184,7 +184,7 @@ export default function Careers() {
               <img src={joinbg} className="image-overlay" />
               <article>
                 <Typography variant="h2" gutterBottom>
-                  Join Us on this Journey
+                  Join Us in Making Every Event and Production Unforgettable
                 </Typography>
                 <Typography variant="body1">
                   SpotLet is more than a service - it's a movement that
@@ -197,7 +197,7 @@ export default function Careers() {
               </article>
               <aside>
                 <Button className="readmore" variant="contained" size="large">
-                  Explore Our Spaces
+                  Apply Now
                 </Button>
               </aside>
             </Box>

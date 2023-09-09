@@ -1,10 +1,94 @@
 .guestContainer {
   width: 100%;
-}
-/* Tab view*/
-@media only screen and (min-width: 768px) {
+  margin-top: 96px;
 }
 
-/* Desktop view */
-@media only screen and (min-width: 1000px) {
+.guest-bg {
+  background-color: black;
+  position: relative;
+  z-index: 1;
 }
+
+.guest-content {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.guest-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2d2d2d;
+  padding: 5px 0;
+}
+
+.guest-content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2d2d2d;
+  padding: 5px 0;
+}
+
+.guest-content h4 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #2d2d2d;
+  padding: 5px 0;
+}
+
+.guest-content h5 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2d2d2d;
+}
+
+.guest-content p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #1a1a1a;
+  padding: 5px 0;
+}
+
+.welcome-content {
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.why-choose {
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.what-provides {
+  margin: 0 auto;
+  padding: 100px 0;
+  background-color: #f2f6f5;
+}
+
+.testimonials {
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.join-community {
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Tab view*/
+@media only screen and (min-width: 768px) {}
+
+/* Desktop view */
+@media only screen and (min-width: 1000px) {}

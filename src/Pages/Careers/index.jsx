@@ -67,7 +67,6 @@ export default function Careers() {
             </Typography>
           </Box>
         </Box>
-
         <Box className="careers-content">
           <Box className="join-team">
             <figure>
@@ -258,6 +257,15 @@ export default function Careers() {
               <Typography className="text-center" variant="h2">
                 Current Openings
               </Typography>
+              <Box className="blogfilter">
+                <Box className="search">
+                  <TextField
+                    id="outlined-basic"
+                    label="Search Current Openings"
+                    variant="outlined"
+                  />
+                </Box>
+              </Box>
             </Box>
             <Box className="opernings-mid">
               <Card className="job-opernings">

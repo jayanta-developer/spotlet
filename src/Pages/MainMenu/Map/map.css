@@ -44,7 +44,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-top: 23px;
+  /* padding-top: 23px; */
 }
 /* .mapBody {
   width: 94%;
@@ -57,6 +57,16 @@
   background-position: center;
   background-size: 100%;
 } */
+.mapBodyBox > div > div:first-child {
+  position: relative;
+  top: -11px;
+  right: 128px;
+}
+
+.mapBodyBox > div > div:nth-child(2) {
+  left: 0px;
+  height: auto !important;
+}
 
 @media only screen and (min-width: 768px) {
   .mapContainer {
@@ -67,4 +77,13 @@
     width: 653px;
     height: 434px;
   }
+  .mapBodyBox > div > div:first-child {
+    position: relative;
+    top: -11px;
+    right: -265px;
+  }
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
 }

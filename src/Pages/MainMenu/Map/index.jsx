@@ -8,8 +8,8 @@ import "./map.css"
 import locationIcon from "../../../Assets/images/locationIcon.png"
 
 export default function Map({ Location }) {
-  const latitude = 28.230553471285813
-  const longitude = 75.97394025062951
+  const latitude = 18.755707
+  const longitude = 73.409099
 
 
   return (
@@ -25,7 +25,6 @@ export default function Map({ Location }) {
             <Typography className='locationSubText'>Lonavala, Maharashtra, India</Typography>
           </Box>
         </Box>
-
         <Box className="mapBodyBox">
           {/* <Box className="mapBody"> */}
           <GoogleMap latitude={latitude} longitude={longitude} />

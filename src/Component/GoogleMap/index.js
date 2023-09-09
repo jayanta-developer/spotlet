@@ -19,7 +19,7 @@ class MapContainer extends React.Component {
     return (
       <>
         <div className="goMapButton" onClick={this.handleGoMapClick}>
-          Open Maps
+          Open Map
         </div>
         <Map
           google={this.props.google}

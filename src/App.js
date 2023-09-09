@@ -21,7 +21,7 @@ import Guest from "./Pages/Guest";
 import Host from "./Pages/Host";
 import Terms from "./Pages/Terms&Conditions";
 import Policy from "./Pages/Privacy&Policy";
-// "google-maps-react": "^2.0.6",
+
 export default function App() {
   return (
     <>

@@ -70,7 +70,7 @@ export default function Blog() {
                 alt=""
               />
               <CardContent className="article">
-                <Typography variant="h2" gutterBottom>
+                <Typography variant="h4" gutterBottom>
                   Far far away, behind the word mountains
                 </Typography>
                 <Typography className="meta" variant="body1" gutterBottom>
@@ -111,7 +111,7 @@ export default function Blog() {
                 alt=""
               />
               <CardContent className="article">
-                <Typography variant="h2" gutterBottom>
+                <Typography variant="h4" gutterBottom>
                   Far far away, behind the word mountains
                 </Typography>
                 <Typography className="meta" variant="body1" gutterBottom>
@@ -152,7 +152,7 @@ export default function Blog() {
                 alt=""
               />
               <CardContent className="article">
-                <Typography variant="h2" gutterBottom>
+                <Typography variant="h4" gutterBottom>
                   Far far away, behind the word mountains
                 </Typography>
                 <Typography className="meta" variant="body1" gutterBottom>
@@ -193,7 +193,7 @@ export default function Blog() {
                 alt=""
               />
               <CardContent className="article">
-                <Typography variant="h2" gutterBottom>
+                <Typography variant="h4" gutterBottom>
                   Far far away, behind the word mountains
                 </Typography>
                 <Typography className="meta" variant="body1" gutterBottom>

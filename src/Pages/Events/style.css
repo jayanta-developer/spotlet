@@ -1,6 +1,26 @@
 .eventContainer {
   width: 100%;
+  margin-top: 96px;
 }
+
+.events-bg {
+  background-color: black;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Tab view*/
 @media only screen and (min-width: 768px) {
 }

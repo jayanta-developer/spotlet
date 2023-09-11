@@ -17,6 +17,7 @@ import BlogDetails from "./Pages/BlogDetails";
 import AboutUs from "./Pages/AboutUs";
 import Careers from "./Pages/Careers";
 import Events from "./Pages/Events";
+import EventsHost from "./Pages/EventHost";
 import Guest from "./Pages/Guest";
 import Host from "./Pages/Host";
 import Terms from "./Pages/Terms&Conditions";
@@ -41,6 +42,7 @@ export default function App() {
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/events/host" element={<EventsHost />} />
         <Route path="/guest" element={<Guest />} />
         <Route path="/host" element={<Host />} />
         <Route path="/Terms-and-Conditions" element={<Terms />} />

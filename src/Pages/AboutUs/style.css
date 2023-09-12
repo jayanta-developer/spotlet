@@ -299,7 +299,10 @@
   border-radius: 35px;
 }
 
-.join-content h2,
+.join-content h2 {
+  color: #ffffff !important;
+}
+
 .join-content p {
   color: #ffffff !important;
 }

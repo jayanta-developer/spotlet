@@ -19,6 +19,7 @@
 .host-bg .banner-content h1 {
   font-size: 42px;
   font-weight: 300;
+  line-height: 50px;
   color: #ffffff;
   max-width: 740px;
 }
@@ -26,6 +27,7 @@
 .host-bg .banner-content h6 {
   font-size: 18px;
   font-weight: 400;
+  line-height: 24px;
   color: #ffffff;
   max-width: 700px;
 }
@@ -39,6 +41,7 @@
 .host-content h2 {
   font-size: 32px;
   font-weight: 700;
+  line-height: 39px;
   color: #2d2d2d;
   padding: 5px 0;
 }
@@ -58,14 +61,16 @@
 }
 
 .host-content h5 {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
+  line-height: 27px;
   color: #2d2d2d;
 }
 
 .host-content p {
   font-size: 17px;
   font-weight: 300;
+  line-height: 27px;
   color: #1a1a1a;
   padding: 5px 0;
 }
@@ -81,6 +86,10 @@
 
 .host-welcome h2 {
   max-width: 600px;
+}
+
+.host-welcome p {
+  line-height: 24px;
 }
 
 .host-welcome article {
@@ -99,7 +108,7 @@
   text-align: center;
 }
 
-.three-steps h2 {  
+.three-steps h2 {
   margin: 0 auto;
   max-width: 400px;
 }
@@ -129,7 +138,25 @@
 .why-hosts {
   margin: 0 auto;
   padding: 100px 0;
-  background-color: #d2cfd2;
+  background-color: #f2f6f5;
+}
+
+.why-container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.why-container article {
+  flex: calc(100% - 550px);
+  max-width: calc(100% - 550px);
+}
+
+.why-container figure {
+  flex: 500px;
+  max-width: 500px;
 }
 
 .testimonials {
@@ -137,20 +164,134 @@
   padding: 100px 0;
 }
 
+.testimonials h2 {
+  text-align: center;
+}
+
 .faq-section {
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 0 0 100px 0;
   max-width: 1300px;
   display: flex;
   justify-content: space-between;
 }
 
+.faq-section figure {
+  flex: 562px;
+  max-width: 562px;
+}
+
+.faq-section article {
+  flex: calc(100% - 612px);
+  max-width: calc(100% - 612px);
+}
+
+.faq-accodian {
+  margin: 30px auto;
+}
+
+.faq-section .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  margin: 30px auto !important;
+  border-radius: 12px !important;
+  background: #FFF !important;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12) !important;
+}
+
+.faq-section .css-1elwnq4-MuiPaper-root-MuiAccordion-root::before {
+  display: none !important;
+}
+
+.faq-heading {
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  color: #000000;
+  position: relative;
+}
+
+.faq-heading span.number {
+  padding: 15px;
+  border-radius: 12px;
+  background: #EA4335;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  line-height: 24px;
+  color: #ffffff !important;
+  margin: 0 10px 0 0 !important;
+}
+
+.faq-content {
+  padding: 0 20px 20px 60px !important;
+}
+
+.css-15v22id-MuiAccordionDetails-root {
+  padding: 0 16px 16px 16px !important;
+}
+
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+  padding: 10px 20px 10px 10px !important;
+}
+
+.css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
+  margin: 12px 0 !important;
+}
+
 .get-in-touch {
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 0 0 100px 0;
   max-width: 1300px;
   display: flex;
   justify-content: space-between;
+}
+
+.get-in-touch section {
+  flex: 50%;
+  max-width: 50%;
+  border-radius: 30px 0px 0px 30px;
+  background: #F4F4F3;
+  padding: 50px;
+}
+
+.get-in-touch figure {
+  flex: 50%;
+  max-width: 50%;
+  min-height: 670px;
+  border-radius: 0px 30px 30px 0px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.subheading {
+  max-width: 470px;
+}
+
+.get-in-touch .form-box .css-ahj2mt-MuiTypography-root {
+  font-size: 16px;
+}
+
+.form-box .two-column, .form-box .one-column {
+  padding: 10px 0;
+}
+
+.org-input {
+  background: url(./input-org.png) no-repeat right;
+}
+
+.name-input {
+  background: url(./input-name.png) no-repeat right;
+}
+
+.mobile-input {
+  background: url(./input-phone.png) no-repeat right;
+}
+
+.email-input {
+  background: url(./input-email.png) no-repeat right;
+}
+
+.get-in-touch .submit {
+  font-size: 18px !important;
+  padding: 10px 120px !important;
 }
 
 /* Tab view*/
@@ -198,64 +339,277 @@
   }
 
   .three-steps {
-    padding: 0 0 30px 0;
+    padding: 0 15px 30px 15px;
   }
-  
-  .three-steps h2 {  
+
+  .three-steps h2 {
     padding: 0 15px;
   }
-  
+
   .step-container {
-    margin: 70px auto 0 auto;
-    padding: 0;
-    max-width: 1300px;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 0px;
   }
-  
+
   .step-container .step-box {
-    flex: 33.333%;
-    max-width: 33.333%;
-    border-radius: 20px;
-    background: #fff;
-    box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
-    padding: 30px;
+    flex: 100%;
+    max-width: 100%;
+    margin: 70px auto 0 auto;
   }
-  
-  .step-container .step-box figure {
-    margin: -84px auto 20px auto;
-  }
-  
+
   .why-hosts {
-    margin: 0 auto;
-    padding: 100px 0;
-    background-color: #d2cfd2;
+    padding: 30px 15px;
+  }
+
+  .why-container {
+    flex-wrap: wrap;
   }
   
+  .why-container article {
+    flex: calc(100% - 0px);
+    max-width: calc(100% - 0px);
+  }
+  
+  .why-container figure {
+    flex: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
   .testimonials {
-    margin: 0 auto;
-    padding: 100px 0;
+    padding: 30px 15px;
   }
-  
+
   .faq-section {
-    margin: 0 auto;
-    padding: 100px 0;
-    max-width: 1300px;
-    display: flex;
-    justify-content: space-between;
+    padding: 30px 15px;
+    flex-wrap: wrap;
+  }
+
+  .faq-section figure {
+    flex: 100%;
+    max-width: 100%;
   }
   
+  .faq-section article {
+    flex: calc(100% - 0px);
+    max-width: calc(100% - 0px);
+  }
+
   .get-in-touch {
-    margin: 0 auto;
-    padding: 100px 0;
-    max-width: 1300px;
-    display: flex;
-    justify-content: space-between;
+    padding: 30px 15px;
+    flex-wrap: wrap;
+  }
+
+  .get-in-touch section {
+    flex: 100%;
+    max-width: 100%;
+    padding: 30px;
+    border-radius: 30px 30px 0 0;
   }
   
+  .get-in-touch figure {
+    flex: 100%;
+    max-width: 100%;
+    min-height: 670px;
+    border-radius: 0 0 30px 30px;
+  }
+
+  .faq-heading {
+    font-size: 15px !important;
+  }
+
+  .faq-heading span.number {
+    padding: 5px 10px;
+    font-size: 15px !important;
+    line-height: 1;
+    margin: 0 5px 0 0 !important;
+  }
+
+  .faq-content {
+    padding: 0 !important;
+  }
+
+  .faq-section .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+    margin: 10px auto !important  ;
+  }
+
+  .get-in-touch .submit {
+    font-size: 16px !important;
+    padding: 10px 70px !important;
+  }
+
 }
 
 /* Desktop view */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 761px) and (max-width: 1023px) {
+  .host-bg .banner-content {
+    padding: 100px 15px;
+    min-height: 200px;
+  }
+
+  .host-welcome {
+    padding: 50px 15px;
+    flex-wrap: wrap;
+  }
+
+  .host-welcome article {
+    flex: calc(100% - 330px);
+    max-width: calc(100% - 330px);
+  }
+
+  .host-welcome figure {
+    flex: 300px;
+    max-width: 300px;
+  }
+
+  .three-steps {
+    padding: 0 15px 30px 15px;
+  }
+
+  .why-hosts {
+    padding: 50px 15px;
+  }
+
+  .why-container {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .why-container article {
+    flex: calc(100% - 330px);
+    max-width: calc(100% - 330px);
+  }
+
+  .why-container figure {
+    flex: 300px;
+    max-width: 300px;
+  }
+
+  .testimonials {
+    margin: 0 auto;
+    padding: 50px 15px;
+  }
+  
+  
+  .faq-section {
+    margin: 0 auto;
+    padding: 0 15px 50px 15px;
+    flex-wrap: wrap;
+  }
+  
+  .faq-section figure {
+    flex: 300px;
+    max-width: 300px;
+  }
+  
+  .faq-section article {
+    flex: calc(100% - 330px);
+    max-width: calc(100% - 330px);
+  }
+
+  .get-in-touch {
+    padding: 50px 15px;
+    flex-wrap: wrap;
+  }
+
+  .get-in-touch section {
+    flex: 100%;
+    max-width: 100%;
+    border-radius: 30px 30px 0 0;
+  }
+  
+  .get-in-touch figure {
+    flex: 100%;
+    max-width: 100%;
+    min-height: 670px;
+    border-radius: 0 0 30px 30px;
+  }
+
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1320px) {
+  .host-bg .banner-content {
+    padding: 100px 15px;
+    min-height: 200px;
+  }
+
+  .host-welcome {
+    padding: 70px 15px;
+    flex-wrap: wrap;
+  }
+
+  .host-welcome article {
+    flex: calc(100% - 450px);
+    max-width: calc(100% - 450px);
+  }
+
+  .host-welcome figure {
+    flex: 400px;
+    max-width: 400px;
+  }
+
+  .three-steps {
+    padding: 0 15px 70px 15px;
+  }
+
+  .why-hosts {
+    padding: 70px 15px;
+  }
+
+  .why-container {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .why-container article {
+    flex: calc(100% - 450px);
+    max-width: calc(100% - 450px);
+  }
+
+  .why-container figure {
+    flex: 400px;
+    max-width: 400px;
+  }
+
+  
+
+  .testimonials {
+    margin: 0 auto;
+    padding: 70px 15px;
+  }
+  
+  
+  .faq-section {
+    margin: 0 auto;
+    padding: 0 15px 70px 15px;
+    flex-wrap: wrap;
+  }
+  
+  .faq-section figure {
+    flex: 400px;
+    max-width: 400px;
+  }
+  
+  .faq-section article {
+    flex: calc(100% - 450px);
+    max-width: calc(100% - 450px);
+  }
+
+  .get-in-touch {
+    padding: 70px 15px;
+    flex-wrap: wrap;
+  }
+
+  .get-in-touch section {
+    flex: calc(100% - 400px);
+    max-width: calc(100% - 400px);
+  }
+  
+  .get-in-touch figure {
+    flex: 400px;
+    max-width: 400px;
+    min-height: 670px;
+  }
 }

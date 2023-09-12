@@ -61,7 +61,7 @@ export default function CreateCoupon() {
                 </Box>
               </Box>
               <Box className="coupon couponNameInputFieldBox couponAmountMobile">
-                <Typography className='InputLabelText'>Coupon Amount / Discount</Typography>
+                <Typography className='InputLabelText'>Coupon Amount / Discount %</Typography>
                 <TextField placeholder='Enter your coupon name' />
               </Box>
               <Box className="coupon couponMinimumBookingInputFieldBox">

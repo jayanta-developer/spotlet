@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef } from 'react';
 import {
   Box,
   Typography,
@@ -28,6 +28,7 @@ import icon14 from "../../Assets/images/icon-14.svg";
 import iconbriefcase from "../../Assets/images/icon-briefcase.svg";
 import iconrupee from "../../Assets/images/icon-rupee.svg";
 import iconlocation from "../../Assets/images/icon-location.svg";
+import whiteCross from "../../Assets/images/whiteCross.svg"
 
 //Components
 import NavBar from "../NavBar";
@@ -46,9 +47,18 @@ const style = {
 };
 
 export default function Careers() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const fileInputRef = useRef(null);
+
+
+  const onFileInputChange = (event) => {
+    const { files } = event.target;
+  }
+  const onTargetClick = () => {
+    fileInputRef.current.click()
+  }
 
   return (
     <>
@@ -517,10 +527,11 @@ export default function Careers() {
             >
               <Box className="modalbox" sx={{ ...style, width: 730 }}>
                 <Typography variant="h5">Apply Now</Typography>
+                <img onClick={() => setOpen(false)} className="whiteCross" src={whiteCross} />
                 <Box className="form-auto-scroll">
                   <Box className="form-box">
                     <div className="two-column">
-                      <Typography variant="body1">Name</Typography>
+                      <Typography className="applyInput" variant="body1">Name</Typography>
                       <TextField
                         id="outlined-basic"
                         label="Name"
@@ -528,7 +539,7 @@ export default function Careers() {
                       />
                     </div>
                     <div className="two-column">
-                      <Typography variant="body1">Email Address</Typography>
+                      <Typography className="applyInput" variant="body1">Email Address</Typography>
                       <TextField
                         id="outlined-basic"
                         label="Email"
@@ -538,7 +549,7 @@ export default function Careers() {
                   </Box>
                   <Box className="form-box">
                     <div className="two-column">
-                      <Typography variant="body1">Phone number</Typography>
+                      <Typography className="applyInput" variant="body1">Phone number</Typography>
                       <TextField
                         id="outlined-basic"
                         label="91256897456"
@@ -546,7 +557,7 @@ export default function Careers() {
                       />
                     </div>
                     <div className="two-column">
-                      <Typography variant="body1">Alternate number</Typography>
+                      <Typography className="applyInput" variant="body1">Alternate number</Typography>
                       <TextField
                         id="outlined-basic"
                         label="91256897456"
@@ -556,7 +567,7 @@ export default function Careers() {
                   </Box>
                   <Box className="form-box">
                     <div className="two-column">
-                      <Typography variant="body1">Qualification</Typography>
+                      <Typography className="applyInput" variant="body1">Qualification</Typography>
                       <TextField
                         id="outlined-basic"
                         label="Qualification"
@@ -564,7 +575,7 @@ export default function Careers() {
                       />
                     </div>
                     <div className="two-column">
-                      <Typography variant="body1">IT experience</Typography>
+                      <Typography className="applyInput" variant="body1">IT experience</Typography>
                       <TextField
                         id="outlined-basic"
                         label="IT experience"
@@ -574,7 +585,7 @@ export default function Careers() {
                   </Box>
                   <Box className="form-box">
                     <div className="two-column">
-                      <Typography variant="body1">
+                      <Typography className="applyInput" variant="body1">
                         Relevant experience
                       </Typography>
                       <TextField
@@ -584,7 +595,7 @@ export default function Careers() {
                       />
                     </div>
                     <div className="two-column">
-                      <Typography variant="body1">Current CTC</Typography>
+                      <Typography className="applyInput" variant="body1">Current CTC</Typography>
                       <TextField
                         id="outlined-basic"
                         label="Numbers here"
@@ -594,7 +605,7 @@ export default function Careers() {
                   </Box>
                   <Box className="form-box">
                     <div className="two-column">
-                      <Typography variant="body1">Expected CTC</Typography>
+                      <Typography className="applyInput" variant="body1">Expected CTC</Typography>
                       <TextField
                         id="outlined-basic"
                         label="Numbers here"
@@ -602,7 +613,7 @@ export default function Careers() {
                       />
                     </div>
                     <div className="two-column">
-                      <Typography variant="body1">Key skills</Typography>
+                      <Typography className="applyInput" variant="body1">Key skills</Typography>
                       <TextField
                         id="outlined-basic"
                         label="Key skills"
@@ -612,7 +623,7 @@ export default function Careers() {
                   </Box>
                   <Box className="form-box">
                     <div className="one-column">
-                      <Typography variant="body1">Profile Summary</Typography>
+                      <Typography className="applyInput" variant="body1">Profile Summary</Typography>
                       <TextField
                         className="textarea"
                         id="outlined-basic"
@@ -623,17 +634,31 @@ export default function Careers() {
                   </Box>
                   <Box className="form-box">
                     <div className="one-column">
-                      <Typography variant="body1">Upload Resume</Typography>
-                      <TextField
-                        id="outlined-basic"
-                        label=""
-                        variant="outlined"
-                        type="file"
-                      />
+                      <Typography className="applyInput" variant="body1">Upload Resume</Typography>
+                      <Box className="applyFileInputBox">
+                        <input
+                          onChange={onFileInputChange}
+                          ref={fileInputRef}
+                          type="file"
+                          className="hidden"
+                        />
+                        <svg onClick={() => fileInputRef.current.click()} className='pointer' xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                          <g clip-path="url(#clip0_2182_5478)">
+                            <path d="M20.9625 10.8766C20.2258 7.13909 16.9433 4.33325 13 4.33325C9.86917 4.33325 7.15 6.10992 5.79583 8.70992C2.535 9.05658 0 11.8191 0 15.1666C0 18.7524 2.91417 21.6666 6.5 21.6666H20.5833C23.5733 21.6666 26 19.2399 26 16.2499C26 13.3899 23.7792 11.0716 20.9625 10.8766ZM20.5833 19.4999H6.5C4.10583 19.4999 2.16667 17.5608 2.16667 15.1666C2.16667 12.9458 3.82417 11.0933 6.02333 10.8658L7.1825 10.7466L7.72417 9.71742C8.75333 7.73492 10.7683 6.49992 13 6.49992C15.8383 6.49992 18.2867 8.51492 18.8392 11.2991L19.1642 12.9241L20.8217 13.0433C22.5117 13.1516 23.8333 14.5708 23.8333 16.2499C23.8333 18.0374 22.3708 19.4999 20.5833 19.4999ZM8.66667 14.0833H11.4292V17.3333H14.5708V14.0833H17.3333L13 9.74992L8.66667 14.0833Z" fill="#212121" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_2182_5478">
+                              <rect width="26" height="26" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                        <Typography onClick={() => fileInputRef.current.click()} className="dragText pointer">Drag & Drop</Typography>
+                        <Typography onClick={() => fileInputRef.current.click()} my={1} className="bottomRedTex pointert">Supported Formats: doc, docx, rtf, PDF upto 2MB</Typography>
+                      </Box>
                     </div>
                   </Box>
                   <Box className="form-box">
-                    <div className="one-column">
+                    <div style={{ display: "flex", justifyContent: "end" }} className="one-column">
                       <Button
                         className="submit"
                         variant="contained"

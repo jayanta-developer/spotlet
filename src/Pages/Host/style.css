@@ -1,8 +1,259 @@
 .hostContainer {
   width: 100%;
+  margin-top: 96px;
 }
+
+.host-bg {
+  background-color: black;
+  position: relative;
+  z-index: 1;
+}
+
+.host-bg .banner-content {
+  padding: 150px 0;
+  margin: 0 auto;
+  max-width: 1300px;
+  min-height: 450px;
+}
+
+.host-bg .banner-content h1 {
+  font-size: 42px;
+  font-weight: 300;
+  color: #ffffff;
+  max-width: 740px;
+}
+
+.host-bg .banner-content h6 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  max-width: 700px;
+}
+
+.host-content {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.host-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2d2d2d;
+  padding: 5px 0;
+}
+
+.host-content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2d2d2d;
+  padding: 5px 0;
+}
+
+.host-content h4 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #2d2d2d;
+  padding: 5px 0;
+}
+
+.host-content h5 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2d2d2d;
+}
+
+.host-content p {
+  font-size: 17px;
+  font-weight: 300;
+  color: #1a1a1a;
+  padding: 5px 0;
+}
+
+.host-welcome {
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.host-welcome h2 {
+  max-width: 600px;
+}
+
+.host-welcome article {
+  flex: calc(100% - 560px);
+  max-width: calc(100% - 560px);
+}
+
+.host-welcome figure {
+  flex: 510px;
+  max-width: 510px;
+}
+
+.three-steps {
+  margin: 0 auto;
+  padding: 0 0 100px 0;
+  text-align: center;
+}
+
+.three-steps h2 {  
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.step-container {
+  margin: 70px auto 0 auto;
+  padding: 0;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.step-container .step-box {
+  flex: 33.333%;
+  max-width: 33.333%;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+  padding: 30px;
+}
+
+.step-container .step-box figure {
+  margin: -84px auto 20px auto;
+}
+
+.why-hosts {
+  margin: 0 auto;
+  padding: 100px 0;
+  background-color: #d2cfd2;
+}
+
+.testimonials {
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.faq-section {
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.get-in-touch {
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Tab view*/
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 760px) {
+  .host-bg .banner-content {
+    padding: 50px 15px;
+    min-height: 200px;
+  }
+
+  .host-bg .banner-content h1 {
+    font-size: 24px;
+  }
+
+  .host-bg .banner-content h6 {
+    font-size: 16px;
+  }
+
+  .host-content h2 {
+    font-size: 24px;
+  }
+
+  .host-content h4 {
+    font-size: 20px;
+  }
+
+  .host-content p {
+    font-size: 15px;
+  }
+
+  .host-welcome {
+    padding: 30px 15px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .host-welcome article {
+    flex: calc(100% - 0px);
+    max-width: calc(100% - 0px);
+  }
+
+  .host-welcome figure {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .three-steps {
+    padding: 0 0 30px 0;
+  }
+  
+  .three-steps h2 {  
+    padding: 0 15px;
+  }
+  
+  .step-container {
+    margin: 70px auto 0 auto;
+    padding: 0;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .step-container .step-box {
+    flex: 33.333%;
+    max-width: 33.333%;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+    padding: 30px;
+  }
+  
+  .step-container .step-box figure {
+    margin: -84px auto 20px auto;
+  }
+  
+  .why-hosts {
+    margin: 0 auto;
+    padding: 100px 0;
+    background-color: #d2cfd2;
+  }
+  
+  .testimonials {
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+  
+  .faq-section {
+    margin: 0 auto;
+    padding: 100px 0;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .get-in-touch {
+    margin: 0 auto;
+    padding: 100px 0;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
 }
 
 /* Desktop view */

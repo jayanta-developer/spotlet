@@ -28,6 +28,7 @@
 .careers-content h2 {
   font-size: 32px;
   font-weight: 700;
+  line-height: 38px;
   color: #2d2d2d;
   padding: 5px 0;
 }
@@ -42,19 +43,22 @@
 .careers-content h4 {
   font-size: 25px;
   font-weight: 700;
+  line-height: 29px;
   color: #2d2d2d;
   padding: 5px 0;
 }
 
 .careers-content h5 {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
+  line-height: 22px;
   color: #2d2d2d;
 }
 
 .careers-content p {
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 300;
+  line-height: 27px;
   color: #1a1a1a;
   padding: 5px 0;
 }

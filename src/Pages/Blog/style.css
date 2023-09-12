@@ -30,12 +30,14 @@
 .banner-content h1 {
   font-size: 42px;
   font-weight: 700;
+  line-height: 50px;
   color: #ffffff;
 }
 
 .banner-content h6 {
   font-size: 18px;
   font-weight: 400;
+  line-height: 24px;
   color: #ffffff;
   max-width: 700px;
 }
@@ -53,6 +55,14 @@
   padding: 15px 0 0 0;
 }
 
+.blog-content h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #143146;
+  padding: 15px 0 0 0;
+}
+
 .blog-content h6 {
   font-size: 18px;
   font-weight: 700;
@@ -63,8 +73,13 @@
 .blog-content p {
   font-size: 17px;
   font-weight: 400;
-  color: #143146;
+  line-height: 25px;
+  color: #393939;
   padding: 5px 0;
+}
+
+.css-lqq3n7-MuiButtonBase-root-MuiPaginationItem-root {
+  border-color: #1C1C1C !important;
 }
 
 .blog-top {
@@ -176,16 +191,19 @@
   display: inline-block;
   margin-right: 30px;
   font-size: 14px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #000000;
 }
 
 .readmore {
   margin-top: 10px !important;
-  font-size: 17px !important;
+  font-size: 16px !important;
   font-weight: 600 !important;
   background-color: #ea4335 !important;
   border-radius: 10px !important;
   text-transform: none !important;
-  box-shadow: none !important;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.10) !important;
 }
 
 .blog-bot {
@@ -197,7 +215,9 @@
 .blog-bot .css-lqq3n7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
   background-color: #ea4335 !important;
   color: #ffffff !important;
+  border-color: #ea4335 !important;
 }
+
 .blogHeader {
   font-size: 25px !important;
 }
@@ -221,6 +241,18 @@
     padding: 30px 15px;
   }
 
+  .blog-content h4 {
+    font-size: 20px;
+  }
+
+  .blog-content p {
+    font-size: 15px;
+  }
+
+  .readmore {
+    font-size: 14px !important;
+  }
+
   .blog-top {
     flex-direction: column;
     width: 100%;
@@ -238,22 +270,27 @@
     display: flex;
     justify-content: center;
   }
+
   .blog {
     margin: 15px auto;
     padding: 15px;
     flex-wrap: wrap;
   }
+
   .blog .figure {
     width: 100%;
     flex: 100%;
   }
+
   .blog .article {
     width: calc(100% - 0);
     flex: 100%;
   }
+
   .blog-content h2 {
     font-size: 24px;
   }
+
   .blogfilter .search::after {
     right: -5px;
   }
@@ -288,10 +325,12 @@
   .blog-content {
     padding: 50px 15px;
   }
+
   .blogHeader {
     font-size: 32px !important;
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .blogHeader {
     font-size: 32px !important;

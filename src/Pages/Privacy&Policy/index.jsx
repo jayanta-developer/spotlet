@@ -31,61 +31,76 @@ export default function Policy() {
             1. SpotLet Privacy Policy
           </Typography>
           <Typography variant="body1" gutterBottom>
-            SpotLet operates as an online platform that bridges the gap between
-            property listers who possess rental properties and renters searching
-            for such spaces to accommodate various purposes, including but not
-            limited to motion pictures, television, and diverse creative
-            productions (collectively referred to as the "Services"). These
-            Services are conveniently accessible through SpotLet.in and other
-            associated websites through which SpotLet extends its offerings
-            (collectively termed the "Site").
+            SpotLet operates as an online platform that{" "}
+            <span className="span600">bridges the gap between</span> property
+            listers who possess rental properties and renters searching for such
+            spaces to accommodate various purposes, including but not limited to
+            motion pictures, television, and diverse{" "}
+            <span className="span600">creative productions</span> (collectively
+            referred to as the "Services").{" "}
+            <span className="span600">These Services are conveniently</span>{" "}
+            accessible through SpotLet.in and other associated websites through
+            which SpotLet extends its offerings (collectively termed the
+            "Site").
           </Typography>
           <Typography variant="body1" gutterBottom>
-            The primary objective of this Privacy Policy is to apprise you of
-            our approach to handling Personal Information that we gather from
-            you and about you. Should any aspect of this Privacy Policy be in
-            disagreement with your preferences, we regretfully will be unable to
-            provide you access to our Site or Services. In such instances, we
-            kindly urge you to deactivate your account and abstain from
-            utilizing any component of our Site.
+            The primary objective of this Privacy Policy is to{" "}
+            <span className="span600">apprise you of our approach</span> to
+            handling Personal Information that we gather from you and about you.
+            Should any aspect of this Privacy Policy be in disagreement with
+            your preferences, we regretfully will be unable to{" "}
+            <span className="span600">provide you access to our Site</span> or
+            Services. In such instances, we kindly urge you to deactivate your
+            account and abstain from utilizing any component of our Site.
           </Typography>
           <Typography variant="h2" gutterBottom>
             2. Definitions
           </Typography>
           <Typography variant="body1" gutterBottom>
-            For the purpose of this Privacy Policy, terms such as "Listing,"
-            "Property," "Content," etc., shall carry the meanings defined in our
-            Terms of Service.
+            For the purpose of this{" "}
+            <span className="span600">
+              Privacy Policy, terms such as "Listing," "Property," "Content,"
+              etc.
+            </span>{" "}
+            , shall carry the meanings defined in our Terms of Service.
           </Typography>
           <Typography variant="body1">
             <ol>
               <li>
-                "Affiliates" refers to companies that share common ownership or
-                control. Such entities encompass both financial and
+                {" "}
+                <span className="span600">"Affiliates"</span> refers to
+                companies that share common ownership or control. Such entities
+                encompass both financial and non-financial companies.
+              </li>
+              <li>
+                {" "}
+                <span className="span600">"Aggregated Information"</span>{" "}
+                pertains to data concerning all users or specific
+                groups/categories of users that are combined in a manner that
+                prevents the identification or reference of individual users.
+              </li>
+              <li>
+                {" "}
+                <span className="span600">"Data Controller"</span> signifies
+                SpotLet, the company responsible for the utilization and
+                processing of Personal Information.
+              </li>
+              <li>
+                {" "}
+                <span className="span600">"Third Parties"</span> denotes
+                companies or individuals who lack common ownership or control
+                (i.e., non-affiliates) or individuals unrelated to you and
+                SpotLet. This category encompasses both financial and
                 non-financial companies.
               </li>
               <li>
-                "Aggregated Information" pertains to data concerning all users
-                or specific groups/categories of users that are combined in a
-                manner that prevents the identification or reference of
-                individual users.
-              </li>
-              <li>
-                "Data Controller" signifies SpotLet, the company responsible for
-                the utilization and processing of Personal Information.
-              </li>
-              <li>
-                "Third Parties" denotes companies or individuals who lack common
-                ownership or control (i.e., non-affiliates) or individuals
-                unrelated to you and SpotLet. This category encompasses both
-                financial and non-financial companies.
-              </li>
-              <li>
-                "Personal Information" encompasses information, including
-                sensitive details, pertaining to a living individual. This
-                information either identifies the individual directly or can do
-                so when combined with other information likely to come into the
-                possession of the Data Controller.
+                {" "}
+                <span className="span600">"Personal Information"</span>{" "}
+                encompasses information, including sensitive details, pertaining
+                to a living individual. This information either identifies the
+                individual directly or can do so when combined with other
+                information likely to come into the possession of the Data
+                Controller.
               </li>
             </ol>
           </Typography>
@@ -134,21 +149,27 @@ export default function Policy() {
             Mobile Data
           </Typography>
           <Typography variant="body1" gutterBottom>
-            If you use certain Site features, we may collect varying types of
-            location information, such as general details (e.g., IP address, zip
-            code) and more precise data (e.g., GPS-based information from mobile
-            devices). Should you wish to prevent your device from providing
-            location data, you can disable GPS or similar functions, subject to
-            your device's capabilities. Refer to your device manufacturer's
-            guidelines for specifics.
+            If you use certain Site features, we may collect{" "}
+            <span className="span600">
+              varying types of location information
+            </span>{" "}
+            , such as general details (e.g., IP address, zip code) and more
+            precise data (e.g., GPS-based information from mobile devices).
+            Should you wish to prevent your device from providing location data,
+            you can disable GPS or similar functions, subject to{" "}
+            <span className="span600">your device's capabilities</span> . Refer
+            to your device manufacturer's guidelines for specifics.
           </Typography>
           <Typography variant="subtitle2" gutterBottom>
             Log Data
           </Typography>
 
           <Typography variant="body1" gutterBottom>
-            Our servers automatically record Log Data whenever you access the
-            Site, regardless of registration or login status. Log Data includes
+            Our servers automatically record{" "}
+            <span className="span600">
+              Log Data whenever you access the Site
+            </span>{" "}
+            , regardless of registration or login status. Log Data includes
             information like your IP address, access time, hardware and software
             details, exit pages, clicks, device event data, pages viewed, and
             time spent on specific pages.
@@ -157,27 +178,36 @@ export default function Policy() {
             Cookies and Other Tracking Technologies
           </Typography>
           <Typography variant="body1" gutterBottom>
-            SpotLet employs cookies and comparable technologies (e.g., device
-            identifiers) on the Site. We may also permit business partners to
-            use their tracking technologies on the Site. Consequently, using the
-            Site enables you to provide information to us and our business
-            partners.
+            {" "}
+            <span className="span600">SpotLet</span> employs{" "}
+            <span className="span600">cookies and comparable technologies</span>{" "}
+            (e.g., device identifiers) on the Site. We may also permit business
+            partners to use their tracking technologies on the Site.
+            Consequently, using the Site enables you to provide information to
+            us and our business partners.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            While browser settings allow you to disable cookies, we don't modify
-            our practices based on a "Do Not Track" signal in HTTP headers. We
-            track your actions when you click on SpotLet service ads on
-            Third-Party platforms like search engines and social networks. This
-            tracking helps us enhance your experience.
+            While browser{" "}
+            <span className="span600">
+              settings allow you to disable cookies
+            </span>{" "}
+            , we don't modify our practices based on a "Do Not Track" signal in
+            HTTP headers. We track your actions when you click on{" "}
+            <span className="span600">SpotLet</span> service ads on Third-Party
+            platforms like search engines and social networks. This tracking
+            helps us enhance your experience.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            Furthermore, we may continue to track your behavior on our Site for
+            Furthermore, we may continue to{" "}
+            <span className="span600">track your behavior</span> on our Site for
             purposes like customer support, analytics, research, product
             development, fraud prevention, and more. This tracking also aids in
-            marketing and advertising our services on the Site and Third-Party
-            platforms. Third Parties that use cookies for targeted ads may
-            provide opt-out options via industry group websites. Please note
-            that even if you opt-out, you might still receive untargeted ads.
+            marketing and advertising our services on the{" "}
+            <span className="span600">Site and Third-Party platforms</span> .
+            Third Parties that use cookies for targeted ads{" "}
+            <span className="span600">may provide opt-out options</span> via
+            industry group websites. Please note that even if you opt-out, you
+            might still receive untargeted ads.
           </Typography>
           <Typography variant="subtitle2" gutterBottom>
             Third-Party Social Plugins
@@ -195,56 +225,77 @@ export default function Policy() {
             Communications
           </Typography>
           <Typography variant="body1" gutterBottom>
-            By using our services, you explicitly provide your consent to
-            receive communications from SpotLet and its representatives. These
-            communications may include emails, telephone calls, text messages
+            By using our services, you explicitly provide your consent to{" "}
+            <span className="span600">receive communications from SpotLet</span>{" "}
+            and its representatives. These communications may include{" "}
+            <span className="span600">
+              emails, telephone calls, text messages
+            </span>{" "}
             (via an automatic telephone dialing system or prerecorded voice),
             push notifications, or equivalent methods. Such communications may
-            be directed to any of the email addresses and/or telephone numbers
-            provided by you or on your behalf to SpotLet.
+            be directed to any of the email addresses and/or{" "}
+            <span className="span600">telephone numbers provided</span> by you
+            or on your behalf to SpotLet.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            You acknowledge that these authorized communications could be
+            You acknowledge that these{" "}
+            <span className="span600">authorized communications</span> could be
             initiated for various purposes, including transactional, customer
             service, advertising, marketing, promotional, debt collection,
-            account administration, and other relevant reasons. Please note that
-            your consent to receive prerecorded or autodialed promotional,
-            advertising, or marketing (collectively referred to as "Marketing")
-            calls or text messages is not a mandatory requirement for purchasing
-            any property, goods, or services.
+            account administration, and other{" "}
+            <span className="span600">
+              relevant reasons. Please note that your consent
+            </span>{" "}
+            to receive prerecorded or autodialed{" "}
+            <span className="span600">
+              promotional, advertising, or marketing
+            </span>{" "}
+            (collectively referred to as "Marketing") calls or text messages is
+            not a mandatory requirement for purchasing any property, goods, or
+            services.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            Should you wish to opt out of receiving marketing calls, emails, or
-            text messages from us, you agree to initiate the opt-out process by
-            following any unsubscribe instructions provided in the
-            communications. Alternatively, you can reach out to our Customer
-            Success team at contact@SpotLet.info for assistance. If you receive
-            a marketing call and wish to opt out, you can convey a do-not-call
-            request to our representative before ending the call.
+            Should you wish to opt out of receiving marketing{" "}
+            <span className="span600">
+              calls, emails, or text messages from us, you agree
+            </span>{" "}
+            to initiate the opt-out process by following any unsubscribe
+            instructions{" "}
+            <span className="span600">provided in the communications</span> .
+            Alternatively, you can reach out to our Customer Success team at
+            contact@SpotLet.info for assistance. If you receive a marketing call
+            and wish to opt out, you can convey a do-not-call request to our
+            representative before ending the call.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            It's important to note that SpotLet and our representatives won't be
-            held responsible for honoring opt-out requests made through other
-            channels. If you want to register for a SpotLet account without
-            agreeing to receive autodialed or prerecorded marketing calls or
-            text messages, you can seek assistance from our Customer Success
-            representative at contact@SpotLet.info.
+            It's important to note that SpotLet and our{" "}
+            <span className="span600">
+              representatives won't be held responsible
+            </span>{" "}
+            for honoring opt-out requests made through other channels. If you
+            want to register for a SpotLet account without agreeing to receive
+            autodialed or prerecorded marketing calls or text messages, you can
+            seek assistance from our Customer Success representative at{" "}
+            <span className="span600">contact@SpotLet.info</span> .
           </Typography>
           <Typography variant="body1" gutterBottom>
-            Please be aware that standard text messaging and data charges
-            imposed by your wireless service provider may apply to the text
-            messages we send. By providing any telephone number to us in
-            connection with your account or use of our services, you affirm that
-            you have the authority to consent to the receipt of calls and text
-            messages at that number, as well as the associated carrier charges.
+            {" "}
+            <span className="span600">Please be aware that standard</span> text
+            messaging and data charges imposed by your wireless service provider
+            may apply to the text messages we send. By providing any telephone
+            number to us in connection with your{" "}
+            <span className="span600">account or use of our services</span> ,
+            you affirm that you have the authority to consent to the receipt of
+            calls and text messages at that number, as well as the associated
+            carrier charges.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            Kindly note that even if you opt out of marketing communications,
-            SpotLet may continue to send you communications concerning your
-            account, transactions, and interactions with other users of the
-            platform, including services provided or received. Opting out of
-            receiving text messages or other communications may impact your use
-            of our services.
+            Kindly note that even if you opt out of marketing communications,{" "}
+            <span className="span600">SpotLet may continue</span> to send you
+            communications concerning your account, transactions, and
+            interactions with other users of the platform, including services
+            provided or received. Opting out of receiving text messages or other
+            communications may impact your use of our services.
           </Typography>
           <Typography variant="h2" gutterBottom>
             5. What We Do With The Information We Gather
@@ -305,31 +356,45 @@ export default function Policy() {
             B. SpotLet's Use and Processing of User Communications
           </Typography>
           <Typography variant="body1" gutterBottom>
-            We may, whether directly or through Third Parties engaged to assist
-            us, review, scan, or analyze the communications exchanged between
-            you and other users via the Site. This review serves purposes like
-            fraud prevention, risk assessment, regulatory compliance,
-            investigation, product development, research, and customer support.
+            We may, whether directly or through{" "}
+            <span className="span600">
+              Third Parties engaged to assist us, review, scan
+            </span>{" "}
+            , or analyze the communications exchanged between you and other
+            users via the Site. This review serves purposes like fraud
+            prevention, risk assessment, regulatory compliance, investigation,
+            product development, research, and customer support.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            For instance, to prevent misleading project descriptions by Renters
-            or to prevent fraudulent Listers from seeking payments outside the
-            Site, the Site may scan and analyze messages as part of our fraud
-            prevention efforts. Additionally, we may analyze messages for
-            research and product development, aiming to enhance the efficiency
-            and effectiveness of search, booking, and user interactions, and to
-            improve and expand our range of offerings.
+            {" "}
+            <span className="span600">
+              For instance, to prevent misleading project
+            </span>{" "}
+            descriptions by Renters or to prevent fraudulent Listers from
+            seeking payments outside the Site, the Site may scan and analyze
+            messages as part of our fraud prevention efforts. Additionally, we
+            may analyze{" "}
+            <span className="span600">messages for research and product</span>{" "}
+            development, aiming to enhance the efficiency and effectiveness of
+            search, booking, and user interactions, and to improve and expand
+            our range of offerings.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            We assure you that we will not review, scan, or analyze your
-            communications for sending Third-Party marketing messages. Moreover,
-            we will not sell the results of these communication reviews or
-            analyses to Third Parties. We may also employ automated methods for
-            these reviews or analyses, where feasible. However, on occasion,
-            manual review may be necessary. By using the Site, you consent to
-            SpotLet's right, at its sole discretion, to review, scan, analyze,
-            and store your communications, either directly or through engaged
-            Third Parties. These reviews may be conducted manually or through
+            We assure you that we will not{" "}
+            <span className="span600">
+              review, scan, or analyze your communications
+            </span>{" "}
+            for sending Third-Party marketing messages. Moreover, we will not
+            sell the results of these communication reviews or analyses to Third
+            Parties. We may also employ automated methods for these reviews or
+            analyses, where feasible. However, on occasion, manual review may be
+            necessary. By using the Site, you consent to SpotLet's right, at its
+            sole{" "}
+            <span className="span600">
+              discretion, to review, scan, analyze, and store
+            </span>{" "}
+            your communications, either directly or through engaged Third
+            Parties. These reviews may be conducted manually or through
             automated processes.
           </Typography>
           <Typography variant="h2" gutterBottom>
@@ -474,27 +539,33 @@ export default function Policy() {
             7. Business Transfers by SpotLet
           </Typography>
           <Typography variant="body1" gutterBottom>
-            If SpotLet engages in or is part of any merger, acquisition,
-            reorganization, asset sale, bankruptcy, or insolvency event, it is
-            possible that we may sell, transfer, or share some or all of our
-            assets, including your Personal Information. Should such a
-            circumstance arise, we will inform you prior to the transfer of your
-            Personal Information, and this transfer will be subject to a
-            distinct privacy policy.
+            {" "}
+            <span className="span600">
+              If SpotLet engages in or is part of any merger
+            </span>{" "}
+            , acquisition, reorganization, asset sale, bankruptcy, or insolvency
+            event, it is possible that we may sell, transfer, or share some or
+            all of our assets, including your Personal Information.{" "}
+            <span className="span600">Should such a circumstance</span> arise,
+            we will inform you prior to the transfer of your Personal
+            Information, and this transfer will be subject to a distinct privacy
+            policy.
           </Typography>
           <Typography variant="h2" gutterBottom>
             8. Accessing, Changing, or Deleting your Information and/or SpotLet
             Account
           </Typography>
           <Typography variant="body1" gutterBottom>
-            We are consistently enhancing and revising our administrative,
-            technical, and physical security protocols to safeguard your
-            Personal Information from unauthorized access, destruction, or
-            alteration. Nevertheless, it's important to note that no method of
-            transmitting data over the Internet or storing electronic
-            information can ensure absolute security. Therefore, we cannot
-            assure the complete security of the information you transmit to us
-            or the Personal Information we store.
+            You have the option to review, modify, rectify, or{" "}
+            <span className="span600">remove the Personal Information</span> in
+            your SpotLet account. If you wish to rectify your information or
+            deactivate your <span className="span600">SpotLet account</span> ,
+            you can accomplish this by logging into your SpotLet account or by
+            sending us an email. It's important to be aware that any reviews,
+            forum posts, or similar{" "}
+            <span className="span600">content authored by you might</span>{" "}
+            persistently remain publicly accessible on the Site, linked to your
+            first name, even if you choose to cancel your SpotLet account.
           </Typography>
           <Typography variant="h2" gutterBottom>
             9. Securing You Personal Information
@@ -526,10 +597,18 @@ export default function Policy() {
           <Typography variant="body1" gutterBottom>
             Some portions of the Site implement Google Maps/Earth mapping
             services, including Google Maps API(s). Your use of Google
-            Maps/Earth is subject to Google’s terms of use (located at
-            www.google.com/intl/en_us/help/terms_maps.html) and Google’s privacy
-            policy (located at www.google.com/privacy.html), and may be amended
-            by Google from time to time.
+            Maps/Earth is subject to Google’s terms of use{" "}
+            <a
+              href="www.google.com/intl/en_us/help/terms_maps.html"
+              target="_blank"
+            >
+              (located at www.google.com/intl/en_us/help/terms_maps.html)
+            </a>{" "}
+            and Google’s privacy policy{" "}
+            <a href="www.google.com/privacy.html" target="_blank">
+              (located at www.google.com/privacy.html)
+            </a>
+            , and may be amended by Google from time to time.
           </Typography>
           <Typography variant="h2" gutterBottom>
             11. Changes to this Privacy Policy
@@ -556,21 +635,25 @@ export default function Policy() {
             12. Feedback
           </Typography>
           <Typography variant="body1" gutterBottom>
-            We welcome and encourage you to provide feedback, comments and
-            suggestions for improvements to the Site and Services ("Feedback").
-            You may submit Feedback by emailing us, through the "Contact"
-            section of the Site, or by other means of communication. You
-            acknowledge and agree that all Feedback you give us will be the sole
-            and exclusive property of SpotLet and you hereby irrevocably assign
-            to SpotLet and agree to irrevocably assign to SpotLet all of your
-            right, title, and interest in and to all Feedback, including without
-            limitation all worldwide patent, copyright, trade secret, moral and
-            other proprietary or intellectual property rights therein, and waive
-            any moral rights you may have in such Feedback. At SpotLet's request
-            and expense, you will execute documents and take such further acts
-            as SpotLet may reasonably request to assist SpotLet to acquire,
-            perfect, and maintain its intellectual property rights and other
-            legal protections for the Feedback.
+            We welcome and encourage you to provide{" "}
+            <span className="span600">feedback, comments and suggestions</span>{" "}
+            for improvements to the Site and Services ("Feedback"). You may
+            submit Feedback by emailing us, through the "Contact" section of the
+            Site, or by other means of communication. You acknowledge and agree
+            that all Feedback you give us will be the sole and exclusive
+            property of SpotLet and you hereby irrevocably assign to{" "}
+            <span className="span600">SpotLet and agree to irrevocably</span>{" "}
+            assign to SpotLet all of your right, title, and{" "}
+            <span className="span600">interest in and to all Feedback</span> ,
+            including without limitation all worldwide patent, copyright, trade
+            secret, moral and other proprietary or intellectual property rights
+            therein, and waive any moral rights you may have in such Feedback.
+            At <span className="span600">SpotLet's request and expense</span> ,
+            you will execute documents and take such further acts as SpotLet may
+            reasonably request to assist{" "}
+            <span className="span600">SpotLet to acquire</span> , perfect, and
+            maintain its intellectual property rights and other legal
+            protections for the Feedback.
           </Typography>
         </Box>
       </Box>

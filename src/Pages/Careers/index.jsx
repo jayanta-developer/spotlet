@@ -187,12 +187,9 @@ export default function Careers() {
                   Join Us in Making Every Event and Production Unforgettable
                 </Typography>
                 <Typography variant="body1">
-                  SpotLet is more than a service - it's a movement that
-                  celebrates creativity, connection, and the magic of spaces.
-                  Whether you're a guest seeking the perfect location or a host
-                  eager to showcase your property, you're part of our story.
-                  Join us on this exhilarating journey as we continue to reshape
-                  the way spaces are perceived, experienced, and shared.
+                  our skills and passion could be the missing piece to our
+                  puzzle. Come be a part of SpotLet's story and help shape the
+                  future of exceptional event and production spaces.
                 </Typography>
               </article>
               <aside>

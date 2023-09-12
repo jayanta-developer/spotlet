@@ -40,16 +40,23 @@ export default function CreateCoupon() {
           <Box className="CouponFB FirstInnerBox">
 
             <Box className="cupInputBox couponNameBox">
-
               <Box className="coupon couponNameInputFieldBox">
                 <Typography className='InputLabelText'>Coupon Name</Typography>
                 <TextField placeholder='Enter your coupon name' />
               </Box>
+
+              <Box className="coupon couponIdInputFieldBox inputLeftMargin">
+                <Typography className='InputLabelText'>Coupon ID</Typography>
+                <TextField placeholder='1GR589POIUY8956' />
+              </Box>
+            </Box>
+
+            <Box className="cupInputBox">
               <Box className="coupon couponTypeInputFieldBox">
                 <Typography className='InputLabelText'>Coupon Type</Typography>
                 <TextField placeholder='Enter coupon type' value={couponVal} />
                 <img onClick={() => setCouponPopUp(!couponPopUp)} src={downArrowFill} className='CouponTypeDArrow' />
-                {/* drop down */}
+
                 <Box sx={{ display: couponPopUp ? "flex" : "none" }} className="CouponTypeDBox">
                   {
                     coupon_Type?.map((el) => (
@@ -60,45 +67,35 @@ export default function CreateCoupon() {
                   }
                 </Box>
               </Box>
-              <Box className="coupon couponNameInputFieldBox couponAmountMobile">
+
+              <Box className="coupon inputLeftMargin">
                 <Typography className='InputLabelText'>Coupon Amount / Discount %</Typography>
                 <TextField placeholder='Enter your coupon name' />
               </Box>
+            </Box>
+
+            <Box className="cupInputBox">
               <Box className="coupon couponMinimumBookingInputFieldBox">
                 <Typography className='InputLabelText'>Minimum booking</Typography>
                 <TextField placeholder='Minimum booking' />
               </Box>
 
-            </Box>
-
-            <Box className="cupInputBox couponIdBox">
-
-              <Box className="coupon couponIdInputFieldBox">
-                <Typography className='InputLabelText'>Coupon ID</Typography>
-                <TextField placeholder='1GR589POIUY8956' />
-              </Box>
-              <Box className="coupon couponNameInputFieldBox couponAmountDesktop coupon">
-                <Typography className='InputLabelText'>Coupon Amount / Discount</Typography>
-                <TextField placeholder='Enter your coupon name' />
-              </Box>
-              <Box className="coupon couponActivationDateInputFieldBox">
+              <Box className="coupon couponActivationDateInputFieldBox inputLeftMargin">
                 <Typography className='InputLabelText'>Activation Date</Typography>
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
                   <DatePicker />
                 </LocalizationProvider>
               </Box>
 
-            </Box>
 
-            <Box className="cupInputBox couponExpiryBox">
-              <Box className="coupon couponActivationDateInputFieldBox">
-                <Typography className='InputLabelText'>Expiry Date</Typography>
-                <LocalizationProvider dateAdapter={AdapterDayjs}>
-                  <DatePicker />
-                </LocalizationProvider>
+              <Box className="cupInputBox couponExpiryBox inputLeftMarginLast">
+                <Box className="coupon couponActivationDateInputFieldBox">
+                  <Typography className='InputLabelText'>Expiry Date</Typography>
+                  <LocalizationProvider dateAdapter={AdapterDayjs}>
+                    <DatePicker />
+                  </LocalizationProvider>
+                </Box>
               </Box>
-
-
             </Box>
           </Box>
 
@@ -143,20 +140,17 @@ export default function CreateCoupon() {
                   <Typography className='InputLabelText'>Specific to Booking ID</Typography>
                   <TextField placeholder='1GR589POIUY8956' />
                 </Box>
-              </Box>
-              <Box className="cupInputBox couponIdBox">
-                <Box className="coupon couponLocationIDInputFieldBox  ">
+
+                <Box className="coupon couponLocationIDInputFieldBox inputLeftMargin ">
                   <Typography className='InputLabelText'>Specific to Location ID</Typography>
                   <TextField placeholder='1GR589POIUY8956' />
                 </Box>
-              </Box>
-              <Box className="cupInputBox couponIdBox">
-                <Box className="coupon couponEmailIDInputFieldBox ">
+
+                <Box className="coupon couponEmailIDInputFieldBox inputLeftMarginLast">
                   <Typography className='InputLabelText'>Specific to User Email ID</Typography>
                   <TextField placeholder='info@ert.com' />
                 </Box>
               </Box>
-
             </Box>
             <Box className="CouponButtonBox">
               <Box className="couponCancelBtn pointer">

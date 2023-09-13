@@ -432,7 +432,7 @@
   }
 
   .faq-section .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
-    margin: 10px auto !important  ;
+    margin: 10px auto !important;
   }
 
   .get-in-touch .submit {
@@ -607,12 +607,14 @@
     min-height: 670px;
   }
 }
+
 .testimonials {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .testimonialsSlideContainer {
   width: 100%;
   height: auto;
@@ -622,9 +624,10 @@
   align-items: center;
   justify-content: center;
 }
+
 .testimonialsCard {
   width: 100%;
-  height: 450px;
+  height: auto;
   border-radius: 20px;
   background: #f6f5f8;
   display: flex;
@@ -632,6 +635,7 @@
   padding: 35px 42px;
   margin: 20px 10px;
 }
+
 .testimonialsCardSubText {
   color: #737373 !important;
   font-family: "Poppins-Regular" !important;
@@ -641,10 +645,12 @@
   line-height: 30px !important;
   margin-bottom: 27px !important;
 }
+
 .userInfoBox {
   display: flex;
   flex-direction: row;
 }
+
 .userProfilePic {
   width: 64px;
   height: 64px;
@@ -654,6 +660,7 @@
   background: #ea4335;
   border-radius: 50%;
 }
+
 .userProfilePic p {
   color: #fff;
   font-family: Suranna !important;
@@ -662,6 +669,7 @@
   font-weight: 400 !important;
   line-height: 30px !important;
 }
+
 .User_name {
   color: #0e0e0e !important;
   font-family: "Poppins-Regular" !important;
@@ -671,6 +679,7 @@
   line-height: 34px !important;
   padding: 0 !important;
 }
+
 .userRole {
   color: #737373 !important;
   font-family: "Poppins-Regular" !important;
@@ -680,11 +689,13 @@
   line-height: 30px !important;
   padding: 0 !important;
 }
+
 .blueTik {
   position: absolute;
   top: 8px;
   right: -26px;
 }
+
 .testimonialsArrow {
   display: none !important;
 }
@@ -694,15 +705,18 @@
   .testimonialsCardSubText {
     font-size: 14px !important;
   }
+
   .testimonialsCard {
     width: 364px;
-    height: 393px;
+    height: auto;
     padding: 13px 17px;
     margin: 0 10px;
   }
+
   .testimonialsArrow {
     display: block !important;
   }
+
   .testimonialsSlideContainer {
     flex-direction: row;
   }
@@ -713,11 +727,13 @@
   .testimonialsCardSubText {
     font-size: 17px !important;
   }
+
   .testimonialsCard {
     width: 635px;
-    height: 365px;
+    height: auto;
     padding: 35px 42px;
   }
+
   .testimonialsSlideContainer {
     width: 90%;
   }

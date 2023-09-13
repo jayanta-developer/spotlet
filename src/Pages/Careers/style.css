@@ -531,3 +531,12 @@
     padding: 100px 15px;
   }
 }
+@media only screen and (max-width: 760px) {
+  .applyFileInputBox {
+    height: auto;
+    padding: 15px 15px 0 15px;
+  }
+  .applyFileInputBox p {
+    text-align: center;
+  }
+}

@@ -22,6 +22,7 @@ import Guest from "./Pages/Guest";
 import Host from "./Pages/Host";
 import Terms from "./Pages/Terms&Conditions";
 import Policy from "./Pages/Privacy&Policy";
+import LandingPage from "./Pages/LandingPage";
 
 export default function App() {
   return (
@@ -47,6 +48,7 @@ export default function App() {
         <Route path="/host" element={<Host />} />
         <Route path="/Terms-and-Conditions" element={<Terms />} />
         <Route path="/Privacy-Policy" element={<Policy />} />
+        <Route path="/LandingPage" element={<LandingPage />} />
       </Routes>
     </>
   );

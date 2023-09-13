@@ -1,0 +1,315 @@
+.landingpageContainer {
+  width: 100%;
+  margin-top: 96px;
+}
+
+.landingpage-banner {
+  background-color: black;
+  position: relative;
+  z-index: 1;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.landingpage-banner .banner-content {
+  padding: 150px 0;
+  margin: 0 auto;
+  max-width: 1300px;
+  min-height: 980px;
+}
+
+.landingpage-banner .banner-content h1 {
+  font-size: 62px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 70px;
+  padding: 100px 0 250px 0;
+}
+
+.landingpage-banner .span700 {
+  display: block;
+}
+
+.banner-search {
+  padding: 30px 0;
+  border-radius: 19px;
+  border: 1px solid #EA4335;
+  background: #FFF;
+}
+
+.banner-search ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-search ul li.select-input {
+  margin: 0;
+  padding: 10px 30px;
+  border-right: 1px solid #e4e4e4;
+  flex: 21%;
+  max-width: 21%;
+  position: relative;
+}
+
+.banner-search ul li.select-button {
+  margin: 0;
+  padding: 10px 30px;
+  flex: 16%;
+  max-width: 16%;
+}
+
+.banner-search .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 0 !important;
+  padding-right: 32px !important;
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+.banner-search .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+.banner-search .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  line-height: 30px !important;
+  color: #444444 !important;
+}
+
+.banner-search .css-1wc848c-MuiFormHelperText-root {
+  margin: 0 !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+  color: #999999 !important;
+}
+
+.btn-search {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  width: 100% !important;
+  background-color: #ea4335 !important;
+  border-radius: 7px !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+  padding: 10px 30px !important;
+}
+
+.landingpage-content {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.landingpage-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333333;
+  line-height: 48px;
+  padding: 5px 0;
+}
+
+.landingpage-content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2d2d2d;
+  padding: 5px 0;
+}
+
+.landingpage-content h4 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #2d2d2d;
+  padding: 5px 0;
+}
+
+.landingpage-content p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #1a1a1a;
+  padding: 5px 0;
+}
+
+.film-shooting {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.text-stroke {
+  margin: 0 auto !important;
+  width: fit-content;
+  text-align: center;
+  font-size: 50px !important;
+  font-weight: 700 !important;
+  line-height: 75px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.09em !important;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 1px #333333;
+  opacity: 0.3;
+}
+
+.mar-t60 {
+  margin-top: -60px !important;
+  position: relative;
+  z-index: 9;
+}
+
+.tabs-container {
+  margin: 50px auto 0 auto;
+  padding: 0;
+  max-width: 1300px;
+}
+
+.tabs-film-shooting {
+  border-radius: 12px;
+  background: rgba(234, 67, 53, 0.05);
+
+}
+
+.tabs-film-shooting .css-heg063-MuiTabs-flexContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tabs-film-shooting .css-h0q0iv-MuiButtonBase-root-MuiTab-root {
+  color: #444 !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  text-transform: none !important;
+  padding: 20px !important;
+  flex: 33.333%; 
+  max-width: 33.333%;
+}
+
+.tabs-film-shooting .css-h0q0iv-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  background-color: #EA4335 !important;
+  color: #ffffff !important;
+  position: relative;
+}
+
+.tabs-film-shooting .css-h0q0iv-MuiButtonBase-root-MuiTab-root.Mui-selected:after {
+  position: absolute;
+	top: 100%;
+	left: 50%;
+  z-index: 999;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;	
+	pointer-events: none;
+	border-color: rgba(234, 67, 53, 0);
+	border-top-color: #EA4335;
+	border-width: 15px;
+	margin-left: -15px;
+}
+
+.simple-3-step {
+  padding: 100px 0;
+  background-color: #f2f6f5;
+}
+
+.featured-properties {
+  padding: 100px 0;
+}
+
+.professional-services {
+  padding: 100px 0;
+}
+
+.top-rated-properties {
+  padding: 100px 0;
+}
+
+.why-choose-us {
+  padding: 100px 0;
+  background-color: #f2f6f5;
+}
+
+.recently-added-properties {
+  padding: 100px 0;
+}
+
+.client-testimonials {
+  padding: 100px 0;
+  background-color: #f2f6f5;
+}
+
+.recent-projects {
+  padding: 100px 0;
+}
+
+.project-video {
+  padding: 100px 0;
+}
+
+.spotlet-provides {
+  padding: 100px 0;
+}
+
+.post-property {
+  padding: 100px 0;
+}
+
+.host-your-spot {
+  padding: 100px 0;
+  background-color: #f2f6f5;
+}
+
+
+/* Mobile view*/
+@media only screen and (max-width: 760px) {
+  .landingpage-banner .banner-content {
+    padding: 50px 15px;
+    min-height: 200px;
+  }
+
+  .landingpage-banner .banner-content h1 {
+    font-size: 24px;
+  }
+
+  .landingpage-content h2 {
+    font-size: 24px;
+  }
+
+  .landingpage-content h4 {
+    font-size: 20px;
+  }
+
+  .landingpage-content p {
+    font-size: 15px;
+  }
+
+}
+
+/* Tab view*/
+@media only screen and (min-width: 761px) and (max-width: 1023px) {
+  .landingpage-banner .banner-content {
+    padding: 100px 15px;
+    min-height: 200px;
+  }
+
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1024px) and (max-width: 1320px) {
+  .landingpage-banner .banner-content {
+    padding: 100px 15px;
+    min-height: 200px;
+  }
+
+}

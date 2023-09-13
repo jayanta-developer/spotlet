@@ -44,9 +44,9 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-top: 23px;
+  /* padding-top: 23p/x; */
 }
-/* .mapBody {
+.mapBody {
   width: 94%;
   height: 258px;
   flex-shrink: 0;
@@ -56,6 +56,16 @@
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
   background-position: center;
   background-size: 100%;
+}
+/* .mapBodyBox > div > div:first-child {
+  position: relative;
+  top: -11px;
+  right: 0;
+} */
+
+/* .mapBodyBox > div > div:nth-child(2) {
+  left: 0px;
+  height: auto !important;
 } */
 
 @media only screen and (min-width: 768px) {
@@ -67,4 +77,12 @@
     width: 653px;
     height: 434px;
   }
+  /* .mapBodyBox > div > div:first-child {
+    position: relative;
+    top: -11px;
+  } */
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
 }

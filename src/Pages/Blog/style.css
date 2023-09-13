@@ -111,6 +111,7 @@
 
 .blogfilter .search {
   position: relative;
+  width: 365px;
 }
 
 .blogfilter .search::after {
@@ -291,7 +292,11 @@
   }
 
   .blogfilter .search::after {
-    right: 36px;
+    right: -5px;
+  }
+  .blogfilter .search {
+    position: relative;
+    width: 100%;
   }
 }
 
@@ -304,6 +309,10 @@
 
   .blog-content {
     padding: 30px 15px;
+  }
+  .blogfilter .search {
+    position: relative;
+    width: 291px;
   }
 }
 
@@ -328,7 +337,7 @@
   }
 }
 
-@media only screen and (min-width:1024px) and (max-width:1320px) {
+@media only screen and (min-width: 1024px) and (max-width: 1320px) {
   .banner-content {
     padding: 100px 15px;
     min-height: 200px;

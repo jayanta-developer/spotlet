@@ -524,4 +524,7 @@
   .productContainer {
     justify-content: space-between;
   }
+  .favoritesContainer {
+    max-width: 1329px;
+  }
 }

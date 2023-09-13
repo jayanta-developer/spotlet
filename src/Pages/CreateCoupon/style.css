@@ -45,9 +45,10 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: start;
 }
 .coupon {
+  width: 100%;
   height: 110px;
   display: flex;
   flex-direction: column;
@@ -57,6 +58,12 @@
 .coupon input {
   width: 393px !important;
   height: 18px !important;
+}
+.inputLeftMargin {
+  margin-left: 0px;
+}
+.inputLeftMarginLast {
+  margin-left: 0px;
 }
 .InputLabelText {
   color: #202020;
@@ -186,12 +193,6 @@
 .CDItems:hover {
   background: #ea44352f;
 }
-.couponAmountDesktop {
-  display: none !important;
-}
-.couponAmountMobile {
-  display: flex !important;
-}
 /* Tab view*/
 @media only screen and (min-width: 768px) {
   .CreateCouponBox {
@@ -201,7 +202,7 @@
   }
   .FirstInnerBox {
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     height: auto;
     padding: 10px;
     justify-content: center;
@@ -230,7 +231,9 @@
     justify-content: center;
   }
   .cupInputBox {
-    width: 393px;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
   .couponBookingIDInputFieldBox {
     width: 393px;
@@ -251,6 +254,12 @@
   .couponContainer {
     margin-top: 106px;
   }
+  .coupon {
+    width: 364px;
+  }
+  .inputLeftMargin {
+    margin-left: 20px;
+  }
 }
 /* Desktop view */
 @media only screen and (min-width: 1000px) {
@@ -261,6 +270,7 @@
   .FirstInnerBox {
     height: 363px;
     justify-content: space-between;
+    align-items: end;
   }
   .SecondFieldBox {
     justify-content: space-between;
@@ -282,10 +292,16 @@
   .couponContainer {
     margin-top: 145px;
   }
-  .couponAmountDesktop {
-    display: flex !important;
+  .coupon {
+    width: 396px;
   }
-  .couponAmountMobile {
-    display: none !important;
+  .cupInputBox {
+    flex-wrap: initial;
+  }
+  .inputLeftMargin {
+    margin-left: 20px;
+  }
+  .inputLeftMarginLast {
+    margin-left: 20px;
   }
 }

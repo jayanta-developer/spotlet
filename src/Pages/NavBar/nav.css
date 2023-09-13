@@ -171,7 +171,8 @@
   border-bottom: 1px solid #e2e5f0;
 }
 
-.notificationHeaderBox1 {}
+.notificationHeaderBox1 {
+}
 
 .notificationHeaderBox2 {
   display: flex;
@@ -185,7 +186,7 @@
   font-family: "Poppins-Regular" !important;
   font-size: 30px !important;
   font-style: normal;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   line-height: normal !important;
 }
 

@@ -84,7 +84,7 @@
 .why-work {
   margin: 0 auto;
   padding: 100px 0;
-  background-color: #f2f6f5;
+  background-color: #fffafa;
 }
 
 .work-container {
@@ -143,7 +143,7 @@
 .current-opernings {
   margin: 0 auto;
   padding: 100px 0;
-  background-color: #f2f6f5;
+  background-color: #fffafa;
 }
 
 .opernings-top {
@@ -273,7 +273,8 @@
   text-align: center;
 }
 
-.opernings-bot .css-lqq3n7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+.opernings-bot
+  .css-lqq3n7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
   background-color: #ea4335 !important;
   color: #ffffff !important;
 }
@@ -283,15 +284,14 @@
   border-radius: 30px;
 }
 
-.form-auto-scroll {
+/* .form-auto-scroll {
   max-height: 500px;
   overflow: auto;
-}
+} */
 
 .modalbox h5 {
   font-size: 18px;
   font-weight: 700;
-  padding: 0 0 10px 0;
 }
 
 .modalbox p {
@@ -400,6 +400,61 @@
   }
 }
 
+.form-box .two-column {
+  flex: 48% 1;
+  width: 48%;
+  padding: 5px 0 !important;
+}
+.applyInput {
+  color: #202020;
+  font-family: "Poppins-Regular" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 130% !important;
+}
+.modalbox {
+  position: relative;
+}
+.whiteCross {
+  position: absolute;
+  top: -21px;
+  right: -20px;
+  cursor: pointer;
+}
+.applyFileInputBox {
+  width: 100%;
+  height: 93px;
+  border-radius: 6px;
+  border: 1px solid #d3d3d3;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.dragText {
+  color: var(--greyscale-900, #212121);
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+  padding: 0 !important;
+}
+.bottomRedText {
+  color: #ea4335;
+  font-family: "Poppins-Regular" !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  line-height: 130% !important;
+  padding: 0 !important;
+}
+.hidden {
+  display: none;
+}
 /* Desktop view */
 @media only screen and (min-width: 761px) and (max-width: 1023px) {
   .join-team {

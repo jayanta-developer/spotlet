@@ -207,7 +207,7 @@ export default function Guest() {
           </Box>
           <Box className="testimonials">
             <Typography mb={3} variant="h2" gutterBottom>
-              Host Testimonials
+              SpotLet Testimonials
             </Typography>
             <Box className="testimonialsSlideContainer">
               <ArrowBackIosIcon className="testimonialsArrow" />

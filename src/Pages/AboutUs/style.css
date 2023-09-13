@@ -215,7 +215,6 @@
   padding: 15px 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .icon-content .icon {
@@ -229,6 +228,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 5px 0;
 }
 
 .icon-content .content {

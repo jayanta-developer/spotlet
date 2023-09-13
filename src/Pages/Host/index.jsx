@@ -37,7 +37,6 @@ export default function Host() {
     setExpanded(newExpanded ? panel : false);
   };
 
- 
 
   return (
     <>
@@ -181,7 +180,7 @@ export default function Host() {
           <Typography variant="h2" gutterBottom>
             Host Testimonials
           </Typography>
-
+          
           
         </Box>
         <Box className="join-us">

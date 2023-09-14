@@ -58,6 +58,7 @@ import Pimage3 from "../../Assets/images/properitiseImage/IMG-20221120-WA0148.jp
 //Components
 import NavBar from "../NavBar";
 import Footer from "../Footer";
+import { propertiesCard } from "../../Component/PropertiesCard";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -105,7 +106,56 @@ export default function LandingPage() {
     setValue(newValue);
   };
 
-  
+  let scrl = useRef(null);
+  const [scrollX, setscrollX] = useState(0);
+  const [scrolEnd, setscrolEnd] = useState(false);
+  const [scrolLeftEnd, setScrolLeftEnd] = useState(false);
+
+  const slide = (shift) => {
+    if (scrl.current.scrollLeft === 0) {
+      setScrolLeftEnd(true);
+    } else {
+      setScrolLeftEnd(false);
+    }
+
+    scrl.current.scrollLeft += shift;
+    setscrollX(scrollX + shift);
+
+    if (
+      Math.floor(scrl.current.scrollWidth - scrl.current.scrollLeft) <=
+      scrl.current.offsetWidth
+    ) {
+      setscrolEnd(true);
+    } else {
+      setscrolEnd(false);
+    }
+  };
+
+  const anim = (e) => {
+    gsap.from(e.target, { scale: 1 });
+    gsap.to(e.target, { scale: 1.5 });
+  };
+  const anim2 = (e) => {
+    gsap.from(e.target, { scale: 1.5 });
+    gsap.to(e.target, { scale: 1 });
+  };
+
+  const scrollCheck = () => {
+    setscrollX(scrl.current.scrollLeft);
+    if (
+      Math.floor(scrl.current.scrollWidth - scrl.current.scrollLeft) <=
+      scrl.current.offsetWidth
+    ) {
+      setscrolEnd(true);
+    } else {
+      setscrolEnd(false);
+    }
+  };
+
+  // const handleVideoBoxScroll = () => {
+  //   const videosBox = document.getElementById('videosBox');
+  //   videosBox.scrollIntoView({ behavior: 'smooth' });
+  // };
 
   return (
     <>
@@ -382,8 +432,75 @@ export default function LandingPage() {
               FEATURED PROPERTIES
             </Typography>
             <Box className="properties-container">
-              
-              
+              <Box className="YouTubeContent" ref={scrl} onScroll={scrollCheck}>
+                {propertiesCard(
+                  Pimage1,
+                  "#SWISS23808",
+                  "INR. 4000",
+                  "Cafe",
+                  "Sri Ram Nagar",
+                  [buildingIcon, PersonIcon]
+                )}
+                {propertiesCard(
+                  Pimage1,
+                  "#SWISS23808",
+                  "INR. 4000",
+                  "Cafe",
+                  "Sri Ram Nagar",
+                  [buildingIcon, PersonIcon]
+                )}
+                {propertiesCard(
+                  Pimage1,
+                  "#SWISS23808",
+                  "INR. 4000",
+                  "Cafe",
+                  "Sri Ram Nagar",
+                  [buildingIcon, PersonIcon]
+                )}
+                {propertiesCard(
+                  Pimage1,
+                  "#SWISS23808",
+                  "INR. 4000",
+                  "Cafe",
+                  "Sri Ram Nagar",
+                  [buildingIcon, PersonIcon]
+                )}
+                {propertiesCard(
+                  Pimage1,
+                  "#SWISS23808",
+                  "INR. 4000",
+                  "Cafe",
+                  "Sri Ram Nagar",
+                  [buildingIcon, PersonIcon]
+                )}
+                {propertiesCard(
+                  Pimage1,
+                  "#SWISS23808",
+                  "INR. 4000",
+                  "Cafe",
+                  "Sri Ram Nagar",
+                  [buildingIcon, PersonIcon]
+                )}
+              </Box>
+
+              <Box className="arrowBox">
+                <Box
+                  className={`ScrollBtn${scrolLeftEnd ? " arrowDisabled" : ""}`}
+                  onClick={() => slide(-300)}
+                  onMouseEnter={(e) => anim(e)}
+                  onMouseLeave={(e) => anim2(e)}
+                >
+                  <img style={{ width: "40px" }} src={icon01} />
+                </Box>
+                <Box
+                  className={`ScrollBtn${scrolEnd ? " arrowDisabled" : ""}`}
+                  onClick={() => slide(+300)}
+                  onMouseEnter={(e) => anim(e)}
+                  onMouseLeave={(e) => anim2(e)}
+                >
+                  <img style={{ width: "40px" }} src={icon02} />
+                </Box>
+              </Box>
             </Box>
           </Box>
           <Box className="professional-services">

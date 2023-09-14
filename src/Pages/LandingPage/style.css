@@ -118,7 +118,9 @@
   font-weight: 700;
   color: #333333;
   line-height: 48px;
+  text-transform: uppercase;
   padding: 5px 0;
+  text-align: center;
 }
 
 .landingpage-content h3 {
@@ -135,6 +137,13 @@
   padding: 5px 0;
 }
 
+.landingpage-content h5 {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #2d2d2d;
+}
+
 .landingpage-content p {
   font-size: 17px;
   font-weight: 400;
@@ -145,6 +154,172 @@
 .film-shooting {
   padding: 100px 0;
   text-align: center;
+}
+
+.tabs-container {
+  margin: 50px auto 0 auto;
+  padding: 0;
+  max-width: 1300px;
+}
+
+.tabs-film-shooting {
+  border-radius: 12px;
+  background: rgba(234, 67, 53, 0.05);
+}
+
+.tabs-film-shooting .css-heg063-MuiTabs-flexContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tabs-film-shooting .css-h0q0iv-MuiButtonBase-root-MuiTab-root {
+  color: #444 !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  text-transform: none !important;
+  padding: 20px !important;
+  flex: 33.333%;
+  max-width: 33.333%;
+}
+
+.tabs-film-shooting .css-h0q0iv-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  background-color: #EA4335 !important;
+  color: #ffffff !important;
+  position: relative;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+  position: absolute !important;
+  top: 100% !important;
+  left: 50% !important;
+  z-index: 999 !important;
+  border: solid transparent !important;
+  content: "";
+  height: 0 !important;
+  width: 0 !important;
+  pointer-events: none !important;
+  border-color: rgba(234, 67, 53, 0) !important;
+  border-top-color: #EA4335 !important;
+  border-width: 15px !important;
+  margin-left: -15px !important;
+}
+
+.css-19kzrtu {
+  padding: 30px 0 !important;
+}
+
+ul.tablisting {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+ul.tablisting li {
+  flex: 23%;
+  max-width: 23%;
+  height: 350px;
+  overflow: hidden;
+  background-color: #EA4335;
+  border-radius: 20px;
+  position: relative;
+}
+
+ul.tablisting li img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+ul.tablisting li span {
+  display: block;
+  padding: 15px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .3);
+  backdrop-filter: blur(10px);
+  border-radius: 0 0 24px 24px;
+  color: #fff;
+  text-align: center;
+}
+
+.simple-3-step {
+  padding: 100px 0;
+  background-color: #f2f6f5;
+  text-align: center;
+}
+
+.simple-3-step .step-container {
+  margin: 80px auto 0 auto !important;
+  padding: 0;
+  max-width: 1300px;
+}
+
+.featured-properties {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.properties-container {
+  margin: 50px auto 0 auto;
+  padding: 0;
+  max-width: 1300px;
+}
+
+.professional-services {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.top-rated-properties {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.why-choose-us {
+  padding: 100px 0;
+  background-color: #f2f6f5;
+  text-align: center;
+}
+
+.recently-added-properties {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.client-testimonials {
+  padding: 100px 0;
+  background-color: #f2f6f5;
+  text-align: center;
+}
+
+.recent-projects {
+  padding: 100px 0;
+}
+
+.project-video {
+  padding: 100px 0;
+}
+
+.spotlet-provides {
+  padding: 100px 0;
+}
+
+.post-property {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.host-your-spot {
+  padding: 100px 0;
+  background-color: #f2f6f5;
 }
 
 .text-stroke {
@@ -167,110 +342,6 @@
   z-index: 9;
 }
 
-.tabs-container {
-  margin: 50px auto 0 auto;
-  padding: 0;
-  max-width: 1300px;
-}
-
-.tabs-film-shooting {
-  border-radius: 12px;
-  background: rgba(234, 67, 53, 0.05);
-
-}
-
-.tabs-film-shooting .css-heg063-MuiTabs-flexContainer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.tabs-film-shooting .css-h0q0iv-MuiButtonBase-root-MuiTab-root {
-  color: #444 !important;
-  font-size: 18px !important;
-  font-weight: 500 !important;
-  line-height: normal !important;
-  text-transform: none !important;
-  padding: 20px !important;
-  flex: 33.333%; 
-  max-width: 33.333%;
-}
-
-.tabs-film-shooting .css-h0q0iv-MuiButtonBase-root-MuiTab-root.Mui-selected {
-  background-color: #EA4335 !important;
-  color: #ffffff !important;
-  position: relative;
-}
-
-.tabs-film-shooting .css-h0q0iv-MuiButtonBase-root-MuiTab-root.Mui-selected:after {
-  position: absolute;
-	top: 100%;
-	left: 50%;
-  z-index: 999;
-	border: solid transparent;
-	content: "";
-	height: 0;
-	width: 0;	
-	pointer-events: none;
-	border-color: rgba(234, 67, 53, 0);
-	border-top-color: #EA4335;
-	border-width: 15px;
-	margin-left: -15px;
-}
-
-.simple-3-step {
-  padding: 100px 0;
-  background-color: #f2f6f5;
-}
-
-.featured-properties {
-  padding: 100px 0;
-}
-
-.professional-services {
-  padding: 100px 0;
-}
-
-.top-rated-properties {
-  padding: 100px 0;
-}
-
-.why-choose-us {
-  padding: 100px 0;
-  background-color: #f2f6f5;
-}
-
-.recently-added-properties {
-  padding: 100px 0;
-}
-
-.client-testimonials {
-  padding: 100px 0;
-  background-color: #f2f6f5;
-}
-
-.recent-projects {
-  padding: 100px 0;
-}
-
-.project-video {
-  padding: 100px 0;
-}
-
-.spotlet-provides {
-  padding: 100px 0;
-}
-
-.post-property {
-  padding: 100px 0;
-}
-
-.host-your-spot {
-  padding: 100px 0;
-  background-color: #f2f6f5;
-}
-
-
 /* Mobile view*/
 @media only screen and (max-width: 760px) {
   .landingpage-banner .banner-content {
@@ -279,11 +350,36 @@
   }
 
   .landingpage-banner .banner-content h1 {
-    font-size: 24px;
+    font-size: 32px;
+    line-height: 1.4;
+    padding: 0 0 50px 0;
+  }
+
+  .banner-search {
+    padding: 20px 0;
+  }
+
+  .banner-search ul {
+    flex-wrap: wrap;
+  }
+
+  .banner-search ul li.select-input {
+    padding: 10px 20px;
+    border-right: none;
+    border-bottom: 1px solid #e4e4e4;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .banner-search ul li.select-button {
+    padding: 10px 20px;
+    flex: 100%;
+    max-width: 100%;
   }
 
   .landingpage-content h2 {
     font-size: 24px;
+    line-height: 1.2;
   }
 
   .landingpage-content h4 {
@@ -294,6 +390,107 @@
     font-size: 15px;
   }
 
+  .film-shooting {
+    padding: 30px 15px;
+  }
+  
+  .tabs-container {
+    margin: 30px auto 0 auto;
+  }
+  
+  .tabs-film-shooting .css-heg063-MuiTabs-flexContainer {
+    flex-wrap: wrap;
+  }
+  
+  .tabs-film-shooting .css-h0q0iv-MuiButtonBase-root-MuiTab-root {
+    font-size: 16px !important;
+    flex: 100%;
+    max-width: 100%;
+    padding: 15px !important;
+    min-height: inherit !important;
+  }
+  
+  .css-1aquho2-MuiTabs-indicator {
+    display: none;
+  }
+  
+  .css-19kzrtu {
+    padding: 15px 0 !important;
+  }
+  
+  ul.tablisting {
+    gap: 15px;
+  }
+  
+  ul.tablisting li {
+    flex: 47%;
+    max-width: 47%;
+    border-radius: 12px;
+    height: 200px;
+  }
+  
+  .simple-3-step {
+    padding: 30px 15px;
+  }
+  
+  .simple-3-step .step-container {
+    margin: 0 auto !important;
+  }
+  
+  .featured-properties {
+    padding: 30px 15px;
+  }
+  
+  .professional-services {
+    padding: 30px 15px;
+  }
+  
+  .top-rated-properties {
+    padding: 30px 15px;
+  }
+  
+  .why-choose-us {
+    padding: 30px 15px;
+    background-color: #f2f6f5;
+  }
+  
+  .recently-added-properties {
+    padding: 30px 15px;
+  }
+  
+  .client-testimonials {
+    padding: 30px 15px;
+    background-color: #f2f6f5;
+  }
+  
+  .recent-projects {
+    padding: 30px 15px;
+  }
+  
+  .project-video {
+    padding: 30px 15px;
+  }
+  
+  .spotlet-provides {
+    padding: 30px 15px;
+  }
+  
+  .post-property {
+    padding: 30px 15px;
+  }
+  
+  .host-your-spot {
+    padding: 30px 15px;
+  }
+  
+  .text-stroke {
+    font-size: 32px !important;
+    line-height: 1.4 !important;
+  }
+  
+  .mar-t60 {
+    margin-top: -30px !important;
+  }
 }
 
 /* Tab view*/
@@ -302,6 +499,87 @@
     padding: 100px 15px;
     min-height: 200px;
   }
+
+  .landingpage-banner .banner-content h1 {
+    padding: 0 0 100px 0;
+  }
+
+  .banner-search ul {
+    flex-wrap: wrap;
+  }
+
+  .banner-search ul li.select-input {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .banner-search ul li.select-button {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .film-shooting {
+    padding: 70px 15px;
+  }
+  
+  .tabs-container {
+    margin: 30px auto 0 auto;
+  }
+   
+  ul.tablisting li {
+    flex: 48%;
+    max-width: 48%;
+  }
+  
+  .simple-3-step {
+    padding: 70px 15px;
+  }
+  
+  .featured-properties {
+    padding: 70px 15px;
+  }
+  
+  .professional-services {
+    padding: 70px 15px;
+  }
+  
+  .top-rated-properties {
+    padding: 70px 15px;
+  }
+  
+  .why-choose-us {
+    padding: 70px 15px;
+  }
+  
+  .recently-added-properties {
+    padding: 70px 15px;
+  }
+  
+  .client-testimonials {
+    padding: 70px 15px;
+  }
+  
+  .recent-projects {
+    padding: 70px 15px;
+  }
+  
+  .project-video {
+    padding: 70px 15px;
+  }
+  
+  .spotlet-provides {
+    padding: 70px 15px;
+  }
+  
+  .post-property {
+    padding: 70px 15px;
+  }
+  
+  .host-your-spot {
+    padding: 70px 15px;
+  }
+  
+
 
 }
 
@@ -312,4 +590,72 @@
     min-height: 200px;
   }
 
+  .landingpage-banner .banner-content h1 {
+    padding: 0 0 100px 0;
+  }
+
+  .film-shooting {
+    padding: 100px 15px;
+  }
+     
+  ul.tablisting li {
+    flex: 22.5%;
+    max-width: 22.5%;
+  }
+  
+  .simple-3-step {
+    padding: 100px 15px;
+  }
+  
+  .featured-properties {
+    padding: 100px 15px;
+  }
+  
+  .professional-services {
+    padding: 100px 15px;
+  }
+  
+  .top-rated-properties {
+    padding: 100px 15px;
+  }
+  
+  .why-choose-us {
+    padding: 100px 15px;
+  }
+  
+  .recently-added-properties {
+    padding: 100px 15px;
+  }
+  
+  .client-testimonials {
+    padding: 100px 15px;
+  }
+  
+  .recent-projects {
+    padding: 100px 15px;
+  }
+  
+  .project-video {
+    padding: 100px 15px;
+  }
+  
+  .spotlet-provides {
+    padding: 100px 15px;
+  }
+  
+  .post-property {
+    padding: 100px 15px;
+  }
+  
+  .host-your-spot {
+    padding: 100px 15px;
+  }
+
+}
+.YouTubeContent{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
 }

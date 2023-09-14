@@ -273,7 +273,8 @@
   text-align: center;
 }
 
-.opernings-bot .css-lqq3n7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+.opernings-bot
+  .css-lqq3n7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
   background-color: #ea4335 !important;
   color: #ffffff !important;
 }
@@ -449,7 +450,7 @@
 }
 
 .bottomRedText {
-  color: #ea4335;
+  color: #ea4335 !important;
   font-family: "Poppins-Regular" !important;
   font-size: 12px !important;
   font-style: normal !important;

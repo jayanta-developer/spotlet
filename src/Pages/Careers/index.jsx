@@ -534,7 +534,7 @@ export default function Careers() {
                       <Typography className="applyInput" variant="body1">Name</Typography>
                       <TextField
                         id="outlined-basic"
-                        label="Name"
+                        placeholder='Name'
                         variant="outlined"
                       />
                     </div>
@@ -542,7 +542,7 @@ export default function Careers() {
                       <Typography className="applyInput" variant="body1">Email Address</Typography>
                       <TextField
                         id="outlined-basic"
-                        label="Email"
+                        placeholder="Email"
                         variant="outlined"
                       />
                     </div>
@@ -552,7 +552,7 @@ export default function Careers() {
                       <Typography className="applyInput" variant="body1">Phone number</Typography>
                       <TextField
                         id="outlined-basic"
-                        label="91256897456"
+                        placeholder="Enter Phone number "
                         variant="outlined"
                       />
                     </div>
@@ -560,7 +560,7 @@ export default function Careers() {
                       <Typography className="applyInput" variant="body1">Alternate number</Typography>
                       <TextField
                         id="outlined-basic"
-                        label="91256897456"
+                        placeholder="Alternate Phone number"
                         variant="outlined"
                       />
                     </div>
@@ -570,7 +570,7 @@ export default function Careers() {
                       <Typography className="applyInput" variant="body1">Qualification</Typography>
                       <TextField
                         id="outlined-basic"
-                        label="Qualification"
+                        placeholder="Qualification"
                         variant="outlined"
                       />
                     </div>
@@ -578,7 +578,7 @@ export default function Careers() {
                       <Typography className="applyInput" variant="body1">IT experience</Typography>
                       <TextField
                         id="outlined-basic"
-                        label="IT experience"
+                        placeholder="IT experience"
                         variant="outlined"
                       />
                     </div>
@@ -590,7 +590,7 @@ export default function Careers() {
                       </Typography>
                       <TextField
                         id="outlined-basic"
-                        label="No of Years"
+                        placeholder="No of Years"
                         variant="outlined"
                       />
                     </div>
@@ -598,7 +598,7 @@ export default function Careers() {
                       <Typography className="applyInput" variant="body1">Current CTC</Typography>
                       <TextField
                         id="outlined-basic"
-                        label="Numbers here"
+                        placeholder="Numbers here"
                         variant="outlined"
                       />
                     </div>
@@ -608,7 +608,7 @@ export default function Careers() {
                       <Typography className="applyInput" variant="body1">Expected CTC</Typography>
                       <TextField
                         id="outlined-basic"
-                        label="Numbers here"
+                        placeholder="Numbers here"
                         variant="outlined"
                       />
                     </div>
@@ -616,7 +616,7 @@ export default function Careers() {
                       <Typography className="applyInput" variant="body1">Key skills</Typography>
                       <TextField
                         id="outlined-basic"
-                        label="Key skills"
+                        placeholder="Key skills"
                         variant="outlined"
                       />
                     </div>
@@ -627,7 +627,7 @@ export default function Careers() {
                       <TextField
                         className="textarea"
                         id="outlined-basic"
-                        label="Type here"
+                        placeholder="Type here"
                         variant="outlined"
                       />
                     </div>
@@ -653,7 +653,7 @@ export default function Careers() {
                           </defs>
                         </svg>
                         <Typography onClick={() => fileInputRef.current.click()} className="dragText pointer">Drag & Drop</Typography>
-                        <Typography onClick={() => fileInputRef.current.click()} my={1} className="bottomRedTex pointert">Supported Formats: doc, docx, rtf, PDF upto 2MB</Typography>
+                        <Typography onClick={() => fileInputRef.current.click()} my={1} className="bottomRedText pointert">Supported Formats: doc, docx, rtf, PDF upto 2MB</Typography>
                       </Box>
                     </div>
                   </Box>

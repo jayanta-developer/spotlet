@@ -39,21 +39,21 @@ export default function Blog() {
               <Box className="search">
                 <TextField
                   id="outlined-basic"
-                  label="Search Here"
+                  placeholder="Search Here"
                   variant="outlined"
                 />
               </Box>
               <Box className="filter" sx={{ maxWidth: 150 }}>
                 <TextField
                   id="outlined-basic"
-                  label="Filter"
+                  placeholder="Filter"
                   variant="outlined"
                 />
               </Box>
               <Box className="sortby" sx={{ maxWidth: 150 }}>
                 <TextField
                   id="outlined-basic"
-                  label="Sort By"
+                  placeholder="Sort By"
                   variant="outlined"
                 />
               </Box>

@@ -376,7 +376,7 @@ export default function Host() {
                 <TextField
                   className="org-input"
                   id="outlined-basic"
-                  label="Your Organization Name"
+                  placeholder="Your Organization Name"
                   variant="outlined"
                 />
               </div>
@@ -385,7 +385,7 @@ export default function Host() {
                 <TextField
                   className="name-input"
                   id="outlined-basic"
-                  label="Contact Person Name"
+                  placeholder="Contact Person Name"
                   variant="outlined"
                 />
               </div>
@@ -396,7 +396,7 @@ export default function Host() {
                 <TextField
                   className="mobile-input"
                   id="outlined-basic"
-                  label="Mobile Number"
+                  placeholder="Mobile Number"
                   variant="outlined"
                 />
               </div>
@@ -405,7 +405,7 @@ export default function Host() {
                 <TextField
                   className="email-input"
                   id="outlined-basic"
-                  label="Email Address"
+                  placeholder="Email Address"
                   variant="outlined"
                 />
               </div>
@@ -416,7 +416,7 @@ export default function Host() {
                 <TextField
                   className="textarea"
                   id="outlined-basic"
-                  label="Message"
+                  placeholder="Message"
                   variant="outlined"
                 />
               </div>

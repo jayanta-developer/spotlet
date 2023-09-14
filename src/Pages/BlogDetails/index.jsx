@@ -73,7 +73,7 @@ export default function BlogDetails() {
             </Typography>
             <Typography variant="body1" gutterBottom>
               Nam porta congue tortor, ut {" "}
-            <span className="span600">tempor purus facilisis rhoncus</span>{" "}. Nunc
+              <span className="span600">tempor purus facilisis rhoncus</span>{" "}. Nunc
               sodales eleifend euismod. Nunc enim nunc, rutrum ut magna at,
               gravida lacinia leo. Aenean iaculis massa augue, ac bibendum purus
               egestas nec. Nullam tristique diam at nisi imperdiet dapibus.
@@ -81,7 +81,7 @@ export default function BlogDetails() {
             </Typography>
             <Typography variant="body1" gutterBottom>
               Suspendisse {" "}
-            <span className="span600">mollis tortor at dolor dignissim</span>, vel volutpat felis
+              <span className="span600">mollis tortor at dolor dignissim</span>, vel volutpat felis
               tincidunt. Ut laoreet tellus lacus, sed eleifend eros mollis in.
               Mauris non leo rutrum nisi gravida tristique. Mauris tempus arcu
               nec nunc varius, in tempus magna ultricies. Cras feugiat dui eget
@@ -91,7 +91,7 @@ export default function BlogDetails() {
               Praesent a ante ac mi pretium lobortis. Phasellus luctus lacus at
               tellus iaculis aliquam. Nam eu metus vel est rhoncus sollicitudin.
               {" "}
-            <span className="span600">Aenean accumsan sit amet</span> augue eget ultricies. Aenean lobortis,
+              <span className="span600">Aenean accumsan sit amet</span> augue eget ultricies. Aenean lobortis,
               libero ac viverra laoreet, tellus lectus volutpat ipsum, et dictum
               ligula ipsum vitae leo. Curabitur elementum faucibus erat vitae
               vestibulum. Nunc sodales eleifend euismod.
@@ -106,7 +106,7 @@ export default function BlogDetails() {
             </Box>
             <Typography variant="body1" gutterBottom>
               Nam porta congue tortor, ut {" "}
-            <span className="span600">tempor purus facilisis rhoncus</span>. Nunc
+              <span className="span600">tempor purus facilisis rhoncus</span>. Nunc
               sodales eleifend euismod. Nunc enim nunc, rutrum ut magna at,
               gravida lacinia leo. Aenean iaculis massa augue, ac bibendum purus
               egestas nec. Nullam tristique diam at nisi imperdiet dapibus.
@@ -114,7 +114,7 @@ export default function BlogDetails() {
             </Typography>
             <Typography variant="body1" gutterBottom>
               Suspendisse {" "}
-            <span className="span600">mollis tortor at dolor dignissim</span>, vel volutpat felis
+              <span className="span600">mollis tortor at dolor dignissim</span>, vel volutpat felis
               tincidunt. Ut laoreet tellus lacus, sed eleifend eros mollis in.
               Mauris non leo rutrum nisi gravida tristique. Mauris tempus arcu
               nec nunc varius, in tempus magna ultricies. Cras feugiat dui eget
@@ -145,13 +145,13 @@ export default function BlogDetails() {
             </Box>
             <Typography variant="body1" gutterBottom>
               Separated they live in {" "}
-            <span className="span600">Bookmarksgrove</span> right at the coast of the
+              <span className="span600">Bookmarksgrove</span> right at the coast of the
               Semantics, a large language ocean. A small river named Duden flows
               by their place and supplies it with the necessary regelialia.
             </Typography>
             <Typography variant="body1" gutterBottom>
               It is a paradisematic country, in which {" "}
-            <span className="span600">roasted parts of sentences</span> fly into your mouth. Even the all-powerful Pointing has no control
+              <span className="span600">roasted parts of sentences</span> fly into your mouth. Even the all-powerful Pointing has no control
               about the blind texts it is an almost unorthographic life One day
               however a small line of blind text by the name of Lorem Ipsum
               decided to leave for the far World of Grammar.
@@ -193,7 +193,7 @@ export default function BlogDetails() {
                   <Typography variant="body1">Comments</Typography>
                   <TextField className="textarea"
                     id="outlined-basic"
-                    label="Comments"
+                    placeholder="Comments"
                     variant="outlined"
                   />
                 </div>
@@ -203,7 +203,7 @@ export default function BlogDetails() {
                   <Typography variant="body1">Name</Typography>
                   <TextField
                     id="outlined-basic"
-                    label="Name"
+                    placeholder="Name"
                     variant="outlined"
                   />
                 </div>
@@ -211,7 +211,7 @@ export default function BlogDetails() {
                   <Typography variant="body1">Email</Typography>
                   <TextField
                     id="outlined-basic"
-                    label="Email"
+                    placeholder="Email"
                     variant="outlined"
                   />
                 </div>

@@ -268,7 +268,7 @@ export default function Careers() {
                 <Box className="search">
                   <TextField
                     id="outlined-basic"
-                    label="Search Current Openings"
+                    placeholder="Search Current Openings"
                     variant="outlined"
                   />
                 </Box>

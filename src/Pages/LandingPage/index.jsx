@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import VideoStableIcon from "@mui/icons-material/VideoStable";
 import CorporateFareIcon from "@mui/icons-material/CorporateFare";
@@ -15,6 +15,7 @@ import {
   FormHelperText,
   Tabs,
   Tab,
+  Rating,
 } from "@mui/material";
 import "./style.css";
 
@@ -67,6 +68,21 @@ import professionalservicesimg01 from "../../Assets/images/professional-services
 import professionalservicesimg02 from "../../Assets/images/professional-services-img02.png";
 import landingpageimg01 from "../../Assets/images/landingpage-img01.jpg";
 import icon08 from "../../Assets/images/icon-08.svg";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import blueTik from "../../Assets/images/hexagon-check (1) 1.svg";
+import logo from "../../Assets/images/logo.png";
+import projectimg01 from "../../Assets/images/project-img01.png";
+import projectimg02 from "../../Assets/images/project-img02.png";
+import projectimg03 from "../../Assets/images/project-img03.png";
+import video from "../../Assets/images/video.png";
+import safespace from "../../Assets/images/icon-safespace.svg";
+import chancetosave from "../../Assets/images/icon-chancetosave.svg";
+import widerange from "../../Assets/images/icon-widerange.svg";
+import memorable from "../../Assets/images/icon-memorable.svg";
+import joinbg from "../../Assets/images/join-bg.png";
+import free from "../../Assets/images/free.png";
+import landingpageimg02 from "../../Assets/images/landingpage-img02.png";
 
 //Components
 import NavBar from "../NavBar";
@@ -116,6 +132,51 @@ export default function LandingPage() {
 
   const tabhandleChange = (event, newValue) => {
     setValue(newValue);
+  };
+
+  const testimonialsCard01 = () => {
+    return (
+      <Box className="testimonialsCard">
+        <Rating name="size-small" defaultValue={4} />
+        <Typography className="testimonialsCardSubText">
+          "SpotLet made finding our dream wedding venue a breeze. We were able
+          to shortlist and connect with hosts in no time. Thank you for making
+          our special day even more special!
+        </Typography>
+        <Box className="userInfoBox">
+          <Box className="userProfilePic">
+            <p>E</p>
+          </Box>
+          <Box sx={{ position: "relative" }} ml={2}>
+            <img className="blueTik" src={blueTik} />
+            <Typography className="User_name">Emily and James</Typography>
+            <Typography className="userRole">Guest</Typography>
+          </Box>
+        </Box>
+      </Box>
+    );
+  };
+
+  const testimonialsCard02 = () => {
+    return (
+      <Box className="testimonialsCard">
+        <Rating name="size-small" defaultValue={4} />
+        <Typography className="testimonialsCardSubText">
+          Our corporate event was a huge success thanks to SpotLet. We found the
+          perfect retreat center that aligned with our needs and budget. Highly
+          recommended!
+        </Typography>
+        <Box className="userInfoBox">
+          <Box className="userProfilePic">
+            <p>A</p>
+          </Box>
+          <Box sx={{ position: "relative" }} ml={2}>
+            <Typography className="User_name">Alex</Typography>
+            <Typography className="userRole">CEO of TechNex Corp</Typography>
+          </Box>
+        </Box>
+      </Box>
+    );
   };
 
   return (
@@ -406,7 +467,7 @@ export default function LandingPage() {
                       <img src={iconwishlist} />
                     </a>
                   </div>
-                  <div className="tags">
+                  <div className="tags-icon">
                     <a href="#">
                       <img src={iconfilm} />
                     </a>
@@ -424,11 +485,7 @@ export default function LandingPage() {
                     </div>
                     <div className="other-info">
                       <Typography className="rating" variant="subtitle1">
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="grey" /> 4.1 (484)
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
                       </Typography>
                       <Typography className="namepro" variant="subtitle2">
                         Pant House
@@ -457,7 +514,7 @@ export default function LandingPage() {
                       <img src={iconwishlist} />
                     </a>
                   </div>
-                  <div className="tags">
+                  <div className="tags-icon">
                     <a href="#">
                       <img src={iconfilm} />
                     </a>
@@ -475,11 +532,7 @@ export default function LandingPage() {
                     </div>
                     <div className="other-info">
                       <Typography className="rating" variant="subtitle1">
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="grey" /> 4.1 (484)
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
                       </Typography>
                       <Typography className="namepro" variant="subtitle2">
                         Pant House
@@ -508,7 +561,7 @@ export default function LandingPage() {
                       <img src={iconwishlist} />
                     </a>
                   </div>
-                  <div className="tags">
+                  <div className="tags-icon">
                     <a href="#">
                       <img src={iconfilm} />
                     </a>
@@ -526,11 +579,7 @@ export default function LandingPage() {
                     </div>
                     <div className="other-info">
                       <Typography className="rating" variant="subtitle1">
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="grey" /> 4.1 (484)
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
                       </Typography>
                       <Typography className="namepro" variant="subtitle2">
                         Pant House
@@ -559,7 +608,7 @@ export default function LandingPage() {
                       <img src={iconwishlist} />
                     </a>
                   </div>
-                  <div className="tags">
+                  <div className="tags-icon">
                     <a href="#">
                       <img src={iconfilm} />
                     </a>
@@ -577,11 +626,7 @@ export default function LandingPage() {
                     </div>
                     <div className="other-info">
                       <Typography className="rating" variant="subtitle1">
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="grey" /> 4.1 (484)
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
                       </Typography>
                       <Typography className="namepro" variant="subtitle2">
                         Pant House
@@ -669,7 +714,7 @@ export default function LandingPage() {
                       <img src={iconwishlist} />
                     </a>
                   </div>
-                  <div className="tags">
+                  <div className="tags-icon">
                     <a href="#">
                       <img src={iconfilm} />
                     </a>
@@ -687,11 +732,7 @@ export default function LandingPage() {
                     </div>
                     <div className="other-info">
                       <Typography className="rating" variant="subtitle1">
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="grey" /> 4.1 (484)
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
                       </Typography>
                       <Typography className="namepro" variant="subtitle2">
                         Pant House
@@ -720,7 +761,7 @@ export default function LandingPage() {
                       <img src={iconwishlist} />
                     </a>
                   </div>
-                  <div className="tags">
+                  <div className="tags-icon">
                     <a href="#">
                       <img src={iconfilm} />
                     </a>
@@ -738,11 +779,7 @@ export default function LandingPage() {
                     </div>
                     <div className="other-info">
                       <Typography className="rating" variant="subtitle1">
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="grey" /> 4.1 (484)
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
                       </Typography>
                       <Typography className="namepro" variant="subtitle2">
                         Pant House
@@ -771,7 +808,7 @@ export default function LandingPage() {
                       <img src={iconwishlist} />
                     </a>
                   </div>
-                  <div className="tags">
+                  <div className="tags-icon">
                     <a href="#">
                       <img src={iconfilm} />
                     </a>
@@ -789,11 +826,7 @@ export default function LandingPage() {
                     </div>
                     <div className="other-info">
                       <Typography className="rating" variant="subtitle1">
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="grey" /> 4.1 (484)
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
                       </Typography>
                       <Typography className="namepro" variant="subtitle2">
                         Pant House
@@ -822,7 +855,7 @@ export default function LandingPage() {
                       <img src={iconwishlist} />
                     </a>
                   </div>
-                  <div className="tags">
+                  <div className="tags-icon">
                     <a href="#">
                       <img src={iconfilm} />
                     </a>
@@ -840,11 +873,7 @@ export default function LandingPage() {
                     </div>
                     <div className="other-info">
                       <Typography className="rating" variant="subtitle1">
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="grey" /> 4.1 (484)
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
                       </Typography>
                       <Typography className="namepro" variant="subtitle2">
                         Pant House
@@ -946,7 +975,7 @@ export default function LandingPage() {
                       <img src={iconwishlist} />
                     </a>
                   </div>
-                  <div className="tags">
+                  <div className="tags-icon">
                     <a href="#">
                       <img src={iconfilm} />
                     </a>
@@ -964,11 +993,7 @@ export default function LandingPage() {
                     </div>
                     <div className="other-info">
                       <Typography className="rating" variant="subtitle1">
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="grey" /> 4.1 (484)
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
                       </Typography>
                       <Typography className="namepro" variant="subtitle2">
                         Pant House
@@ -997,7 +1022,7 @@ export default function LandingPage() {
                       <img src={iconwishlist} />
                     </a>
                   </div>
-                  <div className="tags">
+                  <div className="tags-icon">
                     <a href="#">
                       <img src={iconfilm} />
                     </a>
@@ -1015,11 +1040,7 @@ export default function LandingPage() {
                     </div>
                     <div className="other-info">
                       <Typography className="rating" variant="subtitle1">
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="grey" /> 4.1 (484)
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
                       </Typography>
                       <Typography className="namepro" variant="subtitle2">
                         Pant House
@@ -1048,7 +1069,7 @@ export default function LandingPage() {
                       <img src={iconwishlist} />
                     </a>
                   </div>
-                  <div className="tags">
+                  <div className="tags-icon">
                     <a href="#">
                       <img src={iconfilm} />
                     </a>
@@ -1066,11 +1087,7 @@ export default function LandingPage() {
                     </div>
                     <div className="other-info">
                       <Typography className="rating" variant="subtitle1">
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="grey" /> 4.1 (484)
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
                       </Typography>
                       <Typography className="namepro" variant="subtitle2">
                         Pant House
@@ -1099,7 +1116,7 @@ export default function LandingPage() {
                       <img src={iconwishlist} />
                     </a>
                   </div>
-                  <div className="tags">
+                  <div className="tags-icon">
                     <a href="#">
                       <img src={iconfilm} />
                     </a>
@@ -1117,11 +1134,7 @@ export default function LandingPage() {
                     </div>
                     <div className="other-info">
                       <Typography className="rating" variant="subtitle1">
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="yellow" />
-                        <StarRateIcon className="grey" /> 4.1 (484)
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
                       </Typography>
                       <Typography className="namepro" variant="subtitle2">
                         Pant House
@@ -1148,9 +1161,52 @@ export default function LandingPage() {
             <Typography className="mar-t60" variant="h2">
               Client Testimonials
             </Typography>
+            <Box className="testimonialsSlideContainer">
+              <ArrowBackIosIcon className="testimonialsArrow" />
+              {testimonialsCard01()}
+              {testimonialsCard02()}
+              <ArrowForwardIosIcon className="testimonialsArrow" />
+            </Box>
           </Box>
-          <Box className="recent-projects"></Box>
-          <Box className="project-video"></Box>
+          <Box className="recent-projects">
+            <Box className="project-heading">
+              <img src={logo} />
+              <Typography variant="h4">Recent Projects</Typography>
+              <Typography variant="body1">
+                "Unlocking Success Through Innovation"
+              </Typography>
+            </Box>
+            <Box className="project-box">
+              <figure>
+                <img src={projectimg01} />
+              </figure>
+              <article>
+                <Typography variant="h5">Anna Kendrick</Typography>
+                <Typography variant="h6">FILM SHOOTING</Typography>
+              </article>
+            </Box>
+            <Box className="project-box">
+              <figure>
+                <img src={projectimg02} />
+              </figure>
+              <article>
+                <Typography variant="h5">Anna Kendrick</Typography>
+                <Typography variant="h6">FILM SHOOTING</Typography>
+              </article>
+            </Box>
+            <Box className="project-box">
+              <figure>
+                <img src={projectimg03} />
+              </figure>
+              <article>
+                <Typography variant="h5">Anna Kendrick</Typography>
+                <Typography variant="h6">FILM SHOOTING</Typography>
+              </article>
+            </Box>
+          </Box>
+          <Box className="project-video">
+            <img src={video} />
+          </Box>
           <Box className="spotlet-provides">
             <Typography className="text-stroke" variant="h2">
               Sporlet
@@ -1158,9 +1214,93 @@ export default function LandingPage() {
             <Typography className="mar-t60" variant="h2">
               SpotLet Provides
             </Typography>
+            <Box className="provides-container">
+              <Box className="icon-text-box">
+                <figure>
+                  <img src={safespace} />
+                </figure>
+                <Typography variant="h5">A Safe Space</Typography>
+                <Typography variant="body1">
+                  We do our background research and ensure that all the
+                  properties on our portal are safe for usage amongst crew
+                  members, teams, families and friends.
+                </Typography>
+              </Box>
+              <Box className="icon-text-box">
+                <figure>
+                  <img src={chancetosave} />
+                </figure>
+                <Typography variant="h5">A Chance to Save</Typography>
+                <Typography variant="body1">
+                  You can save up to 20% when you book with SpotLet, compared to
+                  when you work with a location agency. In addition, our prices
+                  are affordable and budget-friendly.
+                </Typography>
+              </Box>
+              <Box className="icon-text-box">
+                <figure>
+                  <img src={widerange} />
+                </figure>
+                <Typography variant="h5">A Wide Range of Options</Typography>
+                <Typography variant="body1">
+                  We invite you to explore our diverse locations for all kinds
+                  of shooting, events and celebrations. You’ll always be spoilt
+                  for choice!
+                </Typography>
+              </Box>
+              <Box className="icon-text-box">
+                <figure>
+                  <img src={memorable} />
+                </figure>
+                <Typography variant="h5">A Memorable Experience</Typography>
+                <Typography variant="body1">
+                  We promise our customers a smooth, satisfactory and memorable
+                  experience during the booking, and our hosts ensure you love
+                  your location every time!
+                </Typography>
+              </Box>
+            </Box>
           </Box>
-          <Box className="post-property"></Box>
-          <Box className="host-your-spot"></Box>
+          <Box className="join-us">
+            <Box className="join-content">
+              <img src={joinbg} className="image-overlay" />
+              <article>
+                <Typography variant="h2" gutterBottom>
+                  Post your Property for <img src={free} />
+                </Typography>
+                <Typography variant="body1">
+                  Ready to discover incredible spaces that match your vision?
+                  Let SpotLet guide you to the most exciting locations for your
+                  events.
+                </Typography>
+              </article>
+              <aside>
+                <Button className="readmore" variant="contained" size="large">
+                  Post Property <div className="spanfree">Free</div>
+                </Button>
+              </aside>
+            </Box>
+          </Box>
+          <Box className="host-your-spot">
+            <Box className="host-container">
+              <article>
+                <Typography variant="h2" gutterBottom>
+                  Host your Spot with U
+                </Typography>
+                <Typography variant="body1">
+                  If you’d like to become a host and list your unique property,
+                  we’d be happy to showcase it on our website. We invite you to
+                  join our growing family
+                </Typography>
+                <Button className="readmore" variant="contained" size="large">
+                  List Your Space
+                </Button>
+              </article>
+              <figure>
+                <img src={landingpageimg02} />
+              </figure>
+            </Box>
+          </Box>
         </Box>
       </Box>
       <Footer />

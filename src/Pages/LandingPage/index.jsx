@@ -265,7 +265,7 @@ export default function LandingPage() {
             <Typography className="mar-t60" variant="h2">
               FILM SHOOTING
             </Typography>
-            <Box className="tabs-container">
+        <Box className="tabs-container">
               <Box>
                 <Tabs
                   className="tabs-film-shooting"

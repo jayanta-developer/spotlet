@@ -264,6 +264,7 @@
 
 .subheading {
   max-width: 470px;
+  margin-bottom: 20px !important;
 }
 
 .get-in-touch .form-box .css-ahj2mt-MuiTypography-root {
@@ -640,7 +641,7 @@
 .testimonialsCardSubText {
   color: #737373 !important;
   font-family: "Poppins-Regular" !important;
-  font-size: 13px !important;
+  font-size: 14px !important;
   font-style: normal;
   font-weight: 300 !important;
   line-height: 30px !important;
@@ -663,7 +664,7 @@
 }
 
 .userProfilePic p {
-  color: #fff;
+  color: #fff !important;
   font-family: Suranna !important;
   font-size: 50px !important;
   font-style: normal;
@@ -737,5 +738,18 @@
 
   .testimonialsSlideContainer {
     width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .testimonialsCard {
+    padding: 25px;
+  }
+  .User_name {
+    font-size: 18px !important;
+  }
+  .userRole {
+    font-size: 16px !important;
   }
 }

@@ -1,5 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
+import VideoStableIcon from "@mui/icons-material/VideoStable";
+import CorporateFareIcon from "@mui/icons-material/CorporateFare";
+import StarRateIcon from "@mui/icons-material/StarRate";
+import PersonIcon from "@mui/icons-material/Person";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 import {
   Box,
   Typography,
@@ -10,14 +15,74 @@ import {
   FormHelperText,
   Tabs,
   Tab,
+  Rating,
 } from "@mui/material";
 import "./style.css";
 
-import VideoStableIcon from '@mui/icons-material/VideoStable';
-import CorporateFareIcon from '@mui/icons-material/CorporateFare';
-import PersonIcon from '@mui/icons-material/Person';
-
 import bannerPhoto from "../../Assets/images/landing-banner.png";
+import filmshootingimg01 from "../../Assets/images/filmshooting-img01.jpg";
+import filmshootingimg02 from "../../Assets/images/filmshooting-img02.jpg";
+import filmshootingimg03 from "../../Assets/images/filmshooting-img03.jpg";
+import filmshootingimg04 from "../../Assets/images/filmshooting-img04.jpg";
+import filmshootingimg05 from "../../Assets/images/filmshooting-img05.jpg";
+import filmshootingimg06 from "../../Assets/images/filmshooting-img06.jpg";
+import filmshootingimg07 from "../../Assets/images/filmshooting-img07.jpg";
+import filmshootingimg08 from "../../Assets/images/filmshooting-img08.jpg";
+import corporateeventsimg01 from "../../Assets/images/corporateevents-img01.jpg";
+import corporateeventsimg02 from "../../Assets/images/corporateevents-img02.jpg";
+import corporateeventsimg03 from "../../Assets/images/corporateevents-img03.jpg";
+import corporateeventsimg04 from "../../Assets/images/corporateevents-img04.jpg";
+import corporateeventsimg05 from "../../Assets/images/corporateevents-img05.jpg";
+import corporateeventsimg06 from "../../Assets/images/corporateevents-img06.jpg";
+import corporateeventsimg07 from "../../Assets/images/corporateevents-img07.jpg";
+import corporateeventsimg08 from "../../Assets/images/corporateevents-img08.jpg";
+import individualeventsimg01 from "../../Assets/images/individualevents-img01.jpg";
+import individualeventsimg02 from "../../Assets/images/individualevents-img02.jpg";
+import individualeventsimg03 from "../../Assets/images/individualevents-img03.jpg";
+import individualeventsimg04 from "../../Assets/images/individualevents-img04.jpg";
+import individualeventsimg05 from "../../Assets/images/individualevents-img05.jpg";
+import individualeventsimg06 from "../../Assets/images/individualevents-img06.jpg";
+import individualeventsimg07 from "../../Assets/images/individualevents-img07.jpg";
+import individualeventsimg08 from "../../Assets/images/individualevents-img08.jpg";
+import icon01 from "../../Assets/images/icon-desired.png";
+import icon02 from "../../Assets/images/icon-find.png";
+import icon03 from "../../Assets/images/icon-book.png";
+import iconverified from "../../Assets/images/icon-verified.svg";
+import iconwishlist from "../../Assets/images/wishlist.svg";
+import iconfilm from "../../Assets/images/icon-film.svg";
+import iconcorporate from "../../Assets/images/icon-corporate.svg";
+import iconindividual from "../../Assets/images/icon-individual.svg";
+import propertiesimg01 from "../../Assets/images/properties-img01.png";
+import propertiesimg02 from "../../Assets/images/properties-img02.png";
+import propertiesimg03 from "../../Assets/images/properties-img03.png";
+import propertiesimg04 from "../../Assets/images/properties-img04.png";
+import propertiesimg05 from "../../Assets/images/properties-img05.png";
+import propertiesimg06 from "../../Assets/images/properties-img06.png";
+import propertiesimg07 from "../../Assets/images/properties-img07.png";
+import propertiesimg08 from "../../Assets/images/properties-img08.png";
+import propertiesimg09 from "../../Assets/images/properties-img09.png";
+import propertiesimg10 from "../../Assets/images/properties-img10.png";
+import propertiesimg11 from "../../Assets/images/properties-img11.png";
+import propertiesimg12 from "../../Assets/images/properties-img12.png";
+import professionalservicesimg01 from "../../Assets/images/professional-services-img01.png";
+import professionalservicesimg02 from "../../Assets/images/professional-services-img02.png";
+import landingpageimg01 from "../../Assets/images/landingpage-img01.jpg";
+import icon08 from "../../Assets/images/icon-08.svg";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import blueTik from "../../Assets/images/hexagon-check (1) 1.svg";
+import logo from "../../Assets/images/logo.png";
+import projectimg01 from "../../Assets/images/project-img01.png";
+import projectimg02 from "../../Assets/images/project-img02.png";
+import projectimg03 from "../../Assets/images/project-img03.png";
+import video from "../../Assets/images/video.png";
+import safespace from "../../Assets/images/icon-safespace.svg";
+import chancetosave from "../../Assets/images/icon-chancetosave.svg";
+import widerange from "../../Assets/images/icon-widerange.svg";
+import memorable from "../../Assets/images/icon-memorable.svg";
+import joinbg from "../../Assets/images/join-bg.png";
+import free from "../../Assets/images/free.png";
+import landingpageimg02 from "../../Assets/images/landingpage-img02.png";
 
 //Components
 import NavBar from "../NavBar";
@@ -67,6 +132,51 @@ export default function LandingPage() {
 
   const tabhandleChange = (event, newValue) => {
     setValue(newValue);
+  };
+
+  const testimonialsCard01 = () => {
+    return (
+      <Box className="testimonialsCard">
+        <Rating name="size-small" defaultValue={4} />
+        <Typography className="testimonialsCardSubText">
+          "SpotLet made finding our dream wedding venue a breeze. We were able
+          to shortlist and connect with hosts in no time. Thank you for making
+          our special day even more special!
+        </Typography>
+        <Box className="userInfoBox">
+          <Box className="userProfilePic">
+            <p>E</p>
+          </Box>
+          <Box sx={{ position: "relative" }} ml={2}>
+            <img className="blueTik" src={blueTik} />
+            <Typography className="User_name">Emily and James</Typography>
+            <Typography className="userRole">Guest</Typography>
+          </Box>
+        </Box>
+      </Box>
+    );
+  };
+
+  const testimonialsCard02 = () => {
+    return (
+      <Box className="testimonialsCard">
+        <Rating name="size-small" defaultValue={4} />
+        <Typography className="testimonialsCardSubText">
+          Our corporate event was a huge success thanks to SpotLet. We found the
+          perfect retreat center that aligned with our needs and budget. Highly
+          recommended!
+        </Typography>
+        <Box className="userInfoBox">
+          <Box className="userProfilePic">
+            <p>A</p>
+          </Box>
+          <Box sx={{ position: "relative" }} ml={2}>
+            <Typography className="User_name">Alex</Typography>
+            <Typography className="userRole">CEO of TechNex Corp</Typography>
+          </Box>
+        </Box>
+      </Box>
+    );
   };
 
   return (
@@ -155,40 +265,1042 @@ export default function LandingPage() {
             <Typography className="mar-t60" variant="h2">
               FILM SHOOTING
             </Typography>
-            <Box className="tabs-container">
+        <Box className="tabs-container">
               <Box>
-                <Tabs className="tabs-film-shooting"
+                <Tabs
+                  className="tabs-film-shooting"
                   value={value}
                   onChange={tabhandleChange}
-                  aria-label="basic tabs example"                 >
-                  <Tab icon={<VideoStableIcon />} iconPosition="start" label="Film Shooting" {...a11yProps(0)} />
-                  <Tab icon={<CorporateFareIcon />} iconPosition="start" label="Corporate Events" {...a11yProps(1)} />
-                  <Tab icon={<PersonIcon />} iconPosition="start" label="Individual Events" {...a11yProps(2)} />
+                  aria-label="basic tabs example"
+                >
+                  <Tab
+                    icon={<VideoStableIcon />}
+                    iconPosition="start"
+                    label="Film Shooting"
+                    {...a11yProps(0)}
+                  />
+                  <Tab
+                    icon={<CorporateFareIcon />}
+                    iconPosition="start"
+                    label="Corporate Events"
+                    {...a11yProps(1)}
+                  />
+                  <Tab
+                    icon={<PersonIcon />}
+                    iconPosition="start"
+                    label="Individual Events"
+                    {...a11yProps(2)}
+                  />
                 </Tabs>
               </Box>
               <CustomTabPanel value={value} index={0}>
-                Item One
+                <ul className="tablisting">
+                  <li>
+                    <img src={filmshootingimg01} />
+                    <span>Ad Film Shoot</span>
+                  </li>
+                  <li>
+                    <img src={filmshootingimg02} />
+                    <span>Film Shoot</span>
+                  </li>
+                  <li>
+                    <img src={filmshootingimg03} />
+                    <span>Web Series Shoot</span>
+                  </li>
+                  <li>
+                    <img src={filmshootingimg04} />
+                    <span>Music Album Shoot</span>
+                  </li>
+                  <li>
+                    <img src={filmshootingimg05} />
+                    <span>Tv Serial</span>
+                  </li>
+                  <li>
+                    <img src={filmshootingimg06} />
+                    <span>PhotoShoot</span>
+                  </li>
+                  <li>
+                    <img src={filmshootingimg07} />
+                    <span>Video Shoot</span>
+                  </li>
+                  <li>
+                    <img src={filmshootingimg08} />
+                    <span>Green Screen Shoot</span>
+                  </li>
+                </ul>
               </CustomTabPanel>
               <CustomTabPanel value={value} index={1}>
-                Item Two
+                <ul className="tablisting">
+                  <li>
+                    <img src={corporateeventsimg01} />
+                    <span>Product Launch</span>
+                  </li>
+                  <li>
+                    <img src={corporateeventsimg02} />
+                    <span>Company Anniversary</span>
+                  </li>
+                  <li>
+                    <img src={corporateeventsimg03} />
+                    <span>Press Conference</span>
+                  </li>
+                  <li>
+                    <img src={corporateeventsimg04} />
+                    <span>Awards Ceremony</span>
+                  </li>
+                  <li>
+                    <img src={corporateeventsimg05} />
+                    <span>Trade Show</span>
+                  </li>
+                  <li>
+                    <img src={corporateeventsimg06} />
+                    <span>Fashion Show</span>
+                  </li>
+                  <li>
+                    <img src={corporateeventsimg07} />
+                    <span>Company Meetings</span>
+                  </li>
+                  <li>
+                    <img src={corporateeventsimg08} />
+                    <span>Corporate Party</span>
+                  </li>
+                </ul>
               </CustomTabPanel>
               <CustomTabPanel value={value} index={2}>
-                Item Three
+                <ul className="tablisting">
+                  <li>
+                    <img src={individualeventsimg01} />
+                    <span>Birthday Party</span>
+                  </li>
+                  <li>
+                    <img src={individualeventsimg02} />
+                    <span>Bachelor Party</span>
+                  </li>
+                  <li>
+                    <img src={individualeventsimg03} />
+                    <span>Engagement</span>
+                  </li>
+                  <li>
+                    <img src={individualeventsimg04} />
+                    <span>Wedding</span>
+                  </li>
+                  <li>
+                    <img src={individualeventsimg05} />
+                    <span>Festive Event</span>
+                  </li>
+                  <li>
+                    <img src={individualeventsimg06} />
+                    <span>Baby Shower</span>
+                  </li>
+                  <li>
+                    <img src={individualeventsimg07} />
+                    <span>Friends Gathering</span>
+                  </li>
+                  <li>
+                    <img src={individualeventsimg08} />
+                    <span>Cocktail Party</span>
+                  </li>
+                </ul>
               </CustomTabPanel>
             </Box>
           </Box>
-          <Box className="simple-3-step"></Box>
-          <Box className="featured-properties"></Box>
-          <Box className="professional-services"></Box>
-          <Box className="top-rated-properties"></Box>
-          <Box className="why-choose-us"></Box>
-          <Box className="recently-added-properties"></Box>
-          <Box className="client-testimonials"></Box>
-          <Box className="recent-projects"></Box>
-          <Box className="project-video"></Box>
-          <Box className="spotlet-provides"></Box>
-          <Box className="post-property"></Box>
-          <Box className="host-your-spot"></Box>
+          <Box className="simple-3-step">
+            <Typography className="text-stroke" variant="h2">
+              3 STEP PROCESS
+            </Typography>
+            <Typography className="mar-t60" variant="h2">
+              A SIMPLE 3-STEP BOOKING PROCESS
+            </Typography>
+            <Box className="step-container">
+              <Box className="step-box">
+                <figure>
+                  <img src={icon01} />
+                </figure>
+                <Typography variant="h5" gutterBottom>
+                  Choose your Desired Interest
+                </Typography>
+                <Typography variant="body1">
+                  Share property specifics to attract potential guests.
+                </Typography>
+              </Box>
+              <Box className="step-box">
+                <figure>
+                  <img src={icon02} />
+                </figure>
+                <Typography variant="h5" gutterBottom>
+                  Find the Perfect Spot
+                </Typography>
+                <Typography variant="body1">
+                  Highlight unique amenities and features of your space.
+                </Typography>
+              </Box>
+              <Box className="step-box">
+                <figure>
+                  <img src={icon03} />
+                </figure>
+                <Typography variant="h5" gutterBottom>
+                  Book your Dates
+                </Typography>
+                <Typography variant="body1">
+                  Choose a competitive rate to start hosting exceptional events.
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
+          <Box className="featured-properties">
+            <Typography className="text-stroke" variant="h2">
+              IN INDIA
+            </Typography>
+            <Typography className="mar-t60" variant="h2">
+              FEATURED PROPERTIES
+            </Typography>
+            <Box className="properties-container">
+              <ul className="properties">
+                <li>
+                  <figure>
+                    <img src={propertiesimg01} />
+                  </figure>
+                  <div className="verified">
+                    <img src={iconverified} /> Verified
+                  </div>
+                  <div className="wishlist">
+                    <a href="#">
+                      <img src={iconwishlist} />
+                    </a>
+                  </div>
+                  <div className="tags-icon">
+                    <a href="#">
+                      <img src={iconfilm} />
+                    </a>
+                    <a href="#">
+                      <img src={iconcorporate} />
+                    </a>
+                    <a href="#">
+                      <img src={iconindividual} />
+                    </a>
+                  </div>
+                  <article>
+                    <div className="name-price">
+                      <Typography variant="h2">#SPEED41606</Typography>
+                      <Typography variant="h3">INR. 4000/hr</Typography>
+                    </div>
+                    <div className="other-info">
+                      <Typography className="rating" variant="subtitle1">
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
+                      </Typography>
+                      <Typography className="namepro" variant="subtitle2">
+                        Pant House
+                      </Typography>
+                      <Typography
+                        className="proaddress"
+                        variant="caption"
+                        display="block"
+                        gutterBottom
+                      >
+                        <LocationOnIcon className="red" /> Maruthi Nagar,
+                        Hyderabad
+                      </Typography>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <figure>
+                    <img src={propertiesimg02} />
+                  </figure>
+                  <div className="verified">
+                    <img src={iconverified} /> Verified
+                  </div>
+                  <div className="wishlist">
+                    <a href="#">
+                      <img src={iconwishlist} />
+                    </a>
+                  </div>
+                  <div className="tags-icon">
+                    <a href="#">
+                      <img src={iconfilm} />
+                    </a>
+                    <a href="#">
+                      <img src={iconcorporate} />
+                    </a>
+                    <a href="#">
+                      <img src={iconindividual} />
+                    </a>
+                  </div>
+                  <article>
+                    <div className="name-price">
+                      <Typography variant="h2">#SPEED41606</Typography>
+                      <Typography variant="h3">INR. 4000/hr</Typography>
+                    </div>
+                    <div className="other-info">
+                      <Typography className="rating" variant="subtitle1">
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
+                      </Typography>
+                      <Typography className="namepro" variant="subtitle2">
+                        Pant House
+                      </Typography>
+                      <Typography
+                        className="proaddress"
+                        variant="caption"
+                        display="block"
+                        gutterBottom
+                      >
+                        <LocationOnIcon className="red" /> Maruthi Nagar,
+                        Hyderabad
+                      </Typography>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <figure>
+                    <img src={propertiesimg03} />
+                  </figure>
+                  <div className="verified">
+                    <img src={iconverified} /> Verified
+                  </div>
+                  <div className="wishlist">
+                    <a href="#">
+                      <img src={iconwishlist} />
+                    </a>
+                  </div>
+                  <div className="tags-icon">
+                    <a href="#">
+                      <img src={iconfilm} />
+                    </a>
+                    <a href="#">
+                      <img src={iconcorporate} />
+                    </a>
+                    <a href="#">
+                      <img src={iconindividual} />
+                    </a>
+                  </div>
+                  <article>
+                    <div className="name-price">
+                      <Typography variant="h2">#SPEED41606</Typography>
+                      <Typography variant="h3">INR. 4000/hr</Typography>
+                    </div>
+                    <div className="other-info">
+                      <Typography className="rating" variant="subtitle1">
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
+                      </Typography>
+                      <Typography className="namepro" variant="subtitle2">
+                        Pant House
+                      </Typography>
+                      <Typography
+                        className="proaddress"
+                        variant="caption"
+                        display="block"
+                        gutterBottom
+                      >
+                        <LocationOnIcon className="red" /> Maruthi Nagar,
+                        Hyderabad
+                      </Typography>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <figure>
+                    <img src={propertiesimg04} />
+                  </figure>
+                  <div className="verified">
+                    <img src={iconverified} /> Verified
+                  </div>
+                  <div className="wishlist">
+                    <a href="#">
+                      <img src={iconwishlist} />
+                    </a>
+                  </div>
+                  <div className="tags-icon">
+                    <a href="#">
+                      <img src={iconfilm} />
+                    </a>
+                    <a href="#">
+                      <img src={iconcorporate} />
+                    </a>
+                    <a href="#">
+                      <img src={iconindividual} />
+                    </a>
+                  </div>
+                  <article>
+                    <div className="name-price">
+                      <Typography variant="h2">#SPEED41606</Typography>
+                      <Typography variant="h3">INR. 4000/hr</Typography>
+                    </div>
+                    <div className="other-info">
+                      <Typography className="rating" variant="subtitle1">
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
+                      </Typography>
+                      <Typography className="namepro" variant="subtitle2">
+                        Pant House
+                      </Typography>
+                      <Typography
+                        className="proaddress"
+                        variant="caption"
+                        display="block"
+                        gutterBottom
+                      >
+                        <LocationOnIcon className="red" /> Maruthi Nagar,
+                        Hyderabad
+                      </Typography>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </Box>
+          </Box>
+          <Box className="professional-services">
+            <Typography className="text-stroke" variant="h2">
+              Professionals
+            </Typography>
+            <Typography className="mar-t60" variant="h2">
+              SpotLet Professional Services
+            </Typography>
+            <Typography variant="body1">
+              Let us take the lead in discovering the hidden locations,
+              skillfully negotiating rates, and ensuring your desired dates are
+              locked in.
+            </Typography>
+            <Box className="services-container">
+              <Box className="img-txt-panel">
+                <img
+                  src={professionalservicesimg01}
+                  className="image-overlay"
+                />
+                <Typography variant="h4">
+                  SpotLet Professional Services
+                </Typography>
+                <Typography variant="body1">
+                  Let our expert team assist you in discovering your perfect
+                  location
+                </Typography>
+                <Button className="readmore" variant="contained" size="large">
+                  Find My Spot
+                </Button>
+              </Box>
+              <Box className="img-txt-panel">
+                <img
+                  src={professionalservicesimg02}
+                  className="image-overlay"
+                />
+                <Typography variant="h4">
+                  Need Assistance with Your Event Planning?
+                </Typography>
+                <Typography variant="body1">
+                  Our experienced team is here to provide you with comprehensive
+                  event planning support.
+                </Typography>
+                <Button className="readmore" variant="contained" size="large">
+                  Get Started
+                </Button>
+              </Box>
+            </Box>
+          </Box>
+          <Box className="top-rated-properties">
+            <Typography className="text-stroke" variant="h2">
+              Top Rated
+            </Typography>
+            <Typography className="mar-t60" variant="h2">
+              Top Rated Properties
+            </Typography>
+            <Box className="properties-container">
+              <ul className="properties">
+                <li>
+                  <figure>
+                    <img src={propertiesimg05} />
+                  </figure>
+                  <div className="verified">
+                    <img src={iconverified} /> Verified
+                  </div>
+                  <div className="wishlist">
+                    <a href="#">
+                      <img src={iconwishlist} />
+                    </a>
+                  </div>
+                  <div className="tags-icon">
+                    <a href="#">
+                      <img src={iconfilm} />
+                    </a>
+                    <a href="#">
+                      <img src={iconcorporate} />
+                    </a>
+                    <a href="#">
+                      <img src={iconindividual} />
+                    </a>
+                  </div>
+                  <article>
+                    <div className="name-price">
+                      <Typography variant="h2">#SPEED41606</Typography>
+                      <Typography variant="h3">INR. 4000/hr</Typography>
+                    </div>
+                    <div className="other-info">
+                      <Typography className="rating" variant="subtitle1">
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
+                      </Typography>
+                      <Typography className="namepro" variant="subtitle2">
+                        Pant House
+                      </Typography>
+                      <Typography
+                        className="proaddress"
+                        variant="caption"
+                        display="block"
+                        gutterBottom
+                      >
+                        <LocationOnIcon className="red" /> Maruthi Nagar,
+                        Hyderabad
+                      </Typography>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <figure>
+                    <img src={propertiesimg06} />
+                  </figure>
+                  <div className="verified">
+                    <img src={iconverified} /> Verified
+                  </div>
+                  <div className="wishlist">
+                    <a href="#">
+                      <img src={iconwishlist} />
+                    </a>
+                  </div>
+                  <div className="tags-icon">
+                    <a href="#">
+                      <img src={iconfilm} />
+                    </a>
+                    <a href="#">
+                      <img src={iconcorporate} />
+                    </a>
+                    <a href="#">
+                      <img src={iconindividual} />
+                    </a>
+                  </div>
+                  <article>
+                    <div className="name-price">
+                      <Typography variant="h2">#SPEED41606</Typography>
+                      <Typography variant="h3">INR. 4000/hr</Typography>
+                    </div>
+                    <div className="other-info">
+                      <Typography className="rating" variant="subtitle1">
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
+                      </Typography>
+                      <Typography className="namepro" variant="subtitle2">
+                        Pant House
+                      </Typography>
+                      <Typography
+                        className="proaddress"
+                        variant="caption"
+                        display="block"
+                        gutterBottom
+                      >
+                        <LocationOnIcon className="red" /> Maruthi Nagar,
+                        Hyderabad
+                      </Typography>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <figure>
+                    <img src={propertiesimg07} />
+                  </figure>
+                  <div className="verified">
+                    <img src={iconverified} /> Verified
+                  </div>
+                  <div className="wishlist">
+                    <a href="#">
+                      <img src={iconwishlist} />
+                    </a>
+                  </div>
+                  <div className="tags-icon">
+                    <a href="#">
+                      <img src={iconfilm} />
+                    </a>
+                    <a href="#">
+                      <img src={iconcorporate} />
+                    </a>
+                    <a href="#">
+                      <img src={iconindividual} />
+                    </a>
+                  </div>
+                  <article>
+                    <div className="name-price">
+                      <Typography variant="h2">#SPEED41606</Typography>
+                      <Typography variant="h3">INR. 4000/hr</Typography>
+                    </div>
+                    <div className="other-info">
+                      <Typography className="rating" variant="subtitle1">
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
+                      </Typography>
+                      <Typography className="namepro" variant="subtitle2">
+                        Pant House
+                      </Typography>
+                      <Typography
+                        className="proaddress"
+                        variant="caption"
+                        display="block"
+                        gutterBottom
+                      >
+                        <LocationOnIcon className="red" /> Maruthi Nagar,
+                        Hyderabad
+                      </Typography>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <figure>
+                    <img src={propertiesimg08} />
+                  </figure>
+                  <div className="verified">
+                    <img src={iconverified} /> Verified
+                  </div>
+                  <div className="wishlist">
+                    <a href="#">
+                      <img src={iconwishlist} />
+                    </a>
+                  </div>
+                  <div className="tags-icon">
+                    <a href="#">
+                      <img src={iconfilm} />
+                    </a>
+                    <a href="#">
+                      <img src={iconcorporate} />
+                    </a>
+                    <a href="#">
+                      <img src={iconindividual} />
+                    </a>
+                  </div>
+                  <article>
+                    <div className="name-price">
+                      <Typography variant="h2">#SPEED41606</Typography>
+                      <Typography variant="h3">INR. 4000/hr</Typography>
+                    </div>
+                    <div className="other-info">
+                      <Typography className="rating" variant="subtitle1">
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
+                      </Typography>
+                      <Typography className="namepro" variant="subtitle2">
+                        Pant House
+                      </Typography>
+                      <Typography
+                        className="proaddress"
+                        variant="caption"
+                        display="block"
+                        gutterBottom
+                      >
+                        <LocationOnIcon className="red" /> Maruthi Nagar,
+                        Hyderabad
+                      </Typography>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </Box>
+          </Box>
+          <Box className="why-choose-us">
+            <Typography className="text-stroke" variant="h2">
+              Choose us
+            </Typography>
+            <Typography className="mar-t60" variant="h2">
+              Why Choose Us
+            </Typography>
+            <Box className="why-container">
+              <figure>
+                <img src={landingpageimg01} />
+                <Typography className="box" variant="subtitle1">
+                  lorem ipsum dolor sit amet
+                </Typography>
+              </figure>
+              <article>
+                <Box className="icon-content">
+                  <Box className="icon">
+                    <img src={icon08} />
+                  </Box>
+                  <Box className="content">
+                    <Typography variant="subtitle1">Exciting Spaces</Typography>
+                    <Typography variant="body1">
+                      Whether you’re hosting a family get-together, planning a
+                      corporate event or starting an OTT series, we have the
+                      perfect spaces for you to uncover!
+                    </Typography>
+                  </Box>
+                </Box>
+                <Box className="icon-content">
+                  <Box className="icon">
+                    <img src={icon08} />
+                  </Box>
+                  <Box className="content">
+                    <Typography variant="subtitle1">
+                      Transparent Prices
+                    </Typography>
+                    <Typography variant="body1">
+                      We assure you of no hidden fees in all our properties. Pay
+                      for what you need and find the most cost-effective spaces
+                      for your requirements.
+                    </Typography>
+                  </Box>
+                </Box>
+                <Box className="icon-content">
+                  <Box className="icon">
+                    <img src={icon08} />
+                  </Box>
+                  <Box className="content">
+                    <Typography variant="subtitle1">
+                      Simplified Bookings
+                    </Typography>
+                    <Typography variant="body1">
+                      Bid goodbye to long messy contracts and legal hassles. Our
+                      smooth and simplified booking can be made on the go,
+                      within a few minutes!
+                    </Typography>
+                  </Box>
+                </Box>
+              </article>
+            </Box>
+          </Box>
+          <Box className="recently-added-properties">
+            <Typography className="text-stroke" variant="h2">
+              Recently
+            </Typography>
+            <Typography className="mar-t60" variant="h2">
+              Recently Added Properties
+            </Typography>
+            <Box className="properties-container">
+              <ul className="properties">
+                <li>
+                  <figure>
+                    <img src={propertiesimg09} />
+                  </figure>
+                  <div className="verified">
+                    <img src={iconverified} /> Verified
+                  </div>
+                  <div className="wishlist">
+                    <a href="#">
+                      <img src={iconwishlist} />
+                    </a>
+                  </div>
+                  <div className="tags-icon">
+                    <a href="#">
+                      <img src={iconfilm} />
+                    </a>
+                    <a href="#">
+                      <img src={iconcorporate} />
+                    </a>
+                    <a href="#">
+                      <img src={iconindividual} />
+                    </a>
+                  </div>
+                  <article>
+                    <div className="name-price">
+                      <Typography variant="h2">#SPEED41606</Typography>
+                      <Typography variant="h3">INR. 4000/hr</Typography>
+                    </div>
+                    <div className="other-info">
+                      <Typography className="rating" variant="subtitle1">
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
+                      </Typography>
+                      <Typography className="namepro" variant="subtitle2">
+                        Pant House
+                      </Typography>
+                      <Typography
+                        className="proaddress"
+                        variant="caption"
+                        display="block"
+                        gutterBottom
+                      >
+                        <LocationOnIcon className="red" /> Maruthi Nagar,
+                        Hyderabad
+                      </Typography>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <figure>
+                    <img src={propertiesimg10} />
+                  </figure>
+                  <div className="verified">
+                    <img src={iconverified} /> Verified
+                  </div>
+                  <div className="wishlist">
+                    <a href="#">
+                      <img src={iconwishlist} />
+                    </a>
+                  </div>
+                  <div className="tags-icon">
+                    <a href="#">
+                      <img src={iconfilm} />
+                    </a>
+                    <a href="#">
+                      <img src={iconcorporate} />
+                    </a>
+                    <a href="#">
+                      <img src={iconindividual} />
+                    </a>
+                  </div>
+                  <article>
+                    <div className="name-price">
+                      <Typography variant="h2">#SPEED41606</Typography>
+                      <Typography variant="h3">INR. 4000/hr</Typography>
+                    </div>
+                    <div className="other-info">
+                      <Typography className="rating" variant="subtitle1">
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
+                      </Typography>
+                      <Typography className="namepro" variant="subtitle2">
+                        Pant House
+                      </Typography>
+                      <Typography
+                        className="proaddress"
+                        variant="caption"
+                        display="block"
+                        gutterBottom
+                      >
+                        <LocationOnIcon className="red" /> Maruthi Nagar,
+                        Hyderabad
+                      </Typography>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <figure>
+                    <img src={propertiesimg11} />
+                  </figure>
+                  <div className="verified">
+                    <img src={iconverified} /> Verified
+                  </div>
+                  <div className="wishlist">
+                    <a href="#">
+                      <img src={iconwishlist} />
+                    </a>
+                  </div>
+                  <div className="tags-icon">
+                    <a href="#">
+                      <img src={iconfilm} />
+                    </a>
+                    <a href="#">
+                      <img src={iconcorporate} />
+                    </a>
+                    <a href="#">
+                      <img src={iconindividual} />
+                    </a>
+                  </div>
+                  <article>
+                    <div className="name-price">
+                      <Typography variant="h2">#SPEED41606</Typography>
+                      <Typography variant="h3">INR. 4000/hr</Typography>
+                    </div>
+                    <div className="other-info">
+                      <Typography className="rating" variant="subtitle1">
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
+                      </Typography>
+                      <Typography className="namepro" variant="subtitle2">
+                        Pant House
+                      </Typography>
+                      <Typography
+                        className="proaddress"
+                        variant="caption"
+                        display="block"
+                        gutterBottom
+                      >
+                        <LocationOnIcon className="red" /> Maruthi Nagar,
+                        Hyderabad
+                      </Typography>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <figure>
+                    <img src={propertiesimg12} />
+                  </figure>
+                  <div className="verified">
+                    <img src={iconverified} /> Verified
+                  </div>
+                  <div className="wishlist">
+                    <a href="#">
+                      <img src={iconwishlist} />
+                    </a>
+                  </div>
+                  <div className="tags-icon">
+                    <a href="#">
+                      <img src={iconfilm} />
+                    </a>
+                    <a href="#">
+                      <img src={iconcorporate} />
+                    </a>
+                    <a href="#">
+                      <img src={iconindividual} />
+                    </a>
+                  </div>
+                  <article>
+                    <div className="name-price">
+                      <Typography variant="h2">#SPEED41606</Typography>
+                      <Typography variant="h3">INR. 4000/hr</Typography>
+                    </div>
+                    <div className="other-info">
+                      <Typography className="rating" variant="subtitle1">
+                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
+                      </Typography>
+                      <Typography className="namepro" variant="subtitle2">
+                        Pant House
+                      </Typography>
+                      <Typography
+                        className="proaddress"
+                        variant="caption"
+                        display="block"
+                        gutterBottom
+                      >
+                        <LocationOnIcon className="red" /> Maruthi Nagar,
+                        Hyderabad
+                      </Typography>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </Box>
+          </Box>
+          <Box className="client-testimonials">
+            <Typography className="text-stroke" variant="h2">
+              Testimonials
+            </Typography>
+            <Typography className="mar-t60" variant="h2">
+              Client Testimonials
+            </Typography>
+            <Box className="testimonialsSlideContainer">
+              <ArrowBackIosIcon className="testimonialsArrow" />
+              {testimonialsCard01()}
+              {testimonialsCard02()}
+              <ArrowForwardIosIcon className="testimonialsArrow" />
+            </Box>
+          </Box>
+          <Box className="recent-projects">
+            <Box className="project-heading">
+              <img src={logo} />
+              <Typography variant="h4">Recent Projects</Typography>
+              <Typography variant="body1">
+                "Unlocking Success Through Innovation"
+              </Typography>
+            </Box>
+            <Box className="project-box">
+              <figure>
+                <img src={projectimg01} />
+              </figure>
+              <article>
+                <Typography variant="h5">Anna Kendrick</Typography>
+                <Typography variant="h6">FILM SHOOTING</Typography>
+              </article>
+            </Box>
+            <Box className="project-box">
+              <figure>
+                <img src={projectimg02} />
+              </figure>
+              <article>
+                <Typography variant="h5">Anna Kendrick</Typography>
+                <Typography variant="h6">FILM SHOOTING</Typography>
+              </article>
+            </Box>
+            <Box className="project-box">
+              <figure>
+                <img src={projectimg03} />
+              </figure>
+              <article>
+                <Typography variant="h5">Anna Kendrick</Typography>
+                <Typography variant="h6">FILM SHOOTING</Typography>
+              </article>
+            </Box>
+          </Box>
+          <Box className="project-video">
+            <img src={video} />
+          </Box>
+          <Box className="spotlet-provides">
+            <Typography className="text-stroke" variant="h2">
+              Sporlet
+            </Typography>
+            <Typography className="mar-t60" variant="h2">
+              SpotLet Provides
+            </Typography>
+            <Box className="provides-container">
+              <Box className="icon-text-box">
+                <figure>
+                  <img src={safespace} />
+                </figure>
+                <Typography variant="h5">A Safe Space</Typography>
+                <Typography variant="body1">
+                  We do our background research and ensure that all the
+                  properties on our portal are safe for usage amongst crew
+                  members, teams, families and friends.
+                </Typography>
+              </Box>
+              <Box className="icon-text-box">
+                <figure>
+                  <img src={chancetosave} />
+                </figure>
+                <Typography variant="h5">A Chance to Save</Typography>
+                <Typography variant="body1">
+                  You can save up to 20% when you book with SpotLet, compared to
+                  when you work with a location agency. In addition, our prices
+                  are affordable and budget-friendly.
+                </Typography>
+              </Box>
+              <Box className="icon-text-box">
+                <figure>
+                  <img src={widerange} />
+                </figure>
+                <Typography variant="h5">A Wide Range of Options</Typography>
+                <Typography variant="body1">
+                  We invite you to explore our diverse locations for all kinds
+                  of shooting, events and celebrations. You’ll always be spoilt
+                  for choice!
+                </Typography>
+              </Box>
+              <Box className="icon-text-box">
+                <figure>
+                  <img src={memorable} />
+                </figure>
+                <Typography variant="h5">A Memorable Experience</Typography>
+                <Typography variant="body1">
+                  We promise our customers a smooth, satisfactory and memorable
+                  experience during the booking, and our hosts ensure you love
+                  your location every time!
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
+          <Box className="join-us">
+            <Box className="join-content">
+              <img src={joinbg} className="image-overlay" />
+              <article>
+                <Typography variant="h2" gutterBottom>
+                  Post your Property for <img src={free} />
+                </Typography>
+                <Typography variant="body1">
+                  Ready to discover incredible spaces that match your vision?
+                  Let SpotLet guide you to the most exciting locations for your
+                  events.
+                </Typography>
+              </article>
+              <aside>
+                <Button className="readmore" variant="contained" size="large">
+                  Post Property <div className="spanfree">Free</div>
+                </Button>
+              </aside>
+            </Box>
+          </Box>
+          <Box className="host-your-spot">
+            <Box className="host-container">
+              <article>
+                <Typography variant="h2" gutterBottom>
+                  Host your Spot with U
+                </Typography>
+                <Typography variant="body1">
+                  If you’d like to become a host and list your unique property,
+                  we’d be happy to showcase it on our website. We invite you to
+                  join our growing family
+                </Typography>
+                <Button className="readmore" variant="contained" size="large">
+                  List Your Space
+                </Button>
+              </article>
+              <figure>
+                <img src={landingpageimg02} />
+              </figure>
+            </Box>
+          </Box>
         </Box>
       </Box>
       <Footer />

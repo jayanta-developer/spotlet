@@ -2,17 +2,20 @@
   cursor: auto;
   opacity: 0.5;
 }
+
 .paginationButton.active {
   color: #ffffff;
   font-size: 15px;
   background: #ea4335;
 }
+
 .paginationContainer {
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 20px 0px;
 }
+
 .paginationContainer span {
   width: 29px;
   height: 29px;
@@ -24,6 +27,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .removeText {
   display: flex;
   flex-direction: row;
@@ -32,13 +36,16 @@
   top: -30px;
   cursor: pointer;
 }
+
 .removeNoneText {
   display: none;
 }
+
 .crossLogo {
   width: 10px;
   height: 10px;
 }
+
 .removeText p {
   color: #ea4335;
   font-family: "Poppins-Regular" !important;
@@ -47,13 +54,15 @@
   font-weight: 400 !important;
   line-height: 130% !important;
 }
+
 .propertiesCard {
   width: 302px;
-  height: 350px !important;
+  height: 400px !important;
   position: relative;
   margin: 0px 20px;
   flex: 0 0 302px;
 }
+
 .logo_Box {
   display: flex;
   flex-direction: row;
@@ -70,6 +79,7 @@
   bottom: 86px;
   right: 12px;
 }
+
 .cardText1stHeader {
   font-family: "Poppins-Bold" !important;
   font-size: 18px !important;
@@ -77,37 +87,45 @@
   font-weight: 600 !important;
   color: #333;
 }
+
 .cardStarBox {
   display: flex;
   flex-direction: row;
   margin-bottom: 7px;
   align-items: center;
 }
+
 .borderHeartLogo {
   position: absolute;
   top: 19px;
   left: 250px;
 }
+
 .comparerTextBox {
   display: flex;
   flex-direction: row;
 }
+
 @media only screen and (min-width: 768px) {
   .propertiesCard {
     height: 100%;
     position: relative;
     margin: 0px 15px;
   }
+
   .logo_Box {
     right: 15px;
   }
+
   .borderHeartLogo {
     /* left: 269px; */
   }
+
   .removeNoneText {
     display: none;
   }
 }
+
 /* Desktop view */
 @media only screen and (min-width: 1000px) {
   .removeNoneText {

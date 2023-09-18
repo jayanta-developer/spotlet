@@ -104,13 +104,13 @@ export default function NavBar() {
           <img src={message} />
           <img style={{ width: "19px", height: "17px", marginBottom: "2px" }} src={redHeart} />
         </Box>
-        <Box className="top-links">   
-        <Box className="host NavTextVisibility">
-          <Typography className='poppins pointer'>Become a Host</Typography>          
-        </Box>
-        <Box className="booking NavTextVisibility">
-          <Typography className='poppins pointer' sx={{ color: "#EA4335" }}>Bookings</Typography>
-        </Box>
+        <Box className="top-links">
+          <Box className="host NavTextVisibility">
+            <Typography className='poppins pointer'>Become a Host</Typography>
+          </Box>
+          <Box className="booking NavTextVisibility">
+            <Typography className='poppins pointer' sx={{ color: "#EA4335" }}>Bookings</Typography>
+          </Box>
         </Box>
         <Box className="profile pointer">
           <Box className="profileTab">

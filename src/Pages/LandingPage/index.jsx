@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { TypeAnimation } from "react-type-animation";
 import VideoStableIcon from "@mui/icons-material/VideoStable";
 import CorporateFareIcon from "@mui/icons-material/CorporateFare";
-import StarRateIcon from "@mui/icons-material/StarRate";
 import PersonIcon from "@mui/icons-material/Person";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import {
@@ -19,6 +18,9 @@ import {
   Rating,
 } from "@mui/material";
 import "./style.css";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 
 import bannerPhoto from "../../Assets/images/landing-banner.png";
 import filmshootingimg01 from "../../Assets/images/filmshooting-img01.jpg";
@@ -88,6 +90,8 @@ import landingpageimg02 from "../../Assets/images/landingpage-img02.png";
 //Components
 import NavBar from "../NavBar";
 import Footer from "../Footer";
+
+
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -179,6 +183,8 @@ export default function LandingPage() {
       </Box>
     );
   };
+
+  
 
   return (
     <>
@@ -469,196 +475,416 @@ export default function LandingPage() {
               FEATURED PROPERTIES
             </Typography>
             <Box className="properties-container">
-              <ul className="properties">
-                <li>
-                  <figure>
-                    <img src={propertiesimg01} />
-                  </figure>
-                  <div className="verified">
-                    <img src={iconverified} /> Verified
-                  </div>
-                  <div className="wishlist">
-                    <a href="#">
-                      <img src={iconwishlist} />
-                    </a>
-                  </div>
-                  <div className="tags-icon">
-                    <a href="#">
-                      <img src={iconfilm} />
-                    </a>
-                    <a href="#">
-                      <img src={iconcorporate} />
-                    </a>
-                    <a href="#">
-                      <img src={iconindividual} />
-                    </a>
-                  </div>
-                  <article>
-                    <div className="name-price">
-                      <Typography variant="h2">#SPEED41606</Typography>
-                      <Typography variant="h3">INR. 4000/hr</Typography>
+              <OwlCarousel
+                className="properties-carousel owl-theme"
+                autoplay
+                items={4}
+                loop
+                margin={30}
+                nav
+                dots={false}                
+              >
+                <div className="item">
+                  <Box className="properties-box">
+                    <figure>
+                      <img src={propertiesimg01} />
+                    </figure>
+                    <div className="verified">
+                      <img src={iconverified} /> Verified
                     </div>
-                    <div className="other-info">
-                      <Typography className="rating" variant="subtitle1">
-                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
-                      </Typography>
-                      <Typography className="namepro" variant="subtitle2">
-                        Pant House
-                      </Typography>
-                      <Typography
-                        className="proaddress"
-                        variant="caption"
-                        display="block"
-                        gutterBottom
-                      >
-                        <LocationOnIcon className="red" /> Maruthi Nagar,
-                        Hyderabad
-                      </Typography>
+                    <div className="wishlist">
+                      <a href="#">
+                        <img src={iconwishlist} />
+                      </a>
                     </div>
-                  </article>
-                </li>
-                <li>
-                  <figure>
-                    <img src={propertiesimg02} />
-                  </figure>
-                  <div className="verified">
-                    <img src={iconverified} /> Verified
-                  </div>
-                  <div className="wishlist">
-                    <a href="#">
-                      <img src={iconwishlist} />
-                    </a>
-                  </div>
-                  <div className="tags-icon">
-                    <a href="#">
-                      <img src={iconfilm} />
-                    </a>
-                    <a href="#">
-                      <img src={iconcorporate} />
-                    </a>
-                    <a href="#">
-                      <img src={iconindividual} />
-                    </a>
-                  </div>
-                  <article>
-                    <div className="name-price">
-                      <Typography variant="h2">#SPEED41606</Typography>
-                      <Typography variant="h3">INR. 4000/hr</Typography>
+                    <div className="tags-icon">
+                      <a href="#">
+                        <img src={iconfilm} />
+                      </a>
+                      <a href="#">
+                        <img src={iconcorporate} />
+                      </a>
+                      <a href="#">
+                        <img src={iconindividual} />
+                      </a>
                     </div>
-                    <div className="other-info">
-                      <Typography className="rating" variant="subtitle1">
-                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
-                      </Typography>
-                      <Typography className="namepro" variant="subtitle2">
-                        Pant House
-                      </Typography>
-                      <Typography
-                        className="proaddress"
-                        variant="caption"
-                        display="block"
-                        gutterBottom
-                      >
-                        <LocationOnIcon className="red" /> Maruthi Nagar,
-                        Hyderabad
-                      </Typography>
+                    <article>
+                      <div className="name-price">
+                        <Typography variant="h2">#SPEED41606</Typography>
+                        <Typography variant="h3">INR. 4000/hr</Typography>
+                      </div>
+                      <div className="other-info">
+                        <Typography className="rating" variant="subtitle1">
+                          <Rating name="size-small" defaultValue={4} /> 4.1
+                          (484)
+                        </Typography>
+                        <Typography className="namepro" variant="subtitle2">
+                          Pant House
+                        </Typography>
+                        <Typography
+                          className="proaddress"
+                          variant="caption"
+                          display="block"
+                          gutterBottom
+                        >
+                          <LocationOnIcon className="red" /> Maruthi Nagar,
+                          Hyderabad
+                        </Typography>
+                      </div>
+                    </article>
+                  </Box>
+                </div>
+                <div className="item">
+                  <Box className="properties-box">
+                    <figure>
+                      <img src={propertiesimg02} />
+                    </figure>
+                    <div className="verified">
+                      <img src={iconverified} /> Verified
                     </div>
-                  </article>
-                </li>
-                <li>
-                  <figure>
-                    <img src={propertiesimg03} />
-                  </figure>
-                  <div className="verified">
-                    <img src={iconverified} /> Verified
-                  </div>
-                  <div className="wishlist">
-                    <a href="#">
-                      <img src={iconwishlist} />
-                    </a>
-                  </div>
-                  <div className="tags-icon">
-                    <a href="#">
-                      <img src={iconfilm} />
-                    </a>
-                    <a href="#">
-                      <img src={iconcorporate} />
-                    </a>
-                    <a href="#">
-                      <img src={iconindividual} />
-                    </a>
-                  </div>
-                  <article>
-                    <div className="name-price">
-                      <Typography variant="h2">#SPEED41606</Typography>
-                      <Typography variant="h3">INR. 4000/hr</Typography>
+                    <div className="wishlist">
+                      <a href="#">
+                        <img src={iconwishlist} />
+                      </a>
                     </div>
-                    <div className="other-info">
-                      <Typography className="rating" variant="subtitle1">
-                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
-                      </Typography>
-                      <Typography className="namepro" variant="subtitle2">
-                        Pant House
-                      </Typography>
-                      <Typography
-                        className="proaddress"
-                        variant="caption"
-                        display="block"
-                        gutterBottom
-                      >
-                        <LocationOnIcon className="red" /> Maruthi Nagar,
-                        Hyderabad
-                      </Typography>
+                    <div className="tags-icon">
+                      <a href="#">
+                        <img src={iconfilm} />
+                      </a>
+                      <a href="#">
+                        <img src={iconcorporate} />
+                      </a>
+                      <a href="#">
+                        <img src={iconindividual} />
+                      </a>
                     </div>
-                  </article>
-                </li>
-                <li>
-                  <figure>
-                    <img src={propertiesimg04} />
-                  </figure>
-                  <div className="verified">
-                    <img src={iconverified} /> Verified
-                  </div>
-                  <div className="wishlist">
-                    <a href="#">
-                      <img src={iconwishlist} />
-                    </a>
-                  </div>
-                  <div className="tags-icon">
-                    <a href="#">
-                      <img src={iconfilm} />
-                    </a>
-                    <a href="#">
-                      <img src={iconcorporate} />
-                    </a>
-                    <a href="#">
-                      <img src={iconindividual} />
-                    </a>
-                  </div>
-                  <article>
-                    <div className="name-price">
-                      <Typography variant="h2">#SPEED41606</Typography>
-                      <Typography variant="h3">INR. 4000/hr</Typography>
+                    <article>
+                      <div className="name-price">
+                        <Typography variant="h2">#SPEED41606</Typography>
+                        <Typography variant="h3">INR. 4000/hr</Typography>
+                      </div>
+                      <div className="other-info">
+                        <Typography className="rating" variant="subtitle1">
+                          <Rating name="size-small" defaultValue={4} /> 4.1
+                          (484)
+                        </Typography>
+                        <Typography className="namepro" variant="subtitle2">
+                          Pant House
+                        </Typography>
+                        <Typography
+                          className="proaddress"
+                          variant="caption"
+                          display="block"
+                          gutterBottom
+                        >
+                          <LocationOnIcon className="red" /> Maruthi Nagar,
+                          Hyderabad
+                        </Typography>
+                      </div>
+                    </article>
+                  </Box>
+                </div>
+                <div className="item">
+                  <Box className="properties-box">
+                    <figure>
+                      <img src={propertiesimg03} />
+                    </figure>
+                    <div className="verified">
+                      <img src={iconverified} /> Verified
                     </div>
-                    <div className="other-info">
-                      <Typography className="rating" variant="subtitle1">
-                        <Rating name="size-small" defaultValue={4} /> 4.1 (484)
-                      </Typography>
-                      <Typography className="namepro" variant="subtitle2">
-                        Pant House
-                      </Typography>
-                      <Typography
-                        className="proaddress"
-                        variant="caption"
-                        display="block"
-                        gutterBottom
-                      >
-                        <LocationOnIcon className="red" /> Maruthi Nagar,
-                        Hyderabad
-                      </Typography>
+                    <div className="wishlist">
+                      <a href="#">
+                        <img src={iconwishlist} />
+                      </a>
                     </div>
-                  </article>
-                </li>
-              </ul>
+                    <div className="tags-icon">
+                      <a href="#">
+                        <img src={iconfilm} />
+                      </a>
+                      <a href="#">
+                        <img src={iconcorporate} />
+                      </a>
+                      <a href="#">
+                        <img src={iconindividual} />
+                      </a>
+                    </div>
+                    <article>
+                      <div className="name-price">
+                        <Typography variant="h2">#SPEED41606</Typography>
+                        <Typography variant="h3">INR. 4000/hr</Typography>
+                      </div>
+                      <div className="other-info">
+                        <Typography className="rating" variant="subtitle1">
+                          <Rating name="size-small" defaultValue={4} /> 4.1
+                          (484)
+                        </Typography>
+                        <Typography className="namepro" variant="subtitle2">
+                          Pant House
+                        </Typography>
+                        <Typography
+                          className="proaddress"
+                          variant="caption"
+                          display="block"
+                          gutterBottom
+                        >
+                          <LocationOnIcon className="red" /> Maruthi Nagar,
+                          Hyderabad
+                        </Typography>
+                      </div>
+                    </article>
+                  </Box>
+                </div>
+                <div className="item">
+                  <Box className="properties-box">
+                    <figure>
+                      <img src={propertiesimg04} />
+                    </figure>
+                    <div className="verified">
+                      <img src={iconverified} /> Verified
+                    </div>
+                    <div className="wishlist">
+                      <a href="#">
+                        <img src={iconwishlist} />
+                      </a>
+                    </div>
+                    <div className="tags-icon">
+                      <a href="#">
+                        <img src={iconfilm} />
+                      </a>
+                      <a href="#">
+                        <img src={iconcorporate} />
+                      </a>
+                      <a href="#">
+                        <img src={iconindividual} />
+                      </a>
+                    </div>
+                    <article>
+                      <div className="name-price">
+                        <Typography variant="h2">#SPEED41606</Typography>
+                        <Typography variant="h3">INR. 4000/hr</Typography>
+                      </div>
+                      <div className="other-info">
+                        <Typography className="rating" variant="subtitle1">
+                          <Rating name="size-small" defaultValue={4} /> 4.1
+                          (484)
+                        </Typography>
+                        <Typography className="namepro" variant="subtitle2">
+                          Pant House
+                        </Typography>
+                        <Typography
+                          className="proaddress"
+                          variant="caption"
+                          display="block"
+                          gutterBottom
+                        >
+                          <LocationOnIcon className="red" /> Maruthi Nagar,
+                          Hyderabad
+                        </Typography>
+                      </div>
+                    </article>
+                  </Box>
+                </div>
+                <div className="item">
+                  <Box className="properties-box">
+                    <figure>
+                      <img src={propertiesimg01} />
+                    </figure>
+                    <div className="verified">
+                      <img src={iconverified} /> Verified
+                    </div>
+                    <div className="wishlist">
+                      <a href="#">
+                        <img src={iconwishlist} />
+                      </a>
+                    </div>
+                    <div className="tags-icon">
+                      <a href="#">
+                        <img src={iconfilm} />
+                      </a>
+                      <a href="#">
+                        <img src={iconcorporate} />
+                      </a>
+                      <a href="#">
+                        <img src={iconindividual} />
+                      </a>
+                    </div>
+                    <article>
+                      <div className="name-price">
+                        <Typography variant="h2">#SPEED41606</Typography>
+                        <Typography variant="h3">INR. 4000/hr</Typography>
+                      </div>
+                      <div className="other-info">
+                        <Typography className="rating" variant="subtitle1">
+                          <Rating name="size-small" defaultValue={4} /> 4.1
+                          (484)
+                        </Typography>
+                        <Typography className="namepro" variant="subtitle2">
+                          Pant House
+                        </Typography>
+                        <Typography
+                          className="proaddress"
+                          variant="caption"
+                          display="block"
+                          gutterBottom
+                        >
+                          <LocationOnIcon className="red" /> Maruthi Nagar,
+                          Hyderabad
+                        </Typography>
+                      </div>
+                    </article>
+                  </Box>
+                </div>
+                <div className="item">
+                  <Box className="properties-box">
+                    <figure>
+                      <img src={propertiesimg02} />
+                    </figure>
+                    <div className="verified">
+                      <img src={iconverified} /> Verified
+                    </div>
+                    <div className="wishlist">
+                      <a href="#">
+                        <img src={iconwishlist} />
+                      </a>
+                    </div>
+                    <div className="tags-icon">
+                      <a href="#">
+                        <img src={iconfilm} />
+                      </a>
+                      <a href="#">
+                        <img src={iconcorporate} />
+                      </a>
+                      <a href="#">
+                        <img src={iconindividual} />
+                      </a>
+                    </div>
+                    <article>
+                      <div className="name-price">
+                        <Typography variant="h2">#SPEED41606</Typography>
+                        <Typography variant="h3">INR. 4000/hr</Typography>
+                      </div>
+                      <div className="other-info">
+                        <Typography className="rating" variant="subtitle1">
+                          <Rating name="size-small" defaultValue={4} /> 4.1
+                          (484)
+                        </Typography>
+                        <Typography className="namepro" variant="subtitle2">
+                          Pant House
+                        </Typography>
+                        <Typography
+                          className="proaddress"
+                          variant="caption"
+                          display="block"
+                          gutterBottom
+                        >
+                          <LocationOnIcon className="red" /> Maruthi Nagar,
+                          Hyderabad
+                        </Typography>
+                      </div>
+                    </article>
+                  </Box>
+                </div>
+                <div className="item">
+                  <Box className="properties-box">
+                    <figure>
+                      <img src={propertiesimg03} />
+                    </figure>
+                    <div className="verified">
+                      <img src={iconverified} /> Verified
+                    </div>
+                    <div className="wishlist">
+                      <a href="#">
+                        <img src={iconwishlist} />
+                      </a>
+                    </div>
+                    <div className="tags-icon">
+                      <a href="#">
+                        <img src={iconfilm} />
+                      </a>
+                      <a href="#">
+                        <img src={iconcorporate} />
+                      </a>
+                      <a href="#">
+                        <img src={iconindividual} />
+                      </a>
+                    </div>
+                    <article>
+                      <div className="name-price">
+                        <Typography variant="h2">#SPEED41606</Typography>
+                        <Typography variant="h3">INR. 4000/hr</Typography>
+                      </div>
+                      <div className="other-info">
+                        <Typography className="rating" variant="subtitle1">
+                          <Rating name="size-small" defaultValue={4} /> 4.1
+                          (484)
+                        </Typography>
+                        <Typography className="namepro" variant="subtitle2">
+                          Pant House
+                        </Typography>
+                        <Typography
+                          className="proaddress"
+                          variant="caption"
+                          display="block"
+                          gutterBottom
+                        >
+                          <LocationOnIcon className="red" /> Maruthi Nagar,
+                          Hyderabad
+                        </Typography>
+                      </div>
+                    </article>
+                  </Box>
+                </div>
+                <div className="item">
+                  <Box className="properties-box">
+                    <figure>
+                      <img src={propertiesimg04} />
+                    </figure>
+                    <div className="verified">
+                      <img src={iconverified} /> Verified
+                    </div>
+                    <div className="wishlist">
+                      <a href="#">
+                        <img src={iconwishlist} />
+                      </a>
+                    </div>
+                    <div className="tags-icon">
+                      <a href="#">
+                        <img src={iconfilm} />
+                      </a>
+                      <a href="#">
+                        <img src={iconcorporate} />
+                      </a>
+                      <a href="#">
+                        <img src={iconindividual} />
+                      </a>
+                    </div>
+                    <article>
+                      <div className="name-price">
+                        <Typography variant="h2">#SPEED41606</Typography>
+                        <Typography variant="h3">INR. 4000/hr</Typography>
+                      </div>
+                      <div className="other-info">
+                        <Typography className="rating" variant="subtitle1">
+                          <Rating name="size-small" defaultValue={4} /> 4.1
+                          (484)
+                        </Typography>
+                        <Typography className="namepro" variant="subtitle2">
+                          Pant House
+                        </Typography>
+                        <Typography
+                          className="proaddress"
+                          variant="caption"
+                          display="block"
+                          gutterBottom
+                        >
+                          <LocationOnIcon className="red" /> Maruthi Nagar,
+                          Hyderabad
+                        </Typography>
+                      </div>
+                    </article>
+                  </Box>
+                </div>
+              </OwlCarousel>
             </Box>
           </Box>
           <Box className="professional-services">

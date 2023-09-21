@@ -201,6 +201,21 @@ html {
   /* border-radius: 12px 0px 0px 12px; */
 }
 
+.Mui-selected:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(234, 67, 53, 0);
+	border-top-color: #EA4335;
+	border-width: 17px;
+	margin-left: -17px;
+}
+
 .css-1aquho2-MuiTabs-indicator {
   position: absolute !important;
   top: 100% !important;
@@ -219,6 +234,63 @@ html {
 
 .css-19kzrtu {
   padding: 30px 0 !important;
+}
+
+#simple-tabpanel-0 {
+  position: relative;
+}
+
+#simple-tabpanel-0:after {
+	top: 0;
+	left: 17%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(234, 67, 53, 0);
+	border-top-color: #EA4335;
+	border-width: 17px;
+	margin-left: -17px;
+}
+
+#simple-tabpanel-1 {
+  position: relative;
+}
+
+#simple-tabpanel-1:after {
+	top: 0;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(234, 67, 53, 0);
+	border-top-color: #EA4335;
+	border-width: 17px;
+	margin-left: -17px;
+}
+
+#simple-tabpanel-2 {
+  position: relative;
+}
+
+#simple-tabpanel-2:after {
+	top: 0;
+	right: 15.5%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(234, 67, 53, 0);
+	border-top-color: #EA4335;
+	border-width: 17px;
+	margin-left: -17px;
 }
 
 ul.tablisting {
@@ -1084,6 +1156,18 @@ ul.properties li article h3 {
 
   .mar-t60 {
     margin-top: -30px !important;
+  }
+ 
+  #simple-tabpanel-0:after {
+    display: none;
+  }
+  
+  #simple-tabpanel-1:after {
+    display: none;
+  }
+   
+  #simple-tabpanel-2:after {
+    display: none;
   }
 }
 

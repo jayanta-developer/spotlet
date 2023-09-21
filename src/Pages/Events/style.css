@@ -80,14 +80,14 @@
   max-width: 1300px;
 }
 
-.tabs-film-shooting {
-  border-radius: 0px !important;
+.events-tabs .tabs-film-shooting .css-heg063-MuiTabs-flexContainer {
+  border-radius: 0 !important;
   background: #ffffff !important;
 }
 
 .tabs-film-shooting .css-heg063-MuiTabs-flexContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .tabs-film-shooting .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
@@ -125,6 +125,101 @@
 
 .css-19kzrtu {
   padding: 30px 0 !important;
+}
+
+.events-tabs #simple-tabpanel-0 {
+  position: relative;
+}
+
+.events-tabs #simple-tabpanel-0:after {
+	top: -1px;
+	left: 10%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(234, 67, 53, 0);
+	border-top-color: #EA4335;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+.events-tabs #simple-tabpanel-1 {
+  position: relative;
+}
+
+.events-tabs #simple-tabpanel-1:after {
+	top: -1px;
+	left: 28.5%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(234, 67, 53, 0);
+	border-top-color: #EA4335;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+.events-tabs #simple-tabpanel-2 {
+  position: relative;
+}
+
+.events-tabs #simple-tabpanel-2:after {
+	top: -1px;
+	left: 46%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(234, 67, 53, 0);
+	border-top-color: #EA4335;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+.events-tabs #simple-tabpanel-3 {
+  position: relative;
+}
+
+.events-tabs #simple-tabpanel-3:after {
+	top: -1px;
+	left: 65.3%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(234, 67, 53, 0);
+	border-top-color: #EA4335;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+.events-tabs #simple-tabpanel-4 {
+  position: relative;
+}
+
+.events-tabs #simple-tabpanel-4:after {
+	top: -1px;
+	left: 88%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(234, 67, 53, 0);
+	border-top-color: #EA4335;
+	border-width: 10px;
+	margin-left: -10px;
 }
 
 .tabs-content {
@@ -339,6 +434,26 @@
   .events-content .get-in-touch {
     padding: 30px 15px;
   }
+  
+  .events-tabs #simple-tabpanel-0:after {
+    display: none;
+  }
+  
+  .events-tabs #simple-tabpanel-1:after {
+    display: none;
+  }
+  
+  .events-tabs #simple-tabpanel-2:after {
+    display: none;
+  }
+  
+  .events-tabs #simple-tabpanel-3:after {
+    display: none;
+  }
+
+  .events-tabs #simple-tabpanel-4:after {
+    display: none;
+  }
 }
 
 /* Desktop view */
@@ -400,6 +515,26 @@
     padding: 30px;
   }
 
+  .events-tabs #simple-tabpanel-0:after {
+    left: 10%;
+  }
+  
+  .events-tabs #simple-tabpanel-1:after {
+    left: 28%
+  }
+  
+  .events-tabs #simple-tabpanel-2:after {
+    left: 44.5%;
+  }
+
+  .events-tabs #simple-tabpanel-3:after {
+    left: 63.5%;
+  }
+
+  .events-tabs #simple-tabpanel-4:after {
+    left: 88%;
+  }
+
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1320px) {
@@ -437,5 +572,25 @@
   .tabs-film-shooting .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
     font-size: 16px !important;
     padding: 10px 20px !important;
+  }
+
+  .events-tabs #simple-tabpanel-0:after {
+    left: 10%;
+  }
+  
+  .events-tabs #simple-tabpanel-1:after {
+    left: 28%
+  }
+  
+  .events-tabs #simple-tabpanel-2:after {
+    left: 45%;
+  }
+
+  .events-tabs #simple-tabpanel-3:after {
+    left: 64.2%;
+  }
+
+  .events-tabs #simple-tabpanel-4:after {
+    left: 88%;
   }
 }

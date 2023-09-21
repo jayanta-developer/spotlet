@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import { TypeAnimation } from "react-type-animation";
 import VideoStableIcon from "@mui/icons-material/VideoStable";
 import CorporateFareIcon from "@mui/icons-material/CorporateFare";
 import StarRateIcon from "@mui/icons-material/StarRate";
@@ -188,7 +189,21 @@ export default function LandingPage() {
           <Box className="banner-content">
             <Typography variant="h1">
               Kickstart your Next{" "}
-              <span className="span700">Film & Tv Shoot</span> with SpotLet
+              <span className="span700">
+                <TypeAnimation
+                  sequence={[
+                    "Film & TV Shoot",
+                    500,
+                    "Corporate Retreat",
+                    500,
+                    "Personal Event",
+                    500,
+                  ]}
+                  speed={75}
+                  repeat={Infinity}
+                />
+              </span>{" "}
+              with SpotLet
             </Typography>
             <Box className="banner-search">
               <ul>
@@ -265,7 +280,7 @@ export default function LandingPage() {
             <Typography className="mar-t60" variant="h2">
               FILM SHOOTING
             </Typography>
-        <Box className="tabs-container">
+            <Box className="tabs-container">
               <Box>
                 <Tabs
                   className="tabs-film-shooting"

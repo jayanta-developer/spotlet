@@ -25,7 +25,7 @@ html {
 }
 
 .landingpage-banner .banner-content {
-  padding: 150px 0;
+  padding: 87px 0;
   margin: 0 auto;
   max-width: 1300px;
   min-height: 980px;
@@ -46,8 +46,8 @@ html {
 .banner-search {
   padding: 30px 0;
   border-radius: 19px;
-  border: 1px solid #EA4335;
-  background: #FFF;
+  border: 1px solid #ea4335;
+  background: #fff;
 }
 
 .banner-search ul {
@@ -75,7 +75,8 @@ html {
   max-width: 16%;
 }
 
-.banner-search .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+.banner-search
+  .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
   padding: 0 !important;
   padding-right: 32px !important;
   border-radius: 0 !important;
@@ -86,7 +87,8 @@ html {
   border: none !important;
 }
 
-.banner-search .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+.banner-search
+  .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
   font-size: 20px !important;
   font-weight: 600 !important;
   line-height: 30px !important;
@@ -176,6 +178,9 @@ html {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-radius: 12px;
+  background: #ea433512;
+  overflow: hidden;
 }
 
 .tabs-film-shooting .css-h0q0iv-MuiButtonBase-root-MuiTab-root {
@@ -190,9 +195,10 @@ html {
 }
 
 .tabs-film-shooting .css-h0q0iv-MuiButtonBase-root-MuiTab-root.Mui-selected {
-  background-color: #EA4335 !important;
+  background-color: #ea4335 !important;
   color: #ffffff !important;
   position: relative;
+  /* border-radius: 12px 0px 0px 12px; */
 }
 
 .css-1aquho2-MuiTabs-indicator {
@@ -206,7 +212,7 @@ html {
   width: 0 !important;
   pointer-events: none !important;
   border-color: rgba(234, 67, 53, 0) !important;
-  border-top-color: #EA4335 !important;
+  border-top-color: #ea4335 !important;
   border-width: 15px !important;
   margin-left: -15px !important;
 }
@@ -230,7 +236,7 @@ ul.tablisting li {
   max-width: 23%;
   height: 350px;
   overflow: hidden;
-  background-color: #EA4335;
+  background-color: #ea4335;
   border-radius: 20px;
   position: relative;
 }
@@ -248,7 +254,7 @@ ul.tablisting li span {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, .3);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   border-radius: 0 0 24px 24px;
   color: #fff;
@@ -312,7 +318,7 @@ ul.properties li .verified {
   position: absolute;
   left: 15px;
   top: 15px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 4px;
   padding: 5px;
   width: auto !important;
@@ -335,7 +341,7 @@ ul.properties li .tags-icon {
   position: absolute;
   right: 15px;
   top: 190px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 12px;
   padding: 10px;
   width: auto !important;
@@ -366,7 +372,7 @@ ul.properties li article h3 {
   font-size: 14px !important;
   font-weight: 600 !important;
   line-height: 24px !important;
-  color: #EA4335 !important;
+  color: #ea4335 !important;
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -392,18 +398,18 @@ ul.properties li article h3 {
 }
 
 .yellow {
-  color: #FFCE4B;
+  color: #ffce4b;
   font-size: 18px;
 }
 
 .grey {
-  color: #AEAEAE;
+  color: #aeaeae;
   font-size: 18px;
   margin-right: 5px;
 }
 
 .red {
-  color: #EA4335;
+  color: #ea4335;
   font-size: 18px !important;
 }
 
@@ -454,7 +460,7 @@ ul.properties li article h3 {
 
 .img-txt-panel h4,
 .img-txt-panel p {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .img-txt-panel h4 {
@@ -509,11 +515,11 @@ ul.properties li article h3 {
   width: 100%;
   max-width: 286px;
   border-radius: 12px;
-  border: 6px solid #FFF;
-  background: #1A252D;
+  border: 6px solid #fff;
+  background: #1a252d;
   padding: 30px;
   text-align: center;
-  color: #FFFBFB;
+  color: #fffbfb;
   text-align: center;
   font-size: 22px;
   font-weight: 500;
@@ -569,7 +575,7 @@ ul.properties li article h3 {
 }
 
 .client-testimonials .testimonialsCard {
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
   text-align: left !important;
 }
 
@@ -587,7 +593,7 @@ ul.properties li article h3 {
   max-width: 25%;
   min-height: 420px;
   border-radius: 15px;
-  background: #FFEBEA;
+  background: #ffebea;
   padding: 40px;
   display: flex;
   flex-wrap: wrap;
@@ -614,7 +620,7 @@ ul.properties li article h3 {
   max-width: 25%;
   min-height: 420px;
   border-radius: 15px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -644,7 +650,7 @@ ul.properties li article h3 {
 .recent-projects .project-box article h6 {
   font-size: 18px;
   font-weight: 600;
-  color: #EA4335;
+  color: #ea4335;
   padding: 0;
 }
 
@@ -679,8 +685,8 @@ ul.properties li article h3 {
   max-width: 25%;
   min-height: 300px;
   border-radius: 29px;
-  border: 1px solid #E6E6E6;
-  background: #FFF;
+  border: 1px solid #e6e6e6;
+  background: #fff;
   padding: 20px;
 }
 
@@ -729,8 +735,8 @@ ul.properties li article h3 {
 
 .spanfree {
   border-radius: 5px;
-  background: #FFF;
-  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.10);
+  background: #fff;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.1);
   color: #000;
   text-align: center;
   font-size: 14px;
@@ -1048,7 +1054,6 @@ ul.properties li article h3 {
     min-height: inherit;
   }
 
-
   .post-property {
     padding: 30px 15px;
   }
@@ -1060,12 +1065,12 @@ ul.properties li article h3 {
   .host-container {
     flex-wrap: wrap;
   }
-  
+
   .host-container article {
     flex: calc(100% -0px);
     max-width: calc(100% - 0px);
   }
-  
+
   .host-container figure {
     flex: 100%;
     max-width: 100%;
@@ -1210,18 +1215,17 @@ ul.properties li article h3 {
   .host-container {
     flex-wrap: wrap;
   }
-  
+
   .host-container article {
     flex: calc(100% -0px);
     max-width: calc(100% - 0px);
   }
-  
+
   .host-container figure {
     flex: 100%;
     max-width: 100%;
     margin-bottom: -6px;
   }
-
 }
 
 /* Desktop view */
@@ -1319,7 +1323,6 @@ ul.properties li article h3 {
   .host-your-spot {
     padding: 50px 15px 0 15px;
   }
-
 }
 
 .YouTubeContent {

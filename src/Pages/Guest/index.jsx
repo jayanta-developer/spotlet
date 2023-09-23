@@ -2,9 +2,6 @@ import React from "react";
 import { Box, Typography, Button, Rating } from "@mui/material";
 import "./style.css";
 
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-
 import bannerPhoto from "../../Assets/images/guest-banner.png";
 import joinbg from "../../Assets/images/join-bg.png";
 
@@ -20,38 +17,14 @@ import icon19 from "../../Assets/images/icon-19.svg";
 import icon20 from "../../Assets/images/icon-20.svg";
 import icon21 from "../../Assets/images/icon-21.svg";
 
-import blueTik from "../../Assets/images/hexagon-check.svg";
 
 //Components
 import NavBar from "../NavBar";
 import Footer from "../Footer";
+import GuestTestimonials from "../GuestTestimonials";
 
 export default function Guest() {
-  const testimonialsCard = () => {
-    return (
-      <Box className="testimonialsCard">
-        <Rating name="size-small" defaultValue={2} />
-        <Typography className="testimonialsCardSubText">
-          We’re a renowned 5-star hotel in the heart of the city, often booked
-          by families and outstation guests. However, we wanted to expand our
-          customer base and become a preferred location for corporate events.
-          SpotLet allowed us to reach out to our potential customers, and we’re
-          doing great business with corporates now!
-        </Typography>
-        <Box className="userInfoBox">
-          <Box className="userProfilePic">
-            <p>B</p>
-          </Box>
-          <Box sx={{ position: "relative" }} ml={2}>
-            <img className="blueTik" src={blueTik} />
-            <Typography className="User_name">JHON DOE</Typography>
-            <Typography className="userRole">Host</Typography>
-          </Box>
-        </Box>
-      </Box>
-    );
-  };
-
+  
   return (
     <>
       <NavBar />
@@ -210,10 +183,9 @@ export default function Guest() {
               SpotLet Testimonials
             </Typography>
             <Box className="testimonialsSlideContainer">
-              <ArrowBackIosIcon className="testimonialsArrow" />
-              {testimonialsCard()}
-              {testimonialsCard()}
-              <ArrowForwardIosIcon className="testimonialsArrow" />
+            <Box className="testimonials-Container">
+              <GuestTestimonials />
+            </Box>
             </Box>
           </Box>
           <Box className="join-us">

@@ -9,8 +9,6 @@ import {
   TextField,
   Rating,
 } from "@mui/material";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
@@ -28,11 +26,11 @@ import icon03 from "../../Assets/images/icon-rupee.png";
 import icon15 from "../../Assets/images/icon-15.svg";
 import icon16 from "../../Assets/images/icon-16.svg";
 import icon17 from "../../Assets/images/icon-17.svg";
-import blueTik from "../../Assets/images/hexagon-check.svg";
 
 //Components
 import NavBar from "../NavBar";
 import Footer from "../Footer";
+import HostTestimonials from "../HostTestimonials";
 
 export default function Host() {
   const [expanded, setExpanded] = useState("panel1");
@@ -40,30 +38,6 @@ export default function Host() {
     setExpanded(newExpanded ? panel : false);
   };
 
-  const testimonialsCard = () => {
-    return (
-      <Box className="testimonialsCard">
-        <Rating name="size-small" defaultValue={2} />
-        <Typography className="testimonialsCardSubText">
-          We’re a renowned 5-star hotel in the heart of the city, often booked
-          by families and outstation guests. However, we wanted to expand our
-          customer base and become a preferred location for corporate events.
-          SpotLet allowed us to reach out to our potential customers, and we’re
-          doing great business with corporates now!
-        </Typography>
-        <Box className="userInfoBox">
-          <Box className="userProfilePic">
-            <p>B</p>
-          </Box>
-          <Box sx={{ position: "relative" }} ml={2}>
-            <img className="blueTik" src={blueTik} />
-            <Typography className="User_name">JHON DOE</Typography>
-            <Typography className="userRole">Host</Typography>
-          </Box>
-        </Box>
-      </Box>
-    );
-  };
 
   return (
     <>
@@ -207,11 +181,8 @@ export default function Host() {
           <Typography mb={3} variant="h2" gutterBottom>
             Host Testimonials
           </Typography>
-          <Box className="testimonialsSlideContainer">
-            <ArrowBackIosIcon className="testimonialsArrow" />
-            {testimonialsCard()}
-            {testimonialsCard()}
-            <ArrowForwardIosIcon className="testimonialsArrow" />
+          <Box className="testimonials-Container">
+            <HostTestimonials />
           </Box>
         </Box>
         <Box className="join-us">

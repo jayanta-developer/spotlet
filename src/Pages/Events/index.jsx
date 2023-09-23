@@ -10,8 +10,6 @@ import {
   Tab,
 } from "@mui/material";
 import "./style.css";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 import bannerPhoto from "../../Assets/images/events-banner.png";
 import blueTik from "../../Assets/images/hexagon-check.svg";
@@ -70,30 +68,6 @@ export default function Events() {
     setValue(newValue);
   };
 
-  const testimonialsCard = () => {
-    return (
-      <Box className="testimonialsCard">
-        <Rating name="size-small" defaultValue={2} />
-        <Typography className="testimonialsCardSubText">
-          We’re a renowned 5-star hotel in the heart of the city, often booked
-          by families and outstation guests. However, we wanted to expand our
-          customer base and become a preferred location for corporate events.
-          SpotLet allowed us to reach out to our potential customers, and we’re
-          doing great business with corporates now!
-        </Typography>
-        <Box className="userInfoBox">
-          <Box className="userProfilePic">
-            <p>B</p>
-          </Box>
-          <Box sx={{ position: "relative" }} ml={2}>
-            <img className="blueTik" src={blueTik} />
-            <Typography className="User_name">JHON DOE</Typography>
-            <Typography className="userRole">Host</Typography>
-          </Box>
-        </Box>
-      </Box>
-    );
-  };
 
   return (
     <>

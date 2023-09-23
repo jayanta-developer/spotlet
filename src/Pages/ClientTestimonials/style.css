@@ -1,0 +1,58 @@
+.testimonials-Card {
+  border-radius: 20px;
+  background: #FFF;
+  padding: 50px;
+  text-align: left;
+}
+
+.clienttestimonials-carousel .owl-nav.disabled, .clienttestimonials-carousel .owl-dots.disabled {
+  display: block !important;
+}
+
+.clienttestimonials-carousel button.owl-prev {
+  background: url(./prev.png) no-repeat center !important;
+  width: 34px;
+  height: 54px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: -50px;
+  top: 40%;
+}
+
+.clienttestimonials-carousel button.owl-next {
+  background: url(./next.png) no-repeat center !important;
+  width: 34px;
+  height: 54px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: -50px;
+  top: 40%;
+}
+
+.clienttestimonials-carousel button.owl-prev span,
+.clienttestimonials-carousel button.owl-next span {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .clienttestimonials-carousel button.owl-prev {
+    left: -8px;
+  }
+
+  .clienttestimonials-carousel button.owl-next {
+    right: -8px;
+
+  }
+}
+
+@media only screen and (min-width: 761px) and (max-width: 1320px) {
+  .clienttestimonials-carousel button.owl-prev {
+    left: -8px;
+  }
+
+  .clienttestimonials-carousel button.owl-next {
+    right: -8px;
+  }
+}

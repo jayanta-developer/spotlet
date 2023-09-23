@@ -14,7 +14,7 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 import bannerPhoto from "../../Assets/images/events-banner.png";
-import blueTik from "../../Assets/images/hexagon-check (1) 1.svg";
+import blueTik from "../../Assets/images/hexagon-check.svg";
 import eventsimg01 from "../../Assets/images/eventsimg01.png";
 import eventsimg02 from "../../Assets/images/eventsimg02.png";
 import eventsimg04 from "../../Assets/images/events-img04.png";
@@ -27,6 +27,8 @@ import galleryimg04 from "../../Assets/images/gallery-img04.png";
 //Components
 import NavBar from "../NavBar";
 import Footer from "../Footer";
+import EventsGallery from "../EventsGallery";
+import EventsTestimonials from "../EventsTestimonials";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -171,11 +173,11 @@ export default function Events() {
                 </Box>
               </CustomTabPanel>
               <CustomTabPanel value={value} index={1}>
-              <Box className="tabs-content">
+                <Box className="tabs-content">
                   <article>
                     <Typography variant="h6">Corporate Events</Typography>
                     <Typography variant="h2" gutterBottom>
-                    Event Planning
+                      Event Planning
                     </Typography>
                     <Typography variant="body1">
                       Elevate your corporate event by choosing from our diverse
@@ -191,11 +193,11 @@ export default function Events() {
                 </Box>
               </CustomTabPanel>
               <CustomTabPanel value={value} index={2}>
-              <Box className="tabs-content">
+                <Box className="tabs-content">
                   <article>
                     <Typography variant="h6">Corporate Events</Typography>
                     <Typography variant="h2" gutterBottom>
-                    Customization
+                      Customization
                     </Typography>
                     <Typography variant="body1">
                       Elevate your corporate event by choosing from our diverse
@@ -211,11 +213,11 @@ export default function Events() {
                 </Box>
               </CustomTabPanel>
               <CustomTabPanel value={value} index={3}>
-              <Box className="tabs-content">
+                <Box className="tabs-content">
                   <article>
                     <Typography variant="h6">Corporate Events</Typography>
                     <Typography variant="h2" gutterBottom>
-                    Seamless Execution
+                      Seamless Execution
                     </Typography>
                     <Typography variant="body1">
                       Elevate your corporate event by choosing from our diverse
@@ -231,11 +233,11 @@ export default function Events() {
                 </Box>
               </CustomTabPanel>
               <CustomTabPanel value={value} index={4}>
-              <Box className="tabs-content">
+                <Box className="tabs-content">
                   <article>
                     <Typography variant="h6">Corporate Events</Typography>
                     <Typography variant="h2" gutterBottom>
-                    Technology and Support
+                      Technology and Support
                     </Typography>
                     <Typography variant="body1">
                       Elevate your corporate event by choosing from our diverse
@@ -296,31 +298,15 @@ export default function Events() {
               Our Gallery
             </Typography>
             <Box className="gallery-container">
-              <ul>
-                <li>
-                  <img src={galleryimg01} />
-                </li>
-                <li>
-                  <img src={galleryimg02} />
-                </li>
-                <li>
-                  <img src={galleryimg03} />
-                </li>
-                <li>
-                  <img src={galleryimg04} />
-                </li>
-              </ul>
+              <EventsGallery />
             </Box>
           </Box>
           <Box className="testimonials">
             <Typography mb={3} variant="h2" gutterBottom>
               SpotLet Testimonials
             </Typography>
-            <Box className="testimonialsSlideContainer">
-              <ArrowBackIosIcon className="testimonialsArrow" />
-              {testimonialsCard()}
-              {testimonialsCard()}
-              <ArrowForwardIosIcon className="testimonialsArrow" />
+            <Box className="testimonials-Container">
+              <EventsTestimonials />
             </Box>
           </Box>
           <Box className="get-in-touch">

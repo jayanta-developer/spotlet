@@ -20,7 +20,7 @@ import icon19 from "../../Assets/images/icon-19.svg";
 import icon20 from "../../Assets/images/icon-20.svg";
 import icon21 from "../../Assets/images/icon-21.svg";
 
-import blueTik from "../../Assets/images/hexagon-check (1) 1.svg";
+import blueTik from "../../Assets/images/hexagon-check.svg";
 
 //Components
 import NavBar from "../NavBar";

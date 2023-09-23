@@ -696,6 +696,8 @@
   position: absolute;
   top: 8px;
   right: -26px;
+  width: 17px !important;
+  height: 16px;
 }
 
 .testimonialsArrow {

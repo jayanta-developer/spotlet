@@ -28,7 +28,7 @@ import icon03 from "../../Assets/images/icon-rupee.png";
 import icon15 from "../../Assets/images/icon-15.svg";
 import icon16 from "../../Assets/images/icon-16.svg";
 import icon17 from "../../Assets/images/icon-17.svg";
-import blueTik from "../../Assets/images/hexagon-check (1) 1.svg";
+import blueTik from "../../Assets/images/hexagon-check.svg";
 
 //Components
 import NavBar from "../NavBar";

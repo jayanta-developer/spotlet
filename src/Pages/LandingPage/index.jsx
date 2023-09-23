@@ -51,13 +51,7 @@ import professionalservicesimg01 from "../../Assets/images/professional-services
 import professionalservicesimg02 from "../../Assets/images/professional-services-img02.png";
 import landingpageimg01 from "../../Assets/images/landingpage-img01.jpg";
 import icon08 from "../../Assets/images/icon-08.svg";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import blueTik from "../../Assets/images/hexagon-check (1) 1.svg";
 import logo from "../../Assets/images/logo.png";
-import projectimg01 from "../../Assets/images/project-img01.png";
-import projectimg02 from "../../Assets/images/project-img02.png";
-import projectimg03 from "../../Assets/images/project-img03.png";
 import safespace from "../../Assets/images/icon-safespace.svg";
 import chancetosave from "../../Assets/images/icon-chancetosave.svg";
 import widerange from "../../Assets/images/icon-widerange.svg";
@@ -74,6 +68,8 @@ import Footer from "../Footer";
 import FeaturedProperties from "../FeaturedProperties";
 import TopRatedProperties from "../TopRatedProperties";
 import RecentlyAddedProperties from "../RecentlyAddedProperties";
+import RecentProjects from "../RecentProjects";
+import ClientTestimonials from "../ClientTestimonials";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -121,50 +117,7 @@ export default function LandingPage() {
     setValue(newValue);
   };
 
-  const testimonialsCard01 = () => {
-    return (
-      <Box className="testimonialsCard">
-        <Rating name="size-small" defaultValue={4} />
-        <Typography className="testimonialsCardSubText">
-          "SpotLet made finding our dream wedding venue a breeze. We were able
-          to shortlist and connect with hosts in no time. Thank you for making
-          our special day even more special!
-        </Typography>
-        <Box className="userInfoBox">
-          <Box className="userProfilePic">
-            <p>E</p>
-          </Box>
-          <Box sx={{ position: "relative" }} ml={2}>
-            <img className="blueTik" src={blueTik} />
-            <Typography className="User_name">Emily and James</Typography>
-            <Typography className="userRole">Guest</Typography>
-          </Box>
-        </Box>
-      </Box>
-    );
-  };
-
-  const testimonialsCard02 = () => {
-    return (
-      <Box className="testimonialsCard">
-        <Rating name="size-small" defaultValue={4} />
-        <Typography className="testimonialsCardSubText">
-          Our corporate event was a huge success thanks to SpotLet. We found the
-          perfect retreat center that aligned with our needs and budget. Highly
-          recommended!
-        </Typography>
-        <Box className="userInfoBox">
-          <Box className="userProfilePic">
-            <p>A</p>
-          </Box>
-          <Box sx={{ position: "relative" }} ml={2}>
-            <Typography className="User_name">Alex</Typography>
-            <Typography className="userRole">CEO of TechNex Corp</Typography>
-          </Box>
-        </Box>
-      </Box>
-    );
-  };
+  
 
   return (
     <>
@@ -595,11 +548,8 @@ export default function LandingPage() {
             <Typography className="mar-t60" variant="h2">
               Client Testimonials
             </Typography>
-            <Box className="testimonialsSlideContainer">
-              <ArrowBackIosIcon className="testimonialsArrow" />
-              {testimonialsCard01()}
-              {testimonialsCard02()}
-              <ArrowForwardIosIcon className="testimonialsArrow" />
+            <Box className="testimonials-Container">
+              <ClientTestimonials />
             </Box>
           </Box>
           <Box className="recent-projects">
@@ -610,37 +560,13 @@ export default function LandingPage() {
                 "Unlocking Success Through Innovation"
               </Typography>
             </Box>
-            <Box className="project-box">
-              <figure>
-                <img src={projectimg01} />
-              </figure>
-              <article>
-                <Typography variant="h5">Anna Kendrick</Typography>
-                <Typography variant="h6">FILM SHOOTING</Typography>
-              </article>
-            </Box>
-            <Box className="project-box">
-              <figure>
-                <img src={projectimg02} />
-              </figure>
-              <article>
-                <Typography variant="h5">Anna Kendrick</Typography>
-                <Typography variant="h6">FILM SHOOTING</Typography>
-              </article>
-            </Box>
-            <Box className="project-box">
-              <figure>
-                <img src={projectimg03} />
-              </figure>
-              <article>
-                <Typography variant="h5">Anna Kendrick</Typography>
-                <Typography variant="h6">FILM SHOOTING</Typography>
-              </article>
+            <Box className="project-carousel">
+              <RecentProjects />
             </Box>
           </Box>
           <Box className="project-video">
             <CardMedia
-              sx={{ height: 734 }}
+              className="video-player"
               component="iframe"
               src={videodemo}
               allow="autoPlay"

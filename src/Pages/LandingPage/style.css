@@ -210,21 +210,6 @@ html {
   /* border-radius: 12px 0px 0px 12px; */
 }
 
-.Mui-selected:after {
-  top: 100%;
-  left: 50%;
-  border: solid transparent;
-  content: "";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-color: rgba(234, 67, 53, 0);
-  border-top-color: #EA4335;
-  border-width: 17px;
-  margin-left: -17px;
-}
-
 .css-1aquho2-MuiTabs-indicator {
   position: absolute !important;
   top: 100% !important;

@@ -117,8 +117,6 @@ export default function LandingPage() {
     setValue(newValue);
   };
 
-  
-
   return (
     <>
       <NavBar />
@@ -149,6 +147,19 @@ export default function LandingPage() {
                 <li className="select-input">
                   <FormControl>
                     <Select
+                      sx={{
+                        boxShadow: "none",
+                        ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                        "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
+                          {
+                            border: 0,
+                          },
+                        "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
+                          {
+                            border: 0,
+                          },
+                      }}
+                      className="custom-select"
                       value={age}
                       onChange={handleChange}
                       displayEmpty
@@ -156,12 +167,27 @@ export default function LandingPage() {
                     >
                       <MenuItem value="">Event</MenuItem>
                     </Select>
-                    <FormHelperText>Select Event</FormHelperText>
+                    <FormHelperText className="custom-select-label">
+                      Select Event
+                    </FormHelperText>
                   </FormControl>
                 </li>
                 <li className="select-input">
                   <FormControl>
                     <Select
+                      sx={{
+                        boxShadow: "none",
+                        ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                        "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
+                          {
+                            border: 0,
+                          },
+                        "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
+                          {
+                            border: 0,
+                          },
+                      }}
+                      className="custom-select"
                       value={age}
                       onChange={handleChange}
                       displayEmpty
@@ -169,12 +195,27 @@ export default function LandingPage() {
                     >
                       <MenuItem value="">Activity</MenuItem>
                     </Select>
-                    <FormHelperText>Select Activity</FormHelperText>
+                    <FormHelperText className="custom-select-label">
+                      Select Activity
+                    </FormHelperText>
                   </FormControl>
                 </li>
                 <li className="select-input">
                   <FormControl>
                     <Select
+                      sx={{
+                        boxShadow: "none",
+                        ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                        "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
+                          {
+                            border: 0,
+                          },
+                        "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
+                          {
+                            border: 0,
+                          },
+                      }}
+                      className="custom-select"
                       value={age}
                       onChange={handleChange}
                       displayEmpty
@@ -182,12 +223,27 @@ export default function LandingPage() {
                     >
                       <MenuItem value="">Location</MenuItem>
                     </Select>
-                    <FormHelperText>Select Location</FormHelperText>
+                    <FormHelperText className="custom-select-label">
+                      Select Location
+                    </FormHelperText>
                   </FormControl>
                 </li>
                 <li className="select-input">
                   <FormControl>
                     <Select
+                      sx={{
+                        boxShadow: "none",
+                        ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                        "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
+                          {
+                            border: 0,
+                          },
+                        "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
+                          {
+                            border: 0,
+                          },
+                      }}
+                      className="custom-select"
                       value={age}
                       onChange={handleChange}
                       displayEmpty
@@ -195,7 +251,9 @@ export default function LandingPage() {
                     >
                       <MenuItem value="">City</MenuItem>
                     </Select>
-                    <FormHelperText>Select City</FormHelperText>
+                    <FormHelperText className="custom-select-label">
+                      Select City
+                    </FormHelperText>
                   </FormControl>
                 </li>
                 <li className="select-button">
@@ -228,18 +286,21 @@ export default function LandingPage() {
                   aria-label="basic tabs example"
                 >
                   <Tab
+                    className="tab-text"
                     icon={<VideoStableIcon />}
                     iconPosition="start"
                     label="Film Shooting"
                     {...a11yProps(0)}
                   />
                   <Tab
+                    className="tab-text"
                     icon={<CorporateFareIcon />}
                     iconPosition="start"
                     label="Corporate Events"
                     {...a11yProps(1)}
                   />
                   <Tab
+                    className="tab-text"
                     icon={<PersonIcon />}
                     iconPosition="start"
                     label="Individual Events"

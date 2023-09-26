@@ -68,7 +68,6 @@ export default function Events() {
     setValue(newValue);
   };
 
-
   return (
     <>
       <NavBar />
@@ -119,11 +118,31 @@ export default function Events() {
                   onChange={tabhandleChange}
                   aria-label="basic tabs example"
                 >
-                  <Tab label="Unique Locations" {...a11yProps(0)} />
-                  <Tab label="Event Planning" {...a11yProps(1)} />
-                  <Tab label="Customization" {...a11yProps(2)} />
-                  <Tab label="Seamless Execution" {...a11yProps(3)} />
-                  <Tab label="Technology and Support" {...a11yProps(4)} />
+                  <Tab
+                    className="tab-text-event"
+                    label="Unique Locations"
+                    {...a11yProps(0)}
+                  />
+                  <Tab
+                    className="tab-text-event"
+                    label="Event Planning"
+                    {...a11yProps(1)}
+                  />
+                  <Tab
+                    className="tab-text-event"
+                    label="Customization"
+                    {...a11yProps(2)}
+                  />
+                  <Tab
+                    className="tab-text-event"
+                    label="Seamless Execution"
+                    {...a11yProps(3)}
+                  />
+                  <Tab
+                    className="tab-text-event"
+                    label="Technology and Support"
+                    {...a11yProps(4)}
+                  />
                 </Tabs>
               </Box>
               <CustomTabPanel value={value} index={0}>

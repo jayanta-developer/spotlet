@@ -80,26 +80,24 @@ html {
   max-width: 16%;
 }
 
-.banner-search .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+.banner-search .custom-select {
   padding: 0 !important;
   padding-right: 32px !important;
   border-radius: 0 !important;
   border: none !important;
-}
-
-.banner-search .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
-  border: none !important;
-}
-
-.banner-search .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
   font-size: 20px !important;
   font-weight: 600 !important;
   line-height: 30px !important;
   color: #444444 !important;
 }
 
-.banner-search .css-1wc848c-MuiFormHelperText-root {
-  margin: 0 !important;
+.banner-search .custom-select .MuiSelect-select {
+  border: none !important;
+  padding: 0 !important;
+}
+
+.banner-search .custom-select-label {
+  margin: 5px 0 0 0 !important;
   font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 24px !important;
@@ -183,7 +181,7 @@ html {
   background: rgba(234, 67, 53, 0.05);
 }
 
-.tabs-film-shooting .css-heg063-MuiTabs-flexContainer {
+.tabs-film-shooting .MuiTabs-flexContainer {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -192,7 +190,7 @@ html {
   overflow: hidden;
 }
 
-.tabs-film-shooting .css-h0q0iv-MuiButtonBase-root-MuiTab-root {
+.tabs-film-shooting .tab-text {
   color: #444 !important;
   font-size: 18px !important;
   font-weight: 500 !important;
@@ -203,14 +201,14 @@ html {
   max-width: 33.333%;
 }
 
-.tabs-film-shooting .css-h0q0iv-MuiButtonBase-root-MuiTab-root.Mui-selected {
+.tabs-film-shooting .Mui-selected {
   background-color: #ea4335 !important;
   color: #ffffff !important;
   position: relative;
   /* border-radius: 12px 0px 0px 12px; */
 }
 
-.css-1aquho2-MuiTabs-indicator {
+.MuiTabs-indicator {
   position: absolute !important;
   top: 100% !important;
   left: 50% !important;

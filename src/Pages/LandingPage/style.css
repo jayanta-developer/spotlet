@@ -844,11 +844,11 @@ ul.properties li article h3 {
     margin: 30px auto 0 auto;
   }
 
-  .tabs-film-shooting .css-heg063-MuiTabs-flexContainer {
+  .tabs-film-shooting .MuiTabs-flexContainer {
     flex-wrap: wrap;
   }
 
-  .tabs-film-shooting .css-h0q0iv-MuiButtonBase-root-MuiTab-root {
+  .tabs-film-shooting .tab-text {
     font-size: 16px !important;
     flex: 100%;
     max-width: 100%;
@@ -856,7 +856,7 @@ ul.properties li article h3 {
     min-height: inherit !important;
   }
 
-  .css-1aquho2-MuiTabs-indicator {
+  .MuiTabs-indicator {
     display: none;
   }
 

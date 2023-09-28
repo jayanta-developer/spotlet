@@ -204,7 +204,7 @@
   margin-right: -6px !important;
 }
 
-.job-info .css-1pqm26d-MuiAvatar-img {
+.job-info .MuiAvatar-img {
   width: auto !important;
   height: auto !important;
 }
@@ -277,8 +277,7 @@
   text-align: center;
 }
 
-.opernings-bot
-  .css-lqq3n7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+.opernings-bot .MuiPaginationItem-root.Mui-selected {
   background-color: #ea4335 !important;
   color: #ffffff !important;
 }

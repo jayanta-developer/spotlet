@@ -128,15 +128,16 @@ export default function LandingPage() {
               Kickstart your Next{" "}
               <span className="span700">
                 <TypeAnimation
+                  preRenderFirstString={true}
                   sequence={[
                     "Film & TV Shoot",
-                    500,
+                    1000,
                     "Corporate Retreat",
-                    500,
+                    1000,
                     "Personal Event",
-                    500,
+                    1000,
                   ]}
-                  speed={75}
+                  speed={{type: 'keyStrokeDelayInMs', value: 150}}
                   repeat={Infinity}
                 />
               </span>{" "}

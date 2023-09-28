@@ -357,7 +357,7 @@
     padding: 30px 15px;
   }
 
-  .tabs-film-shooting .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  .tabs-film-shooting .MuiTab-root {
     width: 100%;
   }
 
@@ -473,7 +473,7 @@
     padding: 50px 15px;
   }
 
-  .tabs-film-shooting .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  .tabs-film-shooting .MuiTab-root {
     font-size: 14px !important;
     padding: 10px !important;
   }
@@ -553,7 +553,7 @@
     padding: 70px 15px;
   }
 
-  .tabs-film-shooting .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  .tabs-film-shooting .MuiTab-root {
     font-size: 16px !important;
     padding: 10px 20px !important;
   }

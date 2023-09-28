@@ -148,7 +148,7 @@
   padding: 8px 4px 0 4px;
 }
 
-.guests-hosts .heading figure .css-1wlk0hk-MuiAvatar-root {
+.guests-hosts .heading figure .MuiAvatar-root {
   width: 102px;
   height: 102px;
 }
@@ -423,7 +423,7 @@
     height: 80px;
   }
 
-  .guests-hosts .heading figure .css-1wlk0hk-MuiAvatar-root {
+  .guests-hosts .heading figure .MuiAvatar-root {
     width: 72px;
     height: 72px;
   }

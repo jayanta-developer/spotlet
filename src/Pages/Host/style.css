@@ -195,14 +195,15 @@
   margin: 30px auto;
 }
 
-.faq-section .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+.faq-section .MuiPaper-root {
   margin: 30px auto !important;
   border-radius: 12px !important;
   background: #fff !important;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12) !important;
+  padding: 16px 0;
 }
 
-.faq-section .css-1elwnq4-MuiPaper-root-MuiAccordion-root::before {
+.faq-section .MuiPaper-root::before {
   display: none !important;
 }
 
@@ -228,17 +229,14 @@
   padding: 0 20px 20px 60px !important;
 }
 
-.css-15v22id-MuiAccordionDetails-root {
-  padding: 0 16px 16px 16px !important;
+.MuiAccordionDetails-root {
+  padding: 16px !important;
 }
 
-.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+.MuiButtonBase-root-MuiAccordionSummary-root {
   padding: 10px 20px 10px 10px !important;
 }
 
-.css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
-  margin: 12px 0 !important;
-}
 
 .get-in-touch {
   margin: 0 auto;
@@ -271,7 +269,7 @@
   margin-bottom: 20px !important;
 }
 
-.get-in-touch .form-box .css-ahj2mt-MuiTypography-root {
+.get-in-touch .form-box .MuiPaper-rootMuiTypography-root {
   font-size: 16px;
 }
 
@@ -437,8 +435,9 @@
     padding: 0 !important;
   }
 
-  .faq-section .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  .faq-section .MuiPaper-root {
     margin: 10px auto !important;
+    padding: 0;
   }
 
   .get-in-touch .submit {

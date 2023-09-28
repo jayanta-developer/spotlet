@@ -48,6 +48,10 @@
   max-width: 1300px;
 }
 
+.policy-content img {
+  max-width: 100%;
+}
+
 .policy-content h2 {
   font-size: 23px;
   font-weight: 700;

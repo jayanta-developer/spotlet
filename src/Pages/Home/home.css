@@ -6,12 +6,15 @@
   margin-top: 84px;
   position: relative;
 }
+
 .coverContainer {
   position: relative;
 }
+
 .coverGallerySlider {
   display: block;
 }
+
 .coverGallery {
   display: none;
 }
@@ -24,6 +27,7 @@
   font-weight: 400 !important;
   line-height: 130% !important;
 }
+
 .PrintPreviewBtn img {
   width: 19px;
   height: 19px;
@@ -41,6 +45,7 @@
   align-items: center;
   margin: 0px 4px;
 }
+
 .topTabLogo {
   width: 12px;
   height: 12px;
@@ -52,6 +57,7 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .shareItem {
   width: 139px;
   height: 40px;
@@ -66,11 +72,13 @@
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
   margin: 6px 5px;
 }
+
 .shareSubHeader {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 .shareBoxHeaderText {
   color: #202020;
   font-family: "Poppins-Bold" !important;
@@ -79,6 +87,7 @@
   font-weight: 600 !important;
   line-height: 26px !important;
 }
+
 .shareId {
   color: #202020;
   font-family: "Poppins-Bold" !important;
@@ -88,6 +97,7 @@
   line-height: 26px !important;
   margin-right: 5px;
 }
+
 .shareBoxSubHeaderText {
   color: #383838;
   font-family: "Poppins-Regular" !important;
@@ -98,11 +108,13 @@
   display: flex;
   align-items: center;
 }
+
 .shareItem img {
   width: 20px;
   height: 20px;
   margin: 0px 15px 0px 19px;
 }
+
 .subImageBox {
   width: 282px;
   height: 282px;
@@ -118,6 +130,7 @@
   position: relative;
   margin: 32px 0px;
 }
+
 .ClickHereTab {
   width: 65px;
   height: 22px;
@@ -130,6 +143,7 @@
   margin-left: 19px;
   cursor: pointer;
 }
+
 #clickHereText {
   color: #fff;
   font-family: "Poppins-Regular" !important;
@@ -144,9 +158,11 @@
   flex-direction: row;
   align-items: center;
 }
+
 .locationHeader h5 {
   font-size: 25px !important;
 }
+
 .locationId {
   color: #1a1a1a;
   font-family: "Poppins-Bold" !important;
@@ -156,27 +172,33 @@
   line-height: 130% !important;
   margin-bottom: 8px !important;
 }
+
 .CityLocation {
   display: flex;
   flex-direction: column;
   justify-content: left;
 }
+
 .startLogos {
   display: flex;
   flex-direction: row;
   margin-top: 2px;
 }
+
 .startLogos img {
   width: 25px;
   height: 25px;
 }
+
 .bottomMargin {
   margin-bottom: 10px;
 }
+
 .ShowGalleryTabBox {
   display: flex;
   justify-content: end;
 }
+
 .ShowGalleryTab {
   width: 141px;
   height: 40px;
@@ -193,6 +215,7 @@
   margin-right: 17px;
   cursor: pointer;
 }
+
 .ShowGalleryTab p {
   color: #fff;
   font-family: "Poppins-Regular" !important;
@@ -202,13 +225,16 @@
   line-height: normal !important;
   text-transform: lowercase;
 }
+
 .cityLocationTextBox {
   display: flex;
   margin: 4px 0px;
 }
+
 .divider {
   display: none;
 }
+
 .showGalleryBox {
   position: absolute;
   top: -113px;
@@ -222,10 +248,12 @@
   .homeContainer {
     margin-top: 112px;
   }
+
   .venueLocation {
     width: 100%;
     margin: 0px 0;
   }
+
   .coverGallery {
     width: 100%;
     height: 50%;
@@ -233,31 +261,39 @@
     overflow: hidden;
     border-radius: 10px;
   }
+
   .coverGallerySlider {
     display: none;
   }
+
   .galleryImage {
     width: 100%;
   }
+
   .ShowGalleryTab {
     width: 170px;
     height: 47px;
     bottom: 202px;
   }
+
   .locationHeader h5 {
     font-size: 25px !important;
   }
+
   .CityLocation {
     flex-direction: row;
     align-items: center;
   }
+
   .divider {
     display: block;
   }
+
   .locationId {
     font-size: 18px !important;
   }
 }
+
 /* Desktop view */
 @media only screen and (min-width: 1000px) {
   .coverContainer {
@@ -266,6 +302,7 @@
     display: flex;
     flex-direction: column;
   }
+
   .venueLocation {
     max-width: 1305px;
     margin: 20px 0;
@@ -275,9 +312,11 @@
     width: 100%;
     max-width: 1305px;
   }
+
   .coverGallery {
     max-width: 1305px;
   }
+
   .ShowGalleryTab {
     bottom: 238px;
   }

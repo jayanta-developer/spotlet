@@ -6,6 +6,7 @@
   margin-top: 92px;
   margin-bottom: 80px;
 }
+
 .CreateCouponBox {
   width: 100%;
   height: auto;
@@ -17,12 +18,14 @@
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
   padding: 5px;
 }
+
 .couponNavBar {
   width: 100%;
   height: 60px;
   border-bottom: #ededed 1px solid;
   padding: 8px 0px 0 0px;
 }
+
 .couponNavBar p {
   color: #000;
   font-family: "Poppins-Bold" !important;
@@ -32,6 +35,7 @@
   line-height: normal;
   text-align: center;
 }
+
 .FirstInnerBox {
   height: auto;
   border-bottom: #ededed 1px solid;
@@ -41,12 +45,14 @@
   padding-bottom: 33px;
   align-items: center;
 }
+
 .cupInputBox {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: start;
 }
+
 .coupon {
   width: 100%;
   height: 110px;
@@ -55,16 +61,20 @@
   justify-content: end;
   position: relative;
 }
+
 .coupon input {
   width: 393px !important;
   height: 18px !important;
 }
+
 .inputLeftMargin {
   margin-left: 0px;
 }
+
 .inputLeftMarginLast {
   margin-left: 0px;
 }
+
 .InputLabelText {
   color: #202020;
   font-family: "Poppins-Regular" !important;
@@ -74,26 +84,31 @@
   line-height: 130% !important;
   margin-bottom: 17px !important;
 }
+
 .SecondFieldBox {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
+
 .SecondRadioBox {
   padding: 0 17px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 .radioLabel {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 .radioLabel input {
   cursor: pointer;
 }
+
 .radioLabelText {
   color: #202020;
   font-family: "Poppins-Regular" !important;
@@ -103,18 +118,23 @@
   line-height: 130% !important;
   margin-left: 5px !important;
 }
+
 .SecondInnerBox {
   padding-top: 30px;
 }
+
 .couponBookingIDInputFieldBox {
   width: 100%;
 }
+
 .couponLocationIDInputFieldBox {
   width: 100%;
 }
+
 .couponEmailIDInputFieldBox {
   width: 100%;
 }
+
 .CouponButtonBox {
   width: 100%;
   display: flex;
@@ -122,6 +142,7 @@
   align-items: center;
   margin-top: 43px;
 }
+
 .CouponButtonBox p {
   color: #fff;
   font-family: "Poppins-Regular" !important;
@@ -130,6 +151,7 @@
   font-weight: 600 !important;
   line-height: 130% !important;
 }
+
 .couponCancelBtn {
   width: 172px;
   height: 51px;
@@ -143,9 +165,11 @@
   transition: background 0.5s;
   margin-bottom: 16px;
 }
+
 .couponCancelBtn:hover {
   background: #380905;
 }
+
 .couponCodeBtn {
   width: 350px;
   height: 51px;
@@ -159,15 +183,18 @@
   align-items: center;
   transition: background 0.5s;
 }
+
 .couponCodeBtn:hover {
   background: #c73a2d;
 }
+
 .CouponTypeDArrow {
   position: absolute;
   top: 81px;
   right: 11px;
   cursor: pointer;
 }
+
 .CouponTypeDBox {
   flex-direction: column;
   width: 100%;
@@ -180,6 +207,7 @@
   border: 1px solid rgb(214, 214, 214);
   z-index: 9;
 }
+
 .CDItems {
   width: 100%;
   height: 40px;
@@ -190,9 +218,11 @@
   cursor: pointer;
   transition: background 0.5s;
 }
+
 .CDItems:hover {
   background: #ea44352f;
 }
+
 /* Tab view*/
 @media only screen and (min-width: 768px) {
   .CreateCouponBox {
@@ -200,6 +230,7 @@
     padding: 0;
     padding: 25px;
   }
+
   .FirstInnerBox {
     flex-wrap: wrap;
     flex-direction: column;
@@ -208,6 +239,7 @@
     justify-content: center;
     align-items: start;
   }
+
   .SecondFieldBox {
     flex-wrap: wrap;
     flex-direction: row;
@@ -215,92 +247,117 @@
     justify-content: center;
     align-items: start;
   }
+
   .CouponButtonBox {
     flex-direction: row;
     justify-content: center;
     padding-right: 31px;
   }
+
   .couponCancelBtn {
     margin-bottom: 0;
   }
+
   .couponCodeBtn {
     width: 393px;
     margin-left: 23px !important;
   }
+
   .SecondRadioBox {
     justify-content: center;
   }
+
   .cupInputBox {
     width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
   }
+
   .couponBookingIDInputFieldBox {
     width: 393px;
   }
+
   .couponLocationIDInputFieldBox {
     width: 393px;
   }
+
   .couponEmailIDInputFieldBox {
     width: 393px;
   }
+
   .couponNavBar p {
     font-size: 35px !important;
   }
+
   .couponNavBar {
     padding: 10px 30px 0 30px;
     height: 93px;
   }
+
   .couponContainer {
     margin-top: 106px;
   }
+
   .coupon {
     width: 364px;
   }
+
   .inputLeftMargin {
     margin-left: 20px;
   }
 }
+
 /* Desktop view */
 @media only screen and (min-width: 1000px) {
   .CreateCouponBox {
     width: 1300px;
     height: 783px;
   }
+
   .FirstInnerBox {
     height: 363px;
     justify-content: space-between;
     align-items: end;
   }
+
   .SecondFieldBox {
     justify-content: space-between;
   }
+
   .SecondRadioBox {
     justify-content: start;
   }
+
   .couponNavBar p {
     text-align: inherit;
     font-size: 27px !important;
   }
+
   .CouponButtonBox {
     justify-content: end;
   }
+
   .couponNavBar {
     padding: 39px 30px 0 30px;
     height: 100px;
   }
+
   .couponContainer {
     margin-top: 145px;
   }
+
   .coupon {
     width: 396px;
   }
+
   .cupInputBox {
     flex-wrap: initial;
   }
+
   .inputLeftMargin {
     margin-left: 20px;
   }
+
   .inputLeftMarginLast {
     margin-left: 20px;
   }

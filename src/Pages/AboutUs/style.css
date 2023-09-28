@@ -46,6 +46,10 @@
   width: 100%;
 }
 
+.about-content img {
+  max-width: 100%;
+}
+
 .about-content h2 {
   font-size: 32px;
   font-weight: 700;

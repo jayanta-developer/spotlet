@@ -171,8 +171,7 @@
   border-bottom: 1px solid #e2e5f0;
 }
 
-.notificationHeaderBox1 {
-}
+.notificationHeaderBox1 {}
 
 .notificationHeaderBox2 {
   display: flex;

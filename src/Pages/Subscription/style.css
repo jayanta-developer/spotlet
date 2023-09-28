@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .subscriptionHeaderBox {
   width: 100%;
   display: flex;
@@ -16,11 +17,13 @@
   margin-top: 37px;
   align-items: center;
 }
+
 .subscriptionHeader {
   text-align: center;
   display: flex;
   align-items: center;
 }
+
 .subscriptionHeader p {
   color: #1a1a1a;
   font-family: "Poppins-Bold" !important;
@@ -29,6 +32,7 @@
   font-weight: 700 !important;
   line-height: normal !important;
 }
+
 .backButtonPosition {
   position: absolute;
   left: 8%;
@@ -41,6 +45,7 @@
   align-items: end;
   margin-bottom: 133px;
 }
+
 .planeItem p {
   color: #252525;
   font-family: "Poppins-Regular" !important;
@@ -50,35 +55,44 @@
   line-height: normal !important;
   padding-left: 17px;
 }
+
 .planeItem {
   height: 63px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .subCLabel {
   display: none;
   flex-direction: column;
   padding: 24px 0;
 }
+
 .subCLabel img {
   cursor: pointer;
 }
+
 .tinBackground {
   background: #edf3ff;
 }
+
 .MobileTin {
   background: #edf3ff;
 }
+
 .TabTin {
   background: #edf3ff;
 }
+
 .ActiveTabTin {
   background: #edf3ff;
 }
+
 .WhiteBackground {
   background: #ffffff;
 }
+
 .basicPlan {
   width: 325px;
   padding: 24px 0px;
@@ -88,6 +102,7 @@
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
   border-radius: 21px;
 }
+
 .standardPlan {
   width: 325px;
   padding: 24px 0px;
@@ -97,6 +112,7 @@
   background: #fff;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
 }
+
 .premiumPlan {
   width: 325px;
   padding: 24px 0px;
@@ -105,12 +121,14 @@
   border-radius: 21px;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
 }
+
 .basicPlanHeader {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 49px;
 }
+
 .getStartButton {
   width: 279px;
   height: 43px;
@@ -122,6 +140,7 @@
   align-items: center;
   cursor: pointer;
 }
+
 .getStartButton p {
   color: #fff;
   font-family: "Poppins-Bold" !important;
@@ -130,21 +149,25 @@
   font-weight: 700 !important;
   line-height: normal !important;
 }
+
 .planItems {
   display: flex;
   flex-direction: column;
 }
+
 .planHeaderLogo {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 13px;
 }
+
 .planeHeaderText {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .planeHeaderText p {
   /* color: #140301; */
   font-family: "Poppins-Regular" !important;
@@ -153,11 +176,13 @@
   font-weight: 600 !important;
   line-height: normal !important;
 }
+
 .planPrice {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .planPrice p {
   /* color: #140301; */
   text-align: center;
@@ -167,6 +192,7 @@
   font-weight: 600 !important;
   line-height: normal !important;
 }
+
 .planItemsText p {
   color: #030418;
   font-family: "Poppins-Regular" !important;
@@ -175,12 +201,15 @@
   font-weight: 400 !important;
   line-height: normal !important;
 }
+
 .leftBorderRadius {
   border-radius: 10px 0px 0px 10px;
 }
+
 .rightBorderRadius {
   border-radius: 0px 10px 10px 0px;
 }
+
 .lastPlanText p {
   color: #02041d;
   font-family: "Poppins-Regular" !important;
@@ -189,6 +218,7 @@
   font-weight: 400 !important;
   line-height: normal !important;
 }
+
 .PerAnnumText p {
   color: #ea4335;
   font-family: "Poppins-Regular" !important;
@@ -197,9 +227,11 @@
   font-weight: 600 !important;
   line-height: normal !important;
 }
+
 .imgC {
   position: relative;
 }
+
 .message {
   width: 318px;
   display: none;
@@ -215,35 +247,42 @@
   z-index: 1;
 }
 
-.imgC img:hover + .message {
+.imgC img:hover+.message {
   display: block;
 }
+
 .responsiveLabelText {
   display: block;
 }
+
 .responsiveLabel2ndText {
   display: block;
   padding-left: 9px !important;
   font-weight: 800 !important;
   font-size: 12px;
 }
+
 /* Tab view*/
 @media only screen and (min-width: 768px) {
   .subscriptionHeaderBox {
     flex-direction: row;
     margin-top: 25px;
   }
+
   .backButtonPosition {
     position: absolute;
     left: 10%;
     bottom: 11px;
   }
+
   .subscriptionPlanBox {
     flex-direction: row;
   }
+
   .subCLabel {
     display: none;
   }
+
   .basicPlan {
     width: 260px;
     border-radius: none;
@@ -252,6 +291,7 @@
     box-shadow: none;
     margin-bottom: 0;
   }
+
   .standardPlan {
     width: 260px;
     margin-bottom: 0;
@@ -262,6 +302,7 @@
     box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
     z-index: 1;
   }
+
   .premiumPlan {
     width: 260px;
     border-radius: none;
@@ -269,32 +310,41 @@
     background: #fff;
     box-shadow: none;
   }
+
   .getStartButton {
     width: 225px;
   }
+
   .planItemsText p {
     font-size: 12px !important;
   }
+
   .planeItem {
     justify-content: start;
   }
+
   .planeItem p {
     padding-left: 16px;
   }
+
   .responsiveLabelText {
     padding-left: 9px !important;
     font-weight: 800 !important;
     font-size: 12px;
   }
+
   .responsiveLabel2ndText {
     display: none;
   }
+
   .MobileTin {
     background: #edf3ff;
   }
+
   .TabTin {
     background: #fff;
   }
+
   .ActiveTabTin {
     background: #fff;
   }
@@ -305,9 +355,11 @@
   .subCLabel {
     display: flex;
   }
+
   .basicPlan {
     width: 325px;
   }
+
   .standardPlan {
     width: 325px;
     margin-bottom: 0;
@@ -315,9 +367,11 @@
     border: 0px;
     box-shadow: none;
   }
+
   .premiumPlan {
     width: 325px;
   }
+
   .basicPlan:hover {
     border: 1px solid #d3d3d3;
     background: #fff;
@@ -325,6 +379,7 @@
     box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
     z-index: 1;
   }
+
   .standardPlan {
     border: 1px solid #ffcac6;
     background: #fff;
@@ -332,6 +387,7 @@
     box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
     z-index: 1;
   }
+
   .premiumPlan:hover {
     border: 1px solid #d3d3d3;
     background: #fff;
@@ -339,21 +395,27 @@
     box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
     z-index: 1;
   }
+
   .getStartButton {
     width: 279px;
   }
+
   .responsiveLabelText {
     display: none;
   }
+
   .planItemsText p {
     font-size: 16px !important;
   }
+
   .MobileTin {
     background: none;
   }
+
   .TabTin {
     background: #fff;
   }
+
   .ActiveTabTin {
     background: none;
   }

@@ -121,6 +121,10 @@ html {
   width: 100%;
 }
 
+.landingpage-content img {
+  max-width: 100%;
+}
+
 .landingpage-content h2 {
   font-size: 32px;
   font-weight: 700;

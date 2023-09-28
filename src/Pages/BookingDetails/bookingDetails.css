@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .coverBox {
   width: 95%;
   height: 457px;
@@ -16,9 +17,11 @@
   max-width: 1302px;
   min-width: 50px;
 }
+
 .coverBox .topTabs .top_TabBox {
   top: 62px;
 }
+
 .BookingDetailContinent {
   width: 95%;
   display: flex;
@@ -37,6 +40,7 @@
   margin-bottom: 52px;
   max-width: 1302px;
 }
+
 .lastContentBox {
   width: 100%;
   align-items: center;
@@ -45,12 +49,15 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .lastWidth {
   width: 85%;
 }
+
 .PaymentWidth {
   width: 100%;
 }
+
 .backButton {
   width: 123px;
   height: 39px;
@@ -64,20 +71,24 @@
   justify-content: center;
   cursor: pointer;
 }
+
 .coverPhotoBox {
   border-radius: 15px;
   overflow: hidden;
   height: 47%;
   margin-top: 10px;
 }
+
 .coverPhoto {
   width: 100%;
   height: 100%;
 }
+
 .coverPhoto img {
   width: 100%;
   height: 100%;
 }
+
 .cityLocationTextBox2 {
   margin-left: 43px;
 }
@@ -96,6 +107,7 @@
   max-width: 635px;
   min-width: 350px;
 }
+
 .BookingDetailBoxCard {
   width: 100%;
   border-radius: 10px;
@@ -103,6 +115,7 @@
   background: #fff;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
 }
+
 .lastBookingDetailBoxCard {
   width: 100%;
   border-radius: 10px;
@@ -112,6 +125,7 @@
   min-width: 350px;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
 }
+
 /* Cards height */
 /* .VisitSummary {
   height: auto;
@@ -119,26 +133,33 @@
 .UserDetails {
   height: auto;
 }
+
 .RejectedSummary {
   height: auto;
 }
+
 .BookingSummary {
   height: auto;
 }
+
 .EventSummary {
   height: auto;
   margin-bottom: 30px;
 }
+
 .Paymentsummary {
   height: auto;
 }
+
 .HostDetails {
   height: auto;
 }
+
 .RefundSummary {
   height: auto;
   margin-bottom: 30px;
 }
+
 .CancellationSummary {
   height: auto;
   margin-bottom: 30px;
@@ -152,57 +173,71 @@
   font-weight: 600 !important;
   line-height: 130% !important;
 }
+
 .DetailContent {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   /* align-items: center; */
 }
+
 /* Cards padding */
 .VisitSummaryContent {
   padding: 15px;
 }
+
 .UserDetailsContent {
   padding: 21px 15px;
 }
+
 .RejectedSummaryContent {
   padding: 21px 15px;
 }
+
 .BookingSummaryContent {
   padding: 45px 15px;
 }
+
 .EventSummaryContent {
   padding: 21px 15px;
 }
+
 .PaymentSummaryContent {
   padding: 21px 15px;
 }
+
 .HostDetailsContent {
   padding: 21px 15px;
 }
+
 .MapBoxContent {
   padding: 21px 45px;
   align-items: center;
   /* height: 100%; */
 }
+
 .CancellationSummaryContent {
   padding: 21px 30px 21px 15px;
 }
+
 .RefundSummaryContent {
   padding: 21px 15px;
   margin-left: 0px;
 }
+
 .DetailsCardRowBox {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
 }
+
 .labelBox {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   /* align-items: center; */
 }
+
 .labelBox p {
   width: 50%;
   color: #606060;
@@ -213,6 +248,7 @@
   line-height: 130% !important;
   margin-bottom: 3px;
 }
+
 .AboutProjectHeading p {
   width: 50%;
   color: #606060;
@@ -223,6 +259,7 @@
   line-height: 130% !important;
   margin-bottom: 5px;
 }
+
 .AboutProjectMainTextBox p {
   color: #464646;
   font-family: "Poppins-Regular" !important;
@@ -231,12 +268,14 @@
   font-weight: 400 !important;
   line-height: normal !important;
 }
+
 .dataBox {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   /* align-items: center; */
 }
+
 .dataBox p {
   width: 50%;
   color: #1d1d1d;
@@ -246,21 +285,26 @@
   /* font-weight: 500 !important; */
   line-height: normal !important;
 }
+
 .fontWeight {
   font-weight: 700 !important;
 }
+
 .GreenText {
   color: #11c539 !important;
   font-weight: 600 !important;
 }
+
 .RedText {
   color: #f20d0d !important;
   font-weight: 600 !important;
 }
+
 .YellowText {
   color: #eb910a !important;
   font-weight: 600 !important;
 }
+
 .SpecialRequestsText {
   color: #606060;
   font-family: "Poppins-Regular" !important;
@@ -270,17 +314,20 @@
   line-height: 13px !important;
   margin-bottom: 20px !important;
 }
+
 .SpecialRequestsItem {
   margin-bottom: 5px;
   display: flex;
   flex-direction: row;
   align-items: start;
 }
+
 .SpecialRequestsItem img {
   width: 12px;
   height: 12px;
   margin-top: 8px;
 }
+
 .SpecialRequestsItem p {
   color: #1c1c1c;
   font-family: "Poppins-Regular" !important;
@@ -290,6 +337,7 @@
   line-height: 26px !important;
   margin-left: 5px;
 }
+
 .RejectedReasonTextBox p {
   color: #464646;
   font-family: "Poppins-Regular" !important;
@@ -298,6 +346,7 @@
   font-weight: 400 !important;
   line-height: normal !important;
 }
+
 .MapHeader {
   height: 119px;
   display: flex;
@@ -305,6 +354,7 @@
   justify-content: center;
   padding-left: 15px;
 }
+
 .MapHeaderText {
   color: #000;
   font-family: "Poppins-Bold" !important;
@@ -313,6 +363,7 @@
   font-weight: 600 !important;
   line-height: 130% !important;
 }
+
 .MapSubHeaderText {
   color: #1a1a1a;
   font-family: "Poppins-Regular" !important;
@@ -321,9 +372,11 @@
   font-weight: 400 !important;
   line-height: 130% !important;
 }
+
 .boxWidth {
   width: 100% !important;
 }
+
 .MapBoxContent div:nth-child(1) {
   position: absolute;
   width: 80%;
@@ -331,52 +384,67 @@
   border-radius: 15px;
   max-width: 1236px;
 }
+
 .specialTopMargin {
   padding-top: 31px;
   border-top: 1px solid #e8e8e8;
 }
+
 .eventDateBox {
   display: flex;
   flex-direction: column;
   width: 181px;
 }
+
 .e6px {
   width: 180px !important;
 }
+
 .dataBoxAlign {
   align-items: start !important;
 }
+
 .eventDateBox p {
   width: 100% !important;
 }
+
 .textCenter {
   text-align: center;
 }
+
 .fontS_11 {
   font-size: 11px !important;
 }
+
 .fontS11 p {
   font-size: 11px !important;
 }
+
 .fontS12 p {
   font-size: 12px !important;
 }
+
 .mobileView {
   display: block;
 }
+
 .desktopView {
   display: none;
 }
+
 .fullWidth {
   width: 100% !important;
 }
+
 .bATextBox {
   width: 50%;
   margin-left: 10px;
 }
+
 .bATextBox p {
   width: 100%;
 }
+
 .locationId {
   color: #ea4335;
   font-family: "Poppins-Bold" !important;
@@ -385,6 +453,7 @@
   font-weight: 600 !important;
   line-height: 130% !important;
 }
+
 .goMapButton {
   width: 108px !important;
   height: 28px !important;
@@ -400,68 +469,87 @@
   top: 14px;
   cursor: pointer;
 }
+
 @media only screen and (min-width: 768px) {
   .coverBox .topTabs .top_TabBox {
     top: 84px;
   }
+
   .mobileView {
     display: none;
   }
+
   .desktopView {
     display: block;
   }
+
   .coverBox {
     width: 85%;
     height: 743.255px;
     min-width: 750px;
     margin-top: 96px;
   }
+
   .coverPhotoBox {
     height: 70%;
     margin-top: 30px;
   }
+
   .cityLocationTextBox2 {
     margin-left: 0px;
   }
+
   .venueLocationH {
     height: 111px !important;
   }
+
   .BookingDetailContinent {
     width: 85%;
   }
+
   /* Cards padding */
   .VisitSummaryContent {
     padding: 45px;
   }
+
   .RejectedSummaryContent {
     padding: 45px 30px;
   }
+
   .UserDetailsContent {
     padding: 21px 45px;
   }
+
   .RejectedSummaryContent {
     padding: 21px 45px;
   }
+
   .BookingSummaryContent {
     padding: 45px 45px;
   }
+
   .EventSummaryContent {
     padding: 21px 45px;
   }
+
   .PaymentSummaryContent {
     padding: 21px 45px;
   }
+
   .HostDetailsContent {
     padding: 21px 45px;
   }
+
   .MapBoxContent {
     padding: 21px 45px;
     align-items: center;
     /* height: 100%; */
   }
+
   .CancellationSummaryContent {
     padding: 21px 30px 21px 45px;
   }
+
   .RefundSummaryContent {
     padding: 21px 45px;
   }
@@ -474,35 +562,44 @@
   .UserDetails {
     height: 322px;
   }
+
   .RejectedSummary {
     height: 426px;
   }
+
   .BookingSummary {
     height: 448px;
   }
+
   /* .EventSummary {
     height: 317px;
   } */
   .Paymentsummary {
     height: 330px;
   }
+
   .HostDetails {
     height: 175px;
   }
+
   .RefundSummary {
     height: 276px;
   }
+
   .UserSummary {
     margin-left: 0px;
     height: 489px;
   }
+
   .HostSummary {
     margin-left: 0px;
     height: auto;
   }
+
   .CancellationSummary {
     height: 276px;
   }
+
   .EventSummary {
     height: auto;
     margin-bottom: 30;
@@ -512,87 +609,111 @@
     width: 50%;
     min-width: 584px;
   }
+
   .DetailBoxCardHeader {
     padding-left: 45px;
   }
+
   .SpecialRequestsItem {
     margin-bottom: 0px;
     align-items: center;
   }
+
   .lastContentBox {
     height: auto;
     max-width: 1302px;
   }
+
   .lastBookingDetailBoxCard {
     width: 100%;
     max-width: 1302px;
   }
+
   .MapBox {
     width: 85%;
     margin-bottom: 30px;
   }
+
   .MapHeader {
     padding-left: 45px;
   }
+
   .CancellationSummaryContent {
     padding: 21px 30px 21px 45px;
   }
+
   .RefundSummaryContent {
     padding: 21px 45px;
   }
+
   .visitSummary {
     max-width: 1302px;
   }
+
   .visitSummary {
     max-width: 1302px;
   }
+
   .SpecialRequestsItem img {
     margin-top: 0px;
   }
+
   .e6px {
     width: 606px !important;
   }
+
   .fontS11 p {
     font-size: 14px !important;
   }
+
   .fontS12 p {
     font-size: 15px !important;
   }
+
   .textCenter {
     text-align: start;
   }
+
   .eventDateBox {
     width: 606px;
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .lastContentBox {
     flex-direction: row;
     align-items: start;
   }
+
   .lastBookingDetailBoxCard {
     width: 50%;
     min-width: 584px;
   }
+
   .EventSummary {
     margin-right: 15px;
     margin-bottom: 0px;
   }
+
   .UserSummary {
     margin-left: 15px;
     min-height: 494.56px;
   }
+
   .HostSummary {
     margin-left: 15px;
     height: 333px;
   }
+
   .CancellationSummary {
     margin-right: 15px;
   }
+
   .RefundSummary {
     margin-left: 15px;
   }
 }
+
 @media only screen and (min-width: 1300px) and (max-width: 1486px) {
   .UserSummary {
     height: 514.56px !important;

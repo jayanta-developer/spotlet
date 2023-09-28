@@ -48,6 +48,10 @@
   max-width: 1300px;
 }
 
+.blog-content img {
+  max-width: 100%;
+}
+
 .blog-content h2 {
   font-size: 32px;
   font-weight: 700;

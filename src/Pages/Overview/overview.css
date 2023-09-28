@@ -4,14 +4,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Dimmed background color with transparency */
-  z-index: 1; /* Place the backdrop below the popup */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Dimmed background color with transparency */
+  z-index: 1;
+  /* Place the backdrop below the popup */
 }
+
 .overviewContainer {
   width: 100%;
   display: flex;
@@ -31,9 +29,11 @@
   align-items: center;
   overflow: scroll;
 }
+
 .leftSideMenu {
   display: none;
 }
+
 .mobileViewMenu {
   width: 100%;
   height: 85px;
@@ -56,14 +56,15 @@
   justify-content: center;
 }
 
-.overviewActive:hover > p {
+.overviewActive:hover>p {
   color: #ea4335;
 }
 
 .menuItem:hover {
   border-bottom: 5px #ea4335 solid;
 }
-.menuItem:hover > p {
+
+.menuItem:hover>p {
   color: #ea4335;
 }
 
@@ -95,6 +96,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .verifyBox {
   width: 100%;
   display: flex;
@@ -104,31 +106,38 @@
   padding-left: 52px;
   padding-top: 5px;
 }
+
 .verifyBoxBorderBottom {
   border-bottom: 1px solid #eee;
   padding-bottom: 8px;
 }
+
 .verifyHeaderText {
   color: #3c3c3c;
   font-family: "Poppins-Bold" !important;
   font-size: 16px !important;
   font-style: normal;
   font-weight: 600 !important;
-  line-height: 26px !important; /* 162.5% */
+  line-height: 26px !important;
+  /* 162.5% */
 }
+
 .verifySubText {
   color: #1c1c1c;
   font-family: "Poppins-Regular" !important;
   font-size: 15px !important;
   font-style: normal;
   font-weight: 300 !important;
-  line-height: 26px !important; /* 173.333% */
+  line-height: 26px !important;
+  /* 173.333% */
 }
+
 .Description {
   height: auto;
   transition: all 0.5s;
   position: relative;
 }
+
 .DescriptionHeader {
   display: flex;
   flex-direction: row;
@@ -136,16 +145,19 @@
   height: 67px;
   border-bottom: 1px solid #ececec;
 }
+
 .descriptionIconBox {
   width: 50px;
   height: 50px;
 }
+
 .descriptionTextBox {
   height: 155px;
   transition: all 0.5s;
   padding: 20px 20px 0px 20px;
   overflow: hidden;
 }
+
 .descriptionHeaderText {
   color: #3c3c3c;
   font-family: "Poppins-Bold" !important;
@@ -154,6 +166,7 @@
   font-weight: 700 !important;
   line-height: normal !important;
 }
+
 .descriptionGrayText {
   color: #d2cccc;
   font-family: "Poppins-Regular" !important;
@@ -171,10 +184,12 @@
   font-weight: 300 !important;
   line-height: 26px !important;
 }
+
 .DescriptionPopUp {
   width: 98%;
   max-width: 681px;
-  position: fixed; /* Use fixed position to ensure centering */
+  position: fixed;
+  /* Use fixed position to ensure centering */
   background: #fff;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -190,9 +205,11 @@
   overflow: scroll;
   overflow-x: hidden;
 }
+
 .descriptionRedCrossMargin {
   margin-left: 9%;
 }
+
 .AmenitiesRedCrossMargin {
   margin-left: 44%;
 }
@@ -214,9 +231,11 @@
   transition: all 1s;
   position: relative;
 }
+
 .AmenitiesSeeMore {
   margin-top: 24px;
 }
+
 .AmenitiesOpen {
   display: flex;
   flex-direction: column;
@@ -229,6 +248,7 @@
   height: auto;
   transition: all 0.5s;
 }
+
 .amenitiesHeader {
   display: flex;
   flex-direction: row;
@@ -236,27 +256,32 @@
   height: 67px;
   border-bottom: 1px solid #ececec;
 }
+
 .AmenitiesIconBox {
   width: 50px;
   height: 50px;
 }
+
 .amenitiesTextBox {
   display: flex;
   flex-direction: column;
   width: 100%;
   /* padding: 20px 20px 0px 20px; */
 }
+
 .amenitiesTextBoxOpen {
   display: flex;
   flex-direction: column;
   padding: 20px 20px 0px 20px;
 }
+
 .amenitiesText {
   width: 52%;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
 }
+
 .amenitiesText p {
   color: #1c1c1c;
   font-family: "Poppins-Regular" !important;
@@ -265,6 +290,7 @@
   font-weight: 300 !important;
   line-height: 26px !important;
 }
+
 .amenitiesItem {
   display: flex;
   flex-direction: row;
@@ -285,11 +311,13 @@
   top: 53%;
   transform: translate(-50%, -50%);
 }
+
 .amenitiesTextAryaBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .amenitiesScrollBox {
   overflow: scroll;
   width: 100%;
@@ -300,17 +328,20 @@
 .DisplayBookingRequest {
   display: flex;
 }
+
 .booking_Request {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .buying_Box {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .bookingRequest {
   width: 339px;
   height: 432px;
@@ -320,6 +351,7 @@
   position: sticky;
   top: 233px;
 }
+
 .dayCross {
   position: absolute !important;
   width: 20px;
@@ -328,6 +360,7 @@
   left: 304px !important;
   cursor: pointer;
 }
+
 .priseBox {
   width: 294px;
   height: 92px;
@@ -340,12 +373,14 @@
   justify-content: center;
   z-index: 5;
 }
+
 .priceText {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 .priseBox p {
   color: #fff;
   text-align: center;
@@ -353,6 +388,7 @@
   font-weight: 700;
   line-height: 99.7%;
 }
+
 .priseInputBox {
   width: 339px;
   flex-shrink: 0;
@@ -366,60 +402,74 @@
   align-items: center;
   padding-top: 65px;
 }
+
 .priseInputBoxHeight1 {
   height: 408px;
 }
+
 .priseInputBoxHeight2 {
   height: 484px;
 }
+
 .priseInputItem {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .priseInputItem input {
   height: 18px;
   width: 305px;
 }
+
 .priseInputItem fieldset {
   border-radius: 10px;
   border-color: #eaeaea !important;
 }
+
 .pSize {
   height: 51px !important;
 }
+
 .priseInputItem img {
   position: relative;
   left: 139px;
   top: 28px;
 }
+
 .priseDateInput {
   flex-direction: column;
 }
+
 .priseDateInput input:focus {
   outline: none;
 }
+
 .priseDateInput img {
   left: 39px;
   top: 29px;
 }
+
 .pSize::placeholder {
   font-size: 14px !important;
   color: rgba(128, 128, 128, 0.726);
 }
+
 .DateFieldInput {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
+
 .DateField_Input {
   flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-top: 19px;
 }
+
 .requestBookingBtn {
   width: 305px;
   height: 51px;
@@ -431,6 +481,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .redBtnText {
   color: #fff;
   text-align: center;
@@ -438,12 +489,14 @@
   font-size: 18px !important;
   font-style: normal;
   font-weight: 600 !important;
-  line-height: 99.7% !important; /* 17.946px */
+  line-height: 99.7% !important;
+  /* 17.946px */
 }
 
 .hostDetailsDisplay {
   display: flex;
 }
+
 .hostDetails {
   width: 339px;
   height: 208px;
@@ -457,14 +510,17 @@
   padding: 21px;
   position: sticky;
 }
+
 #hostDetails1 {
   margin-top: 7px;
   top: 718px;
 }
+
 #hostDetails2 {
   margin-top: 133px;
   top: 664px;
 }
+
 .hostDetailsBox {
   display: flex;
   flex-direction: row;
@@ -472,37 +528,45 @@
   height: 110px;
   justify-content: space-between;
 }
+
 .avatarImage {
   width: 87px;
   height: 87px;
   border-radius: 48px;
   overflow: hidden;
 }
+
 .avatarInfo {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
 }
+
 .hostHeaderText {
   color: #000;
   font-family: "Poppins-Bold" !important;
   font-size: 17px !important;
   font-style: normal;
   font-weight: 600 !important;
-  line-height: 99.7% !important; /* 16.949px */
+  line-height: 99.7% !important;
+  /* 16.949px */
 }
+
 .avatarDetailsTextField {
   display: flex;
   flex-direction: row;
 }
+
 .hostDetailsLabel {
   color: #b7b7b7;
   font-family: "Poppins-Regular" !important;
   font-size: 14px !important;
   font-style: normal;
   font-weight: 400 !important;
-  line-height: 99.7% !important; /* 13.958px */
+  line-height: 99.7% !important;
+  /* 13.958px */
 }
+
 .hostDetailsLabelText {
   color: #000;
   font-family: "Poppins-Bold" !important;
@@ -527,6 +591,7 @@
   justify-content: space-between;
   width: 296px;
 }
+
 .TotalPriseText {
   font-family: "Poppins-Regular" !important;
   font-size: 15px !important;
@@ -535,6 +600,7 @@
   line-height: 99.7% !important;
   cursor: pointer;
 }
+
 .venueDetailsBox {
   width: 100%;
   display: flex;
@@ -545,9 +611,11 @@
   overflow: hidden;
   align-items: center;
 }
+
 .bottomVDT p {
   font-size: 10px !important;
 }
+
 .venueDetails {
   display: flex;
   flex-direction: row;
@@ -558,19 +626,24 @@
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.04);
   flex-shrink: 0;
 }
+
 .venueDetailsScroll {
   overflow: scroll;
   justify-content: space-between;
 }
-.venueDetailsScroll > * {
+
+.venueDetailsScroll>* {
   flex: 0 0 112px;
 }
+
 .venueDetailsFirst {
   justify-content: center;
 }
+
 .bottomBorder {
   border-bottom: 1px solid #eee;
 }
+
 .venueDetailsItem {
   display: flex;
   flex-direction: column;
@@ -582,12 +655,14 @@
   background: #fff;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.04);
 }
+
 .crossLine {
   width: 97px;
   height: 52px;
   position: absolute;
   top: 17px;
 }
+
 .venueDetailsItem p {
   color: #333;
   text-align: center;
@@ -595,17 +670,21 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px; /* 185.714% */
+  line-height: 26px;
+  /* 185.714% */
   margin-top: 5px;
 }
+
 .venueDetailsIcon {
   width: 24px;
   height: 24px;
   /* margin-bottom: 5px; */
 }
+
 .BookingBtnLink {
   text-decoration: none;
 }
+
 .amenitiesTextArya {
   display: flex;
   flex-direction: row;
@@ -626,6 +705,7 @@
   margin-bottom: 20px;
   padding-top: 36px;
 }
+
 .buyingHoverBox {
   width: 100%;
   height: 107px;
@@ -640,6 +720,7 @@
   justify-content: space-evenly;
   align-items: center;
 }
+
 .requestBookingBtn {
   width: 194px;
   height: 44px;
@@ -651,6 +732,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .messageHostButton {
   width: 138px;
   height: 44px;
@@ -670,26 +752,34 @@
   font-size: 14px !important;
   font-style: normal;
   font-weight: 600 !important;
-  line-height: 99.7% !important; /* 13.958px */
+  line-height: 99.7% !important;
+  /* 13.958px */
 }
+
 .buyingHoverBtnClicked {
   background: #e6e6e6 !important;
 }
+
 .buyingHoverBtnTextClicked {
   color: #c0c0c0 !important;
 }
+
 .buyingBox {
   display: none;
 }
+
 .bookingPosition {
   top: 114px;
 }
+
 .hostPosition {
   top: 430px;
 }
+
 .leftMargin {
   margin-left: 0px;
 }
+
 .amenitiesTextArya {
   height: auto;
 }
@@ -700,90 +790,115 @@
     width: 683px;
     margin: 0px 30px;
   }
+
   .buyingHoverBox {
     display: none;
   }
+
   .venueDetails {
     overflow: inherit;
   }
+
   .verified {
     height: 121px;
     flex-direction: row;
   }
+
   .verifyBox {
     width: 50%;
     padding-left: 15px;
     justify-content: center;
   }
+
   .verifyBoxBorderBottom {
     border-bottom: 0px solid #eee;
     padding-bottom: 0px;
   }
+
   .mainItemBox {
     /* width: 683px; */
   }
+
   .descriptionHeaderText {
     font-size: 20px !important;
   }
+
   .AmenitiesSeeMore {
     margin-top: 43px;
   }
+
   .Amenities {
     height: 373px;
     position: relative;
   }
+
   .amenitiesTextArya {
     display: flex;
     flex-direction: row;
     overflow: hidden;
     width: 100%;
   }
+
   .amenitiesTextAryaOpenHeight {
     height: auto;
   }
+
   .amenitiesTextAryaCloseHeight {
     height: 251px;
   }
+
   .amenitiesText {
     width: 35%;
   }
+
   .AmenitiesOpen {
     width: 800px;
     padding: 15px 50px 17px 50px;
   }
+
   .amenitiesTextVisibility {
     display: flex;
   }
+
   .bookingRequest {
     display: flex;
   }
+
   .hostDetails {
     display: flex;
   }
+
   .buyingBox {
     display: none;
   }
+
   #hostDetails1 {
     margin-top: 55px;
   }
+
   .venueDetailsFirst {
     justify-content: space-between;
   }
+
   .descriptionRedCrossMargin {
     margin-left: 38%;
   }
+
   .amenitiesPopupBox {
     width: 682px;
     height: 515px;
     top: 50%;
     overflow: hidden;
   }
+
   .AmenitiesRedCrossMargin {
     margin-left: 63%;
   }
+
   .leftMargin {
     margin-left: 124px;
   }
+
   .descriptionPopUpTextBox {
     height: auto;
   }
@@ -794,16 +909,19 @@
   .mainBox {
     margin: 0px 30px;
   }
+
   .overviewContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: start;
   }
+
   .leftSideMenu {
     display: block;
     height: 4123px;
   }
+
   .menuBox {
     width: 219px;
     height: 470px;
@@ -816,9 +934,11 @@
     align-items: flex-start;
     overflow: inherit;
   }
+
   .buyingHoverBox {
     display: none;
   }
+
   .menuItem {
     width: 100%;
     justify-content: left;
@@ -827,100 +947,127 @@
     padding-left: 15px;
     margin: 12px 0px;
   }
+
   .menuItem p {
     font-size: 17px !important;
   }
+
   .menuItem p {
     width: 200px;
     justify-content: start;
   }
+
   .menuItem:hover {
     border-left: 5px #ea4335 solid;
     border-bottom: 0;
   }
+
   .venueDetails {
     overflow: inherit;
   }
+
   .verified {
     height: 121px;
     flex-direction: row;
   }
+
   .verifyBox {
     width: 50%;
     padding-left: 15px;
     justify-content: center;
   }
+
   .verifyBoxBorderBottom {
     border-bottom: 0px solid #eee;
     padding-bottom: 0px;
   }
+
   .mainItemBox {
     width: 683px;
   }
+
   .descriptionHeaderText {
     font-size: 20px !important;
   }
+
   .AmenitiesSeeMore {
     margin-top: 43px;
   }
+
   .Amenities {
     height: 373px;
     position: relative;
   }
+
   .amenitiesTextArya {
     display: flex;
     flex-direction: row;
     overflow: hidden;
     width: 100%;
   }
+
   .amenitiesTextAryaOpenHeight {
     height: auto;
   }
+
   .amenitiesTextAryaCloseHeight {
     height: 251px;
   }
+
   .amenitiesText {
     width: 35%;
   }
+
   .AmenitiesOpen {
     width: 800px;
     padding: 15px 50px 17px 50px;
   }
+
   .amenitiesTextVisibility {
     display: flex;
   }
+
   .bookingPaymentPage {
     display: none;
   }
+
   .bookingRequest {
     display: flex;
   }
+
   .hostDetails {
     display: flex;
   }
+
   .buyingBox {
     width: auto;
     height: 4123px;
     display: block;
     position: relative;
   }
+
   #hostDetails1 {
     margin-top: 55px;
   }
+
   .descriptionRedCrossMargin {
     margin-left: 38%;
   }
+
   .amenitiesPopupBox {
     width: 682px;
     height: 515px;
     overflow: hidden;
   }
+
   .AmenitiesRedCrossMargin {
     margin-left: 63%;
   }
+
   .leftMargin {
     margin-left: 124px;
   }
+
   .mobileViewMenu {
     display: none;
   }

@@ -25,6 +25,10 @@
   width: 100%;
 }
 
+.careers-content img {
+  max-width: 100%;
+}
+
 .careers-content h2 {
   font-size: 32px;
   font-weight: 700;

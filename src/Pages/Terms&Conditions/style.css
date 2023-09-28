@@ -48,6 +48,10 @@
   max-width: 1300px;
 }
 
+.terms-content img {
+  max-width: 100%;
+}
+
 .terms-content h2 {
   font-size: 28px;
   font-weight: 700;

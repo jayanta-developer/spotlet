@@ -15,6 +15,10 @@
   width: 100%;
 }
 
+.guest-content img {
+  max-width: 100%;
+}
+
 .guest-content h2 {
   font-size: 32px;
   font-weight: 700;

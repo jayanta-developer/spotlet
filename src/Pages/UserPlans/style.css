@@ -6,12 +6,14 @@
   flex-direction: column;
   align-items: center;
 }
+
 .userPlansHeaderBox {
   width: 80%;
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
 }
+
 .userPlansHeader {
   color: #000;
   font-family: "Poppins-Regular" !important;
@@ -20,6 +22,7 @@
   font-weight: 700 !important;
   line-height: 130% !important;
 }
+
 .userPlansSubHeader {
   color: #000;
   font-family: "Poppins-Regular" !important;
@@ -28,6 +31,7 @@
   font-weight: 400 !important;
   line-height: 130% !important;
 }
+
 .userPlansBox {
   width: 98%;
   height: 925px;
@@ -40,12 +44,14 @@
   padding: 35px;
   align-items: center;
 }
+
 .plansHederBox {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .plansSubscriptionHeder p {
   color: #000;
   font-family: "Poppins-Regular" !important;
@@ -54,15 +60,18 @@
   font-weight: 700 !important;
   line-height: 130% !important;
 }
+
 .plansRadioBox {
   display: flex;
   flex-direction: row;
 }
+
 .plansInfoBox {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .plansInfoItem {
   display: flex;
   flex-direction: column;
@@ -70,11 +79,13 @@
   margin: 15px 0;
   border-top: 1px solid rgb(245 245 245);
 }
+
 .plansInfoItemSecond {
   display: flex;
   flex-direction: column;
   border-top: 1px solid rgb(245 245 245);
 }
+
 .ItemSecondM {
   margin-top: 34px;
 }
@@ -87,6 +98,7 @@
   font-weight: 300 !important;
   line-height: 26px !important;
 }
+
 .plansSId {
   color: #6917ef;
   font-family: "Poppins-Regular" !important;
@@ -95,6 +107,7 @@
   font-weight: 500 !important;
   line-height: normal !important;
 }
+
 .plansStandard {
   color: #ea4335;
   font-family: "Poppins-Regular" !important;
@@ -103,6 +116,7 @@
   font-weight: 500 !important;
   line-height: normal !important;
 }
+
 .plansExpires {
   color: #1a1919;
   font-family: "Poppins-Regular" !important;
@@ -111,6 +125,7 @@
   font-weight: 700 !important;
   line-height: normal !important;
 }
+
 .plansActive {
   color: #0dc51f;
   font-family: "Poppins-Regular" !important;
@@ -119,6 +134,7 @@
   font-weight: 700 !important;
   line-height: normal !important;
 }
+
 .plansAddress {
   color: #ff0c0c;
   font-family: "Poppins-Regular" !important;
@@ -127,6 +143,7 @@
   font-weight: 500 !important;
   line-height: normal !important;
 }
+
 .plansPaidAmount {
   color: #ea4335;
   font-family: "Poppins-Regular" !important;
@@ -135,9 +152,11 @@
   font-weight: 700 !important;
   line-height: normal !important;
 }
+
 .placeBtnBox {
   margin-top: 20px;
 }
+
 .plansUpgradeBtn {
   width: 264px;
   height: 54px;
@@ -150,10 +169,12 @@
   cursor: pointer;
   transition: all 0.5s;
 }
+
 .plansUpgradeBtn:hover {
   background: #e96256;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .plansUpgradeBtn p {
   color: #fff;
   font-family: "Poppins-Regular" !important;
@@ -162,12 +183,15 @@
   font-weight: 700 !important;
   line-height: normal;
 }
+
 .PlansRadioLabelText {
   font-size: 11px !important;
 }
+
 .plansInfoTextBox {
   margin-bottom: 10px;
 }
+
 /* Tab view*/
 @media only screen and (min-width: 768px) {
   .userPlansBox {
@@ -177,53 +201,66 @@
     justify-content: space-between;
     align-items: start;
   }
+
   .userPlansHeaderBox {
     width: 98%;
   }
+
   .userPlansHeader {
     font-size: 36px !important;
   }
+
   .userPlansSubHeader {
     font-size: 15px !important;
   }
+
   .plansSubscriptionHeder p {
     font-size: 36px !important;
   }
+
   .plansInfoBox {
     width: 100%;
     flex-direction: row;
     height: 220px;
   }
+
   .plansInfoItem {
     margin: 0px;
     justify-content: space-between;
     border: none;
   }
+
   .plansInfoItemSecond {
     border: none;
   }
+
   .placeBtnBox {
     width: 100%;
     display: flex;
     justify-content: end;
   }
+
   .PlansRadioLabelText {
     font-size: 14px !important;
   }
+
   .plansInfoTextBox {
     margin-bottom: 0px;
   }
+
   .plansHederBox {
     width: 100%;
     padding-right: 23px;
   }
 }
+
 /* Desktop view */
 @media only screen and (min-width: 1000px) {
   .userPlansBox {
     width: 80%;
     padding: 35px;
   }
+
   .userPlansHeaderBox {
     width: 80%;
   }

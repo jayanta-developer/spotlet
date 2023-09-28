@@ -6,6 +6,7 @@
   justify-content: center;
   position: relative;
 }
+
 .favoritesContainer {
   width: 85%;
 }
@@ -16,6 +17,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .favoritesHeaderText {
   color: #000;
   font-family: "Poppins-Bold" !important;
@@ -24,6 +26,7 @@
   font-weight: 700 !important;
   line-height: 130% !important;
 }
+
 .favoritesSubHeader {
   color: #000;
   font-family: "Poppins-Regular" !important;
@@ -32,6 +35,7 @@
   font-weight: 400 !important;
   line-height: 130% !important;
 }
+
 .storyButton p {
   color: #808080;
   font-family: "Poppins-Regular" !important;
@@ -40,6 +44,7 @@
   font-weight: 400 !important;
   line-height: 130% !important;
 }
+
 .compareButton {
   width: 150px;
   height: 35px;
@@ -50,6 +55,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .compareButton p {
   font-size: 11px !important;
   color: #fff;
@@ -58,6 +64,7 @@
   font-weight: 500 !important;
   line-height: normal !important;
 }
+
 .storyButton {
   width: 100px;
   height: 35px;
@@ -69,12 +76,15 @@
   justify-content: center;
   align-items: center;
 }
+
 .headerItems {
   margin: 0px 3px;
 }
+
 .search_Bar {
   position: relative;
 }
+
 .favoriteContentBox {
   width: 100%;
   display: flex;
@@ -82,15 +92,18 @@
   justify-content: space-between;
   margin-top: 20px;
 }
+
 .menu_Box {
   width: 302px;
   display: flex;
   flex-direction: column;
   margin-right: 10px;
 }
+
 .menuItem {
   cursor: pointer;
 }
+
 .menuItem p {
   color: #333;
   font-family: "Poppins-Regular" !important;
@@ -100,9 +113,11 @@
   font-weight: 400 !important;
   line-height: 26px !important;
 }
+
 .MenuMargin {
   margin-left: 15px !important;
 }
+
 .menuItemBox {
   width: 302px;
   height: 193px;
@@ -114,6 +129,7 @@
   margin-bottom: 20px;
   box-shadow: 0px 4px 42px 0px rgba(0, 0, 0, 0.12);
 }
+
 .CreateListButton {
   width: 301px;
   height: 51px;
@@ -124,6 +140,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .CreateListButton p {
   color: #fff;
   text-align: center;
@@ -134,6 +151,7 @@
   line-height: 26px !important;
   margin-right: 5px !important;
 }
+
 .CardBox {
   width: 100%;
   display: flex;
@@ -142,6 +160,7 @@
   margin-left: 10px;
   margin-bottom: 30px;
 }
+
 .productContainer {
   width: 100%;
   display: flex;
@@ -149,14 +168,17 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .productContainer span {
   /* margin: 0 15px; */
 }
+
 .CreateListBtn {
   width: 100px;
   height: 35px;
   background: #2e0704;
 }
+
 .CreateListBtn p {
   font-size: 11px !important;
   color: #fff;
@@ -166,6 +188,7 @@
   font-weight: 600 !important;
   line-height: 26px !important;
 }
+
 .createListPopUp {
   width: 373px;
   height: 500px;
@@ -179,17 +202,20 @@
   transform: translate(-50%, -50%);
   padding: 20px;
 }
+
 .whiteCrossImage {
   position: absolute;
   top: -37px;
   right: -40px;
   border-radius: 10px;
 }
+
 .listBoxHeader {
   display: flex;
   flex-direction: column;
   position: relative;
 }
+
 .listHeaderText {
   color: #1f212a;
   font-family: "Poppins-Regular" !important;
@@ -198,6 +224,7 @@
   font-weight: 700 !important;
   line-height: normal !important;
 }
+
 .listSubText {
   color: #000;
   font-family: "Poppins-Regular" !important;
@@ -206,6 +233,7 @@
   font-weight: 300 !important;
   line-height: normal !important;
 }
+
 .listNameBox p {
   color: #000;
   font-family: "Poppins-Regular" !important;
@@ -214,28 +242,34 @@
   font-weight: 400 !important;
   line-height: 130% !important;
 }
+
 .listNameInput {
   width: 100%;
   background: #f2f2f3;
 }
+
 .listNameInput input {
   height: 9px;
 }
+
 .descriptionInput {
   width: 100%;
   /* height: 300px !important; */
 }
+
 .descriptionInput input {
   background: #f2f2f3;
   height: 115px;
   text-align: start;
 }
+
 .listButtonBox {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 36px;
 }
+
 .grayCancelBtn {
   width: 137px;
   height: 41px;
@@ -250,6 +284,7 @@
   border: 0.8px solid #e3e3e7;
   background: #f2f2f3;
 }
+
 .grayCancelBtn p {
   color: #201f1f;
   font-family: "Poppins-Regular" !important;
@@ -258,6 +293,7 @@
   font-weight: 500 !important;
   line-height: 130% !important;
 }
+
 .ListCreateBtn {
   width: 123px;
   height: 41px;
@@ -268,6 +304,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .ListCreateBtn p {
   color: #fff;
   font-family: "Poppins-Regular" !important;
@@ -276,16 +313,19 @@
   font-weight: 600 !important;
   line-height: 130% !important;
 }
+
 .naveFirstBox {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
+
 .favoritesHeaderSearchBar {
   display: flex;
   justify-content: center;
   margin-bottom: 79px;
 }
+
 .NavSecondBox {
   width: 100%;
   display: flex;
@@ -293,6 +333,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .favoritesHeader {
   width: 100%;
   height: 213px;
@@ -310,6 +351,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .favoritesListHeader {
   width: 95%;
   display: flex;
@@ -325,6 +367,7 @@
   font-weight: 600 !important;
   line-height: normal !important;
 }
+
 .favoritesListAddBtn {
   display: flex;
   flex-direction: row;
@@ -338,6 +381,7 @@
   background: #fff;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
 }
+
 .favoritesRedAddBtn {
   color: #ea4335;
   font-family: "Poppins-Regular" !important;
@@ -346,6 +390,7 @@
   font-weight: 400 !important;
   line-height: 130% !important;
 }
+
 .favoriteListItemBox {
   width: 100%;
   display: flex;
@@ -355,6 +400,7 @@
   margin-bottom: 50px;
   margin-top: 20px;
 }
+
 .favoritesCard {
   width: 302px;
   height: 281px;
@@ -370,6 +416,7 @@
   margin: 10px 10px;
   box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
 }
+
 .optionIcon {
   position: absolute;
   top: 16px;
@@ -380,16 +427,19 @@
   align-items: center;
   justify-content: center;
 }
+
 .favoritesCardCover img {
   width: 143px;
   height: 143px;
 }
+
 .favoritesCardTest {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .FCardTitle {
   color: #1a1a1a;
   font-family: "Poppins-Regular" !important;
@@ -398,6 +448,7 @@
   font-weight: 400 !important;
   line-height: 24px !important;
 }
+
 .FCardDate {
   color: #ea4335;
   font-family: "Poppins-Regular" !important;
@@ -406,6 +457,7 @@
   font-weight: 400 !important;
   line-height: 130% !important;
 }
+
 .favoritesOptionPupUP {
   width: 109px;
   height: auto;
@@ -418,6 +470,7 @@
   border-radius: 3px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
 .FCardOptionItem {
   width: 100%;
   height: 40px;
@@ -426,12 +479,15 @@
   align-items: center;
   transition: background 0.5s;
 }
+
 .FCardOptionItem:hover {
   background-color: #f1f1f1;
 }
+
 .FCardOptionItemB {
   border-bottom: 1px solid rgba(184, 184, 184, 0.116);
 }
+
 .FCardOptionItem p {
   color: #000;
   font-family: "Poppins-Regular" !important;
@@ -446,46 +502,59 @@
   .favoritesHeaderTextBox {
     margin-bottom: 20px;
   }
+
   .favoritesHeader {
     height: auto;
   }
+
   .storyButton {
     width: 131px;
     height: 48px;
   }
+
   .CreateListBtn {
     width: 165px;
     height: 48px;
   }
+
   .compareButton {
     width: 210px;
     height: 48px;
   }
+
   .headerItems {
     margin: 0px 15px;
   }
+
   .CreateListBtn p {
     font-size: 17px !important;
   }
+
   .compareButton p {
     font-size: 15px !important;
   }
+
   .favoritesHeaderSearchBar {
     margin-top: 26px;
   }
+
   .NavSecondBox {
     margin-top: 20px;
   }
+
   .createListPopUp {
     width: 572px;
   }
+
   .listButtonBox {
     justify-content: end;
   }
+
   /* FavoritesList */
   .favoritesListHeader {
     width: 90%;
   }
+
   .favoriteListItemBox {
     width: 90%;
     justify-content: center;
@@ -497,33 +566,41 @@
   .favoritesHeader {
     flex-direction: row;
   }
+
   .naveFirstBox {
     width: 50%;
     flex-direction: row;
   }
+
   .favoritesHeaderTextBox {
     width: 372px;
   }
+
   .favoritesHeaderSearchBar {
     width: 253px;
     margin-top: 0;
   }
+
   .NavSecondBox {
     width: 50%;
     margin-top: 0px;
   }
+
   /* FavoritesList */
 
   .favoritesListHeader {
     width: 1250px;
   }
+
   .favoriteListItemBox {
     width: 1288px;
     justify-content: space-between;
   }
+
   .productContainer {
     justify-content: space-between;
   }
+
   .favoritesContainer {
     max-width: 1329px;
   }

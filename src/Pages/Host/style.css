@@ -3,6 +3,10 @@
   margin-top: 96px;
 }
 
+.host-content img {
+  max-width: 100%;
+}
+
 .host-bg {
   background-color: black;
   position: relative;
@@ -612,19 +616,11 @@
 
 .testimonials {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .testimonialsSlideContainer {
   width: 100%;
   height: auto;
-  /* border: 1px solid; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .testimonialsCard {
@@ -721,9 +717,6 @@
     display: block !important;
   }
 
-  .testimonialsSlideContainer {
-    flex-direction: row;
-  }
 }
 
 /* Desktop view */
@@ -739,7 +732,7 @@
   }
 
   .testimonialsSlideContainer {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 }

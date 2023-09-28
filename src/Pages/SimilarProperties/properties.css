@@ -3,10 +3,12 @@
   height: auto;
   margin-bottom: 5%;
 }
+
 .propertiesHeader {
   margin-bottom: 14px;
   margin-top: 34px;
 }
+
 .propertiesHeader p {
   color: #333;
   font-family: "Poppins-Bold" !important;
@@ -16,12 +18,14 @@
   line-height: normal !important;
   margin-left: 3%;
 }
+
 .propertiesBox {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
+
 .propertiesRenderBox {
   display: flex;
   width: 100%;
@@ -31,7 +35,8 @@
   overflow: scroll;
   overflow-y: hidden;
 }
-.propertiesRenderBox > * {
+
+.propertiesRenderBox>* {
   flex: 0 0 280px;
   margin: 0 10px;
 }
@@ -57,6 +62,7 @@
   padding: 8px;
   cursor: pointer;
 }
+
 .verifyTab p {
   color: var(--shade-02, #222);
   font-family: "Poppins-Regular" !important;
@@ -73,10 +79,12 @@
   padding: 20px 8px 0px 0px;
   justify-content: space-between;
 }
+
 .cardText {
   display: flex;
   flex-direction: column;
 }
+
 .cardText2nd {
   align-items: end;
 }
@@ -89,6 +97,7 @@
   font-weight: 600 !important;
   line-height: 24px !important;
 }
+
 .cardSubImr {
   color: #808184;
   font-family: "Poppins-Regular" !important;
@@ -97,6 +106,7 @@
   font-weight: 300 !important;
   line-height: 24px !important;
 }
+
 .cardSubTextBox {
   display: flex;
   flex-direction: row;
@@ -107,11 +117,13 @@
   color: #333;
   font-family: "Poppins-Regular" !important;
 }
+
 .cardLocationHeader {
   font-size: 16px;
   color: rgb(51, 51, 51);
   font-family: "Poppins-Bold" !important;
 }
+
 .cardLocationBox {
   width: 100%;
   display: flex;
@@ -119,6 +131,7 @@
   justify-content: end;
   padding-right: 7px;
 }
+
 .cardLocationBox img {
   width: 10px;
   height: 14px;
@@ -126,33 +139,39 @@
   position: relative;
   bottom: 21%;
 }
+
 .cardLocationBox span {
   font-size: 12px;
   color: #222;
   font-family: "Poppins-Regular" !important;
   text-align: right;
 }
+
 .propertyCardMIcons {
   width: 15px;
   height: 16px;
   margin: 0 5px;
 }
+
 /* Tab */
 @media only screen and (min-width: 768px) {
   .propertiesHeader p {
     font-size: 35px !important;
     margin-left: 0%;
   }
+
   .propertiesHeader {
     margin-bottom: 34px;
     margin-top: 45px;
     padding-left: 20px;
   }
+
   .propertiesRenderBox {
     width: 100%;
     overflow: inherit;
     overflow: scroll;
   }
+
   .propertiesCard {
     width: 304px;
   }
@@ -161,6 +180,7 @@
     right: 15px !important;
     bottom: 78px !important;
   }
+
   .CardTextBox {
     padding: 20px 8px 0px 11px;
   }
@@ -172,6 +192,7 @@
     display: flex;
     flex-direction: column;
   }
+
   .propertiesContainer {
     display: flex;
     justify-content: center;
@@ -184,15 +205,18 @@
     font-size: 35px !important;
     margin-left: 0%;
   }
+
   .propertiesHeader {
     margin-bottom: 34px;
     margin-top: 57px;
   }
+
   .propertiesRenderBox {
     width: 1328px;
     overflow: inherit;
     overflow-x: hidden;
   }
+
   .propertiesCard {
     width: 304px;
   }
@@ -201,6 +225,7 @@
     right: 15px !important;
     bottom: 78px !important;
   }
+
   .CardTextBox {
     padding: 20px 8px 0px 11px;
   }
@@ -212,6 +237,7 @@
     display: flex;
     flex-direction: column;
   }
+
   .propertiesContainer {
     display: flex;
     justify-content: center;

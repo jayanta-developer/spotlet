@@ -1,4 +1,5 @@
-.events-gallery-carousel .owl-nav.disabled, .events-gallery-carousel .owl-dots.disabled {
+.events-gallery-carousel .owl-nav.disabled,
+.events-gallery-carousel .owl-dots.disabled {
   display: block !important;
 }
 

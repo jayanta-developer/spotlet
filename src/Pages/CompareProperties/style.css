@@ -22,7 +22,8 @@
   margin-bottom: 20px;
 }
 
-.compareHederTextBox {}
+.compareHederTextBox {
+}
 
 .compareHederText {
   font-size: 27px !important;
@@ -126,14 +127,10 @@
   height: 45px;
   align-items: center;
   background: #edf3ff;
-  padding: 0 24px;
-  justify-content: center;
+  padding-left: 14px;
+  justify-content: start;
+  border-radius: 10px;
 }
-
-.ratingLogoBoxText {
-  margin-right: 82px !important;
-}
-
 .productCardBox {
   display: flex;
   flex-direction: row;
@@ -234,8 +231,8 @@
     font-size: 16px !important;
   }
 
-  .ratingLogoBoxText {
-    margin-right: 100px !important;
+  .ratingLogoBox {
+    padding-left: 26px;
   }
 
   .compareHeader {
@@ -245,13 +242,15 @@
   .compareBackButton {
     margin-bottom: 0px;
   }
+  .property_items {
+    width: 302px;
+  }
 }
 
 /* Desktop view */
 @media only screen and (min-width: 1000px) {
   .compareHeader {
     width: 75%;
-    margin-bottom: 0px;
   }
 
   .compareProjectBox {
@@ -276,10 +275,10 @@
   }
 
   .ratingLogoBox {
-    justify-content: start;
+    padding-left: 37px;
+    border-radius: 0px;
   }
-
-  .ratingLogoBoxText {
-    margin-right: 0px;
+  .property_items {
+    width: 100%;
   }
 }

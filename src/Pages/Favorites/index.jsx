@@ -295,47 +295,50 @@ export default function Favorites() {
         {showPopup && <div className="popupBackdrop"></div>}
         {createListPupUp()}
         <Box className="favoritesContainer">
-          <Box className="favoritesHeader">
 
-            <Box className="naveFirstBox">
-              <Box className="favoritesHeaderTextBox  headerItems">
-                <Typography className='favoritesHeaderText'>Favorites</Typography>
-                <Typography className='favoritesSubHeader'>Find your saved items and get ready to order them</Typography>
+          <Box className="favoritesHeader">
+            <Box className="favoritesHeaderBox1">
+              <Box className="naveFirstBox">
+                <Box className="favoritesHeaderTextBox  headerItems">
+                  <Typography className='favoritesHeaderText'>Favorites</Typography>
+                </Box>
+                <Box className="favoritesHeaderSearchBar headerItems">
+                  <Box className="favorite_search_Bar">
+                    <img src={SearchIcon} />
+                    <TextField className='favorite_search_input' placeholder='Search favorites....' />
+                  </Box>
+                </Box>
               </Box>
 
+              <Box className="NavSecondBox">
+                <Box className="favoritesHeaderSortBy headerItems">
+                  <Box className="storyButton pointer">
+                    <Typography mr={2}>Sort by</Typography>
+                    <img src={upDownArrow} />
+                  </Box>
+                </Box>
 
-              <Box className="favoritesHeaderSearchBar headerItems">
-                <Box className="search_Bar">
-                  <Box className="searchField">
-                    <img className='pointer' style={{ width: "22px", position: "relative", left: "44px", zIndex: "9" }} src={SearchIcon} />
-                    <TextField className='searchInput' sx={{ width: "100%" }} placeholder='Search favorites....' />
+                <Box className="favoritesHeaderSortBy headerItems">
+                  <Box onClick={() => {
+                    setCreateListPupUp(true)
+                    setShowPopup(true)
+                  }} className="CreateListBtn storyButton pointer">
+                    <Typography mr={1}>Create List</Typography>
+                    <img src={plusIcon} />
+                  </Box>
+                </Box>
+                <Box className="favoritesHeaderCompare headerItems">
+                  <Box className="compareButton pointer">
+                    <Typography>Compare properties</Typography>
                   </Box>
                 </Box>
               </Box>
             </Box>
 
-            <Box className="NavSecondBox">
-              <Box className="favoritesHeaderSortBy headerItems">
-                <Box className="storyButton pointer">
-                  <Typography mr={2}>Sort by</Typography>
-                  <img src={upDownArrow} />
-                </Box>
-              </Box>
 
-              <Box className="favoritesHeaderSortBy headerItems">
-                <Box onClick={() => {
-                  setCreateListPupUp(true)
-                  setShowPopup(true)
-                }} className="CreateListBtn storyButton pointer">
-                  <Typography mr={1}>Create List</Typography>
-                  <img src={plusIcon} />
-                </Box>
-              </Box>
-              <Box className="favoritesHeaderCompare headerItems">
-                <Box className="compareButton pointer">
-                  <Typography>Compare properties</Typography>
-                </Box>
-              </Box>
+            <Box className="favoritesHeaderBox2">
+              <Typography className='favoritesSubHeader'>Find your saved items and get ready to order them</Typography>
+
             </Box>
           </Box>
 
@@ -349,3 +352,5 @@ export default function Favorites() {
     </>
   )
 }
+
+

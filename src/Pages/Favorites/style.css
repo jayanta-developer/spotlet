@@ -34,6 +34,7 @@
   font-style: normal;
   font-weight: 400 !important;
   line-height: 130% !important;
+  text-align: center;
 }
 
 .storyButton p {
@@ -323,7 +324,7 @@
 .favoritesHeaderSearchBar {
   display: flex;
   justify-content: center;
-  margin-bottom: 79px;
+  margin-bottom: 20px;
 }
 
 .NavSecondBox {
@@ -336,7 +337,7 @@
 
 .favoritesHeader {
   width: 100%;
-  height: 213px;
+  height: auto;
   height: auto;
   flex-direction: column;
   align-items: start;
@@ -496,6 +497,35 @@
   font-weight: 300 !important;
   line-height: 39px !important;
 }
+.favorite_search_Bar {
+  width: 245px;
+  position: relative;
+}
+.favorite_search_Bar img {
+  position: absolute;
+  top: 12px;
+  left: 26px;
+}
+.favorite_search_input input {
+  padding-left: 58px !important;
+  height: 13px !important;
+}
+.favorite_search_input div:last-child {
+  border-radius: 72px !important;
+}
+
+.favoritesHeaderBox1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.favoritesHeaderBox2 {
+  width: 100%;
+  padding: 0 15px;
+  margin-top: 16px;
+}
 
 /* Tab view*/
 @media only screen and (min-width: 768px) {
@@ -564,7 +594,8 @@
 /* Desktop view */
 @media only screen and (min-width: 1000px) {
   .favoritesHeader {
-    flex-direction: row;
+    flex-direction: column;
+    /* min-width: 1287px; */
   }
 
   .naveFirstBox {
@@ -573,7 +604,7 @@
   }
 
   .favoritesHeaderTextBox {
-    width: 372px;
+    width: 180px;
   }
 
   .favoritesHeaderSearchBar {
@@ -603,5 +634,15 @@
 
   .favoritesContainer {
     max-width: 1329px;
+  }
+  .favoritesHeaderBox1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .favoritesSubHeader {
+    text-align: start;
   }
 }

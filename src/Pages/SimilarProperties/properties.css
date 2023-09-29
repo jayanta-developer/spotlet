@@ -36,7 +36,7 @@
   overflow-y: hidden;
 }
 
-.propertiesRenderBox>* {
+.propertiesRenderBox > * {
   flex: 0 0 280px;
   margin: 0 10px;
 }
@@ -175,12 +175,6 @@
   .propertiesCard {
     width: 304px;
   }
-
-  .logo_BoxComparePage {
-    right: 15px !important;
-    bottom: 78px !important;
-  }
-
   .CardTextBox {
     padding: 20px 8px 0px 11px;
   }
@@ -219,11 +213,6 @@
 
   .propertiesCard {
     width: 304px;
-  }
-
-  .logo_BoxComparePage {
-    right: 15px !important;
-    bottom: 78px !important;
   }
 
   .CardTextBox {

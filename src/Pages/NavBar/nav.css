@@ -171,7 +171,8 @@
   border-bottom: 1px solid #e2e5f0;
 }
 
-.notificationHeaderBox1 {}
+.notificationHeaderBox1 {
+}
 
 .notificationHeaderBox2 {
   display: flex;
@@ -320,8 +321,9 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  height: 56vh;
+  height: 39vh;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 .user_info {
@@ -381,7 +383,7 @@
 
 .whiteCrossIcon {
   position: absolute;
-  right: -54px;
+  right: -37px;
   top: -118px;
   cursor: pointer;
 }
@@ -482,8 +484,16 @@
 
   /* Nav popup */
   .NotificationPupUp {
-    width: 803px;
+    width: 98%;
+    max-width: 1300px;
+    height: 65vh;
     top: 130px;
+  }
+  .user_summery {
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-bottom: 20px;
+    height: 40vh;
   }
 
   .notiLeftBox {
@@ -496,15 +506,15 @@
     width: 857px;
     display: flex;
     flex-direction: column;
-    padding: 50px 50px 0px 50px;
+    padding: 50px 50px 50px 50px;
     overflow: scroll;
-    height: 638px;
+    height: 70vh;
     overflow-x: hidden;
   }
 
   .notificationSPopUp {
     width: 480px;
-    height: 682px;
+    height: 70vh;
     top: 130px;
   }
 
@@ -547,8 +557,7 @@
 /* Desktop view */
 @media only screen and (min-width: 1000px) {
   .NotificationPupUp {
-    width: 1300px;
-    height: 766px;
+    height: 70vh;
   }
 
   .notiLeftBox {
@@ -557,8 +566,11 @@
 
   .notiRightBox {
     width: 857px;
+    height: 60vh;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 50px 50px 0px 50px;
+    overflow: scroll;
+    padding: 50px 50px 40px 50px;
   }
 }

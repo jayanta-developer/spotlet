@@ -2,33 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Box, Typography, Divider, Menu, MenuItem } from '@mui/material'
 import { useNavigate } from 'react-router-dom';
 
-
 import "./home.css"
-
-//Gallery Images
-import imageA from "../../Assets/images/galleryImages/Mask group.png"
-import imageB from "../../Assets/images/galleryImages/12.jpg"
-import imageC from "../../Assets/images/galleryImages/22.jpg"
-import imageD from "../../Assets/images/galleryImages/32.jpg"
-import imageE from "../../Assets/images/galleryImages/42.jpg"
-
-//white tab logo
-import downArrowF from "../../Assets/images/DownArrowfill.svg"
-import fileListSearch from "../../Assets/images/file-list-search.svg"
-import Star1 from "../../Assets/images/Star 1.svg";
-import copyIcon from "../../Assets/images/copyIcon.svg"
-import MailIcon from "../../Assets/images/MailIcon.svg"
-import MessageIcon from "../../Assets/images/messagesIcon.svg"
-import WhatsAppIcon from "../../Assets/images/whatsappIcon.svg"
-import FacebookIcon from "../../Assets/images/facebookIcon.svg"
-
 
 import locationIcon from "../../Assets/images/Group 54.svg"
 import starIcon from "../../Assets/images/star-48.png"
-import starOutLine from "../../Assets/images/StarOutLine.png"
-
-import redHeartP from "../../Assets/images/redHeartP.svg"
-import redHeart from "../../Assets/images/redHartLogo.png"
 import ImageIcon from "../../Assets/images/galleryImages/icons8-gallery-48.png"
 
 ///Components
@@ -45,9 +22,6 @@ import coverPhoto from "../../Assets/images/galleryImages/cover photo.jpeg"
 
 
 export default function Home() {
-  const [printBox, setPrintBox] = useState(false);
-  const [Favorite, setFavorite] = useState(false);
-  const [shareBox, setShareBox] = useState(false);
   const [showGallery, setShowGallery] = useState(false);
   const [propertyNameVisibility, setPropertyNameVisibility] = useState(false)
   const ref = useRef(null);
@@ -61,9 +35,7 @@ export default function Home() {
       && event.target.id !== "PrintText"
 
     ) {
-      setPrintBox(false);
     } if (event.target.id === "printBox") {
-      setPrintBox(true);
     }
   };
 
@@ -72,7 +44,6 @@ export default function Home() {
       && event.target.id !== "share"
       && event.target.id !== "shareText"
     ) {
-      setShareBox(false);
     }
   };
 
@@ -155,19 +126,10 @@ export default function Home() {
                   <Typography className='poppins' sx={{ color: "#888888" }}>4.0 (3377 Reviews)</Typography>
                 </Box>
               </Box>
-              <Box className="venueRetting">
-
-              </Box>
-
             </Box>
-
           </Box>
-
         </Box>
-
       </Box >
-
-
       <Overview />
       <Properties />
       <Footer />

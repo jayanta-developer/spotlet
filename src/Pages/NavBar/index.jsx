@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Box, TextField, Typography } from '@mui/material'
 
 import "./nav.css";
@@ -25,6 +25,8 @@ export default function NavBar() {
   const [notificationSPopUp, setNotificationSPupUp] = useState(false)
   const [notificationBPopUp, setNotificationBPupUp] = useState(false)
   const [userIndex, setUserIndex] = useState(0)
+  const [showPopup, setShowPopup] = useState(false);
+
 
   const userRow = ({ avatar, name, subTitle, time, index }) => {
     return (
@@ -79,6 +81,15 @@ export default function NavBar() {
     )
   }
 
+  useEffect(() => {
+    if (showPopup) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+
+  })
+
   return (
     <>
       <Box className="navBar">
@@ -99,6 +110,7 @@ export default function NavBar() {
           <img
             onClick={() => {
               setNotificationSPupUp(!notificationSPopUp)
+              setShowPopup(!showPopup)
               document.body.classList.add("no-scroll")
             }} src={bail} />
           <img src={message} />
@@ -166,6 +178,7 @@ export default function NavBar() {
             onClick={() => {
               setNotificationSPupUp(false)
               setNotificationBPupUp(true)
+              setShowPopup(true)
             }}
             className="notificationPopUpSeeAllBtn pointer">
             <Typography>View all</Typography>
@@ -197,6 +210,7 @@ export default function NavBar() {
               </Box>
               <img onClick={() => {
                 setNotificationBPupUp(false)
+                setShowPopup(false)
                 document.body.classList.remove("no-scroll")
               }} className='whiteCrossIcon' src={whiteCross} />
             </Box>

@@ -19,7 +19,6 @@ import {
 } from "@mui/material";
 import "./style.css";
 
-import bannerPhoto from "../../Assets/images/landing-banner.png";
 import filmshootingimg01 from "../../Assets/images/filmshooting-img01.jpg";
 import filmshootingimg02 from "../../Assets/images/filmshooting-img02.jpg";
 import filmshootingimg03 from "../../Assets/images/filmshooting-img03.jpg";
@@ -70,6 +69,7 @@ import TopRatedProperties from "../TopRatedProperties";
 import RecentlyAddedProperties from "../RecentlyAddedProperties";
 import RecentProjects from "../RecentProjects";
 import ClientTestimonials from "../ClientTestimonials";
+import LandingPageBanner from "../LandingPageBanner";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -122,151 +122,153 @@ export default function LandingPage() {
       <NavBar />
       <Box className="landingpageContainer">
         <Box className="landingpage-banner">
-          <img src={bannerPhoto} className="image-overlay" />
-          <Box className="banner-content">
-            <Typography variant="h1">
-              Kickstart your Next{" "}
-              <span className="span700">
-                <TypeAnimation
-                  preRenderFirstString={true}
-                  sequence={[
-                    "Film & TV Shoot",
-                    1000,
-                    "Corporate Retreat",
-                    1000,
-                    "Personal Event",
-                    1000,
-                  ]}
-                  speed={{type: 'keyStrokeDelayInMs', value: 150}}
-                  repeat={Infinity}
-                />
-              </span>{" "}
-              with SpotLet
-            </Typography>
-            <Box className="banner-search">
-              <ul>
-                <li className="select-input">
-                  <FormControl>
-                    <Select
-                      sx={{
-                        boxShadow: "none",
-                        ".MuiOutlinedInput-notchedOutline": { border: 0 },
-                        "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
-                          {
-                            border: 0,
-                          },
-                        "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
-                          {
-                            border: 0,
-                          },
-                      }}
-                      className="custom-select"
-                      value={age}
-                      onChange={handleChange}
-                      displayEmpty
-                      inputProps={{ "aria-label": "Without label" }}
+          <LandingPageBanner />
+          <Box className="landingpagebanner-content">
+            <Box className="banner-container">
+              <Typography variant="h1">
+                Kickstart your Next{" "}
+                <span className="span700">
+                  <TypeAnimation
+                    preRenderFirstString={true}
+                    sequence={[
+                      "Film & TV Shoot",
+                      1000,
+                      "Corporate Retreat",
+                      1000,
+                      "Personal Event",
+                      1000,
+                    ]}
+                    speed={{ type: "keyStrokeDelayInMs", value: 170 }}
+                    repeat={Infinity}
+                  />
+                </span>{" "}
+                with SpotLet
+              </Typography>
+              <Box className="banner-search">
+                <ul>
+                  <li className="select-input">
+                    <FormControl>
+                      <Select
+                        sx={{
+                          boxShadow: "none",
+                          ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                          "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
+                            {
+                              border: 0,
+                            },
+                          "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
+                            {
+                              border: 0,
+                            },
+                        }}
+                        className="custom-select"
+                        value={age}
+                        onChange={handleChange}
+                        displayEmpty
+                        inputProps={{ "aria-label": "Without label" }}
+                      >
+                        <MenuItem value="">Event</MenuItem>
+                      </Select>
+                      <FormHelperText className="custom-select-label">
+                        Select Event
+                      </FormHelperText>
+                    </FormControl>
+                  </li>
+                  <li className="select-input">
+                    <FormControl>
+                      <Select
+                        sx={{
+                          boxShadow: "none",
+                          ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                          "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
+                            {
+                              border: 0,
+                            },
+                          "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
+                            {
+                              border: 0,
+                            },
+                        }}
+                        className="custom-select"
+                        value={age}
+                        onChange={handleChange}
+                        displayEmpty
+                        inputProps={{ "aria-label": "Without label" }}
+                      >
+                        <MenuItem value="">Activity</MenuItem>
+                      </Select>
+                      <FormHelperText className="custom-select-label">
+                        Select Activity
+                      </FormHelperText>
+                    </FormControl>
+                  </li>
+                  <li className="select-input">
+                    <FormControl>
+                      <Select
+                        sx={{
+                          boxShadow: "none",
+                          ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                          "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
+                            {
+                              border: 0,
+                            },
+                          "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
+                            {
+                              border: 0,
+                            },
+                        }}
+                        className="custom-select"
+                        value={age}
+                        onChange={handleChange}
+                        displayEmpty
+                        inputProps={{ "aria-label": "Without label" }}
+                      >
+                        <MenuItem value="">Location</MenuItem>
+                      </Select>
+                      <FormHelperText className="custom-select-label">
+                        Select Location
+                      </FormHelperText>
+                    </FormControl>
+                  </li>
+                  <li className="select-input">
+                    <FormControl>
+                      <Select
+                        sx={{
+                          boxShadow: "none",
+                          ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                          "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
+                            {
+                              border: 0,
+                            },
+                          "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
+                            {
+                              border: 0,
+                            },
+                        }}
+                        className="custom-select"
+                        value={age}
+                        onChange={handleChange}
+                        displayEmpty
+                        inputProps={{ "aria-label": "Without label" }}
+                      >
+                        <MenuItem value="">City</MenuItem>
+                      </Select>
+                      <FormHelperText className="custom-select-label">
+                        Select City
+                      </FormHelperText>
+                    </FormControl>
+                  </li>
+                  <li className="select-button">
+                    <Button
+                      className="btn-search"
+                      variant="contained"
+                      size="large"
                     >
-                      <MenuItem value="">Event</MenuItem>
-                    </Select>
-                    <FormHelperText className="custom-select-label">
-                      Select Event
-                    </FormHelperText>
-                  </FormControl>
-                </li>
-                <li className="select-input">
-                  <FormControl>
-                    <Select
-                      sx={{
-                        boxShadow: "none",
-                        ".MuiOutlinedInput-notchedOutline": { border: 0 },
-                        "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
-                          {
-                            border: 0,
-                          },
-                        "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
-                          {
-                            border: 0,
-                          },
-                      }}
-                      className="custom-select"
-                      value={age}
-                      onChange={handleChange}
-                      displayEmpty
-                      inputProps={{ "aria-label": "Without label" }}
-                    >
-                      <MenuItem value="">Activity</MenuItem>
-                    </Select>
-                    <FormHelperText className="custom-select-label">
-                      Select Activity
-                    </FormHelperText>
-                  </FormControl>
-                </li>
-                <li className="select-input">
-                  <FormControl>
-                    <Select
-                      sx={{
-                        boxShadow: "none",
-                        ".MuiOutlinedInput-notchedOutline": { border: 0 },
-                        "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
-                          {
-                            border: 0,
-                          },
-                        "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
-                          {
-                            border: 0,
-                          },
-                      }}
-                      className="custom-select"
-                      value={age}
-                      onChange={handleChange}
-                      displayEmpty
-                      inputProps={{ "aria-label": "Without label" }}
-                    >
-                      <MenuItem value="">Location</MenuItem>
-                    </Select>
-                    <FormHelperText className="custom-select-label">
-                      Select Location
-                    </FormHelperText>
-                  </FormControl>
-                </li>
-                <li className="select-input">
-                  <FormControl>
-                    <Select
-                      sx={{
-                        boxShadow: "none",
-                        ".MuiOutlinedInput-notchedOutline": { border: 0 },
-                        "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
-                          {
-                            border: 0,
-                          },
-                        "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
-                          {
-                            border: 0,
-                          },
-                      }}
-                      className="custom-select"
-                      value={age}
-                      onChange={handleChange}
-                      displayEmpty
-                      inputProps={{ "aria-label": "Without label" }}
-                    >
-                      <MenuItem value="">City</MenuItem>
-                    </Select>
-                    <FormHelperText className="custom-select-label">
-                      Select City
-                    </FormHelperText>
-                  </FormControl>
-                </li>
-                <li className="select-button">
-                  <Button
-                    className="btn-search"
-                    variant="contained"
-                    size="large"
-                  >
-                    Search
-                  </Button>
-                </li>
-              </ul>
+                      Search
+                    </Button>
+                  </li>
+                </ul>
+              </Box>
             </Box>
           </Box>
         </Box>

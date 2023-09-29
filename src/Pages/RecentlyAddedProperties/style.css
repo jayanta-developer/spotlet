@@ -144,7 +144,7 @@
   padding: 0;
   position: absolute;
   left: -50px;
-  top: 40%;
+  top: 26%;
 }
 
 .properties-carousel button.owl-next {
@@ -156,7 +156,7 @@
   padding: 0;
   position: absolute;
   right: -50px;
-  top: 40%;
+  top: 26%;
 }
 
 .properties-carousel button.owl-prev span,

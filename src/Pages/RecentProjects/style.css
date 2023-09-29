@@ -41,7 +41,7 @@
   padding: 0;
   position: absolute;
   left: -60px;
-  top: 36%;
+  top: 26%;
 }
 
 .recent-projects-carousel button.owl-next {
@@ -52,7 +52,7 @@
   padding: 0;
   position: absolute;
   right: -60px;
-  top: 36%;
+  top: 26%;
 }
 
 .recent-projects-carousel button.owl-prev span,

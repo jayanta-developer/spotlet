@@ -40,6 +40,7 @@ body {
   scrollbar-width: thin;
   /* "thin", "auto", or "none" based on your preference */
   font-family: "Poppins", sans-serif !important;
+  overflow-x: hidden !important;
 }
 
 /* Target the scrollbar thumb and track in WebKit-based browsers (Chrome, Safari) */

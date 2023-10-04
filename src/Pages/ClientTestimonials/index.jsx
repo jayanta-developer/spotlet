@@ -47,9 +47,9 @@ class App extends React.Component {
           className="clienttestimonials-carousel owl-carousel"
           {...options}
         >
-          <div className="item">
+          <div className="item  testimonials-item">
             <Box className="testimonials-Card">
-            <Rating name="size-small" defaultValue={4} />
+              <Rating name="size-small" defaultValue={4} />
               <Typography className="testimonialsCardSubText">
                 "SpotLet made finding our dream wedding venue a breeze. We were
                 able to shortlist and connect with hosts in no time. Thank you
@@ -69,7 +69,7 @@ class App extends React.Component {
           </div>
           <div className="item">
             <Box className="testimonials-Card">
-            <Rating name="size-small" defaultValue={4} />
+              <Rating name="size-small" defaultValue={4} />
               <Typography className="testimonialsCardSubText">
                 Our corporate event was a huge success thanks to SpotLet. We
                 found the perfect retreat center that aligned with our needs and

@@ -1,8 +1,9 @@
 .project-box {
   border-radius: 15px;
-  background: #ffffff; 
+  background: #fff;
+  width: 302px;
+  height: 414px;
 }
-
 .project-box figure {
   height: 310px;
   overflow: hidden;
@@ -59,4 +60,6 @@
 .recent-projects-carousel button.owl-next span {
   display: none;
 }
-
+.owl-dots {
+  display: none;
+}

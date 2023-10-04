@@ -6,9 +6,14 @@ import { Box, Typography } from "@mui/material";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 
-import slide01 from "../../Assets/images/SliderImages/film-tv-shoot.jpg";
-import slide02 from "../../Assets/images/SliderImages/corporate-retreat.jpg";
-import slide03 from "../../Assets/images/SliderImages/personal-event.jpg";
+// import slide01 from "../../Assets/images/SliderImages/film-tv-shoot.jpg";
+// import slide02 from "../../Assets/images/SliderImages/corporate-retreat.jpg";
+// import slide03 from "../../Assets/images/SliderImages/personal-event.jpg";
+
+
+import slide01 from "../../Assets/images/SliderImages/film-tv-shoot2.jpeg";
+import slide02 from "../../Assets/images/SliderImages/corporate-retreat2.jpg";
+import slide03 from "../../Assets/images/SliderImages/personal-event2.jpeg";
 
 function Autoplay() {
   return (

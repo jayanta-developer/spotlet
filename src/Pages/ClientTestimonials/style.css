@@ -1,11 +1,12 @@
 .testimonials-Card {
   border-radius: 20px;
-  background: #FFF;
+  background: #fff;
   padding: 50px;
   text-align: left;
 }
 
-.clienttestimonials-carousel .owl-nav.disabled, .clienttestimonials-carousel .owl-dots.disabled {
+.clienttestimonials-carousel .owl-nav.disabled,
+.clienttestimonials-carousel .owl-dots.disabled {
   display: block !important;
 }
 
@@ -35,4 +36,3 @@
 .clienttestimonials-carousel button.owl-next span {
   display: none;
 }
-

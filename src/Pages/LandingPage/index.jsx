@@ -50,6 +50,10 @@ import professionalservicesimg01 from "../../Assets/images/professional-services
 import professionalservicesimg02 from "../../Assets/images/professional-services-img02.png";
 import landingpageimg01 from "../../Assets/images/landingpage-img01.jpg";
 import icon08 from "../../Assets/images/icon-08.svg";
+import ExcitingIcon from "../../Assets/images/Exciting Spaces icon.svg"
+import TransparentIcon from "../../Assets/images/Transparent prices icon.svg"
+import SimplifiedIcon from "../../Assets/images/Simpified Booking icons.svg"
+
 import logo from "../../Assets/images/logo.png";
 import safespace from "../../Assets/images/icon-safespace.svg";
 import chancetosave from "../../Assets/images/icon-chancetosave.svg";
@@ -132,13 +136,13 @@ export default function LandingPage() {
                     preRenderFirstString={true}
                     sequence={[
                       "Film & TV Shoot",
-                      1000,
+                      4000,
                       "Corporate Retreat",
-                      1000,
+                      4000,
                       "Personal Event",
-                      1000,
+                      4000,
                     ]}
-                    speed={{ type: "keyStrokeDelayInMs", value: 170 }}
+                    speed={{ type: "keyStrokeDelayInMs", value: 80 }}
                     repeat={Infinity}
                   />
                 </span>{" "}
@@ -153,13 +157,13 @@ export default function LandingPage() {
                           boxShadow: "none",
                           ".MuiOutlinedInput-notchedOutline": { border: 0 },
                           "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
-                            {
-                              border: 0,
-                            },
+                          {
+                            border: 0,
+                          },
                           "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
-                            {
-                              border: 0,
-                            },
+                          {
+                            border: 0,
+                          },
                         }}
                         className="custom-select"
                         value={age}
@@ -181,13 +185,13 @@ export default function LandingPage() {
                           boxShadow: "none",
                           ".MuiOutlinedInput-notchedOutline": { border: 0 },
                           "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
-                            {
-                              border: 0,
-                            },
+                          {
+                            border: 0,
+                          },
                           "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
-                            {
-                              border: 0,
-                            },
+                          {
+                            border: 0,
+                          },
                         }}
                         className="custom-select"
                         value={age}
@@ -209,13 +213,13 @@ export default function LandingPage() {
                           boxShadow: "none",
                           ".MuiOutlinedInput-notchedOutline": { border: 0 },
                           "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
-                            {
-                              border: 0,
-                            },
+                          {
+                            border: 0,
+                          },
                           "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
-                            {
-                              border: 0,
-                            },
+                          {
+                            border: 0,
+                          },
                         }}
                         className="custom-select"
                         value={age}
@@ -237,13 +241,13 @@ export default function LandingPage() {
                           boxShadow: "none",
                           ".MuiOutlinedInput-notchedOutline": { border: 0 },
                           "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
-                            {
-                              border: 0,
-                            },
+                          {
+                            border: 0,
+                          },
                           "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
-                            {
-                              border: 0,
-                            },
+                          {
+                            border: 0,
+                          },
                         }}
                         className="custom-select"
                         value={age}
@@ -544,13 +548,13 @@ export default function LandingPage() {
               <figure>
                 <img src={landingpageimg01} />
                 <Typography className="box" variant="subtitle1">
-                  lorem ipsum dolor sit amet
+                  SpotLet offers transparency and trust
                 </Typography>
               </figure>
               <article>
                 <Box className="icon-content">
-                  <Box className="icon">
-                    <img src={icon08} />
+                  <Box className="icon-content-Choose ">
+                    <img src={ExcitingIcon} />
                   </Box>
                   <Box className="content">
                     <Typography variant="subtitle1">Exciting Spaces</Typography>
@@ -562,8 +566,8 @@ export default function LandingPage() {
                   </Box>
                 </Box>
                 <Box className="icon-content">
-                  <Box className="icon">
-                    <img src={icon08} />
+                  <Box className="icon-content-Choose ">
+                    <img src={TransparentIcon} />
                   </Box>
                   <Box className="content">
                     <Typography variant="subtitle1">
@@ -577,8 +581,8 @@ export default function LandingPage() {
                   </Box>
                 </Box>
                 <Box className="icon-content">
-                  <Box className="icon">
-                    <img src={icon08} />
+                  <Box className="icon-content-Choose ">
+                    <img src={SimplifiedIcon} />
                   </Box>
                   <Box className="content">
                     <Typography variant="subtitle1">

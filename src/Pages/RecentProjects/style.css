@@ -1,6 +1,7 @@
 .project-box {
   border-radius: 15px;
   background: #fff;
+  margin: 0 auto;
   width: 302px;
   height: 414px;
 }

@@ -31,10 +31,10 @@ const options = {
       items: 2,
     },
     700: {
-      items: 2,
+      items: 1.5,
     },
     1000: {
-      items: 3,
+      items: 2,
     },
     1170: {
       items: 3,

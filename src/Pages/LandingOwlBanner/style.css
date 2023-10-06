@@ -1,0 +1,15 @@
+.banner-carousel .item {
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.darken {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
+
+@media only screen and (max-width: 760px) {}
+
+@media only screen and (min-width: 761px) and (max-width: 1320px) {}

@@ -5,6 +5,7 @@
   width: 302px;
   height: 414px;
 }
+
 .project-box figure {
   height: 310px;
   overflow: hidden;
@@ -61,6 +62,15 @@
 .recent-projects-carousel button.owl-next span {
   display: none;
 }
+
 .owl-dots {
   display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .recent-projects-carousel {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 302px;
+  }
 }

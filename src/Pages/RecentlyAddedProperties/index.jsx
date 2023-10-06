@@ -46,7 +46,6 @@ const options = {
     1170: {
       items: 4,
     },
-
   },
 };
 class App extends React.Component {

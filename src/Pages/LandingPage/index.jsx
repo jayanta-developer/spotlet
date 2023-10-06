@@ -74,6 +74,7 @@ import RecentlyAddedProperties from "../RecentlyAddedProperties";
 import RecentProjects from "../RecentProjects";
 import ClientTestimonials from "../ClientTestimonials";
 import LandingPageBanner from "../LandingPageBanner";
+import LandingOwlBanner from "../LandingOwlBanner";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -126,28 +127,9 @@ export default function LandingPage() {
       <NavBar />
       <Box className="landingpageContainer">
         <Box className="landingpage-banner">
-          <LandingPageBanner />
+          <LandingOwlBanner />
           <Box className="landingpagebanner-content">
-            <Box className="banner-container">
-              <Typography variant="h1">
-                Kickstart your Next{" "}
-                <span className="span700">
-                  <TypeAnimation
-                    preRenderFirstString={true}
-                    sequence={[
-                      "Film & TV Shoot",
-                      4000,
-                      "Corporate Retreat",
-                      4000,
-                      "Personal Event",
-                      4000,
-                    ]}
-                    speed={{ type: "keyStrokeDelayInMs", value: 80 }}
-                    repeat={Infinity}
-                  />
-                </span>{" "}
-                with SpotLet
-              </Typography>
+            <Box className="banner-container">              
               <Box className="banner-search">
                 <ul>
                   <li className="select-input">

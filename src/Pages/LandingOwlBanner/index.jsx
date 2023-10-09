@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import { Box, Typography } from "@mui/material";
 
 //Owl Carousel Libraries and Module
 import OwlCarousel from "react-owl-carousel";
@@ -11,18 +10,17 @@ import slide01 from "../../Assets/images/SliderImages/film-tv-shoot2.jpeg";
 import slide02 from "../../Assets/images/SliderImages/corporate-retreat2.jpg";
 import slide03 from "../../Assets/images/SliderImages/personal-event2.jpeg";
 
-
 //Owl Carousel Settings
 const options = {
   margin: 0,
-  animateIn: 'fadeIn',
-  animateOut: 'fadeOut',
+  animateIn: "fadeIn",
+  animateOut: "fadeOut",
   responsiveClass: true,
   nav: true,
   autoplay: true,
   loop: true,
   navText: ["", ""],
-  smartSpeed: 2500,
+  smartSpeed: 1000,
   responsive: {
     0: {
       items: 1,
@@ -50,13 +48,13 @@ class App extends React.Component {
       <div>
         <OwlCarousel className="banner-carousel owl-carousel" {...options}>
           <div className="item">
-            <img src={slide01} className="image-overlay darken" />            
+            <img src={slide01} className="image-overlay darken" />
           </div>
           <div className="item">
-            <img src={slide02} className="image-overlay darken" />            
+            <img src={slide02} className="image-overlay darken" />
           </div>
           <div className="item">
-            <img src={slide03} className="image-overlay darken" />            
+            <img src={slide03} className="image-overlay darken" />
           </div>
         </OwlCarousel>
       </div>

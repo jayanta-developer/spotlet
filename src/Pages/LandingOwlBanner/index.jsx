@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 import { Box, Typography } from "@mui/material";
-import ReactTyped from "react-typed";
 
 //Owl Carousel Libraries and Module
 import OwlCarousel from "react-owl-carousel";
@@ -22,7 +21,7 @@ const options = {
   autoplay: true,
   loop: true,
   navText: ["", ""],
-  smartSpeed: 1000,
+  smartSpeed: 2500,
   responsive: {
     0: {
       items: 1,
@@ -50,57 +49,13 @@ class App extends React.Component {
       <div>
         <OwlCarousel className="banner-carousel owl-carousel" {...options}>
           <div className="item">
-            <img src={slide01} className="image-overlay darken" />
-            <Box className="banner-container">
-              <Typography variant="h1">
-                Kickstart your Next{" "}
-                <span className="span700">
-                  Film & Tv Shoot
-                  {/* <ReactTyped strings={["Film &amp; Tv Shoot"]}
-                    typeSpeed={150}
-                    loop
-                    backSpeed={50}
-                    cursorChar="|"
-                    showCursor={true} /> */}
-                </span>{" "}
-                with SpotLet
-              </Typography>
-            </Box>
+            <img src={slide01} className="image-overlay darken" />            
           </div>
           <div className="item">
-            <img src={slide02} className="image-overlay darken" />
-            <Box className="banner-container">
-              <Typography variant="h1">
-                Jumpstart  your Next{" "}
-                <span className="span700">
-                  Corporate Retreat
-                  {/* <ReactTyped strings={["Corporate Retreat"]}
-                    typeSpeed={150}
-                    loop
-                    backSpeed={20}
-                    cursorChar="|"
-                    showCursor={true} /> */}
-                </span>{" "}
-                with SpotLet
-              </Typography>
-            </Box>
+            <img src={slide02} className="image-overlay darken" />            
           </div>
           <div className="item">
-            <img src={slide03} className="image-overlay darken" />
-            <Box className="banner-container">
-              <Typography variant="h1">
-                Upstart your Next{" "}
-                <span className="span700">Personal Event
-                  {/* <ReactTyped strings={["Personal Event"]}
-                    typeSpeed={150}
-                    loop
-                    backSpeed={20}
-                    cursorChar="|"
-                    showCursor={true} /> */}
-                </span>{" "}
-                with SpotLet
-              </Typography>
-            </Box>
+            <img src={slide03} className="image-overlay darken" />            
           </div>
         </OwlCarousel>
       </div>

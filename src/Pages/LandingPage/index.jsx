@@ -50,9 +50,9 @@ import professionalservicesimg01 from "../../Assets/images/professional-services
 import professionalservicesimg02 from "../../Assets/images/professional-services-img02.png";
 import landingpageimg01 from "../../Assets/images/landingpage-img01.jpg";
 import icon08 from "../../Assets/images/icon-08.svg";
-import ExcitingIcon from "../../Assets/images/Exciting Spaces icon.svg"
-import TransparentIcon from "../../Assets/images/Transparent prices icon.svg"
-import SimplifiedIcon from "../../Assets/images/Simpified Booking icons.svg"
+import ExcitingIcon from "../../Assets/images/Exciting Spaces icon.svg";
+import TransparentIcon from "../../Assets/images/Transparent prices icon.svg";
+import SimplifiedIcon from "../../Assets/images/Simpified Booking icons.svg";
 
 import logo from "../../Assets/images/logo.png";
 import safespace from "../../Assets/images/icon-safespace.svg";
@@ -129,7 +129,25 @@ export default function LandingPage() {
         <Box className="landingpage-banner">
           <LandingOwlBanner />
           <Box className="landingpagebanner-content">
-            <Box className="banner-container">              
+            <Box className="banner-container">
+              <Typography variant="h1">
+                Kickstart your Next{" "}
+                <span className="span700">                  
+                  <TypeAnimation
+                    sequence={[
+                      "Film & Tv Shoot",
+                      500,
+                      "Corporate Retreat",
+                      500,
+                      "Personal Event",
+                      500,
+                    ]}
+                    speed={250}
+                    repeat={Infinity}
+                  />
+                </span>{" "}
+                with SpotLet
+              </Typography>
               <Box className="banner-search">
                 <ul>
                   <li className="select-input">
@@ -139,13 +157,13 @@ export default function LandingPage() {
                           boxShadow: "none",
                           ".MuiOutlinedInput-notchedOutline": { border: 0 },
                           "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
-                          {
-                            border: 0,
-                          },
+                            {
+                              border: 0,
+                            },
                           "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
-                          {
-                            border: 0,
-                          },
+                            {
+                              border: 0,
+                            },
                         }}
                         className="custom-select"
                         value={age}
@@ -167,13 +185,13 @@ export default function LandingPage() {
                           boxShadow: "none",
                           ".MuiOutlinedInput-notchedOutline": { border: 0 },
                           "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
-                          {
-                            border: 0,
-                          },
+                            {
+                              border: 0,
+                            },
                           "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
-                          {
-                            border: 0,
-                          },
+                            {
+                              border: 0,
+                            },
                         }}
                         className="custom-select"
                         value={age}
@@ -195,13 +213,13 @@ export default function LandingPage() {
                           boxShadow: "none",
                           ".MuiOutlinedInput-notchedOutline": { border: 0 },
                           "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
-                          {
-                            border: 0,
-                          },
+                            {
+                              border: 0,
+                            },
                           "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
-                          {
-                            border: 0,
-                          },
+                            {
+                              border: 0,
+                            },
                         }}
                         className="custom-select"
                         value={age}
@@ -223,13 +241,13 @@ export default function LandingPage() {
                           boxShadow: "none",
                           ".MuiOutlinedInput-notchedOutline": { border: 0 },
                           "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
-                          {
-                            border: 0,
-                          },
+                            {
+                              border: 0,
+                            },
                           "&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
-                          {
-                            border: 0,
-                          },
+                            {
+                              border: 0,
+                            },
                         }}
                         className="custom-select"
                         value={age}

@@ -64,10 +64,6 @@ html {
   border-radius: 19px;
   border: 1px solid #ea4335;
   background: #fff;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 25%;
 }
 
 .banner-search ul {

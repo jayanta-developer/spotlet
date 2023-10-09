@@ -40,6 +40,8 @@ body {
   scrollbar-width: thin;
   /* "thin", "auto", or "none" based on your preference */
   font-family: "Poppins", sans-serif !important;
+  padding: 0 !important;
+  overflow-y: auto !important;
   overflow-x: hidden !important;
 }
 

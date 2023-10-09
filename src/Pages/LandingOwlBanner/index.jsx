@@ -11,6 +11,7 @@ import slide01 from "../../Assets/images/SliderImages/film-tv-shoot2.jpeg";
 import slide02 from "../../Assets/images/SliderImages/corporate-retreat2.jpg";
 import slide03 from "../../Assets/images/SliderImages/personal-event2.jpeg";
 
+
 //Owl Carousel Settings
 const options = {
   margin: 0,

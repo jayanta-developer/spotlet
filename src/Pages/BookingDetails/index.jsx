@@ -6,7 +6,7 @@ import "./bookingDetails.css";
 import NavBar from '../NavBar';
 import TopTabs from '../../Component/TopTabs';
 import Footer from "../Footer";
-import GoogleMap from '../../Component/GoogleMap';
+// import GoogleMap from '../../Component/GoogleMap';
 
 
 import coverPhoto from "../../Assets/images/BookingDetails/dfsdfsdfds - Copy.jpeg";
@@ -490,7 +490,7 @@ export default function BookingDetails() {
             </Typography>
           </Box>
           <Box className="DetailContent MapBoxContent">
-            <GoogleMap latitude={latitude} longitude={longitude} />
+            {/* <GoogleMap latitude={latitude} longitude={longitude} /> */}
           </Box>
 
         </Box>

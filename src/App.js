@@ -22,7 +22,7 @@ import Host from "./Pages/Host";
 import Terms from "./Pages/Terms&Conditions";
 import Policy from "./Pages/Privacy&Policy";
 import LandingPage from "./Pages/LandingPage";
-
+// google-maps-react
 export default function App() {
   return (
     <>

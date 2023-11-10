@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react';
-import GoogleMap from '../../../Component/GoogleMap';
+// import GoogleMap from '../../../Component/GoogleMap';
 
 
 import "./map.css"
